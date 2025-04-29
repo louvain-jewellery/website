@@ -37,6 +37,7 @@
   font-size: 14px;
   margin-bottom: 10px;
   text-decoration: none;
+  width: fit-content;
 }
 
 .footer-right {

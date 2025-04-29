@@ -30,6 +30,28 @@ a:visited {
   color: inherit;
 }
 
+.text-button {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-button::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1.5px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.text-button:hover::after {
+  width: 100%;
+}
+
+
 body.no-scroll {
   overflow: hidden;
   height: 100vh;

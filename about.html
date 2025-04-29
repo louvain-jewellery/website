@@ -17,12 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="header" class="header">
+    <header id="header" class="header">
       <div class="header-top">
         <div class="header-top-left">
           <button id="hamburger" class="hamburger">&#9776;</button>
-          <a class="header-text-button" href="https://maps.app.goo.gl/Z3Q8pYDUb1qYTpas7" target="_blank">Lokasi</a>
-          <a class="header-text-button" href="https://wa.me/6285324922353" target="_blank">Hubungi Kami</a>
+          <a class="header-text-button text-button" href="https://maps.app.goo.gl/Z3Q8pYDUb1qYTpas7" target="_blank">Lokasi</a>
+          <a class="header-text-button text-button" href="https://wa.me/6285324922353" target="_blank">Hubungi Kami</a>
         </div>
 
         <div class="main-logo-container">
@@ -40,7 +40,7 @@
       </div>
       <div id="mobileMenu" class="header-bottom">
         <div class="mobile-button-container">
-          <a class="header-text-button mobile-button" href="./">Beranda</a>
+          <a class="header-text-button mobile-button text-button" href="./">Beranda</a>
           <a href="./" class="mobile-arrow-button">
             <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
           </a>
@@ -48,7 +48,7 @@
         
       <div class="drop-down koleksi-dropdown">
         <div class="mobile-button-container">
-          <a href="collection.html" class="header-text-button mobile-button">Koleksi</a>
+          <a href="collection.html" class="header-text-button mobile-button text-button">Koleksi</a>
           <a href="collection.html" class="mobile-arrow-button">
             <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
           </a>
@@ -59,50 +59,50 @@
               <a class="dropdown-image-link" href="collection.html?collection=timeless">
                 <img src="images/timeless.png" alt="Timeless">
               </a>
-              <a href="collection.html?collection=timeless">Timeless</a>
+              <a class="text-button" href="collection.html?collection=timeless">Timeless</a>
             </div>
             <div class="dropdown-koleksi-container">
               <a class="dropdown-image-link" href="collection.html?collection=stacking">
                 <img src="images/stacking.png" alt="Stacking">
               </a>
-              <a href="collection.html?collection=stacking">Stacking</a>
+              <a class="text-button" href="collection.html?collection=stacking">Stacking</a>
             </div>
             <div class="dropdown-koleksi-container">
               <a class="dropdown-image-link" href="collection.html?collection=couple">
                 <img src="images/couple.png" alt="Couple">
               </a>
-              <a href="collection.html?collection=couple">Couple</a>
+              <a class="text-button" href="collection.html?collection=couple">Couple</a>
             </div>
             <div class="dropdown-koleksi-container">
               <a class="dropdown-image-link" href="collection.html?collection=complement">
                 <img src="images/complement.png" alt="Complement">
               </a>
-              <a href="collection.html?collection=complement">Complement</a>
+              <a class="text-button" href="collection.html?collection=complement">Complement</a>
             </div>
             <div class="dropdown-koleksi-container">
               <a class="dropdown-image-link" href="collection.html?collection=independent">
                 <img src="images/independent.png" alt="Independent">
               </a>
-              <a href="collection.html?collection=independent">Independent</a>
+              <a class="text-button" href="collection.html?collection=independent">Independent</a>
             </div>
           </div>
-          <a class="dropdown-all-button" href="collection.html">Lihat Semua Produk &gt;</a>
+          <a class="dropdown-all-button text-button" href="collection.html">Lihat Semua Produk &gt;</a>
         </div>
       </div>
       <div class="mobile-button-container">
-        <a class="header-text-button mobile-button" href="about.html">Tentang Kami</a>
+        <a class="header-text-button mobile-button text-button" href="about.html">Tentang Kami</a>
         <a href="about.html" class="mobile-arrow-button">
           <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
         </a>
       </div>
       <div class="mobile-button-container">
-        <a class="header-text-button mobile-button" href="production.html">Produksi</a>
+        <a class="header-text-button mobile-button text-button" href="production.html">Produksi</a>
         <a href="production.html" class="mobile-arrow-button">
           <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
         </a>
       </div>
       <div class="mobile-button-container">
-        <a class="header-text-button mobile-button" href="material.html">Material</a>
+        <a class="header-text-button mobile-button text-button" href="material.html">Material</a>
         <a href="material.html" class="mobile-arrow-button">
           <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
         </a>
@@ -118,41 +118,43 @@
         </div>
         <ul id="searchResults" class="results-list"></ul>
       </div>
-    </div>
+    </header>
 
-    <div class="about-container">
-      <h2 class="about-title-text">
-        Tentang Kami
-      </h2>
-  
-      <p class="about-body-text">
-        LOUVAIN merupakan merek perhiasan pertama disumatera barat yang khusus menjual cincin kawin. Dimana tujuan utama dari LOUVAIN adalah menciptakan produk yang berkualitas dengan pelayanan sepenuh hati  serta jaminan after sales yang memanjakan konsumen.
-      </p>
-    </div>
+    <main>
+      <section class="about-container">
+        <h2 class="about-title-text">
+          Tentang Kami
+        </h2>
+    
+        <p class="about-body-text">
+          LOUVAIN merupakan merek perhiasan pertama disumatera barat yang khusus menjual cincin kawin. Dimana tujuan utama dari LOUVAIN adalah menciptakan produk yang berkualitas dengan pelayanan sepenuh hati  serta jaminan after sales yang memanjakan konsumen.
+        </p>
+      </section>
+    </main>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-top">
         <div class="footer-left">
           <div class="footer-left-first">
             <h2 class="footer-title">
               Louvain Jewellery
             </h2>
-            <a class="footer-left-button" href="./">
+            <a class="footer-left-button text-button" href="./">
               Beranda
             </a>
-            <a class="footer-left-button" href="collection.html">
+            <a class="footer-left-button text-button" href="collection.html">
               Koleksi
             </a>
-            <a class="footer-left-button" href="about.html">
+            <a class="footer-left-button text-button" href="about.html">
               Tentang Kami
             </a>
-            <a class="footer-left-button" href="ring-size-guide.html">
+            <a class="footer-left-button text-button" href="ring-size-guide.html">
               Panduan Ukuran Cincin
             </a>
-            <a class="footer-left-button" href="production.html">
+            <a class="footer-left-button text-button" href="production.html">
               Produksi
             </a>
-            <a class="footer-left-button" href="material.html">
+            <a class="footer-left-button text-button" href="material.html">
               Material
             </a>
           </div>
@@ -198,7 +200,7 @@
           &copy 2025 - Louvain Jewellery
         </p>
       </div>
-    </div>
+    </footer>
 
     <div class="overlay"></div>
 
