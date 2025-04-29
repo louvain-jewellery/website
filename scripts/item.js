@@ -89,6 +89,7 @@ function sendToWhatsApp() {
   const chromeM = document.querySelector('.chrome-selection.man')?.value || '-';
   const materialM = document.querySelector('.material-selection.man')?.value || '-';
   const engravingM = document.querySelector('.engraving-box.man')?.value || '-';
+  const notesBox = document.querySelector('.notes-box')?.value || '';
 
   const message = `
 Halo, saya ingin memesan cincin dengan detail berikut:
@@ -109,6 +110,8 @@ Link Produk: ${itemURL}
 - Chrome: ${chromeM}
 - Material: ${materialM}
 - Ukiran: ${engravingM}
+
+Pesan: ${notesBox}
   `;
 
   const encodedMessage = encodeURIComponent(message);
