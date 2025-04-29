@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Produksi | LOUVAIN Jewellery</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/production.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="header" class="header">
+      <div class="header-top">
+        <div class="header-top-left">
+          <button id="hamburger" class="hamburger">&#9776;</button>
+          <a class="header-text-button" href="https://maps.app.goo.gl/Z3Q8pYDUb1qYTpas7" target="_blank">Lokasi</a>
+          <a class="header-text-button" href="https://wa.me/6285324922353" target="_blank">Hubungi Kami</a>
+        </div>
+
+        <div class="main-logo-container">
+          <a href="./">
+            <img class="main-logo" src="icons/main-logo2.png">
+          </a>
+        </div>
+
+        <div class="header-top-right">
+          <!-- <span class="account-name">Nama Akun</span> -->
+          <img class="header-top-right-button account" src="icons/person_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg">
+          <img class="header-top-right-button favorite" src="icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg">
+          <img id="searchBtn" class="header-top-right-button search" src="icons/search_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg">
+        </div>
+      </div>
+      <div id="mobileMenu" class="header-bottom">
+        <div class="mobile-button-container">
+          <a class="header-text-button mobile-button" href="./">Beranda</a>
+          <a href="./" class="mobile-arrow-button">
+            <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </a>
+        </div>
+        
+      <div class="drop-down koleksi-dropdown">
+        <div class="mobile-button-container">
+          <a href="collection.html" class="header-text-button mobile-button">Koleksi</a>
+          <a href="collection.html" class="mobile-arrow-button">
+            <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </a>
+        </div>
+        <div class="dropdown-content koleksi-dropdown-content">
+          <div class="dropdown-content-top">
+            <div class="dropdown-koleksi-container">
+              <a class="dropdown-image-link" href="collection.html?collection=timeless">
+                <img src="images/timeless.png" alt="Timeless">
+              </a>
+              <a href="collection.html?collection=timeless">Timeless</a>
+            </div>
+            <div class="dropdown-koleksi-container">
+              <a class="dropdown-image-link" href="collection.html?collection=stacking">
+                <img src="images/stacking.png" alt="Stacking">
+              </a>
+              <a href="collection.html?collection=stacking">Stacking</a>
+            </div>
+            <div class="dropdown-koleksi-container">
+              <a class="dropdown-image-link" href="collection.html?collection=couple">
+                <img src="images/couple.png" alt="Couple">
+              </a>
+              <a href="collection.html?collection=couple">Couple</a>
+            </div>
+            <div class="dropdown-koleksi-container">
+              <a class="dropdown-image-link" href="collection.html?collection=complement">
+                <img src="images/complement.png" alt="Complement">
+              </a>
+              <a href="collection.html?collection=complement">Complement</a>
+            </div>
+            <div class="dropdown-koleksi-container">
+              <a class="dropdown-image-link" href="collection.html?collection=independent">
+                <img src="images/independent.png" alt="Independent">
+              </a>
+              <a href="collection.html?collection=independent">Independent</a>
+            </div>
+          </div>
+          <a class="dropdown-all-button" href="collection.html">Lihat Semua Produk &gt;</a>
+        </div>
+      </div>
+      <div class="mobile-button-container">
+        <a class="header-text-button mobile-button" href="about.html">Tentang Kami</a>
+        <a href="about.html" class="mobile-arrow-button">
+          <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </a>
+      </div>
+      <div class="mobile-button-container">
+        <a class="header-text-button mobile-button" href="production.html">Produksi</a>
+        <a href="production.html" class="mobile-arrow-button">
+          <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </a>
+      </div>
+      <div class="mobile-button-container">
+        <a class="header-text-button mobile-button" href="material.html">Material</a>
+        <a href="material.html" class="mobile-arrow-button">
+          <img src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </a>
+      </div>
+      </div>
+      <div id="searchDropdown" class="dropdown-content search-dropdown">
+        <div class="search-dropdown-top">
+          <div class="search-box-container">
+            <input id="searchBox" class="search-box" type="text" placeholder="Cari Produk">
+            <img class="search-icon" src="icons/search_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg" alt="search-icon">
+          </div>
+          <span id="closeBtn" class="close-btn">&#10005;</span>
+        </div>
+        <ul id="searchResults" class="results-list"></ul>
+      </div>
+    </div>
+
+    <div class="production-text-container">
+      <h2 class="production-title-text">
+        Produksi
+      </h2>
+      <p class="production-body-text">
+        LOUVAIN menerapkan sistem produksi lansung tanpa vendor yang pertama di sumatera barat. Mulai dari design hingga plating dilakukan lansung oleh tim produksi LOUVAIN.  Dengan menerapkan sistem produksi modern menggunakan mesin 3D printer dan mesin casting, sehingga hasil produksi lebih presisi dan kadar dari perhiasan akan terjaga.
+      </p>
+    </div>
+
+    <div class="production-process-container">
+      <div class="production-process">
+        <img src="images/production/production1.jpg" alt="Design and Printing">
+        <div class="production-process-text">
+          <h2>01. Design & Printing</h2>
+          <p>
+            Proses perancangan model cincin kawin kemudian dicetak menggunakan mesin 3D printer dan menghasilkan cetakan cincin berbahan resin.
+          </p>
+        </div>
+      </div>
+      <div class="production-process kiri">
+        <img src="images/production/production2.jpg" alt="Casting and Finishin Frame">
+        <div class="production-process-text">
+          <h2>02. Casting & Finishing Frame </h2>
+          <p>
+            Proses pengecoran hasil cetakan resin  yang kemudian dilanjutkan dengan pengikiran hingga permukaan halus dan rata. 
+          </p>
+        </div>
+      </div>
+      <div class="production-process">
+        <img src="images/production/production3.jpg" alt="Microsetting Gems">
+        <div class="production-process-text">
+          <h2>03. Microsetting Gems</h2>
+          <p>
+            Proses pemasangan permata menggunakan mesin microsetting.
+          </p>
+        </div>
+      </div>
+      <div class="production-process kiri">
+        <img src="images/production/production4.jpg" alt="Plating">
+        <div class="production-process-text">
+          <h2>04. Plating the Ring</h2>
+          <p>
+            Proses pewarnaan cincin yang diawali dengan pemolesan permukaan dan dicelupkan kecairan pewarna
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="footer-left-first">
+            <h2 class="footer-title">
+              Louvain Jewellery
+            </h2>
+            <a class="footer-left-button" href="./">
+              Beranda
+            </a>
+            <a class="footer-left-button" href="collection.html">
+              Koleksi
+            </a>
+            <a class="footer-left-button" href="about.html">
+              Tentang Kami
+            </a>
+            <a class="footer-left-button" href="ring-size-guide.html">
+              Panduan Ukuran Cincin
+            </a>
+            <a class="footer-left-button" href="production.html">
+              Produksi
+            </a>
+            <a class="footer-left-button" href="material.html">
+              Material
+            </a>
+          </div>
+  
+          <div class="footer-left-first">
+            <h2 class="footer-title">
+              Informasi Toko
+            </h2>
+            <a class="footer-left-button" href="https://maps.app.goo.gl/Z3Q8pYDUb1qYTpas7">
+              Jl. Patimura, Kp. Jao, Kec. Padang Barat, Kota Padang, Sumatera Barat
+            </a>
+            <a class="footer-left-button">
+              Senin - Minggu | 10.00 - 19.00 WIB
+            </a>
+            <a class="footer-left-button" href="wa.me/6285324922353">
+              Whatsapp: 0853-2492-2353
+            </a>
+          </div>
+        </div>
+  
+        <div class="footer-right">
+          <h2 class="footer-title">Yang terbaru dari kami</h2>
+          <div class="footer-right-email">
+            <input class="footer-email-box" type="text" placeholder="Masukkan Email Anda">
+            <img src="icons/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24 (1).svg">
+          </div>
+          <div class="footer-social-media">
+            <img class="social-media-icon" src="icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930460.png">
+            <img class="social-media-icon" src="icons/vecteezy_tiktok-logo-png-tikok-icon-transparent-png-tikok-app-logo-png_18930701.png">
+            <img class="social-media-icon" src="icons/vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930462.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright-text">
+          &copy 2025 - Louvain Jewellery
+        </p>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/overlay.js"></script>
+    <script src="scripts/filter-product.js"></script>
+  </body>
+</html>

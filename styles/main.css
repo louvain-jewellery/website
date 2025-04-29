@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 105px;
+  overflow-x: hidden;
+}
+
+a,
+div {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 2px solid lightgray;
+}
+
+a:active,
+a:visited {
+  color: inherit;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+}
+

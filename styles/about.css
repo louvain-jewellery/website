@@ -1,0 +1,40 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  margin-bottom: 30vh;
+  flex: 1;
+}
+
+.about-title-text {
+  font-family: "Cormorant Garamont";
+  font-size: 28x;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.about-body-text {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 20vw;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-title-text,
+  .about-body-text {
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .about-title-text,
+  .about-body-text {
+    padding: 0 50px;
+  }
+}

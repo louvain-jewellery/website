@@ -1,0 +1,22 @@
+{
+  "name": "LOUVAIN Jewelry",
+  "short_name": "LOUVAIN",
+  "description": "A beautiful collection of luxury jewelry and wedding rings.",
+  "scope": "/louvain-jewellery/",
+  "start_url": "/louvain-jewellery/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

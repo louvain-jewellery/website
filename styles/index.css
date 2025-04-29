@@ -1,0 +1,615 @@
+.hero-section,
+.location-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  margin: 0 0 50px 0;
+}
+
+.hero-background, 
+.location-background {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* === CONTENT === */
+
+.hero-content,
+.location-content,
+.customize-content {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 55%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 40vw;
+}
+
+/* === TITLE TEXT === */
+
+.hero-title-text,
+.design-title-text,
+.location-title-text,
+.customize-title-text,
+.packaging-title-text,
+.cta-title-text {
+  font-family: "Cormorant Garamont";
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+/* === BODY TEXT === */
+
+.hero-body-text,
+.design-body-text,
+.location-body-text,
+.customize-body-text,
+.packaging-body-text,
+.cta-body-text {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  line-height: 24px;
+}
+
+/* === BUTTONS === */
+
+.hero-button,
+.new-collection-button,
+.location-button,
+.cta-buttons a {
+  border: 1px solid white;
+  color: white;
+  padding: 7.5px 15px 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  width: fit-content;
+
+
+}
+
+/* === NEW COLLECTION === */
+
+.new-collection-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 30px;  
+}
+
+.new-collection-content {
+  display: grid;
+  grid-template-columns: repeat(4, 22.5vw);
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 25px;
+  gap: 1vw;
+}
+
+.new-collection-image {
+  width: 22.5vw;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.new-collection-button {
+  color: black;
+  border: 1px solid black;
+}
+
+/* === DESIGN SECTION === */
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.design-title-text {
+  text-align: center;
+}
+
+.design-body-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.design-content-container {
+  display: grid;
+  grid-template-columns: repeat(5, 17.5vw);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 1vw;
+}
+
+.design-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.design-content a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.design-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  width: 17.5vw;
+  aspect-ratio: 1/1;
+  background-color: rgb(248, 246, 242);
+  margin-bottom: 10px;
+}
+
+.design-image-link img {
+  width: 70%;
+}
+
+/* === CUSTOMIZE SECTION === */
+
+.customize-section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0;
+  margin: 0 50px 50px 50px;
+}
+
+.customize-content {
+  color: black;
+  right: 0;
+  left: 55%;
+}
+
+.customize-image {
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
+  margin-right: 100px;
+}
+
+.customize-button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.customize-button {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* === PACKAGING SECTION === */
+
+.packaging-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  scroll-margin-top: 120px;
+}
+
+.packaging-title-text,
+.packaging-body-text {
+  text-align: center;
+}
+
+.packaging-body-text {
+  margin-bottom: 30px;
+}
+
+.packaging-content {
+  display: grid;
+  grid-template-columns: repeat(4, 22.2vw);
+  justify-content: center;
+  max-width: 100%;
+  gap: 1vw;
+}
+
+.packaging-image {
+  border: 1px solid lightgray;
+  background-color:  #f9f8f2;
+  width: 22.2vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* === LOCATION SECTION === */
+
+.location-section {
+  height: 70vh;
+}
+
+.location-content {
+  left: 5%;
+  max-width: 30vw;
+}
+
+/* === CTA SECTION === */
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle, #36483c, #222e26);
+  /* background-color: #36483c; */
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.cta-image {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.cta-buttons a {
+  text-align: center;
+  width: 180px;
+  margin-right: 20px;
+  padding: 7.5px 0 10px 0;
+  transform: translateX(15px);
+}
+
+.cta-section h2 {
+  justify-content: center;
+  align-items: center;
+}
+
+/* === WHY SECTION === */
+.why-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  padding: 30px;
+}
+
+.why-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  max-width: 400px;
+}
+
+.why-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.why-item p {
+  margin: 0;
+  width: 250px;
+  font-size: 12px;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.why-image-container img {
+  width: 80px;
+  aspect-ratio: 1/1 ;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 1024px) {
+  .hero-section,
+  .location-section {
+    flex-direction: column;
+    position: static;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-background, 
+  .location-background {
+    aspect-ratio: 1/1;
+    object-position: 15%;
+  }
+
+  /* === CONTENT === */
+
+  .hero-content,
+  .location-content,
+  .customize-content {
+    color: black; 
+    position: static;
+    align-items: center;
+    max-width: none;
+    padding: 20px 25px;
+    transform: none;
+  }
+
+  /* === TITLE TEXT === */
+
+  .hero-title-text,
+  .design-title-text,
+  .location-title-text,
+  .customize-title-text,
+  .packaging-title-text,
+  .cta-title-text {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* === BODY TEXT === */
+
+  .hero-body-text,
+  .design-body-text,
+  .location-body-text,
+  .customize-body-text,
+  .packaging-body-text,
+  .cta-body-text {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  /* === BUTTONS === */
+
+  .hero-button,
+  .new-collection-button,
+  .location-button,
+  .cta-buttons a {
+    border: 1px solid black;
+    color: black;
+  }
+
+  /* === NEW COLLECTION === */
+
+  .new-collection-content {
+    grid-template-columns: repeat(2, 45.5vw);
+    gap: 10px;
+  }
+
+  .new-collection-image {
+    width: 45.5vw;
+    aspect-ratio: 1/1 ;
+  }
+
+  /* === DESIGN SECTION === */
+  
+
+  .design-content-container {
+    grid-template-columns: repeat(5, 35vw);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    grid-auto-flow: row;
+    scroll-snap-type: x mandatory;
+
+    padding: 0 25px;
+    justify-content: start;
+    margin-bottom: 0;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .design-body-text {
+    margin-bottom: 25px;
+  }
+
+  .design-content-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .design-content {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .design-content a{
+    font-size: 12px;
+  }
+
+  .design-image-link {
+    width: 35vw;
+  }
+
+  /* === CUSTOMIZE SECTION === */
+
+  .customize-section {
+    flex-direction: column;
+    position: static;
+    margin: 0 0px 50px 0px;
+  }
+
+  .customize-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    transform: rotate(270deg);
+  }
+
+  /* === PACKAGING SECTION === */
+
+  .packaging-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .packaging-title-text {
+    padding: 0 25px;
+  }
+
+  .packaging-body-text {
+    margin-bottom: 30px;
+    padding: 0 25px;
+  }
+
+  .packaging-content {
+    display: grid;
+    grid-template-columns: repeat(2, 45.2vw);
+    justify-content: center;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .packaging-image {
+    border: 1px solid lightgray;
+    background-color:  #f9f8f2;
+    width: 45.2vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  /* === LOCATION SECTION === */
+
+  .location-content {
+    max-width: none;
+  }
+
+  .location-background {
+    object-position: 78%;
+  }
+  
+  /* === CTA SECTION === */
+  
+  .cta-section {
+    padding: 50px 25px;
+    height: auto;
+  }
+  
+  .cta-image {
+    height: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .cta-buttons a {
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    transform: none;
+  }
+
+  .cta-title-text {
+    margin-bottom: 50px;
+  }
+
+  .cta-body-text {
+    display: none;
+  }
+
+  /* === WHY SECTION === */
+  .why-section {
+    flex-direction: column;
+    gap: 60px;
+    padding: 50px 25px;
+  }
+
+  .why-item {
+    width: 100%;
+  }
+
+  .why-item p {
+    width: fit-content;
+    padding: 0;
+  }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+  /* === CTA SECTION === */
+
+  .cta-section {
+    aspect-ratio: 1/1;
+  }
+
+  .cta-title-text {
+    margin-bottom: 10px;
+  }
+
+  .cta-body-text {
+    display: block;
+  }
+
+  .cta-image {
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .cta-buttons a {
+    text-align: center;
+    width: 180px;
+    margin-right: 20px;
+    padding: 7.5px 0 10px 0;
+    transform: translateX(15px);
+  }
+
+  .image-transition {
+    margin: 0 40px;
+    transition: padding 0.5 ease;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .hero-section,
+  .location-section {
+    height: auto;
+    aspect-ratio: 2/1;
+  }
+
+  .customize-image {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    transform: rotate(270deg);
+  }
+
+  .cta-section {
+    height: auto;
+    aspect-ratio: 2/1;
+  }
+
+  .image-transition {
+    margin: 0 50px;
+    transition: padding 0.5 ease;
+  }
+}

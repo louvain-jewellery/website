@@ -1,0 +1,111 @@
+.production-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  padding: 0 50px;
+  margin: 25px 0 50px 0;
+}
+
+.production-title-text {
+  font-family: "Cormorant Garamont";
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.production-body-text {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  }
+
+.production-process-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  flex: 1;
+}
+
+.production-process {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 0 50px 0;
+  background-color: rgb(248, 248, 248);
+  align-items: center;
+}
+
+.production-process.kiri {
+  flex-direction: row-reverse;
+}
+
+.production-process-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: black;
+  padding: 0 50px;
+}
+
+.production-process-text h2 {
+  font-family: "Cormorant Garamont";
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.production-process-text p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.production-process img {
+  width: 50%;
+  aspect-ratio: 3/2 ;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .production-text-container {
+    padding: 0 25px;
+  }
+  
+  .production-process {
+    flex-direction: column;
+    padding: 0 25px;
+    background: none;
+    align-items: flex-start;
+  }
+
+  .production-process.kiri {
+    flex-direction: column;
+  }
+  
+  .production-process-text {
+    color: black;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .production-process img {
+    width: 100%;
+    aspect-ratio: 1/1 ;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .production-text-container {
+    padding: 0 50px;
+  }
+  
+  .production-process {
+    flex-direction: column;
+    padding: 0 50px;
+    background: none;
+  }
+}
