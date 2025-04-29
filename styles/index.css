@@ -419,6 +419,7 @@
 
   .design-body-text {
     margin-bottom: 25px;
+    padding: 0px 25px;
   }
 
   .design-content-container::-webkit-scrollbar {
