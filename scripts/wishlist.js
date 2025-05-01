@@ -24,7 +24,7 @@ function renderWishlist() {
                 <button class="favorite-button" data-item-id="${item.id}">
                     <img src="icons/favorite_22dp_1F1F1F_FILL1_wght300_GRAD0_opsz24.svg">
                 </button>
-                <h2 class="content-name-text">${item.name}</h2>
+                <h2 class="content-name">${item.name}</h2>
                 <a class="content-button" href="${item.detailLink}">Lihat Produk</a>
             </div>
         `;
