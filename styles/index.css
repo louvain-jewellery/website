@@ -37,7 +37,7 @@
 .customize-title-text,
 .packaging-title-text,
 .cta-title-text {
-  font-family: "Cormorant Garamont";
+  font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 500;
   margin: 0 0 10px 0;
