@@ -111,6 +111,7 @@ section {
   display: flex;
   font-size: 14px;
   font-weight: 400;
+  width: fit-content;
 }
 
 @media (max-width: 1024px) {
