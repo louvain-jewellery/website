@@ -54,8 +54,8 @@ section {
   position: absolute;
   align-items: center;
   justify-content: center;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   width: 12%;
   aspect-ratio: 1/1;
   background-color: white;
