@@ -196,3 +196,29 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', rearrangeImages);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const favoriteButton = document.getElementById('favoriteButton');
+
+  // Get item ID from URL or any other dynamic source
+  const urlParams = new URLSearchParams(window.location.search);
+  const itemId = urlParams.get('id');  // This gets the 'id' query parameter from the URL
+  
+  // Load the JSON data
+  fetch('data/catalogue-data.json')
+    .then(response => response.json())
+    .then(data => {
+      // Find the item by its ID from the JSON data
+      const item = data.find(item => item.id === itemId);
+      if (item) {
+        favoriteButton.setAttribute('data-item-id', itemId);
+        
+        favoriteButton.addEventListener('click', () => {
+          toggleFavorite(item);  // Pass the item data to the favorite toggle function
+        });
+        
+        // Update initial button state
+        updateFavoriteButtons(itemId);
+      }
+    })
+    .catch(error => console.error('Error loading catalogue data:', error));
+});

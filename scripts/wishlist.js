@@ -1,0 +1,44 @@
+function renderWishlist() {
+    const wishlistSection = document.getElementById('wishlistContentSection');
+    const favorites = getFavorites();
+    
+    wishlistSection.innerHTML = '';
+    
+    if (favorites.length === 0) {
+        wishlistSection.innerHTML = '<p class="empty-wishlist">Belum ada koleksi yang disukai</p>';
+        return;
+    }
+    
+    favorites.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'catalogue-item';
+        
+        div.innerHTML = `
+            <a class="catalogue-image-link" href="${item.detailLink}">
+                <img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
+            </a>
+            <div class="catalogue-overlay">
+                <a class="catalogue-image-link" href="${item.detailLink}">
+                    <img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
+                </a>
+                <button class="favorite-button" data-item-id="${item.id}">
+                    <img src="icons/favorite_24dp_1F1F1F_FILL1_wght200_GRAD0_opsz24.svg">
+                </button>
+                <h2 class="catalogue-name-text">${item.name}</h2>
+                <a class="catalogue-button" href="${item.detailLink}">Lihat Produk</a>
+            </div>
+        `;
+        
+        const favoriteButton = div.querySelector('.favorite-button');
+        favoriteButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleFavorite(item);
+            renderWishlist();
+        });
+        
+        wishlistSection.appendChild(div);
+    });
+}
+
+// Initialize wishlist when DOM is loaded
+document.addEventListener('DOMContentLoaded', renderWishlist);
