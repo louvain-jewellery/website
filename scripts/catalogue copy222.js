@@ -98,6 +98,13 @@ fetch("data/catalogue-data.json")
           </div>
         `;
 
+        const favoriteButton = div.querySelector('.favorite-button');
+            favoriteButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleFavorite(item);
+            });
+
         catalogueSection.appendChild(div);
       }
     });
