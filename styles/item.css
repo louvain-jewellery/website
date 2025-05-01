@@ -75,7 +75,7 @@
 
 .item-name {
   font-size: 30px;
-  font-family: "Cormorant Garamont";
+  font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
   font-weight: 500;
   margin: 0 0 10px 0;
 }
