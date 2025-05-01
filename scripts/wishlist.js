@@ -11,21 +11,21 @@ function renderWishlist() {
     
     favorites.forEach(item => {
         const div = document.createElement('div');
-        div.className = 'catalogue-item';
+        div.className = 'content-item';
         
         div.innerHTML = `
-            <a class="catalogue-image-link" href="${item.detailLink}">
-                <img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
+            <a class="content-image-link" href="${item.detailLink}">
+                <img class="content-image" src="${item.images[0]}" alt="${item.name}">
             </a>
-            <div class="catalogue-overlay">
-                <a class="catalogue-image-link" href="${item.detailLink}">
-                    <img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
+            <div class="content-overlay">
+                <a class="content-image-link" href="${item.detailLink}">
+                    <img class="content-image" src="${item.images[0]}" alt="${item.name}">
                 </a>
                 <button class="favorite-button" data-item-id="${item.id}">
                     <img src="icons/favorite_24dp_1F1F1F_FILL1_wght200_GRAD0_opsz24.svg">
                 </button>
-                <h2 class="catalogue-name-text">${item.name}</h2>
-                <a class="catalogue-button" href="${item.detailLink}">Lihat Produk</a>
+                <h2 class="content-name-text">${item.name}</h2>
+                <a class="content-button" href="${item.detailLink}">Lihat Produk</a>
             </div>
         `;
         
