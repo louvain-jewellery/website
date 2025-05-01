@@ -210,6 +210,7 @@
 .favorite-button {
   display: flex;
   border: 1px solid black;
+  background-color: white;
   height: 100%;
   aspect-ratio: 1/1;
   align-items: center;
