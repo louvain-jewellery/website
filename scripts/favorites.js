@@ -36,8 +36,8 @@ function updateFavoriteButtons(itemId) {
   const buttons = document.querySelectorAll(`.favorite-button[data-item-id="${itemId}"]`);
   buttons.forEach(button => {
       const imgSrc = isFavorited 
-          ? "icons/favorite_24dp_1F1F1F_FILL1_wght200_GRAD0_opsz24.svg"
-          : "icons/favorite_24dp_1F1F1F_FILL0_wght200_GRAD0_opsz24.svg";
+          ? "icons/favorite_22dp_1F1F1F_FILL1_wght300_GRAD0_opsz24.svg"
+          : "icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg";
       button.querySelector('img').src = imgSrc;
   });
 }
