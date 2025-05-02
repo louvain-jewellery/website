@@ -17,7 +17,7 @@
 }
 
 .about-body-text {
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   padding: 0 20vw;

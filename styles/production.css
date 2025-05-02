@@ -17,7 +17,7 @@
 }
 
 .production-body-text {
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-align: center;
   margin: 0;
