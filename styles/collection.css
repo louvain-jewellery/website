@@ -138,7 +138,6 @@
   background-color: white;
   border: 1px solid lightgray;
   border-radius: 100%;
-  border: none;
   z-index: 1000;
   cursor: pointer;
 }

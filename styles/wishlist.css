@@ -60,7 +60,7 @@ section {
   aspect-ratio: 1/1;
   background-color: white;
   border-radius: 100%;
-  border: none;
+  border: 1px solid lightgray;
   cursor: pointer;
 }
 
