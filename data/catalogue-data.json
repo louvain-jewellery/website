@@ -22,7 +22,7 @@
     },
     "detailLink": "item.html?id=ags1.48"
   },
-
+  
   {
     "id": "ags5.48",
     "collection": null,
@@ -46,7 +46,7 @@
     },
     "detailLink": "item.html?id=ags5.48"
   },
-
+  
   {
     "id": "ags4.48",
     "collection": null,
@@ -71,7 +71,7 @@
     },
     "detailLink": "item.html?id=ags4.48"
   },
-
+  
   {
     "id": "ags3.48",
     "collection": null,
@@ -95,7 +95,7 @@
     },
     "detailLink": "item.html?id=ags3.48"
   },
-
+  
   {
     "id": "alc3.47",
     "collection": null,
@@ -120,7 +120,7 @@
     },
     "detailLink": "item.html?id=alc3.47"
   },
-
+  
   {
     "id": "alc2.47",
     "collection": null,
@@ -145,7 +145,7 @@
     },
     "detailLink": "item.html?id=alc2.47"
   },
-
+  
   {
     "id": "alc1.47",
     "collection": null,
@@ -170,7 +170,7 @@
     },
     "detailLink": "item.html?id=alc1.47"
   },
-
+  
   {
     "id": "alc4.47",
     "collection": null,
@@ -195,7 +195,7 @@
     },
     "detailLink": "item.html?id=alc4.47"
   },
-
+  
   {
     "id": "alc5.47",
     "collection": null,
@@ -220,7 +220,7 @@
     },
     "detailLink": "item.html?id=alc5.47"
   },
-
+  
   {
     "id": "aln1.47",
     "collection": null,
@@ -244,7 +244,7 @@
     },
     "detailLink": "item.html?id=aln1.47"
   },
-
+  
   {
     "id": "aln2.47",
     "collection": null,
@@ -268,7 +268,7 @@
     },
     "detailLink": "item.html?id=aln2.47"
   },
-
+  
   {
     "id": "aln4.47",
     "collection": null,
@@ -292,12 +292,12 @@
     },
     "detailLink": "item.html?id=aln4.47"
   },
-
+  
   {
     "id": "bla4.48",
     "collection": null,
     "images": [
-      "images/rings/Bella/0028_BLA 4.48.jpg",
+      "images/rings/BLA/0028_BLA 4.48.jpg",
       "images/rings/BLA/0029_BLA 4.48.jpg",
       "images/rings/BLA/0030_BLA 4.48.jpg"
     ],
@@ -316,12 +316,12 @@
     },
     "detailLink": "item.html?id=bla4.48"
   },
-
+  
   {
     "id": "bla3.48",
     "collection": null,
     "images": [
-      "images/rings/Bella/0031_BLA 3.48.jpg",
+      "images/rings/BLA/0031_BLA 3.48.jpg",
       "images/rings/BLA/0032_BLA 3.48.jpg",
       "images/rings/BLA/0033_BLA 3.48.jpg"
     ],
@@ -340,12 +340,12 @@
     },
     "detailLink": "item.html?id=bla3.48"
   },
-
+  
   {
     "id": "bla2.48",
     "collection": null,
     "images": [
-      "images/rings/Bella/0034_BLA 2.48.jpg",
+      "images/rings/BLA/0034_BLA 2.48.jpg",
       "images/rings/BLA/0035_BLA 2.48.jpg",
       "images/rings/BLA/0036_BLA 2.48.jpg"
     ],
@@ -364,12 +364,12 @@
     },
     "detailLink": "item.html?id=bla2.48"
   },
-
+  
   {
     "id": "bla1.48",
     "collection": null,
     "images": [
-      "images/rings/Bella/0037_BLA 1.48.jpg",
+      "images/rings/BLA/0037_BLA 1.48.jpg",
       "images/rings/BLA/0038_BLA 1.48.jpg",
       "images/rings/BLA/0039_BLA 1.48.jpg"
     ],
@@ -388,12 +388,12 @@
     },
     "detailLink": "item.html?id=bla1.48"
   },
-
+  
   {
     "id": "bry8.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0000_BRY_8.48.jpg",
+      "images/rings/BRY/0000_BRY_8.48.jpg",
       "images/rings/BRY/0001_BRY_8.48.jpg",
       "images/rings/BRY/0003_BRY_8.48.jpg"
     ],
@@ -412,12 +412,12 @@
     },
     "detailLink": "item.html?id=bry8.48"
   },
-
+  
   {
     "id": "bry10.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0001s_0000_BRY_10.48.jpg",
+      "images/rings/BRY/0001s_0000_BRY_10.48.jpg",
       "images/rings/BRY/0001s_0001_BRY_10.48.jpg",
       "images/rings/BRY/0001s_0002_BRY_10.48.jpg"
     ],
@@ -436,12 +436,12 @@
     },
     "detailLink": "item.html?id=bry10.48"
   },
-
+  
   {
     "id": "bry9.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0002s_0000_BRY_9.48.jpg",
+      "images/rings/BRY/0002s_0000_BRY_9.48.jpg",
       "images/rings/BRY/0002s_0001_BRY_9.48.jpg",
       "images/rings/BRY/0002s_0002_BRY_9.48.jpg",
       "images/rings/BRY/0002s_0003_BRY_9.48.jpg"
@@ -461,12 +461,12 @@
     },
     "detailLink": "item.html?id=bry9.48"
   },
-
+  
   {
     "id": "bry6.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0003s_0000_BRY_6.48.jpg",
+      "images/rings/BRY/0003s_0000_BRY_6.48.jpg",
       "images/rings/BRY/0003s_0001_BRY_6.48.jpg",
       "images/rings/BRY/0003s_0002_BRY_6.48.jpg",
       "images/rings/BRY/0003s_0003_BRY_6.48.jpg"
@@ -486,12 +486,12 @@
     },
     "detailLink": "item.html?id=bry6.48"
   },
-
+  
   {
     "id": "bry7.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0004_BRY_7.48.jpg",
+      "images/rings/BRY/0004_BRY_7.48.jpg",
       "images/rings/BRY/0005_BRY_7.48.jpg",
       "images/rings/BRY/0006_BRY_7.48.jpg",
       "images/rings/BRY/0007_BRY_7.48.jpg"
@@ -511,12 +511,12 @@
     },
     "detailLink": "item.html?id=bry7.48"
   },
-
+  
   {
     "id": "bry5.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0008_BRY_5.48.jpg",
+      "images/rings/BRY/0008_BRY_5.48.jpg",
       "images/rings/BRY/0009_BRY_5.48.jpg",
       "images/rings/BRY/0010_BRY_5.48.jpg",
       "images/rings/BRY/0011_BRY_5.48.jpg"
@@ -536,12 +536,12 @@
     },
     "detailLink": "item.html?id=bry5.48"
   },
-
+  
   {
     "id": "bry4.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0012_BRY_4.48.jpg",
+      "images/rings/BRY/0012_BRY_4.48.jpg",
       "images/rings/BRY/0013_BRY_4.48.jpg",
       "images/rings/BRY/0014_BRY_4.48.jpg",
       "images/rings/BRY/0015_BRY_4.48.jpg"
@@ -561,12 +561,12 @@
     },
     "detailLink": "item.html?id=bry4.48"
   },
-
+  
   {
     "id": "bry3.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0016_BRY_3.48.jpg",
+      "images/rings/BRY/0016_BRY_3.48.jpg",
       "images/rings/BRY/0017_BRY_3.48.jpg",
       "images/rings/BRY/0018_BRY_3.48.jpg",
       "images/rings/BRY/0019_BRY_3.48.jpg"
@@ -586,12 +586,12 @@
     },
     "detailLink": "item.html?id=bry3.48"
   },
-
+  
   {
     "id": "bry2.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0020_BRY 2.48.jpg",
+      "images/rings/BRY/0020_BRY 2.48.jpg",
       "images/rings/BRY/0021_BRY 2.48.jpg",
       "images/rings/BRY/0022_BRY 2.48.jpg",
       "images/rings/BRY/0023_BRY 2.48.jpg"
@@ -611,12 +611,12 @@
     },
     "detailLink": "item.html?id=bry2.48"
   },
-
+  
   {
     "id": "bry1.48",
     "collection": null,
     "images": [
-      "images/rings/Beryl/0024_BRY 1.48.jpg",
+      "images/rings/BRY/0024_BRY 1.48.jpg",
       "images/rings/BRY/0025_BRY 1.48.jpg",
       "images/rings/BRY/0026_BRY 1.48.jpg",
       "images/rings/BRY/0027_BRY 1.48.jpg"
@@ -635,5 +635,1014 @@
       }
     },
     "detailLink": "item.html?id=bry1.48"
+  },
+  
+  {
+    "id": "Brisia1.47",
+    "collection": null,
+    "images": [
+      "images/rings/Brisia/5_0009_57 Brisia 1.47.jpg",
+      "images/rings/Brisia/5_0010_57 Brisia 1.47.jpg",
+      "images/rings/Brisia/5_0011_57 Brisia 1.47.jpg",
+      "images/rings/Brisia/5_0012_57 Brisia 1.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Brisia1.47"
+  },
+  
+  {
+    "id": "Brisia2.47",
+    "collection": null,
+    "images": [
+      "images/rings/Brisia/5_0013_58 Brisia 2.47.jpg",
+      "images/rings/Brisia/5_0014_58 Brisia 2.47.jpg",
+      "images/rings/Brisia/5_0015_58 Brisia 2.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Brisia2.47"
+  },
+  
+  {
+    "id": "Brisia3.47",
+    "collection": null,
+    "images": [
+      "images/rings/Brisia/5_0016_59 Brisia 3.47.jpg",
+      "images/rings/Brisia/5_0017_59 Brisia 3.47.jpg",
+      "images/rings/Brisia/5_0018_59 Brisia 3.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Brisia3.47"
+  },
+  
+  {
+    "id": "CLA1.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLA/4_0008_CLA 1.47.jpg",
+      "images/rings/CLA/4_0009_CLA 1.47.jpg",
+      "images/rings/CLA/4_0010_CLA 1.47.jpg",
+      "images/rings/CLA/4_0011_CLA 1.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLA1.47"
+  },
+  
+  {
+    "id": "CLA2.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLA/4_0012_CLA 2.47.jpg",
+      "images/rings/CLA/4_0013_CLA 2.47.jpg",
+      "images/rings/CLA/4_0014_CLA 2.47.jpg",
+      "images/rings/CLA/4_0015_CLA 2.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLA2.47"
+  },
+  
+  {
+    "id": "CLA3.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLA/4_0016_CLA 3.47.jpg",
+      "images/rings/CLA/4_0017_CLA 3.47.jpg",
+      "images/rings/CLA/4_0018_CLA 3.47.jpg",
+      "images/rings/CLA/4_0019_CLA 3.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLA3.47"
+  },
+  
+  {
+    "id": "CLA4.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLA/4_0020_CLA 4.47.jpg",
+      "images/rings/CLA/4_0021_CLA 4.47.jpg",
+      "images/rings/CLA/4_0022_CLA 4.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLA4.47"
+  },
+  
+  {
+    "id": "CLA5.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLA/4_0023_CLA 5.47.jpg",
+      "images/rings/CLA/4_0024_CLA 5.47.jpg",
+      "images/rings/CLA/4_0025_CLA 5.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLA5.47"
+  },
+  
+  {
+    "id": "CLA6.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLA/4_0029_CLA 2.47.jpg",
+      "images/rings/CLA/4_0030_CLA 2.47.jpg",
+      "images/rings/CLA/4_0031_CLA 2.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLA6.47"
+  },
+  
+  {
+    "id": "CLI6.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLI/4_0000s_0000_CLI 6.47.jpg",
+      "images/rings/CLI/4_0000s_0001_CLI 6.47.jpg",
+      "images/rings/CLI/4_0000s_0002_CLI 6.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLI6.47"
+  },
+  
+  {
+    "id": "CLI1.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLI/4_0026_CLI 1.47.jpg",
+      "images/rings/CLI/4_0027_CLI 1.47.jpg",
+      "images/rings/CLI/4_0028_CLI 1.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLI1.47"
+  },
+  
+  {
+    "id": "CLI3.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLI/4_0032_CLI 3.47.jpg",
+      "images/rings/CLI/4_0033_CLI 3.47.jpg",
+      "images/rings/CLI/4_0034_CLI 3.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLI3.47"
+  },
+  
+  {
+    "id": "CLI4.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLI/4_0035_CLI 4.47.jpg",
+      "images/rings/CLI/4_0036_CLI 4.47.jpg",
+      "images/rings/CLI/4_0037_CLI 4.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLI4.47"
+  },
+  
+  {
+    "id": "CLI5.47",
+    "collection": null,
+    "images": [
+      "images/rings/CLI/4_0038_CLI 5.47.jpg",
+      "images/rings/CLI/4_0039_CLI 5.47.jpg",
+      "images/rings/CLI/4_0040_CLI 5.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CLI5.47"
+  },
+  
+  {
+    "id": "CSA1.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0000s_0000_CSA 1.48.jpg",
+      "images/rings/CSA/0000s_0001_CSA 1.48.jpg",
+      "images/rings/CSA/0000s_0002_CSA 1.48.jpg",
+      "images/rings/CSA/0000s_0003_CSA 1.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA1.48"
+  },
+  
+  {
+    "id": "CSA7.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0002s_0000_CSA 7.48.jpg",
+      "images/rings/CSA/0002s_0001_CSA 7.48.jpg",
+      "images/rings/CSA/0002s_0002_CSA 7.48.jpg",
+      "images/rings/CSA/0002s_0003_CSA 7.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA7.48"
+  },
+  
+  {
+    "id": "CSA6.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0003s_0000_CSA 6.48.jpg",
+      "images/rings/CSA/0003s_0001_CSA 6.48.jpg",
+      "images/rings/CSA/0003s_0002_CSA 6.48.jpg",
+      "images/rings/CSA/0003s_0003_CSA 6.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA6.48"
+  },
+  
+  {
+    "id": "CSA5.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0004s_0000_CSA 5.48.jpg",
+      "images/rings/CSA/0004s_0001_CSA 5.48.jpg",
+      "images/rings/CSA/0004s_0002_CSA 5.48.jpg",
+      "images/rings/CSA/0004s_0003_CSA 5.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA5.48"
+  },
+  
+  {
+    "id": "CSA4.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0025_CSA 4.48.jpg",
+      "images/rings/CSA/0026_CSA 4.48.jpg",
+      "images/rings/CSA/0027_CSA 4.48.jpg",
+      "images/rings/CSA/0028_CSA 4.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA4.48"
+  },
+  
+  {
+    "id": "CSA3.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0029_CSA 3.48.jpg",
+      "images/rings/CSA/0030_CSA 3.48.jpg",
+      "images/rings/CSA/0031_CSA 3.48.jpg",
+      "images/rings/CSA/0032_CSA 3.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA3.48"
+  },
+  
+  {
+    "id": "CSA2.48",
+    "collection": null,
+    "images": [
+      "images/rings/CSA/0033_CSA 2.48.jpg",
+      "images/rings/CSA/0034_CSA 2.48.jpg",
+      "images/rings/CSA/0035_CSA 2.48.jpg",
+      "images/rings/CSA/0036_CSA 2.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=CSA2.48"
+  },
+  
+  {
+    "id": "ERN4.48",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/0000_ERN 4.48.jpg",
+      "images/rings/ERN/0001_ERN 4.48.jpg",
+      "images/rings/ERN/0002_ERN 4.48.jpg",
+      "images/rings/ERN/0003_ERN 4.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN4.48"
+  },
+  
+  {
+    "id": "ERN1.48",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/0000s_0000_ERN 1.48.jpg",
+      "images/rings/ERN/0000s_0001_ERN 1.48.jpg",
+      "images/rings/ERN/0000s_0002_ERN 1.48.jpg",
+      "images/rings/ERN/0000s_0003_ERN 1.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN1.48"
+  },
+  
+  {
+    "id": "ERN3.48",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/0004_ERN 3.48.jpg",
+      "images/rings/ERN/0005_ERN 3.48.jpg",
+      "images/rings/ERN/0006_ERN 3.48.jpg",
+      "images/rings/ERN/0007_ERN 3.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN3.48"
+  },
+  
+  {
+    "id": "ERN2.48",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/0008_ERN 2.48.jpg",
+      "images/rings/ERN/0009_ERN 2.48.jpg",
+      "images/rings/ERN/0010_ERN 2.48.jpg",
+      "images/rings/ERN/0011_ERN 2.48.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN2.48"
+  },
+  
+  {
+    "id": "ERN8.47",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/3_0012_ERN 8.47.jpg",
+      "images/rings/ERN/3_0013_ERN 8.47.jpg",
+      "images/rings/ERN/3_0014_ERN 8.47.jpg",
+      "images/rings/ERN/3_0015_ERN 8.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN8.47"
+  },
+  
+  {
+    "id": "ERN7.47",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/3_0016_ERN 7.47.jpg",
+      "images/rings/ERN/3_0017_ERN 7.47.jpg",
+      "images/rings/ERN/3_0018_ERN 7.47.jpg",
+      "images/rings/ERN/3_0019_ERN 7.47.jpg",
+      ""
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN7.47"
+  },
+  
+  {
+    "id": "ERN6.47",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/3_0020_ERN 6.47.jpg",
+      "images/rings/ERN/3_0021_ERN 6.47.jpg",
+      "images/rings/ERN/3_0022_ERN 6.47.jpg",
+      "images/rings/ERN/3_0023_ERN 6.47.jpg",
+      ""
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN6.47"
+  },
+  
+  {
+    "id": "ERN5.47",
+    "collection": null,
+    "images": [
+      "images/rings/ERN/3_0024_ERN 5.47.jpg",
+      "images/rings/ERN/3_0025_ERN 5.47.jpg",
+      "images/rings/ERN/3_0026_ERN 5.47.jpg",
+      "images/rings/ERN/3_0027_ERN 5.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ERN5.47"
+  },
+  
+  {
+    "id": "Hellia1.47",
+    "collection": null,
+    "images": [
+      "images/rings/Hellia/5_0000_54 Hellia 1.47",
+      "images/rings/Hellia/5_0001_54 Hellia 1.47",
+      "images/rings/Hellia/5_0002_54 Hellia 1.47"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Hellia1.47"
+  },
+  
+  {
+    "id": "Hellia2.47",
+    "collection": null,
+    "images": [
+      "images/rings/Hellia/5_0003_55 Hellia 2.47.jpg",
+      "images/rings/Hellia/5_0004_55 Hellia 2.47.jpg",
+      "images/rings/Hellia/5_0005_55 Hellia 2.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Hellia2.47"
+  },
+  
+  {
+    "id": "Hellia3.47",
+    "collection": null,
+    "images": [
+      "images/rings/Hellia/5_0006_56 Hellia 3.47.jpg",
+      "images/rings/Hellia/5_0007_56 Hellia 3.47.jpg",
+      "images/rings/Hellia/5_0008_56 Hellia 3.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Hellia3.47"
+  },
+  
+  {
+    "id": "Jace1.47",
+    "collection": null,
+    "images": [
+      "images/rings/Jace/5_0019_60 Jace 1.47.jpg",
+      "images/rings/Jace/5_0020_60 Jace 1.47.jpg",
+      "images/rings/Jace/5_0021_60 Jace 1.47.jpg",
+      "images/rings/Jace/5_0022_60 Jace 1.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Jace1.47"
+  },
+  
+  {
+    "id": "Jace2.36",
+    "collection": null,
+    "images": [
+      "images/rings/Jace/5_0023_61 Jace 2.36.jpg",
+      "images/rings/Jace/5_0024_61 Jace 2.36.jpg",
+      "images/rings/Jace/5_0025_61 Jace 2.36.jpg",
+      "images/rings/Jace/5_0026_61 Jace 2.36.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Jace2.36"
+  },
+  
+  {
+    "id": "Jace3.36",
+    "collection": null,
+    "images": [
+      "images/rings/Jace/5_0027_62 Jace 3.36.jpg",
+      "images/rings/Jace/5_0028_62 Jace 3.36.jpg",
+      "images/rings/Jace/5_0029_62 Jace 3.36.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Jace3.36"
+  },
+  
+  {
+    "id": "Jace4.36",
+    "collection": null,
+    "images": [
+      "images/rings/Jace/5_0030_63 Jace 4.36.jpg",
+      "images/rings/Jace/5_0031_63 Jace 4.36.jpg",
+      "images/rings/Jace/5_0032_63 Jace 4.36.jpg",
+      "images/rings/Jace/5_0033_63 Jace 4.36.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Jace4.36"
+  },
+  
+  {
+    "id": "Jace5.36",
+    "collection": null,
+    "images": [
+      "images/rings/Jace/5_0034_64 Jace 5.36.jpg",
+      "images/rings/Jace/5_0035_64 Jace 5.36.jpg",
+      "images/rings/Jace/5_0036_64 Jace 5.36.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Jace5.36"
+  },
+  
+  {
+    "id": "Vee1.36",
+    "collection": null,
+    "images": [
+      "images/rings/Vee/5_0037_65 Vee 1.36.jpg",
+      "images/rings/Vee/5_0038_65 Vee 1.36.jpg",
+      "images/rings/Vee/5_0039_65 Vee 1.36.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Vee1.36"
+  },
+  
+  {
+    "id": "Vee2.36",
+    "collection": null,
+    "images": [
+      "images/rings/Vee/5_0040_66 Vee 2.36.jpg",
+      "images/rings/Vee/5_0041_66 Vee 2.36.jpg",
+      "images/rings/Vee/5_0042_66 Vee 2.36.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Vee2.36"
+  },
+  
+  {
+    "id": "Vee3.11",
+    "collection": null,
+    "images": [
+      "images/rings/Vee/5_0043_67 Vee 3.11.jpg",
+      "images/rings/Vee/5_0044_67 Vee 3.11.jpg",
+      "images/rings/Vee/5_0045_67 Vee 3.11.jpg",
+      "images/rings/Vee/5_0046_67 Vee 3.11.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Vee3.11"
+  },
+  
+  {
+    "id": "Vee4.11",
+    "collection": null,
+    "images": [
+      "images/rings/Vee/5_0047_68 Vee 4.11.jpg",
+      "images/rings/Vee/5_0048_68 Vee 4.11.jpg",
+      "images/rings/Vee/5_0049_68 Vee 4.11.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=Vee4.11"
   }
 ]
