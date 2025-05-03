@@ -124,6 +124,7 @@
   width: fit-content;
   height: fit-content;
   border: 1px solid lightgray;
+  background: radial-gradient(circle, rgba(255, 255, 0 0) 0%, rgb(248, 246, 242));
   
 }
 
@@ -137,6 +138,7 @@
   width: 12%;
   aspect-ratio: 1/1;
   background-color: white;
+  border: 1px solid lightgray;
   border-radius: 100%;
   border: none;
   z-index: 1000;
