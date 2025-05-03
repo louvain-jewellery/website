@@ -67,5 +67,29 @@
       }
     },
     "detailLink": "item.html?id=ags5.48"
+  },
+  
+  {
+    "id": "ags4.48",
+    "collection": null,
+    "images": [
+      "images/rings/AGS/_0015_AGS 4.48.jpg",
+      "images/rings/AGS/_0016_AGS 4.48.jpg",
+      "images/rings/AGS/_0017_AGS 4.48.jpg"
+    ],
+    "name": "Agustin 4.48",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ags4.48"
   }
 ]
