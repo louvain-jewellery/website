@@ -71,6 +71,7 @@
   width: 13vw;
   aspect-ratio: 1/1;
   margin-bottom: 10px;
+  background-color: rgb(248, 246, 242);
 }
 
 .design-image-link img {
