@@ -20,7 +20,7 @@
     },
     "detailLink": "item.html?id=mario"
   },
-
+  
   {
     "id": "ags1.48",
     "collection": null,
@@ -43,5 +43,29 @@
       }
     },
     "detailLink": "item.html?id=ags1.48"
+  },
+  
+  {
+    "id": "ags5.48",
+    "collection": null,
+    "images": [
+      "images/rings/AGS/AGS 5.48 01.jpg",
+      "images/rings/AGS/AGS 5.48 02.jpg",
+      "images/rings/AGS/AGS 5.48 03.jpg"
+    ],
+    "name": "Agustin 5.48",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ags5.48"
   }
 ]
