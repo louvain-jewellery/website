@@ -660,13 +660,13 @@
   },
   
   {
-    "id": "BRS1.47",
+    "id": "brs1.47",
     "collection": null,
     "images": [
-      "images/rings/BRS/5_0009_57 Brisia 1.47.jpg",
-      "images/rings/BRS/5_0010_57 Brisia 1.47.jpg",
-      "images/rings/BRS/5_0011_57 Brisia 1.47.jpg",
-      "images/rings/BRS/5_0012_57 Brisia 1.47.jpg"
+      "images/rings/BRS/Brisia 1.47 09.jpg",
+      "images/rings/BRS/Brisia 1.47 10.jpg",
+      "images/rings/BRS/Brisia 1.47 11.jpg",
+      "images/rings/BRS/Brisia 1.47 12.jpg"
     ],
     "name": "",
     "price": "",
@@ -681,16 +681,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=BRS1.47"
+    "detailLink": "item.html?id=brs1.47"
   },
   
   {
-    "id": "BRS2.47",
+    "id": "brs2.47",
     "collection": null,
     "images": [
-      "images/rings/BRS/5_0013_58 Brisia 2.47.jpg",
-      "images/rings/BRS/5_0014_58 Brisia 2.47.jpg",
-      "images/rings/BRS/5_0015_58 Brisia 2.47.jpg"
+      "images/rings/BRS/Brisia 2.47 13.jpg",
+      "images/rings/BRS/Brisia 2.47 14.jpg",
+      "images/rings/BRS/Brisia 2.47 15.jpg"
     ],
     "name": "",
     "price": "",
@@ -705,16 +705,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=BRS2.47"
+    "detailLink": "item.html?id=brs2.47"
   },
   
   {
-    "id": "BRS3.47",
+    "id": "brs3.47",
     "collection": null,
     "images": [
-      "images/rings/BRS/5_0016_59 Brisia 3.47.jpg",
-      "images/rings/BRS/5_0017_59 Brisia 3.47.jpg",
-      "images/rings/BRS/5_0018_59 Brisia 3.47.jpg"
+      "images/rings/BRS/Brisia 3.47 16.jpg",
+      "images/rings/BRS/Brisia 3.47 17.jpg",
+      "images/rings/BRS/Brisia 3.47 18.jpg"
     ],
     "name": "",
     "price": "",
@@ -729,11 +729,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=BRS3.47"
+    "detailLink": "item.html?id=brs3.47"
   },
   
   {
-    "id": "CLA1.47",
+    "id": "cla1.47",
     "collection": null,
     "images": [
       "images/rings/CLA/4_0008_CLA 1.47.jpg",
@@ -754,11 +754,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLA1.47"
+    "detailLink": "item.html?id=cla1.47"
   },
   
   {
-    "id": "CLA2.47",
+    "id": "cla2.47",
     "collection": null,
     "images": [
       "images/rings/CLA/4_0012_CLA 2.47.jpg",
@@ -779,11 +779,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLA2.47"
+    "detailLink": "item.html?id=cla2.47"
   },
   
   {
-    "id": "CLA3.47",
+    "id": "cla3.47",
     "collection": null,
     "images": [
       "images/rings/CLA/4_0016_CLA 3.47.jpg",
@@ -804,11 +804,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLA3.47"
+    "detailLink": "item.html?id=cla3.47"
   },
   
   {
-    "id": "CLA4.47",
+    "id": "cla4.47",
     "collection": null,
     "images": [
       "images/rings/CLA/4_0020_CLA 4.47.jpg",
@@ -828,11 +828,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLA4.47"
+    "detailLink": "item.html?id=cla4.47"
   },
   
   {
-    "id": "CLA5.47",
+    "id": "cla5.47",
     "collection": null,
     "images": [
       "images/rings/CLA/4_0023_CLA 5.47.jpg",
@@ -852,11 +852,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLA5.47"
+    "detailLink": "item.html?id=cla5.47"
   },
   
   {
-    "id": "CLA6.47",
+    "id": "cla6.47",
     "collection": null,
     "images": [
       "images/rings/CLA/4_0029_CLA 2.47.jpg",
@@ -876,11 +876,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLA6.47"
+    "detailLink": "item.html?id=cla6.47"
   },
   
   {
-    "id": "CLI6.47",
+    "id": "cli6.47",
     "collection": null,
     "images": [
       "images/rings/CLI/4_0000s_0000_CLI 6.47.jpg",
@@ -900,11 +900,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLI6.47"
+    "detailLink": "item.html?id=cli6.47"
   },
   
   {
-    "id": "CLI1.47",
+    "id": "cli1.47",
     "collection": null,
     "images": [
       "images/rings/CLI/4_0026_CLI 1.47.jpg",
@@ -924,11 +924,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLI1.47"
+    "detailLink": "item.html?id=cli1.47"
   },
   
   {
-    "id": "CLI3.47",
+    "id": "cli3.47",
     "collection": null,
     "images": [
       "images/rings/CLI/4_0032_CLI 3.47.jpg",
@@ -948,11 +948,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLI3.47"
+    "detailLink": "item.html?id=cli3.47"
   },
   
   {
-    "id": "CLI4.47",
+    "id": "cli4.47",
     "collection": null,
     "images": [
       "images/rings/CLI/4_0035_CLI 4.47.jpg",
@@ -972,11 +972,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLI4.47"
+    "detailLink": "item.html?id=cli4.47"
   },
   
   {
-    "id": "CLI5.47",
+    "id": "cli5.47",
     "collection": null,
     "images": [
       "images/rings/CLI/4_0038_CLI 5.47.jpg",
@@ -996,11 +996,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CLI5.47"
+    "detailLink": "item.html?id=cli5.47"
   },
   
   {
-    "id": "CSA1.48",
+    "id": "csa1.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0000s_0000_CSA 1.48.jpg",
@@ -1021,11 +1021,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA1.48"
+    "detailLink": "item.html?id=csa1.48"
   },
   
   {
-    "id": "CSA7.48",
+    "id": "csa7.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0002s_0000_CSA 7.48.jpg",
@@ -1046,11 +1046,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA7.48"
+    "detailLink": "item.html?id=csa7.48"
   },
   
   {
-    "id": "CSA6.48",
+    "id": "csa6.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0003s_0000_CSA 6.48.jpg",
@@ -1071,11 +1071,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA6.48"
+    "detailLink": "item.html?id=csa6.48"
   },
   
   {
-    "id": "CSA5.48",
+    "id": "csa5.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0004s_0000_CSA 5.48.jpg",
@@ -1096,11 +1096,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA5.48"
+    "detailLink": "item.html?id=csa5.48"
   },
   
   {
-    "id": "CSA4.48",
+    "id": "csa4.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0025_CSA 4.48.jpg",
@@ -1121,11 +1121,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA4.48"
+    "detailLink": "item.html?id=csa4.48"
   },
   
   {
-    "id": "CSA3.48",
+    "id": "csa3.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0029_CSA 3.48.jpg",
@@ -1146,11 +1146,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA3.48"
+    "detailLink": "item.html?id=csa3.48"
   },
   
   {
-    "id": "CSA2.48",
+    "id": "csa2.48",
     "collection": null,
     "images": [
       "images/rings/CSA/0033_CSA 2.48.jpg",
@@ -1171,11 +1171,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=CSA2.48"
+    "detailLink": "item.html?id=csa2.48"
   },
   
   {
-    "id": "ERN4.48",
+    "id": "ern4.48",
     "collection": null,
     "images": [
       "images/rings/ERN/0000_ERN 4.48.jpg",
@@ -1196,11 +1196,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN4.48"
+    "detailLink": "item.html?id=ern4.48"
   },
   
   {
-    "id": "ERN1.48",
+    "id": "ern1.48",
     "collection": null,
     "images": [
       "images/rings/ERN/0000s_0000_ERN 1.48.jpg",
@@ -1221,11 +1221,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN1.48"
+    "detailLink": "item.html?id=ern1.48"
   },
   
   {
-    "id": "ERN3.48",
+    "id": "ern3.48",
     "collection": null,
     "images": [
       "images/rings/ERN/0004_ERN 3.48.jpg",
@@ -1246,11 +1246,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN3.48"
+    "detailLink": "item.html?id=ern3.48"
   },
   
   {
-    "id": "ERN2.48",
+    "id": "ern2.48",
     "collection": null,
     "images": [
       "images/rings/ERN/0008_ERN 2.48.jpg",
@@ -1271,11 +1271,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN2.48"
+    "detailLink": "item.html?id=ern2.48"
   },
   
   {
-    "id": "ERN8.47",
+    "id": "ern8.47",
     "collection": null,
     "images": [
       "images/rings/ERN/3_0012_ERN 8.47.jpg",
@@ -1296,11 +1296,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN8.47"
+    "detailLink": "item.html?id=ern8.47"
   },
   
   {
-    "id": "ERN7.47",
+    "id": "ern7.47",
     "collection": null,
     "images": [
       "images/rings/ERN/3_0016_ERN 7.47.jpg",
@@ -1322,11 +1322,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN7.47"
+    "detailLink": "item.html?id=ern7.47"
   },
   
   {
-    "id": "ERN6.47",
+    "id": "ern6.47",
     "collection": null,
     "images": [
       "images/rings/ERN/3_0020_ERN 6.47.jpg",
@@ -1348,11 +1348,11 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN6.47"
+    "detailLink": "item.html?id=ern6.47"
   },
   
   {
-    "id": "ERN5.47",
+    "id": "ern5.47",
     "collection": null,
     "images": [
       "images/rings/ERN/3_0024_ERN 5.47.jpg",
@@ -1373,16 +1373,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=ERN5.47"
+    "detailLink": "item.html?id=ern5.47"
   },
   
   {
-    "id": "Hellia1.47",
+    "id": "hla1.47",
     "collection": null,
     "images": [
-      "images/rings/Hellia/5_0000_54 Hellia 1.47",
-      "images/rings/Hellia/5_0001_54 Hellia 1.47",
-      "images/rings/Hellia/5_0002_54 Hellia 1.47"
+      "images/rings/HLA/Hellia 1.47 00.jpg",
+      "images/rings/HLA/Hellia 1.47 01.jpg",
+      "images/rings/HLA/Hellia 1.47 02.jpg"
     ],
     "name": "",
     "price": "",
@@ -1397,16 +1397,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Hellia1.47"
+    "detailLink": "item.html?id=hla1.47"
   },
   
   {
-    "id": "Hellia2.47",
+    "id": "hla2.47",
     "collection": null,
     "images": [
-      "images/rings/Hellia/5_0003_55 Hellia 2.47.jpg",
-      "images/rings/Hellia/5_0004_55 Hellia 2.47.jpg",
-      "images/rings/Hellia/5_0005_55 Hellia 2.47.jpg"
+      "images/rings/HLA/Hellia 2.47 03.jpg",
+      "images/rings/HLA/Hellia 2.47 04.jpg",
+      "images/rings/HLA/Hellia 2.47 05.jpg"
     ],
     "name": "",
     "price": "",
@@ -1421,16 +1421,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Hellia2.47"
+    "detailLink": "item.html?id=hla2.47"
   },
   
   {
-    "id": "Hellia3.47",
+    "id": "hla3.47",
     "collection": null,
     "images": [
-      "images/rings/Hellia/5_0006_56 Hellia 3.47.jpg",
-      "images/rings/Hellia/5_0007_56 Hellia 3.47.jpg",
-      "images/rings/Hellia/5_0008_56 Hellia 3.47.jpg"
+      "images/rings/HLA/Hellia 3.47 06.jpg",
+      "images/rings/HLA/Hellia 3.47 07.jpg",
+      "images/rings/HLA/Hellia 3.47 08.jpg"
     ],
     "name": "",
     "price": "",
@@ -1445,17 +1445,17 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Hellia3.47"
+    "detailLink": "item.html?id=hla3.47"
   },
   
   {
-    "id": "Jace1.47",
+    "id": "jce1.47",
     "collection": null,
     "images": [
-      "images/rings/Jace/5_0019_60 Jace 1.47.jpg",
-      "images/rings/Jace/5_0020_60 Jace 1.47.jpg",
-      "images/rings/Jace/5_0021_60 Jace 1.47.jpg",
-      "images/rings/Jace/5_0022_60 Jace 1.47.jpg"
+      "images/rings/JCE/Jace 1.47 19.jpg",
+      "images/rings/JCE/Jace 1.47 20.jpg",
+      "images/rings/JCE/Jace 1.47 21.jpg",
+      "images/rings/JCE/Jace 1.47 22.jpg"
     ],
     "name": "",
     "price": "",
@@ -1470,17 +1470,17 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Jace1.47"
+    "detailLink": "item.html?id=jce1.47"
   },
   
   {
-    "id": "Jace2.36",
+    "id": "jce2.36",
     "collection": null,
     "images": [
-      "images/rings/Jace/5_0023_61 Jace 2.36.jpg",
-      "images/rings/Jace/5_0024_61 Jace 2.36.jpg",
-      "images/rings/Jace/5_0025_61 Jace 2.36.jpg",
-      "images/rings/Jace/5_0026_61 Jace 2.36.jpg"
+      "images/rings/JCE/Jace 2.36 23.jpg",
+      "images/rings/JCE/Jace 2.36 24.jpg",
+      "images/rings/JCE/Jace 2.36 25.jpg",
+      "images/rings/JCE/Jace 2.36 26.jpg"
     ],
     "name": "",
     "price": "",
@@ -1495,16 +1495,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Jace2.36"
+    "detailLink": "item.html?id=jce2.36"
   },
   
   {
-    "id": "Jace3.36",
+    "id": "jce3.36",
     "collection": null,
     "images": [
-      "images/rings/Jace/5_0027_62 Jace 3.36.jpg",
-      "images/rings/Jace/5_0028_62 Jace 3.36.jpg",
-      "images/rings/Jace/5_0029_62 Jace 3.36.jpg"
+      "images/rings/JCE/Jace 3.36 27.jpg",
+      "images/rings/JCE/Jace 3.36 28.jpg",
+      "images/rings/JCE/Jace 3.36 29.jpg"
     ],
     "name": "",
     "price": "",
@@ -1519,17 +1519,17 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Jace3.36"
+    "detailLink": "item.html?id=jce3.36"
   },
   
   {
-    "id": "Jace4.36",
+    "id": "jce4.36",
     "collection": null,
     "images": [
-      "images/rings/Jace/5_0030_63 Jace 4.36.jpg",
-      "images/rings/Jace/5_0031_63 Jace 4.36.jpg",
-      "images/rings/Jace/5_0032_63 Jace 4.36.jpg",
-      "images/rings/Jace/5_0033_63 Jace 4.36.jpg"
+      "images/rings/JCE/Jace 4.36 30.jpg",
+      "images/rings/JCE/Jace 4.36 31.jpg",
+      "images/rings/JCE/Jace 4.36 32.jpg",
+      "images/rings/JCE/Jace 4.36 33.jpg"
     ],
     "name": "",
     "price": "",
@@ -1544,16 +1544,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Jace4.36"
+    "detailLink": "item.html?id=jce4.36"
   },
   
   {
-    "id": "Jace5.36",
+    "id": "jce5.36",
     "collection": null,
     "images": [
-      "images/rings/Jace/5_0034_64 Jace 5.36.jpg",
-      "images/rings/Jace/5_0035_64 Jace 5.36.jpg",
-      "images/rings/Jace/5_0036_64 Jace 5.36.jpg"
+      "images/rings/JCE/Jace 5.36 34.jpg",
+      "images/rings/JCE/Jace 5.36 35.jpg",
+      "images/rings/JCE/Jace 5.36 36.jpg"
     ],
     "name": "",
     "price": "",
@@ -1568,16 +1568,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Jace5.36"
+    "detailLink": "item.html?id=jce5.36"
   },
   
   {
-    "id": "Vee1.36",
+    "id": "vee1.36",
     "collection": null,
     "images": [
-      "images/rings/Vee/5_0037_65 Vee 1.36.jpg",
-      "images/rings/Vee/5_0038_65 Vee 1.36.jpg",
-      "images/rings/Vee/5_0039_65 Vee 1.36.jpg"
+      "images/rings/VEE/Vee 1.36 37.jpg",
+      "images/rings/VEE/Vee 1.36 38.jpg",
+      "images/rings/VEE/Vee 1.36 39.jpg"
     ],
     "name": "",
     "price": "",
@@ -1592,16 +1592,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Vee1.36"
+    "detailLink": "item.html?id=vee1.36"
   },
   
   {
-    "id": "Vee2.36",
+    "id": "vee2.36",
     "collection": null,
     "images": [
-      "images/rings/Vee/5_0040_66 Vee 2.36.jpg",
-      "images/rings/Vee/5_0041_66 Vee 2.36.jpg",
-      "images/rings/Vee/5_0042_66 Vee 2.36.jpg"
+      "images/rings/VEE/Vee 2.36 40.jpg",
+      "images/rings/VEE/Vee 2.36 41.jpg",
+      "images/rings/VEE/Vee 2.36 42.jpg"
     ],
     "name": "",
     "price": "",
@@ -1616,17 +1616,17 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Vee2.36"
+    "detailLink": "item.html?id=vee2.36"
   },
   
   {
-    "id": "Vee3.11",
+    "id": "vee3.11",
     "collection": null,
     "images": [
-      "images/rings/Vee/5_0043_67 Vee 3.11.jpg",
-      "images/rings/Vee/5_0044_67 Vee 3.11.jpg",
-      "images/rings/Vee/5_0045_67 Vee 3.11.jpg",
-      "images/rings/Vee/5_0046_67 Vee 3.11.jpg"
+      "images/rings/VEE/Vee 3.11 43.jpg",
+      "images/rings/VEE/Vee 3.11 44.jpg",
+      "images/rings/VEE/Vee 3.11 45.jpg",
+      "images/rings/VEE/Vee 3.11 46.jpg"
     ],
     "name": "",
     "price": "",
@@ -1641,16 +1641,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Vee3.11"
+    "detailLink": "item.html?id=vee3.11"
   },
   
   {
-    "id": "Vee4.11",
+    "id": "vee4.11",
     "collection": null,
     "images": [
-      "images/rings/Vee/5_0047_68 Vee 4.11.jpg",
-      "images/rings/Vee/5_0048_68 Vee 4.11.jpg",
-      "images/rings/Vee/5_0049_68 Vee 4.11.jpg"
+      "images/rings/VEE/Vee 4.11 47.jpg",
+      "images/rings/VEE/Vee 4.11 48.jpg",
+      "images/rings/VEE/Vee 4.11 49.jpg"
     ],
     "name": "",
     "price": "",
@@ -1665,6 +1665,6 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Vee4.11"
+    "detailLink": "item.html?id=vee4.11"
   }
 ]
