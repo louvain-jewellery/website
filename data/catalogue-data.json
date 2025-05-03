@@ -20,7 +20,7 @@
     },
     "detailLink": "item.html?id=mario"
   },
-  
+
   {
     "id": "ags1.48",
     "collection": null,
@@ -44,7 +44,7 @@
     },
     "detailLink": "item.html?id=ags1.48"
   },
-  
+
   {
     "id": "ags5.48",
     "collection": null,
@@ -68,15 +68,15 @@
     },
     "detailLink": "item.html?id=ags5.48"
   },
-  
+
   {
     "id": "ags4.48",
     "collection": null,
     "images": [
-      "images/rings/AGS/_0015_AGS 4.48.jpg",
-      "images/rings/AGS/_0016_AGS 4.48.jpg",
-      "images/rings/AGS/_0017_AGS 4.48.jpg",
-      "images/rings/AGS/_0018_AGS 4.48.jpg"
+      "images/rings/AGS/0015 AGS 4.48.jpg",
+      "images/rings/AGS/0016 AGS 4.48.jpg",
+      "images/rings/AGS/0017 AGS 4.48.jpg",
+      "images/rings/AGS/0018 AGS 4.48.jpg"
     ],
     "name": "Agustin 4.48",
     "price": "",
@@ -92,5 +92,154 @@
       }
     },
     "detailLink": "item.html?id=ags4.48"
+  },
+
+  {
+    "id": "ags3.48",
+    "collection": null,
+    "images": [
+      "images/rings/AGS/0019 AGS 3.48.jpg",
+      "images/rings/AGS/0020 AGS 3.48.jpg",
+      "images/rings/AGS/0021 AGS 3.48.jpg"
+    ],
+    "name": "Agustin 3.48",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=ags3.48"
+  },
+
+  {
+    "id": "alc3.47",
+    "collection": null,
+    "images": [
+      "images/rings/ALC/3_0000_ALC 3.47.jpg",
+      "images/rings/ALC/3_0001_ALC 3.47.jpg",
+      "images/rings/ALC/3_0002_ALC 3.47.jpg",
+      "images/rings/ALC/3_0003_ALC 3.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=alc3.47"
+  },
+
+  {
+    "id": "alc2.47",
+    "collection": null,
+    "images": [
+      "images/rings/ALC/3_0004_ALC 2.47.jpg",
+      "images/rings/ALC/3_0005_ALC 2.47.jpg",
+      "images/rings/ALC/3_0006_ALC 2.47.jpg",
+      "images/rings/ALC/3_0007_ALC 2.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=alc2.47"
+  },
+
+  {
+    "id": "alc1.47",
+    "collection": null,
+    "images": [
+      "images/rings/ALC/3_0008_ALC 1.47.jpg",
+      "images/rings/ALC/3_0009_ALC 1.47.jpg",
+      "images/rings/ALC/3_0010_ALC 1.47.jpg",
+      "images/rings/ALC/3_0011_ALC 1.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=alc1.47"
+  },
+
+  {
+    "id": "alc4.47",
+    "collection": null,
+    "images": [
+      "images/rings/ALC/4_0000_ALC 4.47.jpg",
+      "images/rings/ALC/4_0001_ALC 4.47.jpg",
+      "images/rings/ALC/4_0002_ALC 4.47.jpg",
+      "images/rings/ALC/4_0003_ALC 4.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=alc4.47"
+  },
+
+  {
+    "id": "alc5.47",
+    "collection": null,
+    "images": [
+      "images/rings/ALC/4_0004_ALC 5.47.jpg",
+      "images/rings/ALC/4_0005_ALC 5.47.jpg",
+      "images/rings/ALC/4_0006_ALC 5.47.jpg",
+      "images/rings/ALC/4_0007_ALC 5.47.jpg"
+    ],
+    "name": "",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
+    },
+    "detailLink": "item.html?id=alc5.47"
   }
 ]
