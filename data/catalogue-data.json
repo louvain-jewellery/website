@@ -1,5 +1,27 @@
 [
   {
+    "id": "mario",
+    "collection": null,
+    "images": [
+      "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
+    ],
+    "name": "Mario",
+    "price": "",
+    "description": "it's a me!",
+    "specs": {
+      "ringWidth": {
+        "wanita": "mario",
+        "pria": "mario"
+      },
+      "gem": {
+        "wanita": "mario",
+        "pria": "mario"
+      }
+    },
+    "detailLink": "item.html?id=mario"
+  },
+  
+  {
     "id": "ags1.48",
     "collection": null,
     "images": [
@@ -638,13 +660,13 @@
   },
   
   {
-    "id": "Brisia1.47",
+    "id": "BRS1.47",
     "collection": null,
     "images": [
-      "images/rings/Brisia/5_0009_57 Brisia 1.47.jpg",
-      "images/rings/Brisia/5_0010_57 Brisia 1.47.jpg",
-      "images/rings/Brisia/5_0011_57 Brisia 1.47.jpg",
-      "images/rings/Brisia/5_0012_57 Brisia 1.47.jpg"
+      "images/rings/BRS/5_0009_57 Brisia 1.47.jpg",
+      "images/rings/BRS/5_0010_57 Brisia 1.47.jpg",
+      "images/rings/BRS/5_0011_57 Brisia 1.47.jpg",
+      "images/rings/BRS/5_0012_57 Brisia 1.47.jpg"
     ],
     "name": "",
     "price": "",
@@ -659,16 +681,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Brisia1.47"
+    "detailLink": "item.html?id=BRS1.47"
   },
   
   {
-    "id": "Brisia2.47",
+    "id": "BRS2.47",
     "collection": null,
     "images": [
-      "images/rings/Brisia/5_0013_58 Brisia 2.47.jpg",
-      "images/rings/Brisia/5_0014_58 Brisia 2.47.jpg",
-      "images/rings/Brisia/5_0015_58 Brisia 2.47.jpg"
+      "images/rings/BRS/5_0013_58 Brisia 2.47.jpg",
+      "images/rings/BRS/5_0014_58 Brisia 2.47.jpg",
+      "images/rings/BRS/5_0015_58 Brisia 2.47.jpg"
     ],
     "name": "",
     "price": "",
@@ -683,16 +705,16 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Brisia2.47"
+    "detailLink": "item.html?id=BRS2.47"
   },
   
   {
-    "id": "Brisia3.47",
+    "id": "BRS3.47",
     "collection": null,
     "images": [
-      "images/rings/Brisia/5_0016_59 Brisia 3.47.jpg",
-      "images/rings/Brisia/5_0017_59 Brisia 3.47.jpg",
-      "images/rings/Brisia/5_0018_59 Brisia 3.47.jpg"
+      "images/rings/BRS/5_0016_59 Brisia 3.47.jpg",
+      "images/rings/BRS/5_0017_59 Brisia 3.47.jpg",
+      "images/rings/BRS/5_0018_59 Brisia 3.47.jpg"
     ],
     "name": "",
     "price": "",
@@ -707,7 +729,7 @@
         "pria": ""
       }
     },
-    "detailLink": "item.html?id=Brisia3.47"
+    "detailLink": "item.html?id=BRS3.47"
   },
   
   {
