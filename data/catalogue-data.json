@@ -1,48 +1,47 @@
-90% of storage used … If you run out, you can't create, edit, and upload files. Get 30 GB of storage for Rp 14.500,00 Rp 3.500,00 for 1 month.
 [
-{
-  "id": "mario",
-  "collection": null,
-  "images": [
-    "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
-  ],
-  "name": "Mario",
-  "price": "",
-  "description": "it's a me!",
-  "specs": {
-    "ringWidth": {
-      "wanita": "mario",
-      "pria": "mario"
+  {
+    "id": "mario",
+    "collection": null,
+    "images": [
+      "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
+    ],
+    "name": "Mario",
+    "price": "",
+    "description": "it's a me!",
+    "specs": {
+      "ringWidth": {
+        "wanita": "mario",
+        "pria": "mario"
+      },
+      "gem": {
+        "wanita": "mario",
+        "pria": "mario"
+      }
     },
-    "gem": {
-      "wanita": "mario",
-      "pria": "mario"
-    }
+    "detailLink": "item.html?id=mario"
   },
-  "detailLink": "item.html?id=mario"
-},
 
-{
-  "id": "ags1.48",
-  "collection": null,
-  "images": [
-    "images/rings/AGS/_0001s_0000_AGS 1.48.jpg",
-    "images/rings/AGS/_0001s_0001_AGS 1.48.jpg",
-    "images/rings/AGS/_0001s_0002_AGS 1.48.jpg"
-  ],
-  "name": "Agustin 1.48",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
+  {
+    "id": "ags1.48",
+    "collection": null,
+    "images": [
+      "images/rings/AGS/_0001s_0000_AGS 1.48.jpg",
+      "images/rings/AGS/_0001s_0001_AGS 1.48.jpg",
+      "images/rings/AGS/_0001s_0002_AGS 1.48.jpg"
+    ],
+    "name": "Agustin 1.48",
+    "price": "",
+    "description": "",
+    "specs": {
+      "ringWidth": {
+        "wanita": "",
+        "pria": ""
+      },
+      "gem": {
+        "wanita": "",
+        "pria": ""
+      }
     },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ags1.48"
-}
+    "detailLink": "item.html?id=ags1.48"
+  }
 ]
