@@ -1,273 +1,48 @@
+90% of storage used … If you run out, you can't create, edit, and upload files. Get 30 GB of storage for Rp 14.500,00 Rp 3.500,00 for 1 month.
 [
-  {
-    "id": "cmr2.11",
-    "collection": "complement",
-    "images": [
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.11",
-    "price": "",
-    "description": "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5mm"
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
+{
+  "id": "mario",
+  "collection": null,
+  "images": [
+    "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
+  ],
+  "name": "Mario",
+  "price": "",
+  "description": "it's a me!",
+  "specs": {
+    "ringWidth": {
+      "wanita": "mario",
+      "pria": "mario"
     },
-    "detailLink": "item.html?id=cmr2.11"
+    "gem": {
+      "wanita": "mario",
+      "pria": "mario"
+    }
   },
-  
-  {
-    "id": "cmr2.12",
-    "collection": "independent",
-    "images": [
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.12",
-    "price": "",
-    "description": "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm"
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
+  "detailLink": "item.html?id=mario"
+},
+
+{
+  "id": "ags1.48",
+  "collection": null,
+  "images": [
+    "images/rings/AGS/_0001s_0000_AGS 1.48.jpg",
+    "images/rings/AGS/_0001s_0001_AGS 1.48.jpg",
+    "images/rings/AGS/_0001s_0002_AGS 1.48.jpg"
+  ],
+  "name": "Agustin 1.48",
+  "price": "",
+  "description": "",
+  "specs": {
+    "ringWidth": {
+      "wanita": "",
+      "pria": ""
     },
-    "detailLink": "item.html?id=cmr2.12"
+    "gem": {
+      "wanita": "",
+      "pria": ""
+    }
   },
-  
-  {
-    "id": "cmr2.13",
-    "collection": "couple",
-    "images": [
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.13",
-    "price": "",
-    "description": "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm "
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.13"
-  },
-  
-  {
-    "id": "cmr2.11",
-    "collection": "complement",
-    "images": [
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.11",
-    "price": "",
-    "description": "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5mm"
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.11"
-  },
-  
-  {
-    "id": "cmr2.12",
-    "collection": "independent",
-    "images": [
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.12",
-    "price": "",
-    "description": "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm"
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.12"
-  },
-  
-  {
-    "id": "cmr2.13",
-    "collection": "couple",
-    "images": [
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.13",
-    "price": "",
-    "description": "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm "
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.13"
-  },
-  
-  {
-    "id": "cmr2.11",
-    "collection": "complement",
-    "images": [
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.11",
-    "price": "",
-    "description": "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5mm"
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.11"
-  },
-  
-  {
-    "id": "cmr2.12",
-    "collection": "independent",
-    "images": [
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.12",
-    "price": "",
-    "description": "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm"
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.12"
-  },
-  
-  {
-    "id": "cmr2.13",
-    "collection": "couple",
-    "images": [
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.13",
-    "price": "",
-    "description": "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm "
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.13"
-  },
-  
-  {
-    "id": "mario",
-    "collection": null,
-    "images": [
-      "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
-    ],
-    "name": "Mario",
-    "price": "",
-    "description": "it's a me!",
-    "specs": {
-      "ringWidth": {
-        "wanita": "mario",
-        "pria": "mario"
-      },
-      "gem": {
-        "wanita": "mario",
-        "pria": "mario"
-      }
-    },
-    "detailLink": "item.html?id=mario"
-  },
-  
-  {
-    "id": "cmr2.13",
-    "collection": "couple",
-    "images": [
-      "images/rings/cmr 2.11/3.png",
-      "images/rings/cmr 2.11/1.png",
-      "images/rings/cmr 2.11/2.png",
-      "images/rings/cmr 2.11/4.png"
-    ],
-    "name": "Camero 2.13",
-    "price": "",
-    "description": "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.",
-    "specs": {
-      "ringWidth": {
-        "wanita": "2 mm",
-        "pria": "5 mm "
-      },
-      "gem": {
-        "wanita": "1.755 mm",
-        "pria": "-"
-      }
-    },
-    "detailLink": "item.html?id=cmr2.13"
-  }
+  "detailLink": "item.html?id=ags1.48"
+}
 ]
