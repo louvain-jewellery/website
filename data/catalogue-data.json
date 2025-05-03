@@ -1,27 +1,5 @@
 [
   {
-    "id": "mario",
-    "collection": null,
-    "images": [
-      "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
-    ],
-    "name": "Mario",
-    "price": "",
-    "description": "it's a me!",
-    "specs": {
-      "ringWidth": {
-        "wanita": "mario",
-        "pria": "mario"
-      },
-      "gem": {
-        "wanita": "mario",
-        "pria": "mario"
-      }
-    },
-    "detailLink": "item.html?id=mario"
-  },
-  
-  {
     "id": "ags1.48",
     "collection": null,
     "images": [
@@ -1124,6 +1102,28 @@
     "detailLink": "item.html?id=csa4.48"
   },
   
+  {
+    "id": "mario",
+    "collection": null,
+    "images": [
+      "https://i.pinimg.com/474x/b3/07/dd/b307dda59ea94a3fe213d8ede84398b0.jpg"
+    ],
+    "name": "Mario",
+    "price": "",
+    "description": "it's a me!",
+    "specs": {
+      "ringWidth": {
+        "wanita": "mario",
+        "pria": "mario"
+      },
+      "gem": {
+        "wanita": "mario",
+        "pria": "mario"
+      }
+    },
+    "detailLink": "item.html?id=mario"
+  },
+
   {
     "id": "csa3.48",
     "collection": null,
