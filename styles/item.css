@@ -343,7 +343,12 @@
   
   .personalize-section {
     flex-direction: column;
+    margin-bottom: 50px;
     gap: 20px;
+  }
+
+  .notes-box {
+    margin-bottom: 20px;
   }
 
   .favorite-button {
