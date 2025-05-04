@@ -30,7 +30,6 @@
   width: 70%;
   height: auto;
   aspect-ratio: 1/1;
-  background-color: rgb(248, 246, 242);
   border: 1px solid lightgray;
   margin-right: 0.5rem;
   object-fit: cover;
@@ -54,7 +53,6 @@
   object-fit: cover;
   display: block;
   border: 1px solid lightgray;
-  background-color: rgb(248, 246, 242);
   cursor: pointer;
 }
 
