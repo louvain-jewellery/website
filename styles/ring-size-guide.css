@@ -18,7 +18,7 @@
   }
 
   .hero-body-text {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     margin: 0;
   }
@@ -90,6 +90,10 @@
   @media (max-width: 768px) {
     .hero-section {
       padding: 0 25px;
+    }
+
+    .hero-body-text {
+      font-size: 14px;
     }
   
     .hero-title-text {

@@ -38,7 +38,7 @@
 }
 
 .collection-hero-body-text {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -230,6 +230,10 @@
     width: 100%;
   }
 
+  .collection-hero-body-text {
+    font-size: 14px;
+  }
+
   .design-section {
     grid-template-columns: repeat(5, 30vw);
 
@@ -324,6 +328,10 @@
   .collection-hero-section {
     aspect-ratio: 2/1;
     padding: 0 50px;
+  }
+
+  .collection-hero-body-text {
+    font-size: 16px;
   }
 
   .design-section {

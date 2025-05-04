@@ -55,6 +55,11 @@
 
 .dropdown-image-link img {
   width: 70%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dropdown-image-link img:hover {
+  transform: scale(1.1);
 }
 
   
@@ -203,7 +208,7 @@ input:-webkit-autofill {
   }
   
   input:-webkit-autofill {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .search-icon {

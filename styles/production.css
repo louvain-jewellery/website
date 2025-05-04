@@ -18,7 +18,7 @@
 
 .production-body-text {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin: 0;
   }
@@ -59,7 +59,7 @@
 }
 
 .production-process-text p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -84,6 +84,10 @@
   .production-process.kiri {
     flex-direction: column;
   }
+
+  .production-body-text {
+    font-size: 14px;
+  }
   
   .production-process-text {
     color: black;
@@ -103,6 +107,10 @@
     padding: 0 50px;
   }
   
+  .production-body-text {
+    font-size: 16px;
+  }
+
   .production-process {
     flex-direction: column;
     padding: 0 50px;

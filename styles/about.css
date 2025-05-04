@@ -18,7 +18,7 @@
 
 .about-body-text {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   padding: 0 20vw;
   text-align: center;
@@ -30,11 +30,19 @@
   .about-body-text {
     padding: 0 25px;
   }
+
+  .about-body-text {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1399px) {
   .about-title-text,
   .about-body-text {
     padding: 0 50px;
+  }
+  
+  .about-body-text {
+    font-size: 16px;
   }
 }
