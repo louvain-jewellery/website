@@ -8,3 +8,9 @@ dropdownButton.addEventListener("mouseenter", () => {
 dropdownButton.addEventListener("mouseleave", () => {
   overlay.style.display = "none";
 })
+
+document.addEventListener("touchstart", function(e) {
+  if (e.target.tagName === "IMG") {
+    e.preventDefault();
+  }
+}, { passive: false });

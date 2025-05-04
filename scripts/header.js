@@ -1,7 +1,3 @@
-let lastScrollY = window.scrollY;
-const header = document.getElementById("header");
-
-
 window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
   const screenWidth = window.innerWidth;
