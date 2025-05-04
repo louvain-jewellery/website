@@ -10,12 +10,14 @@ window.addEventListener('scroll', () => {
   if (screenWidth >= 769) {
     if (currentScroll > 105 && currentScroll > lastScroll) {
       header.style.top = "-105px";
-      searchDropdown.style.top = "105px";
+      searchDropdown.style.top = "0px";
     } else {
       header.style.top = "0px";
+      searchDropdown.style.top = "105px";
     }
   } else {
     header.style.top = "0px";
+    searchDropdown.style.top = "50px";
   }
 
   lastScroll = currentScroll;
