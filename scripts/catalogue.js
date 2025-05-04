@@ -12,12 +12,12 @@ const collectionLinks = document.querySelectorAll(".design-image-link");
 const collectionData = {
     timeless: {
         title: "Timeless Collection",
-        description: "cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.",
+        description: "Cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.",
         image: "images/timeless.png"
     },
     stacking: {
         title: "Stacking Collection",
-        description: "cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.",
+        description: "Cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.",
         image: "images/stacking.png"
     },
     couple: {
