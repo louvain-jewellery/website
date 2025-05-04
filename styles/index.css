@@ -159,6 +159,11 @@
 
 .design-image-link img {
   width: 70%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.design-image-link img:hover {
+  transform: scale(1.15);
 }
 
 /* === CUSTOMIZE SECTION === */
