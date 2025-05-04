@@ -1,34 +1,24 @@
 let lastScrollY = window.scrollY;
 const header = document.getElementById("header");
-const searchDropdown = document.getElementById("searchDropdown");
 
-window.addEventListener("scroll", () => {
-  const currentScrollY = window.scrollY;
 
-  if (screenWidth <= 768) {
-    searchDropdown.style.top = '0';
-  } else {
-    if (currentScrollY > 105) { // only start hiding after scrolling 100px down
-      if (currentScrollY > lastScrollY) {
-        // Scrolling down
-        header.style.top = "-105px";
-        header.style.borderBottom = "1px solid lightgray";
-  
-        searchDropdown.style.top = '0';
-      } else {
-        // Scrolling up
-        header.style.top = "0";
-        header.style.borderBottom = "none";
-  
-        searchDropdown.style.top = '85px';
-      }
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY;
+  const screenWidth = window.innerWidth;
+  const searchDropdown = document.getElementById("searchDropdown");
+
+  if (screenWidth >= 769) {
+    if (currentScroll > 105 && currentScroll > lastScroll) {
+      header.style.top = "-105px";
+      searchDropdown.style.top = "105px";
     } else {
-      // Always show header when near top
-      header.style.top = "0";
+      header.style.top = "0px";
     }
+  } else {
+    header.style.top = "0px";
   }
 
-  lastScrollY = currentScrollY;
+  lastScroll = currentScroll;
 });
 
 
