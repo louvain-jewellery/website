@@ -1,5 +1,4 @@
-.hero-section,
-.location-section {
+.hero-section {
   display: flex;
   position: relative;
   width: 100%;
@@ -7,8 +6,7 @@
   margin: 0 0 50px 0;
 }
 
-.hero-background, 
-.location-background {
+.hero-background {
   width: 100%;
   object-fit: cover;
 }
@@ -16,7 +14,6 @@
 /* === CONTENT === */
 
 .hero-content,
-.location-content,
 .customize-content {
   color: white;
   position: absolute;
@@ -240,12 +237,31 @@
 /* === LOCATION SECTION === */
 
 .location-section {
-  height: 70vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+  padding: 0;
+  margin: 0 0 50px 0;
+  background-color: rgb(243, 240, 237);
 }
 
 .location-content {
+  position: absolute;
+  color: black;
   left: 5%;
-  max-width: 30vw;
+}
+
+.location-button {
+  color: black;
+  border: 1px solid black;
+}
+
+.location-background {
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
 }
 
 /* === CTA SECTION === */
@@ -262,7 +278,7 @@
 }
 
 .cta-image {
-  height: 150px;
+  height: 100px;
   margin-bottom: 30px;
 }
 
@@ -506,12 +522,22 @@
   
   /* === LOCATION SECTION === */
 
+  .location-section {
+    background: none;
+  }
+
   .location-content {
     max-width: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .location-background {
-    object-position: 78%;
+    width: 100%;
+    object-position: 45%;
+    object-fit: cover;
+    height: auto;
   }
   
   /* === CTA SECTION === */
@@ -601,14 +627,16 @@
     margin: 0 40px;
     transition: padding 0.5 ease;
   }
-
 }
 
 @media (min-width: 1025px) and (max-width: 1399px) {
-  .hero-section,
-  .location-section {
+  .hero-section {
     height: auto;
     aspect-ratio: 2/1;
+  }
+
+  .location-content {
+    max-width: 40px;
   }
 
   .customize-image {
