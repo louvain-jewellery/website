@@ -31,12 +31,7 @@
 
 /* === TITLE TEXT === */
 
-.hero-title-text,
-.design-title-text,
-.location-title-text,
-.customize-title-text,
-.packaging-title-text,
-.cta-title-text {
+.title-text {
   font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 500;
@@ -45,12 +40,7 @@
 
 /* === BODY TEXT === */
 
-.hero-body-text,
-.design-body-text,
-.location-body-text,
-.customize-body-text,
-.packaging-body-text,
-.cta-body-text {
+.body-text {
   font-size: 16px;
   margin: 0 0 10px 0;
   line-height: 24px;
@@ -58,10 +48,7 @@
 
 /* === BUTTONS === */
 
-.hero-button,
-.new-collection-button,
-.location-button,
-.cta-buttons a {
+.square-button {
   border: 1px solid white;
   color: white;
   padding: 7.5px 15px 10px 15px;
@@ -71,8 +58,6 @@
   text-align: center;
   margin: 0;
   width: fit-content;
-
-
 }
 
 /* === NEW COLLECTION === */

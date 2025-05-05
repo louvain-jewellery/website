@@ -52,6 +52,30 @@ a:visited {
 }
 
 
+.square-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid black;
+  padding: 8px 16px;
+}
+
+.square-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.square-button:hover::after {
+  width: 100%;
+}
+
 body.no-scroll {
   overflow: hidden;
   height: 100vh;
