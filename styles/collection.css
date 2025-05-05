@@ -71,7 +71,12 @@
   width: 13vw;
   aspect-ratio: 1/1;
   margin-bottom: 10px;
+  border: 1px solid lightgray;
   background-color: rgb(248, 246, 242);
+}
+
+.design-image-link:hover {
+  border: 1px solid black;
 }
 
 .design-image-link img {
@@ -197,7 +202,7 @@
 }
 
 .selected-collection {
-  border: 1px solid lightgray;
+  border: 1px solid black;
 }
 
 @media (max-width: 1024px) {

@@ -151,6 +151,10 @@
   transform: scale(1.15);
 }
 
+.design-image-link:hover {
+  border: 1px solid black;
+}
+
 /* === CUSTOMIZE SECTION === */
 
 .customize-section {

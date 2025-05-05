@@ -36,6 +36,10 @@ a:visited {
   color: inherit;
 }
 
+.text-button:hover {
+  font-weight: 600;
+}
+
 .text-button::after{
   content: '';
   position: absolute;
