@@ -34,3 +34,25 @@ window.addEventListener('scroll', updateOnScroll);
 
 // Initial call to handle page load state
 updateOnScroll();
+
+const overlay = document.getElementById("overlay");
+const overlayImg = document.getElementById("overlayImg");
+const closeBtn = document.getElementById("closeOverlay");
+
+const clickableImages = document.querySelectorAll(".clickable-img");
+clickableImages.forEach(img => {
+  img.addEventListener("click", () => {
+    overlayImg.src = img.src;
+    overlay.style.display = "flex";
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", (e) => {
+  if (e.target === overlay) {
+    overlay.style.display = "none";
+  }
+});

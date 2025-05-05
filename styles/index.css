@@ -162,7 +162,7 @@
   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.design-image-link:hover .design-image-link img {
+.design-image-link:hover img {
   transform: scale(1.15);
 }
 
@@ -228,12 +228,24 @@
   gap: 1vw;
 }
 
-.packaging-image {
-  border: 1px solid lightgray;
-  background-color:  #f9f8f2;
+.packaging-image-container {
   width: 22.2vw;
   aspect-ratio: 1/1;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+.packaging-image {
+  background-color:  #f9f8f2;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+.packaging-image-container:hover .packaging-image{
+  transform: scale(1.5);
 }
 
 /* === LOCATION SECTION === */
