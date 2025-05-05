@@ -375,24 +375,14 @@
 
   /* === TITLE TEXT === */
 
-  .hero-title-text,
-  .design-title-text,
-  .location-title-text,
-  .customize-title-text,
-  .packaging-title-text,
-  .cta-title-text {
+  .title-text {
     font-size: 24px;
     text-align: center;
   }
 
   /* === BODY TEXT === */
 
-  .hero-body-text,
-  .design-body-text,
-  .location-body-text,
-  .customize-body-text,
-  .packaging-body-text,
-  .cta-body-text {
+  .body-text {
     margin: 0 0 20px 0;
     text-align: center;
     font-size: 14px;
@@ -400,10 +390,7 @@
 
   /* === BUTTONS === */
 
-  .hero-button,
-  .new-collection-button,
-  .location-button,
-  .cta-buttons a {
+  .square-button {
     border: 1px solid black;
     color: black;
   }

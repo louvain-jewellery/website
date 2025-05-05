@@ -48,17 +48,6 @@ collectionLinks.forEach(link => {
     }
 });
 
-// async function initializeCatalogue() {
-//     try {
-//         const response = await fetch("data/catalogue-data.json");
-//         const data = await response.json();
-//         renderCatalogue(data);
-//     } catch (error) {
-//         console.error("Failed to load catalogue data:", error);
-//         catalogueSection.innerHTML = '<p class="error-message">Failed to load catalogue items. Please try again later.</p>';
-//     }
-// }
-
 function renderCatalogue(data) {
     let visibleCount = 0;
 

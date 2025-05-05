@@ -162,12 +162,6 @@ document.addEventListener('DOMContentLoaded', function() {
       thumbnails.forEach(thumbnail => {
         thumbnailContainer.appendChild(thumbnail);
       });
-
-      // Hide the first thumbnail (which is now the main image)
-      // const firstThumbnail = slider.querySelector('.item-image-top');
-      // if (firstThumbnail) {
-      //   firstThumbnail.style.display = 'none';
-      // }
     } else {
       // Revert to mobile layout (remove thumbnail container and show all images)
       let thumbnailContainer = slider.querySelector('.item-image-thumbnails');
