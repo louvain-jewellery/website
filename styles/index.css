@@ -162,7 +162,7 @@
   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.design-image-link img:hover {
+.design-image-link:hover .design-image-link img {
   transform: scale(1.15);
 }
 
