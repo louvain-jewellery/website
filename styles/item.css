@@ -304,8 +304,6 @@
   cursor: zoom-out;
 }
 
-
-
 @media (max-width: 1024px) {
   .item-container {
     display: flex;
