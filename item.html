@@ -22,163 +22,171 @@
     <header id="header" class="header"></header>
 
     <main>
-      <div class="item-container">
-        <div class="item-image-container">
-          <div class="item-image-slider">
-            <img src="" class="item-image-top clickable-img" alt="Main Image" >
-            <img src="" alt="Thumbnail 1" class="item-image clickable-img">
-            <img src="" alt="Thumbnail 2" class="item-image clickable-img">
-            <img src="" alt="Thumbnail 3" class="item-image clickable-img">
-          </div>
-        </div>
-  
-        <div class="item-detail-container">
-          <h2 class="item-name"></h2>
-          <p class="item-description"></p>
-  
-          <button class="table-title-text" onclick="toggleTable(event)">Detail Cincin &#9662;</button>
-          <table id="detailTable" class="detail-table"></table>
-          
-          <span class="item-personalize-title">Request Order: </span>
-          <div class="personalize-section">
-            <div class="gender-container">
-              <span>Wanita</span>
-              <div class="selection-container">
-                <label for="ring-size-selection woman">Ukuran Cincin:</label>
-                <select class="ring-size-selection woman">
-                  <option value="">Pilih</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">16</option>
-                  <option value="17">17</option>
-                  <option value="18">18</option>
-                  <option value="19">19</option>  
-                  <option value="20">20</option>
-                  <option value="21">21</option>
-                  <option value="22">22</option>
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">29</option>
-                  <option value="30">30</option>
-                </select>
-              </div>
-              <div class="selection-container">
-                <label for="gem-selection woman">Gem: </label>
-                <select class="gem-selection woman">
-                  <option value="" disabled selected>Pilih</option>
-                  <option value="Zirconia">Zirconia</option>
-                  <option value="Diamond">Diamond</option>
-                </select>
-              </div>
-              <div class="selection-container">
-                <label for="chrome-selection woman">Chrome: </label>
-                <select class="chrome-selection woman">
-                  <option value="" disabled selected>Pilih</option>
-                  <option value="White Doff">White Doff</option>
-                  <option value="White Glossy">White GLossy</option>
-                  <option value="Yellow Doff">Yellow Doff</option>
-                  <option value="Yellow Glossy">Yellow Glossy</option>
-                  <option value="Rose Doff">Rose Doff</option>
-                  <option value="Rose Glossy">Rose Glossy</option>
-                </select>
-              </div>
-              <div class="selection-container">
-                <label for="material-selection woman">Material: </label>
-                <select class="material-selection woman">
-                  <option value="" disabled selected>Pilih</option>
-                  <option value="Platinum V">Platinum V</option>
-                  <option value="Platinum X">Platinum X</option>
-                  <option value="Gold 17k">Gold 17k</option>
-                  <option value="Gold 16k">Gold 16k</option>
-                </select>
-              </div>
-              <input class="engraving-box woman" type="text" placeholder="Masukkan Ukiran Nama">
-            </div>
-            <div class="gender-container">
-              <span>Pria</span>
-              <div class="selection-container">
-                <label for="ring-size-selection man">Ukuran Cincin: </label>
-                <select class="ring-size-selection man">
-                  <option value="">Pilih</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">16</option>
-                  <option value="17">17</option>
-                  <option value="18">18</option>
-                  <option value="19">19</option>  
-                  <option value="20">20</option>
-                  <option value="21">21</option>
-                  <option value="22">22</option>
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">29</option>
-                  <option value="30">30</option>
-                </select>
-              </div>
-              <div class="selection-container">
-                <label for="gem-selection man">Gem: </label>
-                <select class="gem-selection man">
-                  <option value="" disabled selected>Pilih</option>
-                  <option value="Zirconia">Zirconia</option>
-                  <option value="Diamond">Diamond</option>
-                </select>
-              </div>
-              <div class="selection-container">
-                <label for="chrome-selection man">Chrome: </label>
-                <select class="chrome-selection man">
-                  <option value="" disabled selected>Pilih</option>
-                  <option value="White">White</option>
-                  <option value="Yellow">Yellow</option>
-                  <option value="Rose">Rose</option>
-                </select>
-              </div>
-              <div class="selection-container">
-                <label for="material-selection man">Material: </label>
-                <select class="material-selection man">
-                  <option value="" disabled selected>Pilih</option>
-                  <option value="Platinum V">Platinum V</option>
-                  <option value="Platinum X">Platinum X</option>
-                </select>
-              </div>
-              <input class="engraving-box man" type="text" placeholder="Masukkan Ukiran Nama">
+      <section class="item-section">
+
+        <div class="item-container">
+          <div class="item-image-container">
+            <div class="item-image-slider">
+              <img src="" class="item-image-top clickable-img" alt="Main Image" >
+              <img src="" alt="Thumbnail 1" class="item-image clickable-img">
+              <img src="" alt="Thumbnail 2" class="item-image clickable-img">
+              <img src="" alt="Thumbnail 3" class="item-image clickable-img">
             </div>
           </div>
-          <!-- <label class="notes-box-label" for="notes-box">Tambahkan Pesan:</label> -->
-          <input class="notes-box" type="text" placeholder="Tambahkan Pesan untuk Penjual">
-          
-          <!-- <div class="price-container">
-            <p class="price-title">Harga:</p>
-            <p class="price-tag">Rp. 10.000.000 </p>
-          </div> -->
-          <div class="buttons-container">
-            <button class="order-button" onclick="sendToWhatsApp()">
-              Pesan Via WhatsApp
-            </button>
-            <button id="favoriteButton" class="favorite-button">
-              <img src="icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg">
-            </button>
+    
+          <div class="item-detail-container">
+            <h2 class="item-name"></h2>
+            <p class="item-description"></p>
+    
+            <button class="table-title-text" onclick="toggleTable(event)">Detail Cincin &#9662;</button>
+            <table id="detailTable" class="detail-table"></table>
+            
+            <span class="item-personalize-title">Request Order: </span>
+            <div class="personalize-section">
+              <div class="gender-container">
+                <span>Wanita</span>
+                <div class="selection-container">
+                  <label for="ring-size-selection woman">Ukuran Cincin:</label>
+                  <select class="ring-size-selection woman">
+                    <option value="">Pilih</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>  
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">29</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="selection-container">
+                  <label for="gem-selection woman">Gem: </label>
+                  <select class="gem-selection woman">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Zirconia">Zirconia</option>
+                    <option value="Diamond">Diamond</option>
+                  </select>
+                </div>
+                <div class="selection-container">
+                  <label for="chrome-selection woman">Chrome: </label>
+                  <select class="chrome-selection woman">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="White Doff">White Doff</option>
+                    <option value="White Glossy">White GLossy</option>
+                    <option value="Yellow Doff">Yellow Doff</option>
+                    <option value="Yellow Glossy">Yellow Glossy</option>
+                    <option value="Rose Doff">Rose Doff</option>
+                    <option value="Rose Glossy">Rose Glossy</option>
+                  </select>
+                </div>
+                <div class="selection-container">
+                  <label for="material-selection woman">Material: </label>
+                  <select class="material-selection woman">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Platinum V">Platinum V</option>
+                    <option value="Platinum X">Platinum X</option>
+                    <option value="Gold 17k">Gold 17k</option>
+                    <option value="Gold 16k">Gold 16k</option>
+                  </select>
+                </div>
+                <input class="engraving-box woman" type="text" placeholder="Masukkan Ukiran Nama">
+              </div>
+              <div class="gender-container">
+                <span>Pria</span>
+                <div class="selection-container">
+                  <label for="ring-size-selection man">Ukuran Cincin: </label>
+                  <select class="ring-size-selection man">
+                    <option value="">Pilih</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>  
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">29</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                <div class="selection-container">
+                  <label for="gem-selection man">Gem: </label>
+                  <select class="gem-selection man">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Zirconia">Zirconia</option>
+                    <option value="Diamond">Diamond</option>
+                  </select>
+                </div>
+                <div class="selection-container">
+                  <label for="chrome-selection man">Chrome: </label>
+                  <select class="chrome-selection man">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="White">White</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Rose">Rose</option>
+                  </select>
+                </div>
+                <div class="selection-container">
+                  <label for="material-selection man">Material: </label>
+                  <select class="material-selection man">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Platinum V">Platinum V</option>
+                    <option value="Platinum X">Platinum X</option>
+                  </select>
+                </div>
+                <input class="engraving-box man" type="text" placeholder="Masukkan Ukiran Nama">
+              </div>
+            </div>
+            <!-- <label class="notes-box-label" for="notes-box">Tambahkan Pesan:</label> -->
+            <input class="notes-box" type="text" placeholder="Tambahkan Pesan untuk Penjual">
+            
+            <!-- <div class="price-container">
+              <p class="price-title">Harga:</p>
+              <p class="price-tag">Rp. 10.000.000 </p>
+            </div> -->
+            <div class="buttons-container">
+              <button class="order-button" onclick="sendToWhatsApp()">
+                Pesan Via WhatsApp
+              </button>
+              <button id="favoriteButton" class="favorite-button">
+                <img src="icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg">
+              </button>
+            </div>
+            <a class="ring-guide-button" href="ring-size-guide.html">Panduan Ukuran Cincin &gt;</a>
           </div>
-          <a class="ring-guide-button" href="ring-size-guide.html">Panduan Ukuran Cincin &gt;</a>
         </div>
-      </div>
+      </section>
+
+      <section class="discover-section">
+        <h2>Temukan Lebih Banyak</h2>
+        
+      </section>
     </main>
 
     <footer id="footer" class="footer"></footer>
