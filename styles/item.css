@@ -290,6 +290,23 @@
   z-index: 10000;
 }
 
+#overlayImg {
+  border: 1px solid lightgray;
+  transition: transform 0.1s ease;
+  cursor: zoom-in;
+  transform-origin: center center;
+  user-drag: none;  
+  -webkit-user-drag: none;
+  pointer-events: auto;
+}
+
+#overlayImg.zoomed {
+  transform: scale(4);
+  cursor: zoom-out;
+}
+
+
+
 @media (max-width: 1024px) {
   .item-container {
     display: flex;

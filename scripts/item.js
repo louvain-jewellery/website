@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const overlay = document.getElementById("overlay");
   const overlayImg = document.getElementById("overlayImg");
   const closeBtn = document.getElementById("closeOverlay");
-
   const clickableImages = document.querySelectorAll(".clickable-img");
+
   clickableImages.forEach(img => {
     img.addEventListener("click", () => {
       overlayImg.src = img.src;
@@ -71,8 +71,68 @@ document.addEventListener("DOMContentLoaded", async () => {
       overlay.style.display = "none";
     }
   });
-});
 
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      overlay.style.display = "none";
+    }
+  });
+
+  let isZooming = false;
+
+  overlayImg.addEventListener("mousedown", (e) => {
+    isZooming = true;
+    overlayImg.classList.add("zoomed");
+    moveZoomOrigin(e);
+  });
+
+  overlayImg.addEventListener("mousemove", (e) => {
+    if (isZooming) {
+      moveZoomOrigin(e);
+    }
+  });
+
+  overlayImg.addEventListener("mouseup", () => {
+    isZooming = false;
+    overlayImg.classList.remove("zoomed");
+  });
+
+  overlayImg.addEventListener("mouseleave", () => {
+    isZooming = false;
+    overlayImg.classList.remove("zoomed");
+  });
+
+  // Optional: mobile touch support
+  overlayImg.addEventListener("touchstart", (e) => {
+    isZooming = true;
+    overlayImg.classList.add("zoomed");
+    moveZoomOrigin(e.touches[0]);
+  });
+
+  overlayImg.addEventListener("touchmove", (e) => {
+    if (isZooming) {
+      moveZoomOrigin(e.touches[0]);
+    }
+  });
+
+  overlayImg.addEventListener("touchend", () => {
+    isZooming = false;
+    overlayImg.classList.remove("zoomed");
+  });
+
+  overlayImg.addEventListener("dragstart", (e) => {
+    e.preventDefault();
+  });
+
+  // Function to set zoom origin based on cursor position
+  function moveZoomOrigin(e) {
+    const rect = overlayImg.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    overlayImg.style.transformOrigin = `${x}% ${y}%`;
+  }
+
+});
 
 function sendToWhatsApp() {
   const itemName = document.querySelector('.item-name')?.innerText || 'Produk';
