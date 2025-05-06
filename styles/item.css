@@ -295,7 +295,6 @@
   transition: transform 0.1s ease;
   cursor: zoom-in;
   transform-origin: center center;
-  user-drag: none;  
   -webkit-user-drag: none;
   pointer-events: auto;
 }

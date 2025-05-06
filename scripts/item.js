@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Update name, description, price
     document.querySelector(".item-name").textContent = item.name;
     document.querySelector(".item-description").textContent = item.description;
-    // document.querySelector(".price-tag").textContent = item.price;
+    document.querySelector(".price-tag").textContent = item.price;
 
     // Update specs table
     const table = document.querySelector(".detail-table");
