@@ -55,6 +55,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const closeBtn = document.getElementById("closeOverlay");
   const clickableImages = document.querySelectorAll(".clickable-img");
 
+  // Detect if the device is a touchscreen
+  const isTouchscreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
   clickableImages.forEach(img => {
     img.addEventListener("click", () => {
       overlayImg.src = img.src;
@@ -78,53 +81,31 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  let isZooming = false;
-  const isTouchscreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (!isTouchscreen) {
+    let isZooming = false;
 
-
-  overlayImg.addEventListener("mousedown", (e) => {
-    isZooming = true;
-    overlayImg.classList.add("zoomed");
-    moveZoomOrigin(e);
-  });
-
-  overlayImg.addEventListener("mousemove", (e) => {
-    if (isZooming) {
+    overlayImg.addEventListener("mousedown", (e) => {
+      isZooming = true;
+      overlayImg.classList.add("zoomed");
       moveZoomOrigin(e);
-    }
-  });
+    });
 
-  overlayImg.addEventListener("mouseup", () => {
-    isZooming = false;
-    overlayImg.classList.remove("zoomed");
-  });
+    overlayImg.addEventListener("mousemove", (e) => {
+      if (isZooming) {
+        moveZoomOrigin(e);
+      }
+    });
 
-  overlayImg.addEventListener("mouseleave", () => {
-    isZooming = false;
-    overlayImg.classList.remove("zoomed");
-  });
+    overlayImg.addEventListener("mouseup", () => {
+      isZooming = false;
+      overlayImg.classList.remove("zoomed");
+    });
 
-  // Optional: mobile touch support
-  overlayImg.addEventListener("touchstart", (e) => {
-    isZooming = true;
-    overlayImg.classList.add("zoomed");
-    moveZoomOrigin(e.touches[0]);
-  });
-
-  overlayImg.addEventListener("touchmove", (e) => {
-    if (isZooming) {
-      moveZoomOrigin(e.touches[0]);
-    }
-  });
-
-  overlayImg.addEventListener("touchend", () => {
-    isZooming = false;
-    overlayImg.classList.remove("zoomed");
-  });
-
-  overlayImg.addEventListener("dragstart", (e) => {
-    e.preventDefault();
-  });
+    overlayImg.addEventListener("mouseleave", () => {
+      isZooming = false;
+      overlayImg.classList.remove("zoomed");
+    });
+  }
 
   // Function to set zoom origin based on cursor position
   function moveZoomOrigin(e) {
@@ -134,25 +115,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     overlayImg.style.transformOrigin = `${x}% ${y}%`;
   }
 
-  if (!isTouchscreen) {
-    overlayImg.addEventListener("mousemove", (e) => {
-      const rect = overlayImg.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const xPercent = x / overlayImg.width * 100;
-      const yPercent = y / overlayImg.height * 100;
-      
-      overlayImg.style.transform = `scale(2) translate(-${xPercent}%, -${yPercent}%)`;
-    });
-  
-    overlayImg.addEventListener("mouseleave", () => {
-      overlayImg.style.transform = "scale(1) translate(0, 0)";
-    });
-  } else {
-    // If it's a touchscreen, we prevent zoom behavior entirely
-    overlayImg.style.pointerEvents = "none"; // Disables interaction with the image on touch devices
-  }
+
 
 });
 
