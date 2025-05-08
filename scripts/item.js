@@ -115,40 +115,33 @@ document.addEventListener("DOMContentLoaded", async () => {
     overlayImg.style.transformOrigin = `${x}% ${y}%`;
   }
 
-
-
   document.querySelector(".order-button").addEventListener("click", () => {
-    const formData = new URLSearchParams();
+    const formData = new FormData();
   
-    formData.append("itemId", itemId);
-    formData.append("wanitaSize", document.querySelector(".ring-size-selection.woman").value);
-    formData.append("wanitaGem", document.querySelector(".gem-selection.woman").value);
-    formData.append("wanitaChrome", document.querySelector(".chrome-selection.woman").value);
-    formData.append("wanitaMaterial", document.querySelector(".material-selection.woman").value);
-    formData.append("wanitaEngraving", document.querySelector(".engraving-box.woman").value);
-    formData.append("priaSize", document.querySelector(".ring-size-selection.man").value);
-    formData.append("priaGem", document.querySelector(".gem-selection.man").value);
-    formData.append("priaChrome", document.querySelector(".chrome-selection.man").value);
-    formData.append("priaMaterial", document.querySelector(".material-selection.man").value);
-    formData.append("priaEngraving", document.querySelector(".engraving-box.man").value);
-    formData.append("notes", document.querySelector(".notes-box").value);
+    formData.append("entry.909156942", itemId); // itemId
+    formData.append("entry.1141725507", document.querySelector(".ring-size-selection.woman").value);
+    formData.append("entry.363793153", document.querySelector(".gem-selection.woman").value);
+    formData.append("entry.223777664", document.querySelector(".chrome-selection.woman").value);
+    formData.append("entry.754394153", document.querySelector(".material-selection.woman").value);
+    formData.append("entry.2053348914", document.querySelector(".engraving-box.woman").value);
+    formData.append("entry.676452923", document.querySelector(".ring-size-selection.man").value);
+    formData.append("entry.214539088", document.querySelector(".gem-selection.man").value);
+    formData.append("entry.1975640590", document.querySelector(".chrome-selection.man").value);
+    formData.append("entry.1454873338", document.querySelector(".material-selection.man").value);
+    formData.append("entry.1087315982", document.querySelector(".engraving-box.man").value);
+    formData.append("entry.1234649240", document.querySelector(".notes-box").value);
   
-    fetch("https://script.google.com/macros/s/AKfycbyGJ98ZBJAoLe_agdSvnjsT-9Z6LEboVaGnIhKvvMi8s948dLntBfMQ0G1Rg8ROfuvTUA/exec", {
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScoFRyYyaGKf-ZEkekImRW2EVijPFY7EqeuLbf4VdtiNHt_JQ/formResponse", {
       method: "POST",
-      body: formData,
-    })
-    .then(res => res.json())
-    .then(data => {
-      if (data.result === "success") {
-        alert("Order submitted successfully!");
-      } else {
-        alert("Error: " + data.error);
-      }
-    })
-    .catch(error => {
-      console.error("Submission failed:", JSON.stringify(error));
+      mode: "no-cors", // this is essential
+      body: formData
+    }).then(() => {
+      alert("Order submitted successfully!");
+    }).catch(() => {
+      alert("Submission failed.");
     });
   });
+  
   
 });
 
