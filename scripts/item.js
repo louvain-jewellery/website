@@ -51,75 +51,110 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // ========== Overlay Zoom Feature ==========
   const overlay = document.getElementById("overlay");
-const overlayImg = document.getElementById("overlayImg");
-const closeBtn = document.getElementById("closeOverlay");
-const clickableImages = document.querySelectorAll(".clickable-img");
+  const overlayImg = document.getElementById("overlayImg");
+  const closeBtn = document.getElementById("closeOverlay");
+  const clickableImages = document.querySelectorAll(".clickable-img");
 
-// Detect if the device is a touchscreen
-const isTouchscreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  // Detect if the device is a touchscreen
+  const isTouchscreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-clickableImages.forEach(img => {
-  img.addEventListener("click", () => {
-    overlayImg.src = img.src;
-    overlay.style.display = "flex";
-  });
-});
-
-closeBtn.addEventListener("click", () => {
-  overlay.style.display = "none";
-});
-
-overlay.addEventListener("click", (e) => {
-  if (e.target === overlay) {
-    overlay.style.display = "none";
-  }
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    overlay.style.display = "none";
-  }
-});
-
-if (!isTouchscreen) {
-  let isZooming = false;
-
-  overlayImg.addEventListener("mousedown", (e) => {
-    isZooming = true;
-    overlayImg.classList.add("zoomed");
-    moveZoomOrigin(e);
+  clickableImages.forEach(img => {
+    img.addEventListener("click", () => {
+      overlayImg.src = img.src;
+      overlay.style.display = "flex";
+    });
   });
 
-  overlayImg.addEventListener("mousemove", (e) => {
-    if (isZooming) {
-      moveZoomOrigin(e);
+  closeBtn.addEventListener("click", () => {
+    overlay.style.display = "none";
+  });
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+      overlay.style.display = "none";
     }
   });
 
-  overlayImg.addEventListener("mouseup", () => {
-    isZooming = false;
-    overlayImg.classList.remove("zoomed");
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      overlay.style.display = "none";
+    }
   });
 
-  overlayImg.addEventListener("mouseleave", () => {
-    isZooming = false;
-    overlayImg.classList.remove("zoomed");
+  if (!isTouchscreen) {
+    let isZooming = false;
+
+    overlayImg.addEventListener("mousedown", (e) => {
+      isZooming = true;
+      overlayImg.classList.add("zoomed");
+      moveZoomOrigin(e);
+    });
+
+    overlayImg.addEventListener("mousemove", (e) => {
+      if (isZooming) {
+        moveZoomOrigin(e);
+      }
+    });
+
+    overlayImg.addEventListener("mouseup", () => {
+      isZooming = false;
+      overlayImg.classList.remove("zoomed");
+    });
+
+    overlayImg.addEventListener("mouseleave", () => {
+      isZooming = false;
+      overlayImg.classList.remove("zoomed");
+    });
+  }
+
+  // Function to set zoom origin based on cursor position
+  function moveZoomOrigin(e) {
+    const rect = overlayImg.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    overlayImg.style.transformOrigin = `${x}% ${y}%`;
+  }
+
+
+
+  document.querySelector(".order-button").addEventListener("click", () => {
+    const formData = new URLSearchParams();
+  
+    formData.append("itemId", itemId);
+    formData.append("wanitaSize", document.querySelector(".ring-size-selection.woman").value);
+    formData.append("wanitaGem", document.querySelector(".gem-selection.woman").value);
+    formData.append("wanitaChrome", document.querySelector(".chrome-selection.woman").value);
+    formData.append("wanitaMaterial", document.querySelector(".material-selection.woman").value);
+    formData.append("wanitaEngraving", document.querySelector(".engraving-box.woman").value);
+    formData.append("priaSize", document.querySelector(".ring-size-selection.man").value);
+    formData.append("priaGem", document.querySelector(".gem-selection.man").value);
+    formData.append("priaChrome", document.querySelector(".chrome-selection.man").value);
+    formData.append("priaMaterial", document.querySelector(".material-selection.man").value);
+    formData.append("priaEngraving", document.querySelector(".engraving-box.man").value);
+    formData.append("notes", document.querySelector(".notes-box").value);
+  
+    fetch("https://script.google.com/macros/s/AKfycbyGJ98ZBJAoLe_agdSvnjsT-9Z6LEboVaGnIhKvvMi8s948dLntBfMQ0G1Rg8ROfuvTUA/exec", {
+      method: "POST",
+      body: formData,
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.result === "success") {
+        alert("Order submitted successfully!");
+      } else {
+        alert("Error: " + data.error);
+      }
+    })
+    .catch(error => {
+      console.error("Submission failed:", error);
+    });
   });
-}
-
-// Function to set zoom origin based on cursor position
-function moveZoomOrigin(e) {
-  const rect = overlayImg.getBoundingClientRect();
-  const x = ((e.clientX - rect.left) / rect.width) * 100;
-  const y = ((e.clientY - rect.top) / rect.height) * 100;
-  overlayImg.style.transformOrigin = `${x}% ${y}%`;
-}
-
-  document.querySelector(".table-title-text").addEventListener("click", toggleTable);
+  
 });
 
 // === TABLE DETAILS ===
 
+document.querySelector(".table-title-text").addEventListener("click", toggleTable);
 function toggleTable(event) {
   const table = document.getElementById("detailTable");
   const button = event.target;
@@ -187,40 +222,6 @@ Pesan: ${notesBox}
   window.open(whatsappURL, '_blank');
 }
 
-function sendToSheet() {
-  const data = {
-    nameWoman: document.querySelector(".engraving-box.woman").value,
-    ringSizeWoman: document.querySelector(".ring-size-selection.woman").value,
-    gemWoman: document.querySelector(".gem-selection.woman").value,
-    chromeWoman: document.querySelector(".chrome-selection.woman").value,
-    materialWoman: document.querySelector(".material-selection.woman").value,
-
-    nameMan: document.querySelector(".engraving-box.man").value,
-    ringSizeMan: document.querySelector(".ring-size-selection.man").value,
-    gemMan: document.querySelector(".gem-selection.man").value,
-    chromeMan: document.querySelector(".chrome-selection.man").value,
-    materialMan: document.querySelector(".material-selection.man").value,
-
-    message: document.querySelector(".notes-box").value
-  };
-
-  fetch("https://script.google.com/macros/s/AKfycbz9ohSqsUvdrCXDwjAG9kgI0jHdCF9JVwDcca4s1wz-9xMjq85BMK2KfN08_mvfPpQL9g/exec", {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-  .then(res => res.text())
-  .then(response => {
-    alert("Pesanan berhasil dikirim!");
-    console.log(response);
-  })
-  .catch(error => {
-    alert("Terjadi kesalahan saat mengirim data.");
-    console.error(error);
-  });
-}
 
 
 document.addEventListener('DOMContentLoaded', function() {
