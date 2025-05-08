@@ -586,10 +586,10 @@
   .packaging-hero-image-container {
     height: auto;
     width: 100%;
-    padding: 0 50px;
+    padding: 0 25px;
     aspect-ratio: 1/1;
     width: fit-content;
-    background: radial-gradient(circle at 70% 50%, #36483c, #222e26);
+    background: radial-gradient(circle, #36483c, #222e26);
   }
 
   .packaging-hero-image {
