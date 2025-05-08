@@ -61,7 +61,7 @@
     "description": "",
     "specs": {
       "ringWidth": {
-        "wanita": "",
+        "wanita": ",",
         "pria": ""
       },
       "gem": {
@@ -82,15 +82,15 @@
     ],
     "name": "Agsaina 5.48",
     "price": "",
-    "description": "apeni",
+    "description": "",
     "specs": {
       "ringWidth": {
-        "wanita": "wakwaw",
-        "pria": "wakwa"
+        "wanita": "",
+        "pria": ""
       },
       "gem": {
-        "wanita": "wak",
-        "pria": "waw"
+        "wanita": "",
+        "pria": ""
       }
     },
     "detailLink": "item.html?id=ags5.48"

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector(".price-tag").textContent = item.price;
 
     // Update specs table
-    const table = document.getElementById("detailTable");
+    const table = document.querySelector(".detail-table");
 
     table.innerHTML = `
       <tr>
@@ -55,9 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const closeBtn = document.getElementById("closeOverlay");
   const clickableImages = document.querySelectorAll(".clickable-img");
 
-  // Detect if the device is a touchscreen
-  const isTouchscreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
   clickableImages.forEach(img => {
     img.addEventListener("click", () => {
       overlayImg.src = img.src;
@@ -81,31 +78,53 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  if (!isTouchscreen) {
-    let isZooming = false;
+  let isZooming = false;
+  const isTouchscreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    overlayImg.addEventListener("mousedown", (e) => {
-      isZooming = true;
-      overlayImg.classList.add("zoomed");
+
+  overlayImg.addEventListener("mousedown", (e) => {
+    isZooming = true;
+    overlayImg.classList.add("zoomed");
+    moveZoomOrigin(e);
+  });
+
+  overlayImg.addEventListener("mousemove", (e) => {
+    if (isZooming) {
       moveZoomOrigin(e);
-    });
+    }
+  });
 
-    overlayImg.addEventListener("mousemove", (e) => {
-      if (isZooming) {
-        moveZoomOrigin(e);
-      }
-    });
+  overlayImg.addEventListener("mouseup", () => {
+    isZooming = false;
+    overlayImg.classList.remove("zoomed");
+  });
 
-    overlayImg.addEventListener("mouseup", () => {
-      isZooming = false;
-      overlayImg.classList.remove("zoomed");
-    });
+  overlayImg.addEventListener("mouseleave", () => {
+    isZooming = false;
+    overlayImg.classList.remove("zoomed");
+  });
 
-    overlayImg.addEventListener("mouseleave", () => {
-      isZooming = false;
-      overlayImg.classList.remove("zoomed");
-    });
-  }
+  // Optional: mobile touch support
+  overlayImg.addEventListener("touchstart", (e) => {
+    isZooming = true;
+    overlayImg.classList.add("zoomed");
+    moveZoomOrigin(e.touches[0]);
+  });
+
+  overlayImg.addEventListener("touchmove", (e) => {
+    if (isZooming) {
+      moveZoomOrigin(e.touches[0]);
+    }
+  });
+
+  overlayImg.addEventListener("touchend", () => {
+    isZooming = false;
+    overlayImg.classList.remove("zoomed");
+  });
+
+  overlayImg.addEventListener("dragstart", (e) => {
+    e.preventDefault();
+  });
 
   // Function to set zoom origin based on cursor position
   function moveZoomOrigin(e) {
@@ -114,7 +133,51 @@ document.addEventListener("DOMContentLoaded", async () => {
     const y = ((e.clientY - rect.top) / rect.height) * 100;
     overlayImg.style.transformOrigin = `${x}% ${y}%`;
   }
+
+  if (!isTouchscreen) {
+    overlayImg.addEventListener("mousemove", (e) => {
+      const rect = overlayImg.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const xPercent = x / overlayImg.width * 100;
+      const yPercent = y / overlayImg.height * 100;
+      
+      overlayImg.style.transform = `scale(2) translate(-${xPercent}%, -${yPercent}%)`;
+    });
+  
+    overlayImg.addEventListener("mouseleave", () => {
+      overlayImg.style.transform = "scale(1) translate(0, 0)";
+    });
+  } else {
+    // If it's a touchscreen, we prevent zoom behavior entirely
+    overlayImg.style.pointerEvents = "none"; // Disables interaction with the image on touch devices
+  }
+
+  document.querySelector(".table-title-text").addEventListener("click", toggleTable);
 });
+
+// === TABLE DETAILS ===
+
+function toggleTable(event) {
+  const table = document.getElementById("detailTable");
+  const button = event.target;
+  const isHidden = getComputedStyle(table).display === "none";
+
+  if (isHidden) {
+    table.style.display = "table";
+    button.style.marginBottom = "10px";
+    button.textContent = "Detail Cincin ▴";
+    // button.style.border = "none";
+    // button.style.padding = "0";
+  } else {
+    table.style.display = "none";
+    button.textContent = "Detail Cincin ▾";
+    button.style.marginBottom = "50px";
+    // button.style.borderBottom = "1px solid black";
+    // button.style.padding = "0 0 2px 0";
+  }
+}
 
 function sendToWhatsApp() {
   const itemName = document.querySelector('.item-name')?.innerText || 'Produk';
@@ -161,30 +224,6 @@ Pesan: ${notesBox}
 
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
   window.open(whatsappURL, '_blank');
-}
-
-// === TABLE DETAILS ===
-
-function toggleTable(event) {
-  const table = document.getElementById("detailTable");
-  const button = event.target;
-  const isHidden = getComputedStyle(table).display === "none";
-
-  if (isHidden) {
-    table.style.display = "table";
-    button.style.marginBottom = "10px";
-    button.textContent = "Detail Cincin ▴";
-    // button.style.border = "none";
-    // button.style.padding = "0";
-  } else {
-    table.style.display = "none";
-    button.textContent = "Detail Cincin ▾";
-    button.style.marginBottom = "50px";
-    // button.style.borderBottom = "1px solid black";
-    // button.style.padding = "0 0 2px 0";
-  }
-
-  console.log('toggled');
 }
 
 document.addEventListener('DOMContentLoaded', function() {

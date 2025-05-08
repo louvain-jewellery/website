@@ -173,7 +173,7 @@
 }
 
 .price-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 10px 0;
