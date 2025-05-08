@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     })
     .catch(error => {
-      console.error("Submission failed:", error);
+      console.error("Submission failed:", JSON.stringify(error));
     });
   });
   
