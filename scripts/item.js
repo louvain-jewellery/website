@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector(".price-tag").textContent = item.price;
 
     // Update specs table
-    const table = document.querySelector(".detail-table");
+    const table = document.getElementById("detailTable");
 
     table.innerHTML = `
       <tr>
@@ -114,9 +114,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const y = ((e.clientY - rect.top) / rect.height) * 100;
     overlayImg.style.transformOrigin = `${x}% ${y}%`;
   }
-
-
-
 });
 
 function sendToWhatsApp() {
@@ -186,6 +183,8 @@ function toggleTable(event) {
     // button.style.borderBottom = "1px solid black";
     // button.style.padding = "0 0 2px 0";
   }
+
+  console.log('toggled');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
