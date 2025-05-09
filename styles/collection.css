@@ -161,7 +161,6 @@
   cursor: pointer;
 }
 
-
 .catalogue-overlay {
   position: absolute;
   display: none;
@@ -317,9 +316,8 @@
   }
 
   .catalogue-button {
-    color: white;
-    background-color: black;
     width: 100%;
+    text-align: center;
   }
 }
 
