@@ -623,7 +623,7 @@
   }
 
   .location-content {
-    max-width: 40px;
+    max-width: none;
   }
 
   .customize-image {
