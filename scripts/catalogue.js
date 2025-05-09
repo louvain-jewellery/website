@@ -89,8 +89,8 @@ function renderCatalogue(data) {
                     <img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
                 </a>
                 <div class="catalogue-overlay">
-                    <a class="catalogue-image-link" href="${item.detailLink}">
-                        <img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
+                    <a class="catalogue-image-link-overlay" href="${item.detailLink}">
+                        <img class="catalogue-image-overlay" src="${item.images[0]}" alt="${item.name}">
                     </a>
                     <button class="favorite-button" data-item-id="${item.id}">
                         <img src="${favoriteIconSrc}">
