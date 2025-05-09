@@ -319,6 +319,7 @@
   .catalogue-button {
     color: white;
     background-color: black;
+    width: 100%;
   }
 }
 
