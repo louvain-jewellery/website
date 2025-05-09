@@ -282,7 +282,7 @@
 
   .catalogue-section {
     grid-template-columns: repeat(2, 48%);
-    gap: 10px;
+    gap: 20px;
     padding: 0 25px;
   }
 
@@ -304,7 +304,7 @@
     position: static;
     display: flex;
     border: none;
-    padding: 14px 0;
+    padding: 0 0 50px 0;
   }
 
   .catalogue-item:hover .catalogue-overlay{
