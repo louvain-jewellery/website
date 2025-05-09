@@ -282,7 +282,7 @@
 
   .catalogue-section {
     grid-template-columns: repeat(2, 48%);
-    gap: 20px;
+    gap: 15px;
     padding: 0 25px;
   }
 
