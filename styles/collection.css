@@ -305,7 +305,7 @@
     position: static;
     display: flex;
     border: none;
-    padding: 0;
+    padding: 14px 0;
   }
 
   .catalogue-item:hover .catalogue-overlay{
@@ -314,6 +314,11 @@
 
   .selected-collection {
     border: 1px solid lightgray;
+  }
+
+  .catalogue-button {
+    color: white;
+    background-color: white;
   }
 }
 
