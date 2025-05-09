@@ -309,7 +309,7 @@
   }
 
   .catalogue-item:hover .catalogue-overlay{
-    display: none;
+    display: flex;
   }
 
   .selected-collection {
@@ -318,7 +318,7 @@
 
   .catalogue-button {
     color: white;
-    background-color: white;
+    background-color: black;
   }
 }
 
