@@ -251,6 +251,7 @@
   position: absolute;
   color: black;
   left: 5%;
+  max-width: 40vw;
 }
 
 .location-button {
@@ -620,10 +621,6 @@
   .hero-section {
     height: auto;
     aspect-ratio: 2/1;
-  }
-
-  .location-content {
-    max-width: none;
   }
 
   .customize-image {

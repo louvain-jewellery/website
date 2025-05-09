@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
   
-  
+  document.querySelector(".order-button").addEventListener("click", sendToWhatsApp);
 });
 
 // === TABLE DETAILS ===
