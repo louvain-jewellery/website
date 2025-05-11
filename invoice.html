@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Invoice | Louvain Jewellery</title>
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <main>
+      <h1>LOUVAIN Jewellery Invoice System</h1>
+
+      <form id="invoiceForm" class="invoice-form">
+        <section class="top-section">
+          <div class="form-column">
+            <div>
+              <label for="customer-name">Nama Pemesan: </label>
+              <input placeholder="Masukkan" type="text" name="customer-name" id="customerName" required>
+            </div>
+            <div>
+              <label for="customer-phone">Nomor HP Pemesan: </label>
+              <input placeholder="Masukkan" type="tel" name="customer-phone" id="customerPhone" required>
+            </div>
+            <div>
+              <label for="customer-email">
+                <label for="customer-email">E-mail Pemesan: </label>
+              </label>
+              <input placeholder="Masukkan" type="email" name="customer-email" id="customerEmail">
+            </div>
+            <div>
+              <label for="customer-addresss">Alamat Pemesan: </label>
+              <input placeholder="Masukkan" type="text" name="customer-addresss" id="customerAddress" required>
+            </div>
+
+            <div>
+              <label for="ring-type">Jenis Cincin: </label>
+              <select name="ring-type" id="ringType">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Cincin Nikah">Cincin Nikah</option>
+                <option value="Cincin Tunangan">Cincin Tunangan</option>
+                <option value="Cincin Nikah & Tunangan">Cincin Nikah & Tunangan</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-column">
+            <div>
+              <label for="sales">Sales: </label>
+              <select name="sales" id="sales" required>
+                <option value="-" selected disabled>Pilih</option>
+                <option value="aurel">Aurel</option>
+                <option value="fauzan">Fauzan</option>
+              </select>
+            </div>
+            <div>
+              <label for="sales-phone">Nomor Sales: </label>
+              <input placeholder="Masukkan" type="tel" id="salesPhone" required>
+            </div>
+            <div>
+              <label for="estimated-completion">Estimasi Selesai: </label>
+              <select name="estimated-completion" id="estimatedCompletion">
+                <option value="" selected disabled>Pilih</option>
+                <option value="2 Minggu">2 Minggu</option>
+                <option value="3 Minggu">3 Minggu</option>
+                <option value="4 Minggu">4 Minggu</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="gender-section">
+          <div class="women-column form-column">
+            <div>
+              <label for="women-ring-model">Model Cincin Wanita: </label>
+              <input placeholder="Masukkan" type="text" name="women-ring-model" id="womenRingModel">
+            </div>
+  
+            <div>
+              <label for="women-ring-size">Ukuran Cincin Wanita: </label>
+              <input placeholder="Masukkan" type="text" name="women-ring-size" id="womenRingSize">
+            </div>
+  
+            <div>
+              <label for="women-ring-material">Material Cincin Wanita: </label>
+              <select name="women-ring-material" id="womenRingMaterial">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Platimun V">Platinum V</option>
+                <option value="Platinum X">Platinum X</option>
+                <option value="Emas 16k">Emas 16k</option>
+                <option value="Emas 17k">Emas 17k</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="women-ring-gem">Permata Cincin Wanita: </label>
+              <select name="women-ring-gem" id="womenRingGem">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Zirconia">Zirconia</option>
+                <option value="Berlian">Berlian</option>
+                <option value="Berlian GIA">Berlian GIA</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="women-ring-weight">Estimasi Berat Cincin Wanita: </label>
+              <select name="women-ring-weight" id="womenRingWeight">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="2,5 - 3 gr">2,5 - 3 gr</option>
+                <option value="3 - 3,5 gr">3 - 3,5 gr</option>
+                <option value="3,5 - 4 gr">3,5 - 4 gr</option>
+                <option value=">4 gr">&gt; 4 gr</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="women-ring-color">Warna Cincin Wanita: </label>
+              <select name="women-ring-color" id="womenRingColor">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="White">White</option>
+                <option value="Rose">Rose</option>
+                <option value="Yellow">Yellow</option>
+                <option value="White & Yellow">White & Yellow</option>
+                <option value="White & Rose">White & Rose</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="women-ring-finish">Finishing Cincin Wanita: </label>
+              <select name="women-ring-finish" id="womenRingFinish">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Glossy">Glossy</option>
+                <option value="Doff Kasar">Doff Kasar</option>
+                <option value="Doff Halus">Doff Halus</option>
+                <option value="D.Kasar & Glossy">D.Kasar & Glossy</option>
+                <option value="D.Halus & Glossy">D.Halus & Glossy</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="women-ring-engravement">Ukiran Cincin Wanita: </label>
+              <input placeholder="Masukkan" type="text" name="women-ring-engravement" id="womenRingEngravement">
+            </div>
+          </div>
+  
+          <div class="men-column form-column">
+            <div>
+              <label for="men-ring-model">Model Cincin Pria: </label>
+              <input placeholder="Masukkan" type="text" name="men-ring-model" id="menRingModel">
+            </div>
+  
+            <div>
+              <label for="men-ring-size">Ukuran Cincin Pria: </label>
+              <input placeholder="Masukkan" type="text" name="men-ring-size" id="menRingSize">
+            </div>
+  
+            <div>
+              <label for="men-ring-material">Material Cincin Pria: </label>
+              <select name="men-ring-material" id="menRingMaterial">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Platimun V">Platinum V</option>
+                <option value="Platinum X">Platinum X</option>
+                <option value="Emas 16k">Emas 16k</option>
+                <option value="Emas 17k">Emas 17k</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="men-ring-gem">Permata Cincin Pria: </label>
+              <select name="men-ring-gem" id="menRingGem">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Zirconia">Zirconia</option>
+                <option value="Berlian">Berlian</option>
+                <option value="Berlian GIA">Berlian GIA</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="men-ring-weight">Estimasi Berat Cincin Pria: </label>
+              <select name="men-ring-weight" id="menRingWeight">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="2,5 - 3 gr">2,5 - 3 gr</option>
+                <option value="3 - 3,5 gr">3 - 3,5 gr</option>
+                <option value="3,5 - 4 gr">3,5 - 4 gr</option>
+                <option value=">4 gr">&gt; 4 gr</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="men-ring-color">Warna Cincin Pria: </label>
+              <select name="men-ring-color" id="menRingColor">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="White">White</option>
+                <option value="Rose">Rose</option>
+                <option value="Yellow">Yellow</option>
+                <option value="White & Yellow">White & Yellow</option>
+                <option value="White & Rose">White & Rose</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="men-ring-finish">Finishing Cincin Pria: </label>
+              <select name="men-ring-finish" id="menRingFinish">
+                <option value="-" selected disabled>Pilih</option>
+                <option value="Glossy">Glossy</option>
+                <option value="Doff Kasar">Doff Kasar</option>
+                <option value="Doff Halus">Doff Halus</option>
+                <option value="D.Kasar & Glossy">D.Kasar & Glossy</option>
+                <option value="D.Halus & Glossy">D.Halus & Glossy</option>
+              </select>
+            </div>
+  
+            <div>
+              <label for="men-ring-engravement">Ukiran Cincin Pria: </label>
+              <input placeholder="Masukkan" type="text" name="men-ring-engravement" id="menRingEngravement">
+            </div>
+          </div>
+        </section>
+
+        
+        <section class="bottom-section">
+          <div class="notes-container">
+            <label for="notes-box">Catatan: </label>
+            <textarea name="notes-box" id="notesBox" placeholder="Masukkan..."></textarea>
+          </div>
+
+          <div class="form-column">
+            <div>
+              <label for="estimated-price">Estimasi Harga: </label>
+              <input placeholder="Masukkan" type="number" name="estimated-price" id="estimatedPrice" value="Rp. ">
+            </div>
+            <div>
+              <label for="down-payment">Uang Titipan:</label>
+              <input placeholder="Masukkan" type="number" name="down-payment" id="downPayment">
+            </div>
+
+            <div>
+              <label for="purchased-gold">Beli Emas: </label>
+              <input placeholder="Masukkan" type="number" name="purchased-gold" id="purchasedGold">
+            </div>
+          </div>
+        </section>
+      </form>
+      <button id="submitButton" class="submit-button">Submit</button>
+    </main>
+
+    <script>
+      document.getElementById('sales').addEventListener('change', updateSalesNumber);
+
+      const phoneBook = {
+        "aurel": "0895-0946-2888",
+        "fauzan": "0813-7769-6939"
+      };
+      
+      function updateSalesNumber () {
+        const salesName = document.getElementById('sales');
+        const salesPhone = document.getElementById('salesPhone');
+        const selectedName = salesName.value.toLowerCase().trim();
+
+        if (phoneBook[selectedName]) {
+          salesPhone.value = phoneBook[selectedName];
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        document.getElementById('submitButton').addEventListener('click', () => {
+        const formData = new formData();
+
+        formData.append("entry.403788479", document.getElementById('customerName').value);
+        formData.append("entry.372677485", document.getElementById('customerPhone').value);
+        formData.append("entry.533089204", document.getElementById('customerEmail').value);
+        formData.append("entry.668745681", document.getElementById('customerAddress').value);
+        formData.append("entry.2022626583", document.getElementById('ringType').value);
+        formData.append("entry.817393732", document.getElementById('sales').value);
+        formData.append("entry.1928733728", document.getElementById('salesPhone').value);
+        formData.append("entry.1798966034", document.getElementById('estimatedCompletion').value);
+        formData.append("entry.1691521261", document.getElementById('womenRingMaterial').value);
+        formData.append("entry.787146032", document.getElementById('womenRingGem').value);
+        formData.append("entry.465737398", document.getElementById('womenRingWeight').value);
+        formData.append("entry.255825511", document.getElementById('womenRingSize').value);
+        formData.append("entry.1561675587", document.getElementById('womenRingColor').value);
+        formData.append("entry.258612834", document.getElementById('womenRingFinish').value);
+        formData.append("entry.1519526121", document.getElementById('womenRingEngraving').value);
+        formData.append("entry.684344561", document.getElementById('womenRingModel').value);
+
+        formData.append("entry.1993171059", document.getElementById('menRingMaterial').value);
+        formData.append("entry.1090673640", document.getElementById('menRingGem').value);
+        formData.append("entry.1365428160", document.getElementById('menRingWeight').value);
+        formData.append("entry.1057159300", document.getElementById('menRingSize').value);
+        formData.append("entry.389487441", document.getElementById('menRingColor').value);
+        formData.append("entry.299224605", document.getElementById('menRingFinish').value);
+        formData.append("entry.1452586399", document.getElementById('menRingEngraving').value);
+        formData.append("entry.281323647", document.getElementById('menRingModel').value);
+        
+        formData.append("entry.443879785", document.getElementById('estimatedPrice').value);
+        formData.append("entry.1527336053", document.getElementById('downPayment').value);
+        formData.append("entry.153171518", document.getElementById('purchasedGold').value);
+
+        fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSd3BbkTWkmq9BN4JsJPKdGgm_9feJElIz9iUJKFrkqjOYuHmQ/formResponse", {
+          method: "POST",
+          mode: "no-cors", // this is essential
+          body: formData
+        }).then(() => {
+          alert("Order submitted successfully!");
+        }).catch(() => {
+          alert("Submission failed.");
+        });
+      });
+    });
+    </script>
+  </body>
+</html>
