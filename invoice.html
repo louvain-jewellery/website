@@ -271,7 +271,7 @@
 
       document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('submitButton').addEventListener('click', () => {
-        const formData = new formData();
+        const formData = new FormData();
 
         formData.append("entry.403788479", document.getElementById('customerName').value);
         formData.append("entry.372677485", document.getElementById('customerPhone').value);
