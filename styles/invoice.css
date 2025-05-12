@@ -73,18 +73,21 @@ main,
 .form-column div {
   display: flex;
   justify-content: space-between;
-  height: 30px;
+  height: fit-content;
   border-bottom: 2px solid black;
   align-items: center;
 }
 
 
+label {
+  width: fit-content;
+}
 
 input, select, textarea, button {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
-  height: 90%;
+  height: 30px;
   background-color: white;
 }
 
