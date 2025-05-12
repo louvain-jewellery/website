@@ -74,6 +74,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   height: fit-content;
+  padding-bottom: 3px;
   border-bottom: 2px solid black;
   align-items: center;
 }
@@ -117,8 +118,12 @@ textarea {
 }
 
 button {
- background-color: black;
- color: white;
- padding: 10px;
- cursor: pointer;
+  display: flex;
+  background-color: black;
+  font-weight: 500;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
