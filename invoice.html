@@ -5,6 +5,7 @@
     <title>Invoice | Louvain Jewellery</title>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="styles/invoice.css">
@@ -232,16 +233,16 @@
           <div class="form-column">
             <div>
               <label for="estimated-price">Estimasi Harga: </label>
-              <input placeholder="Masukkan" type="text" inputmode="numeric" name="estimated-price" id="estimatedPrice" required>
+              <input placeholder="Masukkan" type="text" inputmode="numeric" name="estimated-price" id="estimatedPrice" class="currency">
             </div>
             <div>
               <label for="down-payment">Uang Titipan:</label>
-              <input placeholder="Masukkan" type="text" inputmode="numeric" name="down-payment" id="downPayment">
+              <input placeholder="Masukkan" type="text" inputmode="numeric" name="down-payment" id="downPayment" class="currency">
             </div>
 
             <div>
               <label for="purchased-gold">Beli Emas: </label>
-              <input placeholder="Masukkan" type="text" inputmode="numeric" name="purchased-gold" id="purchasedGold">
+              <input placeholder="Masukkan" type="text" inputmode="numeric" name="purchased-gold" id="purchasedGold" class="currency">
             </div>
           </div>
         </section>
@@ -269,6 +270,25 @@
 
       document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('submitButton').addEventListener('click', () => {
+         const requiredFields = document.querySelectorAll('input[required], select[required]');
+
+          // Check if any required field is empty
+          let allFieldsFilled = true;
+          requiredFields.forEach(field => {
+              if (!field.value.trim()) {
+                  allFieldsFilled = false;
+                  field.style.borderColor = 'red'; // Optionally highlight the empty field
+              } else {
+                  field.style.borderColor = ''; // Reset border color if filled
+              }
+          });
+
+          // If any required field is empty, prevent submission and alert the user
+          if (!allFieldsFilled) {
+              alert('Please fill all required fields.');
+              return;
+          }
+
         const formData = new FormData();
 
         formData.append("entry.403788479", document.getElementById('customerName').value);
@@ -311,6 +331,24 @@
         }).catch(() => {
           alert("Submission failed.");
         });
+      });
+
+      document.querySelectorAll('.currency').forEach(input => {
+          input.addEventListener('input', function (e) {
+              let value = e.target.value.replace(/[^,\d]/g, '').toString(); // remove non-numeric chars
+              let split = value.split(',');
+              let sisa = split[0].length % 3; // find the remainder when dividing by 3
+              let rupiah = split[0].substr(0, sisa); // get the first part
+              let ribuan = split[0].substr(sisa).match(/\d{3}/gi); // get the groups of 3 digits
+
+              if (ribuan) {
+                  let separator = sisa ? '.' : ''; // if there's any remainder, add the separator
+                  rupiah += separator + ribuan.join('.'); // join the 3-digit groups with dots
+              }
+
+              rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah; // handle decimal part
+              e.target.value = rupiah ? 'Rp ' + rupiah : ''; // add Rp and set the value
+          });
       });
     });
     </script>
