@@ -41,9 +41,10 @@ h1 {
 .women-column,
 .notes-container,
 .bottom-section .form-column {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 1.5vw;
   flex: 1;
+  box-shadow: 7px 7px 0 black;
 }
 
 .gender-section,
@@ -75,7 +76,7 @@ h1 {
   justify-content: space-between;
   height: fit-content;
   padding-bottom: 3px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px dashed black;
   align-items: center;
 }
 
@@ -115,6 +116,8 @@ textarea {
   padding: 0;
   width: 100%;
   border-bottom: 2px solid black;
+  border-bottom: 2px dashed black;
+
 }
 
 button {
