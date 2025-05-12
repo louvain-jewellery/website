@@ -8,7 +8,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 3vw;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 }
 
 .top-section {
-  gap: 60px;
+  gap: 4vw;
 }
 
 .top-section,
@@ -41,7 +41,7 @@ h1 {
 .notes-container,
 .bottom-section .form-column {
   border: 1px solid black;
-  padding: 20px;
+  padding: 1.5vw;
   flex: 1;
 }
 
@@ -50,7 +50,7 @@ main,
 .bottom-section,
 .invoice-form,
 .notes-container {
-  gap: 20px;
+  gap: 1.5vw;
 }
 
 .men-column,
@@ -66,7 +66,7 @@ main,
 .form-column {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5vw;
   flex: 1;
 }
 
@@ -101,7 +101,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 select {
   text-align: right;
-  padding-right: 10px;
+  padding-right: 0.5vw;
   cursor: pointer;
 }
 
