@@ -23,24 +23,24 @@
           <div class="form-column">
             <div>
               <label for="customer-name">Nama Pemesan: </label>
-              <input placeholder="Masukkan" type="text" name="customer-name" id="customerName">
+              <input placeholder="Masukkan" type="text" name="customer-name" id="customerName" required>
             </div>
             <div>
               <label for="customer-phone">Nomor HP Pemesan: </label>
-              <input placeholder="Masukkan" type="tel" name="customer-phone" id="customerPhone">
+              <input placeholder="Masukkan" type="tel" name="customer-phone" id="customerPhone" required>
             </div>
             <div>
               <label for="customer-email">E-mail Pemesan: </label>
-              <input placeholder="Masukkan" type="email" name="customer-email" id="customerEmail">
+              <input placeholder="Masukkan" type="email" name="customer-email" id="customerEmail" required>
             </div>
             <div>
               <label for="customer-addresss">Alamat Pemesan: </label>
-              <input placeholder="Masukkan" type="text" name="customer-addresss" id="customerAddress">
+              <input placeholder="Masukkan" type="text" name="customer-addresss" id="customerAddress" required>
             </div>
 
             <div>
               <label for="ring-type">Jenis Cincin: </label>
-              <select name="ring-type" id="ringType">
+              <select name="ring-type" id="ringType" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Cincin Nikah">Cincin Nikah</option>
                 <option value="Cincin Tunangan">Cincin Tunangan</option>
@@ -52,7 +52,7 @@
           <div class="form-column">
             <div>
               <label for="sales">Sales: </label>
-              <select name="sales" id="sales">
+              <select name="sales" id="sales" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="aurel">Aurel</option>
                 <option value="fauzan">Fauzan</option>
@@ -60,11 +60,11 @@
             </div>
             <div>
               <label for="sales-phone">Nomor Sales: </label>
-              <input placeholder="Masukkan" type="tel" id="salesPhone">
+              <input placeholder="Masukkan" type="tel" id="salesPhone" required>
             </div>
             <div>
               <label for="estimated-completion">Estimasi Selesai: </label>
-              <select name="estimated-completion" id="estimatedCompletion">
+              <select name="estimated-completion" id="estimatedCompletion" required>
                 <option value="" selected disabled>Pilih</option>
                 <option value="2 Minggu">2 Minggu</option>
                 <option value="3 Minggu">3 Minggu</option>
@@ -78,17 +78,17 @@
           <div class="women-column form-column">
             <div>
               <label for="women-ring-model">Model Cincin Wanita: </label>
-              <input placeholder="Masukkan" type="text" name="women-ring-model" id="womenRingModel">
+              <input placeholder="Masukkan" type="text" name="women-ring-model" id="womenRingModel" required>
             </div>
   
             <div>
               <label for="women-ring-size">Ukuran Cincin Wanita: </label>
-              <input placeholder="Masukkan" type="text" name="women-ring-size" id="womenRingSize">
+              <input placeholder="Masukkan" type="text" name="women-ring-size" id="womenRingSize" required>
             </div>
   
             <div>
               <label for="women-ring-material">Material Cincin Wanita: </label>
-              <select name="women-ring-material" id="womenRingMaterial">
+              <select name="women-ring-material" id="womenRingMaterial" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Platinum V">Platinum V</option>
                 <option value="Platinum X">Platinum X</option>
@@ -99,7 +99,7 @@
   
             <div>
               <label for="women-ring-gem">Permata Cincin Wanita: </label>
-              <select name="women-ring-gem" id="womenRingGem">
+              <select name="women-ring-gem" id="womenRingGem" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Zirconia">Zirconia</option>
                 <option value="Berlian">Berlian</option>
@@ -109,7 +109,7 @@
   
             <div>
               <label for="women-ring-weight">Estimasi Berat Cincin Wanita: </label>
-              <select name="women-ring-weight" id="womenRingWeight">
+              <select name="women-ring-weight" id="womenRingWeight" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="2,5 - 3 gr">2,5 - 3 gr</option>
                 <option value="3 - 3,5 gr">3 - 3,5 gr</option>
@@ -120,7 +120,7 @@
   
             <div>
               <label for="women-ring-color">Warna Cincin Wanita: </label>
-              <select name="women-ring-color" id="womenRingColor">
+              <select name="women-ring-color" id="womenRingColor" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="White">White</option>
                 <option value="Rose">Rose</option>
@@ -132,7 +132,7 @@
   
             <div>
               <label for="women-ring-finish">Finishing Cincin Wanita: </label>
-              <select name="women-ring-finish" id="womenRingFinish">
+              <select name="women-ring-finish" id="womenRingFinish" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Glossy">Glossy</option>
                 <option value="Doff Kasar">Doff Kasar</option>
@@ -144,24 +144,24 @@
   
             <div>
               <label for="women-ring-engravement">Ukiran Cincin Wanita: </label>
-              <input placeholder="Masukkan" type="text" name="women-ring-engravement" id="womenRingEngravement">
+              <input placeholder="Masukkan" type="text" name="women-ring-engravement" id="womenRingEngravement" required>
             </div>
           </div>
   
           <div class="men-column form-column">
             <div>
               <label for="men-ring-model">Model Cincin Pria: </label>
-              <input placeholder="Masukkan" type="text" name="men-ring-model" id="menRingModel">
+              <input placeholder="Masukkan" type="text" name="men-ring-model" id="menRingModel" required>
             </div>
   
             <div>
               <label for="men-ring-size">Ukuran Cincin Pria: </label>
-              <input placeholder="Masukkan" type="text" name="men-ring-size" id="menRingSize">
+              <input placeholder="Masukkan" type="text" name="men-ring-size" id="menRingSize" required>
             </div>
   
             <div>
               <label for="men-ring-material">Material Cincin Pria: </label>
-              <select name="men-ring-material" id="menRingMaterial">
+              <select name="men-ring-material" id="menRingMaterial" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Platinum V">Platinum V</option>
                 <option value="Platinum X">Platinum X</option>
@@ -172,7 +172,7 @@
   
             <div>
               <label for="men-ring-gem">Permata Cincin Pria: </label>
-              <select name="men-ring-gem" id="menRingGem">
+              <select name="men-ring-gem" id="menRingGem" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Zirconia">Zirconia</option>
                 <option value="Berlian">Berlian</option>
@@ -182,7 +182,7 @@
   
             <div>
               <label for="men-ring-weight">Estimasi Berat Cincin Pria: </label>
-              <select name="men-ring-weight" id="menRingWeight">
+              <select name="men-ring-weight" id="menRingWeight" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="2,5 - 3 gr">2,5 - 3 gr</option>
                 <option value="3 - 3,5 gr">3 - 3,5 gr</option>
@@ -193,7 +193,7 @@
   
             <div>
               <label for="men-ring-color">Warna Cincin Pria: </label>
-              <select name="men-ring-color" id="menRingColor">
+              <select name="men-ring-color" id="menRingColor" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="White">White</option>
                 <option value="Rose">Rose</option>
@@ -205,7 +205,7 @@
   
             <div>
               <label for="men-ring-finish">Finishing Cincin Pria: </label>
-              <select name="men-ring-finish" id="menRingFinish">
+              <select name="men-ring-finish" id="menRingFinish" required>
                 <option value="-" selected disabled>Pilih</option>
                 <option value="Glossy">Glossy</option>
                 <option value="Doff Kasar">Doff Kasar</option>
@@ -217,7 +217,7 @@
   
             <div>
               <label for="men-ring-engravement">Ukiran Cincin Pria: </label>
-              <input placeholder="Masukkan" type="text" name="men-ring-engravement" id="menRingEngravement">
+              <input placeholder="Masukkan" type="text" name="men-ring-engravement" id="menRingEngravement" required>
             </div>
           </div>
         </section>
@@ -232,16 +232,16 @@
           <div class="form-column">
             <div>
               <label for="estimated-price">Estimasi Harga: </label>
-              <input placeholder="Masukkan" type="number" name="estimated-price" id="estimatedPrice">
+              <input placeholder="Masukkan" type="text" inputmode="numeric" name="estimated-price" id="estimatedPrice" required>
             </div>
             <div>
               <label for="down-payment">Uang Titipan:</label>
-              <input placeholder="Masukkan" type="number" name="down-payment" id="downPayment">
+              <input placeholder="Masukkan" type="text" inputmode="numeric" name="down-payment" id="downPayment">
             </div>
 
             <div>
               <label for="purchased-gold">Beli Emas: </label>
-              <input placeholder="Masukkan" type="number" name="purchased-gold" id="purchasedGold">
+              <input placeholder="Masukkan" type="text" inputmode="numeric" name="purchased-gold" id="purchasedGold">
             </div>
           </div>
         </section>
