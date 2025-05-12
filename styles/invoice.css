@@ -9,6 +9,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 3vw;
+  gap: 20px;
 }
 
 h1 {
@@ -45,7 +46,6 @@ h1 {
   flex: 1;
 }
 
-main,
 .gender-section,
 .bottom-section,
 .invoice-form,
