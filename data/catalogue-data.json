@@ -22,7 +22,7 @@
     },
     "detailLink": "item.html?id=ags1.48"
   },
-  
+
   {
     "id": "ags3.48",
     "collection": null,
@@ -46,7 +46,7 @@
     },
     "detailLink": "item.html?id=ags3.48"
   },
-  
+
   {
     "id": "ags4.48",
     "collection": null,
@@ -61,7 +61,7 @@
     "description": "",
     "specs": {
       "ringWidth": {
-        "wanita": ",",
+        "wanita": "",
         "pria": ""
       },
       "gem": {
@@ -71,7 +71,7 @@
     },
     "detailLink": "item.html?id=ags4.48"
   },
-  
+
   {
     "id": "ags5.48",
     "collection": null,
@@ -95,7 +95,7 @@
     },
     "detailLink": "item.html?id=ags5.48"
   },
-  
+
   {
     "id": "alc1.47",
     "collection": null,
@@ -105,7 +105,7 @@
       "images/rings/ALC/3_0010_ALC 1.47.jpg",
       "images/rings/ALC/3_0011_ALC 1.47.jpg"
     ],
-    "name": "?",
+    "name": "Alice 1.47",
     "price": "",
     "description": "",
     "specs": {
@@ -120,7 +120,7 @@
     },
     "detailLink": "item.html?id=alc1.47"
   },
-  
+
   {
     "id": "alc2.47",
     "collection": null,
@@ -130,7 +130,7 @@
       "images/rings/ALC/3_0006_ALC 2.47.jpg",
       "images/rings/ALC/3_0007_ALC 2.47.jpg"
     ],
-    "name": "?",
+    "name": "Alice 2.47",
     "price": "",
     "description": "",
     "specs": {
@@ -145,7 +145,7 @@
     },
     "detailLink": "item.html?id=alc2.47"
   },
-  
+
   {
     "id": "alc3.47",
     "collection": null,
@@ -155,7 +155,7 @@
       "images/rings/ALC/3_0002_ALC 3.47.jpg",
       "images/rings/ALC/3_0003_ALC 3.47.jpg"
     ],
-    "name": "?",
+    "name": "Alice 3.47",
     "price": "",
     "description": "",
     "specs": {
@@ -170,7 +170,7 @@
     },
     "detailLink": "item.html?id=alc3.47"
   },
-  
+
   {
     "id": "alc4.47",
     "collection": null,
@@ -180,7 +180,7 @@
       "images/rings/ALC/4_0002_ALC 4.47.jpg",
       "images/rings/ALC/4_0003_ALC 4.47.jpg"
     ],
-    "name": "?",
+    "name": "Alice 4.47",
     "price": "",
     "description": "",
     "specs": {
@@ -195,7 +195,7 @@
     },
     "detailLink": "item.html?id=alc4.47"
   },
-  
+
   {
     "id": "alc5.47",
     "collection": null,
@@ -205,7 +205,7 @@
       "images/rings/ALC/4_0006_ALC 5.47.jpg",
       "images/rings/ALC/4_0007_ALC 5.47.jpg"
     ],
-    "name": "?",
+    "name": "Alice 5.47",
     "price": "",
     "description": "",
     "specs": {
@@ -220,7 +220,7 @@
     },
     "detailLink": "item.html?id=alc5.47"
   },
-  
+
   {
     "id": "aln1.47",
     "collection": null,
@@ -244,7 +244,7 @@
     },
     "detailLink": "item.html?id=aln1.47"
   },
-  
+
   {
     "id": "aln2.47",
     "collection": null,
@@ -268,7 +268,7 @@
     },
     "detailLink": "item.html?id=aln2.47"
   },
-  
+
   {
     "id": "aln4.47",
     "collection": null,
@@ -292,7 +292,7 @@
     },
     "detailLink": "item.html?id=aln4.47"
   },
-  
+
   {
     "id": "bla1.48",
     "collection": null,
@@ -316,7 +316,7 @@
     },
     "detailLink": "item.html?id=bla1.48"
   },
-  
+
   {
     "id": "bla2.48",
     "collection": null,
@@ -340,7 +340,7 @@
     },
     "detailLink": "item.html?id=bla2.48"
   },
-  
+
   {
     "id": "bla3.48",
     "collection": null,
@@ -364,7 +364,7 @@
     },
     "detailLink": "item.html?id=bla3.48"
   },
-  
+
   {
     "id": "bla4.48",
     "collection": null,
@@ -388,7 +388,7 @@
     },
     "detailLink": "item.html?id=bla4.48"
   },
-  
+
   {
     "id": "brs1.47",
     "collection": null,
@@ -413,7 +413,7 @@
     },
     "detailLink": "item.html?id=brs1.47"
   },
-  
+
   {
     "id": "brs2.47",
     "collection": null,
@@ -437,7 +437,7 @@
     },
     "detailLink": "item.html?id=brs2.47"
   },
-  
+
   {
     "id": "brs3.47",
     "collection": null,
@@ -461,7 +461,7 @@
     },
     "detailLink": "item.html?id=brs3.47"
   },
-  
+
   {
     "id": "bry1.48",
     "collection": null,
@@ -486,7 +486,7 @@
     },
     "detailLink": "item.html?id=bry1.48"
   },
-  
+
   {
     "id": "bry10.48",
     "collection": null,
@@ -510,7 +510,7 @@
     },
     "detailLink": "item.html?id=bry10.48"
   },
-  
+
   {
     "id": "bry2.48",
     "collection": null,
@@ -535,7 +535,7 @@
     },
     "detailLink": "item.html?id=bry2.48"
   },
-  
+
   {
     "id": "bry3.48",
     "collection": null,
@@ -560,7 +560,7 @@
     },
     "detailLink": "item.html?id=bry3.48"
   },
-  
+
   {
     "id": "bry4.48",
     "collection": null,
@@ -585,7 +585,7 @@
     },
     "detailLink": "item.html?id=bry4.48"
   },
-  
+
   {
     "id": "bry5.48",
     "collection": null,
@@ -610,7 +610,7 @@
     },
     "detailLink": "item.html?id=bry5.48"
   },
-  
+
   {
     "id": "bry6.48",
     "collection": null,
@@ -635,7 +635,7 @@
     },
     "detailLink": "item.html?id=bry6.48"
   },
-  
+
   {
     "id": "bry7.48",
     "collection": null,
@@ -660,7 +660,7 @@
     },
     "detailLink": "item.html?id=bry7.48"
   },
-  
+
   {
     "id": "bry8.48",
     "collection": null,
@@ -684,7 +684,7 @@
     },
     "detailLink": "item.html?id=bry8.48"
   },
-  
+
   {
     "id": "bry9.48",
     "collection": null,
@@ -709,7 +709,7 @@
     },
     "detailLink": "item.html?id=bry9.48"
   },
-  
+
   {
     "id": "cla1.47",
     "collection": null,
@@ -734,7 +734,7 @@
     },
     "detailLink": "item.html?id=cla1.47"
   },
-  
+
   {
     "id": "cla2.47",
     "collection": null,
@@ -759,7 +759,7 @@
     },
     "detailLink": "item.html?id=cla2.47"
   },
-  
+
   {
     "id": "cla3.47",
     "collection": null,
@@ -784,7 +784,7 @@
     },
     "detailLink": "item.html?id=cla3.47"
   },
-  
+
   {
     "id": "cla4.47",
     "collection": null,
@@ -808,7 +808,7 @@
     },
     "detailLink": "item.html?id=cla4.47"
   },
-  
+
   {
     "id": "cla5.47",
     "collection": null,
@@ -832,7 +832,7 @@
     },
     "detailLink": "item.html?id=cla5.47"
   },
-  
+
   {
     "id": "cla6.47",
     "collection": null,
@@ -856,7 +856,7 @@
     },
     "detailLink": "item.html?id=cla6.47"
   },
-  
+
   {
     "id": "cli1.47",
     "collection": null,
@@ -880,7 +880,7 @@
     },
     "detailLink": "item.html?id=cli1.47"
   },
-  
+
   {
     "id": "cli3.47",
     "collection": null,
@@ -904,7 +904,7 @@
     },
     "detailLink": "item.html?id=cli3.47"
   },
-  
+
   {
     "id": "cli4.47",
     "collection": null,
@@ -928,7 +928,7 @@
     },
     "detailLink": "item.html?id=cli4.47"
   },
-  
+
   {
     "id": "cli5.47",
     "collection": null,
@@ -952,7 +952,7 @@
     },
     "detailLink": "item.html?id=cli5.47"
   },
-  
+
   {
     "id": "cli6.47",
     "collection": null,
@@ -976,7 +976,7 @@
     },
     "detailLink": "item.html?id=cli6.47"
   },
-  
+
   {
     "id": "csa1.48",
     "collection": null,
@@ -1001,7 +1001,7 @@
     },
     "detailLink": "item.html?id=csa1.48"
   },
-  
+
   {
     "id": "csa2.48",
     "collection": null,
@@ -1026,7 +1026,7 @@
     },
     "detailLink": "item.html?id=csa2.48"
   },
-  
+
   {
     "id": "csa3.48",
     "collection": null,
@@ -1051,7 +1051,7 @@
     },
     "detailLink": "item.html?id=csa3.48"
   },
-  
+
   {
     "id": "csa4.48",
     "collection": null,
@@ -1076,7 +1076,7 @@
     },
     "detailLink": "item.html?id=csa4.48"
   },
-  
+
   {
     "id": "csa5.48",
     "collection": null,
@@ -1101,7 +1101,7 @@
     },
     "detailLink": "item.html?id=csa5.48"
   },
-  
+
   {
     "id": "csa6.48",
     "collection": null,
@@ -1126,7 +1126,7 @@
     },
     "detailLink": "item.html?id=csa6.48"
   },
-  
+
   {
     "id": "csa7.48",
     "collection": null,
@@ -1151,7 +1151,7 @@
     },
     "detailLink": "item.html?id=csa7.48"
   },
-  
+
   {
     "id": "ern1.48",
     "collection": null,
@@ -1176,7 +1176,7 @@
     },
     "detailLink": "item.html?id=ern1.48"
   },
-  
+
   {
     "id": "ern2.48",
     "collection": null,
@@ -1201,7 +1201,7 @@
     },
     "detailLink": "item.html?id=ern2.48"
   },
-  
+
   {
     "id": "ern3.48",
     "collection": null,
@@ -1226,7 +1226,7 @@
     },
     "detailLink": "item.html?id=ern3.48"
   },
-  
+
   {
     "id": "ern4.48",
     "collection": null,
@@ -1251,7 +1251,7 @@
     },
     "detailLink": "item.html?id=ern4.48"
   },
-  
+
   {
     "id": "ern5.47",
     "collection": null,
@@ -1276,7 +1276,7 @@
     },
     "detailLink": "item.html?id=ern5.47"
   },
-  
+
   {
     "id": "ern6.47",
     "collection": null,
@@ -1284,8 +1284,7 @@
       "images/rings/ERN/3_0020_ERN 6.47.jpg",
       "images/rings/ERN/3_0021_ERN 6.47.jpg",
       "images/rings/ERN/3_0022_ERN 6.47.jpg",
-      "images/rings/ERN/3_0023_ERN 6.47.jpg",
-      ""
+      "images/rings/ERN/3_0023_ERN 6.47.jpg"
     ],
     "name": "?",
     "price": "",
@@ -1302,7 +1301,7 @@
     },
     "detailLink": "item.html?id=ern6.47"
   },
-  
+
   {
     "id": "ern7.47",
     "collection": null,
@@ -1310,8 +1309,7 @@
       "images/rings/ERN/3_0016_ERN 7.47.jpg",
       "images/rings/ERN/3_0017_ERN 7.47.jpg",
       "images/rings/ERN/3_0018_ERN 7.47.jpg",
-      "images/rings/ERN/3_0019_ERN 7.47.jpg",
-      ""
+      "images/rings/ERN/3_0019_ERN 7.47.jpg"
     ],
     "name": "?",
     "price": "",
@@ -1328,7 +1326,7 @@
     },
     "detailLink": "item.html?id=ern7.47"
   },
-  
+
   {
     "id": "ern8.47",
     "collection": null,
@@ -1353,7 +1351,7 @@
     },
     "detailLink": "item.html?id=ern8.47"
   },
-  
+
   {
     "id": "hla1.47",
     "collection": null,
@@ -1377,7 +1375,7 @@
     },
     "detailLink": "item.html?id=hla1.47"
   },
-  
+
   {
     "id": "hla2.47",
     "collection": null,
@@ -1401,7 +1399,7 @@
     },
     "detailLink": "item.html?id=hla2.47"
   },
-  
+
   {
     "id": "hla3.47",
     "collection": null,
@@ -1425,7 +1423,7 @@
     },
     "detailLink": "item.html?id=hla3.47"
   },
-  
+
   {
     "id": "jce1.47",
     "collection": null,
@@ -1450,7 +1448,7 @@
     },
     "detailLink": "item.html?id=jce1.47"
   },
-  
+
   {
     "id": "jce2.36",
     "collection": null,
@@ -1475,7 +1473,7 @@
     },
     "detailLink": "item.html?id=jce2.36"
   },
-  
+
   {
     "id": "jce3.36",
     "collection": null,
@@ -1499,7 +1497,7 @@
     },
     "detailLink": "item.html?id=jce3.36"
   },
-  
+
   {
     "id": "jce4.36",
     "collection": null,
@@ -1524,7 +1522,7 @@
     },
     "detailLink": "item.html?id=jce4.36"
   },
-  
+
   {
     "id": "jce5.36",
     "collection": null,
@@ -1548,7 +1546,7 @@
     },
     "detailLink": "item.html?id=jce5.36"
   },
-  
+
   {
     "id": "mario",
     "collection": null,
@@ -1570,7 +1568,7 @@
     },
     "detailLink": "item.html?id=mario"
   },
-  
+
   {
     "id": "vee1.36",
     "collection": null,
@@ -1594,7 +1592,7 @@
     },
     "detailLink": "item.html?id=vee1.36"
   },
-  
+
   {
     "id": "vee2.36",
     "collection": null,
@@ -1618,7 +1616,7 @@
     },
     "detailLink": "item.html?id=vee2.36"
   },
-  
+
   {
     "id": "vee3.11",
     "collection": null,
@@ -1643,7 +1641,7 @@
     },
     "detailLink": "item.html?id=vee3.11"
   },
-  
+
   {
     "id": "vee4.11",
     "collection": null,
