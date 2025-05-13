@@ -11,7 +11,7 @@ header.innerHTML = `
 
     <div class="main-logo-container">
       <a href="./">
-        <img class="main-logo" src="icons/main-logo2.png">
+        <img class="main-logo" src="icons/main-logo4.png">
       </a>
     </div>
 
