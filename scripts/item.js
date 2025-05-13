@@ -114,33 +114,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const y = ((e.clientY - rect.top) / rect.height) * 100;
     overlayImg.style.transformOrigin = `${x}% ${y}%`;
   }
-
-  document.querySelector(".order-button").addEventListener("click", () => {
-    const formData = new FormData();
-  
-    formData.append("entry.909156942", itemId); // itemId
-    formData.append("entry.1141725507", document.querySelector(".ring-size-selection.woman").value);
-    formData.append("entry.363793153", document.querySelector(".gem-selection.woman").value);
-    formData.append("entry.223777664", document.querySelector(".chrome-selection.woman").value);
-    formData.append("entry.754394153", document.querySelector(".material-selection.woman").value);
-    formData.append("entry.2053348914", document.querySelector(".engraving-box.woman").value);
-    formData.append("entry.676452923", document.querySelector(".ring-size-selection.man").value);
-    formData.append("entry.214539088", document.querySelector(".gem-selection.man").value);
-    formData.append("entry.1975640590", document.querySelector(".chrome-selection.man").value);
-    formData.append("entry.1454873338", document.querySelector(".material-selection.man").value);
-    formData.append("entry.1087315982", document.querySelector(".engraving-box.man").value);
-    formData.append("entry.1234649240", document.querySelector(".notes-box").value);
-  
-    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScoFRyYyaGKf-ZEkekImRW2EVijPFY7EqeuLbf4VdtiNHt_JQ/formResponse", {
-      method: "POST",
-      mode: "no-cors", // this is essential
-      body: formData
-    }).then(() => {
-      alert("Order submitted successfully!");
-    }).catch(() => {
-      alert("Submission failed.");
-    });
-  });
   
   document.querySelector(".order-button").addEventListener("click", sendToWhatsApp);
 });
