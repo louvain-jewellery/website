@@ -2987,26 +2987,6 @@
 },
 
 {
-  "id": "no.11.64",
-  "collection": null,
-  "images": [],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=no.11.64"
-},
-
-{
   "id": "no.11.65",
   "collection": null,
   "images": [
