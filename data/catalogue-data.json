@@ -2913,30 +2913,6 @@
 },
 
 {
-  "id": "no.11.73",
-  "collection": "complement",
-  "images": [
-    "images/rings/11/11_0080_73.jpg",
-    "images/rings/11/11_0079_73.jpg",
-    "images/rings/11/11_0078_73.jpg"
-  ],
-  "name": "Cincin Kawin",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=no.11.73"
-},
-
-{
   "id": "no.11.74",
   "collection": "independent",
   "images": [
