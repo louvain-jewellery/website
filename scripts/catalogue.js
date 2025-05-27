@@ -95,7 +95,7 @@ function renderCatalogue(data) {
                     <button class="favorite-button" data-item-id="${item.id}">
                         <img src="${favoriteIconSrc}">
                     </button>
-                    <h2 class="catalogue-name-text">${item.name}</h2>
+                    <h2 class="catalogue-name-text">${item.id}</h2>
                     <a class="catalogue-button" href="${item.detailLink}">Lihat Produk</a>
                 </div>
             `;
