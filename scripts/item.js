@@ -27,23 +27,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Update specs table
     const table = document.querySelector(".detail-table");
 
-    table.innerHTML = `
-      <tr>
-        <th>&#9642; &nbsp; Cincin</th>
-        <td>Wanita</td>
-        <td>Pria</td>
-      </tr>
-      <tr>
-        <th>&#9642; &nbsp; Ring Width</th>
-        <td>${item.specs.ringWidth.wanita}</td>
-        <td>${item.specs.ringWidth.pria}</td>
-      </tr>
-      <tr>
-        <th>&#9642; &nbsp; Gem</th>
-        <td>${item.specs.gem.wanita}</td>
-        <td>${item.specs.gem.pria}</td>
-      </tr>
-    `;
+    // table.innerHTML = `
+    //   <tr>
+    //     <th>&#9642; &nbsp; Cincin</th>
+    //     <td>Wanita</td>
+    //     <td>Pria</td>
+    //   </tr>
+    //   <tr>
+    //     <th>&#9642; &nbsp; Ring Width</th>
+    //     <td>${item.specs.ringWidth.wanita}</td>
+    //     <td>${item.specs.ringWidth.pria}</td>
+    //   </tr>
+    //   <tr>
+    //     <th>&#9642; &nbsp; Gem</th>
+    //     <td>${item.specs.gem.wanita}</td>
+    //     <td>${item.specs.gem.pria}</td>
+    //   </tr>
+    // `;
 
   } catch (error) {
     console.error("Failed to load item:", error);
