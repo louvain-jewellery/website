@@ -1,7 +1,7 @@
 [
 {
   "id": "ags1.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/AGS/AGS 1.48 01.jpg",
     "images/rings/AGS/AGS 1.48 02.jpg",
@@ -25,7 +25,7 @@
 
 {
   "id": "ags3.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/AGS/0019 AGS 3.48.jpg",
     "images/rings/AGS/0020 AGS 3.48.jpg",
@@ -49,7 +49,7 @@
 
 {
   "id": "ags4.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/AGS/0015 AGS 4.48.jpg",
     "images/rings/AGS/0016 AGS 4.48.jpg",
@@ -74,7 +74,7 @@
 
 {
   "id": "ags5.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/AGS/AGS 5.48 01.jpg",
     "images/rings/AGS/AGS 5.48 02.jpg",
@@ -98,7 +98,7 @@
 
 {
   "id": "alc1.47",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/ALC/3_0008_ALC 1.47.jpg",
     "images/rings/ALC/3_0009_ALC 1.47.jpg",
@@ -123,7 +123,7 @@
 
 {
   "id": "alc2.47",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/ALC/3_0004_ALC 2.47.jpg",
     "images/rings/ALC/3_0005_ALC 2.47.jpg",
@@ -148,7 +148,7 @@
 
 {
   "id": "alc3.47",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/ALC/3_0000_ALC 3.47.jpg",
     "images/rings/ALC/3_0001_ALC 3.47.jpg",
@@ -173,7 +173,7 @@
 
 {
   "id": "alc4.47",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/ALC/4_0000_ALC 4.47.jpg",
     "images/rings/ALC/4_0001_ALC 4.47.jpg",
@@ -198,7 +198,7 @@
 
 {
   "id": "alc5.47",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/ALC/4_0004_ALC 5.47.jpg",
     "images/rings/ALC/4_0005_ALC 5.47.jpg",
@@ -223,13 +223,13 @@
 
 {
   "id": "aln1.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/ALN/4_0041_ALN 1.47.jpg",
     "images/rings/ALN/4_0042_ALN 1.47.jpg",
     "images/rings/ALN/4_0043_ALN 1.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -247,13 +247,13 @@
 
 {
   "id": "aln2.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/ALN/4_0044_ALN 2.47.jpg",
     "images/rings/ALN/4_0045_ALN 2.47.jpg",
     "images/rings/ALN/4_0046_ALN 2.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -271,13 +271,13 @@
 
 {
   "id": "aln4.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/ALN/4_0047_ALN 4.47.jpg",
     "images/rings/ALN/4_0048_ALN 4.47.jpg",
     "images/rings/ALN/4_0049_ALN 4.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -295,7 +295,7 @@
 
 {
   "id": "atr1.11",
-  "collection": null,
+  "collection": "stacking",
   "images": [
     "images/rings/ATR/7_0094_118 Altair 1.11.jpg",
     "images/rings/ATR/7_0095_118 Altair 1.11.jpg",
@@ -319,7 +319,7 @@
 
 {
   "id": "atr2.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/ATR/7_0097_119 Altair 2.11.jpg",
     "images/rings/ATR/7_0098_119 Altair 2.11.jpg",
@@ -344,7 +344,7 @@
 
 {
   "id": "atr3.11",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images/rings/ATR/7_0101_120 Altair 3.11.jpg",
     "images/rings/ATR/7_0102_120 Altair 3.11.jpg",
@@ -368,7 +368,7 @@
 
 {
   "id": "bla1.48",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/BLA/0037_BLA 1.48.jpg",
     "images/rings/BLA/0038_BLA 1.48.jpg",
@@ -392,7 +392,7 @@
 
 {
   "id": "bla2.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BLA/0034_BLA 2.48.jpg",
     "images/rings/BLA/0035_BLA 2.48.jpg",
@@ -416,7 +416,7 @@
 
 {
   "id": "bla3.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BLA/0031_BLA 3.48.jpg",
     "images/rings/BLA/0032_BLA 3.48.jpg",
@@ -440,7 +440,7 @@
 
 {
   "id": "bla4.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BLA/0028_BLA 4.48.jpg",
     "images/rings/BLA/0029_BLA 4.48.jpg",
@@ -464,7 +464,7 @@
 
 {
   "id": "bqa1.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/BQA/7_0019_97 Billqia 1.12.jpg",
     "images/rings/BQA/7_0020_97 Billqia 1.12.jpg",
@@ -488,7 +488,7 @@
 
 {
   "id": "bqa2.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/BQA/7_0022_98 Billqia 2.12.jpg",
     "images/rings/BQA/7_0023_98 Billqia 2.12.jpg",
@@ -512,7 +512,7 @@
 
 {
   "id": "bqa3.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/BQA/7_0025_99 Billqia 3.12.jpg",
     "images/rings/BQA/7_0026_99 Billqia 3.12.jpg",
@@ -536,7 +536,7 @@
 
 {
   "id": "bqa4.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/BQA/7_0028_100 Billqia 4.12.jpg",
     "images/rings/BQA/7_0029_100 Billqia 4.12.jpg",
@@ -560,7 +560,7 @@
 
 {
   "id": "bqa5.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/BQA/7_0031_101 Billqia 5.12.jpg",
     "images/rings/BQA/7_0032_101 Billqia 5.12.jpg",
@@ -585,7 +585,7 @@
 
 {
   "id": "bqa6.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/BQA/7_0035_102 Billqia 6.12.jpg",
     "images/rings/BQA/7_0036_102 Billqia 6.12.jpg",
@@ -610,7 +610,7 @@
 
 {
   "id": "brs1.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRS/Brisia 1.47 09.jpg",
     "images/rings/BRS/Brisia 1.47 10.jpg",
@@ -635,7 +635,7 @@
 
 {
   "id": "brs2.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRS/Brisia 2.47 13.jpg",
     "images/rings/BRS/Brisia 2.47 14.jpg",
@@ -659,7 +659,7 @@
 
 {
   "id": "brs3.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRS/Brisia 3.47 16.jpg",
     "images/rings/BRS/Brisia 3.47 17.jpg",
@@ -683,7 +683,7 @@
 
 {
   "id": "bry1.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0024_BRY 1.48.jpg",
     "images/rings/BRY/0025_BRY 1.48.jpg",
@@ -708,7 +708,7 @@
 
 {
   "id": "bry10.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0001s_0000_BRY_10.48.jpg",
     "images/rings/BRY/0001s_0001_BRY_10.48.jpg",
@@ -732,7 +732,7 @@
 
 {
   "id": "bry2.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0020_BRY 2.48.jpg",
     "images/rings/BRY/0021_BRY 2.48.jpg",
@@ -757,7 +757,7 @@
 
 {
   "id": "bry3.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0016_BRY_3.48.jpg",
     "images/rings/BRY/0017_BRY_3.48.jpg",
@@ -782,7 +782,7 @@
 
 {
   "id": "bry4.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0012_BRY_4.48.jpg",
     "images/rings/BRY/0013_BRY_4.48.jpg",
@@ -807,7 +807,7 @@
 
 {
   "id": "bry5.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0008_BRY_5.48.jpg",
     "images/rings/BRY/0009_BRY_5.48.jpg",
@@ -832,7 +832,7 @@
 
 {
   "id": "bry6.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0003s_0000_BRY_6.48.jpg",
     "images/rings/BRY/0003s_0001_BRY_6.48.jpg",
@@ -857,7 +857,7 @@
 
 {
   "id": "bry7.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0004_BRY_7.48.jpg",
     "images/rings/BRY/0005_BRY_7.48.jpg",
@@ -882,7 +882,7 @@
 
 {
   "id": "bry8.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0000_BRY_8.48.jpg",
     "images/rings/BRY/0001_BRY_8.48.jpg",
@@ -906,7 +906,7 @@
 
 {
   "id": "bry9.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/BRY/0002s_0000_BRY_9.48.jpg",
     "images/rings/BRY/0002s_0001_BRY_9.48.jpg",
@@ -931,14 +931,14 @@
 
 {
   "id": "cla1.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLA/4_0008_CLA 1.47.jpg",
     "images/rings/CLA/4_0009_CLA 1.47.jpg",
     "images/rings/CLA/4_0010_CLA 1.47.jpg",
     "images/rings/CLA/4_0011_CLA 1.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -956,14 +956,14 @@
 
 {
   "id": "cla2.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLA/4_0012_CLA 2.47.jpg",
     "images/rings/CLA/4_0013_CLA 2.47.jpg",
     "images/rings/CLA/4_0014_CLA 2.47.jpg",
     "images/rings/CLA/4_0015_CLA 2.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -981,14 +981,14 @@
 
 {
   "id": "cla3.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLA/4_0016_CLA 3.47.jpg",
     "images/rings/CLA/4_0017_CLA 3.47.jpg",
     "images/rings/CLA/4_0018_CLA 3.47.jpg",
     "images/rings/CLA/4_0019_CLA 3.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1006,13 +1006,13 @@
 
 {
   "id": "cla4.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLA/4_0020_CLA 4.47.jpg",
     "images/rings/CLA/4_0021_CLA 4.47.jpg",
     "images/rings/CLA/4_0022_CLA 4.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1030,13 +1030,13 @@
 
 {
   "id": "cla5.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLA/4_0023_CLA 5.47.jpg",
     "images/rings/CLA/4_0024_CLA 5.47.jpg",
     "images/rings/CLA/4_0025_CLA 5.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1054,13 +1054,13 @@
 
 {
   "id": "cla6.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLA/4_0029_CLA 2.47.jpg",
     "images/rings/CLA/4_0030_CLA 2.47.jpg",
     "images/rings/CLA/4_0031_CLA 2.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1078,7 +1078,7 @@
 
 {
   "id": "cli1.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLI/4_0026_CLI 1.47.jpg",
     "images/rings/CLI/4_0027_CLI 1.47.jpg",
@@ -1102,7 +1102,7 @@
 
 {
   "id": "cli3.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLI/4_0032_CLI 3.47.jpg",
     "images/rings/CLI/4_0033_CLI 3.47.jpg",
@@ -1126,7 +1126,7 @@
 
 {
   "id": "cli4.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLI/4_0035_CLI 4.47.jpg",
     "images/rings/CLI/4_0036_CLI 4.47.jpg",
@@ -1150,7 +1150,7 @@
 
 {
   "id": "cli5.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLI/4_0038_CLI 5.47.jpg",
     "images/rings/CLI/4_0039_CLI 5.47.jpg",
@@ -1174,7 +1174,7 @@
 
 {
   "id": "cli6.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CLI/4_0000s_0000_CLI 6.47.jpg",
     "images/rings/CLI/4_0000s_0001_CLI 6.47.jpg",
@@ -1198,7 +1198,7 @@
 
 {
   "id": "cln1.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/CLN/7_0039_103 Cleon 1.12.jpg",
     "images/rings/CLN/7_0040_103 Cleon 1.12.jpg",
@@ -1223,7 +1223,7 @@
 
 {
   "id": "cln2.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/CLN/7_0043_104 Cleon 2.12.jpg",
     "images/rings/CLN/7_0044_104 Cleon 2.12.jpg",
@@ -1248,7 +1248,7 @@
 
 {
   "id": "cln3.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/CLN/7_0047_105 Cleon 3.12.jpg",
     "images/rings/CLN/7_0048_105 Cleon 3.12.jpg",
@@ -1272,7 +1272,7 @@
 
 {
   "id": "cln4.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/CLN/7_0050_106 Cleon 4.12.jpg",
     "images/rings/CLN/7_0051_106 Cleon 4.12.jpg",
@@ -1296,7 +1296,7 @@
 
 {
   "id": "cln5.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\CLN\\7_0053_107 Cleon 5.12.jpg",
     "images\\rings\\CLN\\7_0054_107 Cleon 5.12.jpg",
@@ -1320,14 +1320,14 @@
 
 {
   "id": "csa1.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0000s_0000_CSA 1.48.jpg",
     "images/rings/CSA/0000s_0001_CSA 1.48.jpg",
     "images/rings/CSA/0000s_0002_CSA 1.48.jpg",
     "images/rings/CSA/0000s_0003_CSA 1.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1345,14 +1345,14 @@
 
 {
   "id": "csa2.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0033_CSA 2.48.jpg",
     "images/rings/CSA/0034_CSA 2.48.jpg",
     "images/rings/CSA/0035_CSA 2.48.jpg",
     "images/rings/CSA/0036_CSA 2.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1370,14 +1370,14 @@
 
 {
   "id": "csa3.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0029_CSA 3.48.jpg",
     "images/rings/CSA/0030_CSA 3.48.jpg",
     "images/rings/CSA/0031_CSA 3.48.jpg",
     "images/rings/CSA/0032_CSA 3.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1395,14 +1395,14 @@
 
 {
   "id": "csa4.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0025_CSA 4.48.jpg",
     "images/rings/CSA/0026_CSA 4.48.jpg",
     "images/rings/CSA/0027_CSA 4.48.jpg",
     "images/rings/CSA/0028_CSA 4.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1420,14 +1420,14 @@
 
 {
   "id": "csa5.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0004s_0000_CSA 5.48.jpg",
     "images/rings/CSA/0004s_0001_CSA 5.48.jpg",
     "images/rings/CSA/0004s_0002_CSA 5.48.jpg",
     "images/rings/CSA/0004s_0003_CSA 5.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1445,14 +1445,14 @@
 
 {
   "id": "csa6.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0003s_0000_CSA 6.48.jpg",
     "images/rings/CSA/0003s_0001_CSA 6.48.jpg",
     "images/rings/CSA/0003s_0002_CSA 6.48.jpg",
     "images/rings/CSA/0003s_0003_CSA 6.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1470,14 +1470,14 @@
 
 {
   "id": "csa7.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/CSA/0002s_0000_CSA 7.48.jpg",
     "images/rings/CSA/0002s_0001_CSA 7.48.jpg",
     "images/rings/CSA/0002s_0002_CSA 7.48.jpg",
     "images/rings/CSA/0002s_0003_CSA 7.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1495,7 +1495,7 @@
 
 {
   "id": "cto1.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\CTO\\7_0078_114 Catarino 1.11.jpg",
     "images\\rings\\CTO\\7_0079_114 Catarino 1.11.jpg",
@@ -1520,7 +1520,7 @@
 
 {
   "id": "cto2.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\CTO\\7_0082_115 Catarino 2.11.jpg",
     "images\\rings\\CTO\\7_0083_115 Catarino 2.11.jpg",
@@ -1545,7 +1545,7 @@
 
 {
   "id": "cto3.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\CTO\\7_0086_116 Catarino 3.11.jpg",
     "images\\rings\\CTO\\7_0087_116 Catarino 3.11.jpg",
@@ -1570,7 +1570,7 @@
 
 {
   "id": "cto4.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\CTO\\7_0090_117 Catarino 4.11.jpg",
     "images\\rings\\CTO\\7_0091_117 Catarino 4.11.jpg",
@@ -1595,39 +1595,14 @@
 
 {
   "id": "ern1.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/ERN/0000s_0000_ERN 1.48.jpg",
     "images/rings/ERN/0000s_0001_ERN 1.48.jpg",
     "images/rings/ERN/0000s_0002_ERN 1.48.jpg",
     "images/rings/ERN/0000s_0003_ERN 1.48.jpg"
   ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern1.48"
-},
-
-{
-  "id": "ern1.48",
-  "collection": null,
-  "images": [
-    "images\\rings\\ERN\\0000s_0000_ERN 1.48.jpg",
-    "images\\rings\\ERN\\0001s_0000_ERN 1.48.jpg",
-    "images\\rings\\ERN\\0002s_0000_ERN 1.48.jpg",
-    "images\\rings\\ERN\\0003s_0000_ERN 1.48.jpg"
-  ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1645,39 +1620,14 @@
 
 {
   "id": "ern2.48",
-  "collection": null,
-  "images": [
-    "images/rings/ERN/0008_ERN 2.48.jpg",
-    "images/rings/ERN/0009_ERN 2.48.jpg",
-    "images/rings/ERN/0010_ERN 2.48.jpg",
-    "images/rings/ERN/0011_ERN 2.48.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern2.48"
-},
-
-{
-  "id": "ern2.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\ERN\\0008_ERN 2.48.jpg",
     "images\\rings\\ERN\\0009_ERN 2.48.jpg",
     "images\\rings\\ERN\\0010_ERN 2.48.jpg",
     "images\\rings\\ERN\\0011_ERN 2.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1695,39 +1645,14 @@
 
 {
   "id": "ern3.48",
-  "collection": null,
-  "images": [
-    "images/rings/ERN/0004_ERN 3.48.jpg",
-    "images/rings/ERN/0005_ERN 3.48.jpg",
-    "images/rings/ERN/0006_ERN 3.48.jpg",
-    "images/rings/ERN/0007_ERN 3.48.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern3.48"
-},
-
-{
-  "id": "ern3.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\ERN\\0004_ERN 3.48.jpg",
     "images\\rings\\ERN\\0005_ERN 3.48.jpg",
     "images\\rings\\ERN\\0006_ERN 3.48.jpg",
     "images\\rings\\ERN\\0007_ERN 3.48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1745,39 +1670,14 @@
 
 {
   "id": "ern4.48",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/ERN/0000_ERN 4.48.jpg",
     "images/rings/ERN/0001_ERN 4.48.jpg",
     "images/rings/ERN/0002_ERN 4.48.jpg",
     "images/rings/ERN/0003_ERN 4.48.jpg"
   ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern4.48"
-},
-
-{
-  "id": "ern4.48",
-  "collection": null,
-  "images": [
-    "images\\rings\\ERN\\0000_ERN 4.48.jpg",
-    "images\\rings\\ERN\\0001_ERN 4.48.jpg",
-    "images\\rings\\ERN\\0002_ERN 4.48.jpg",
-    "images\\rings\\ERN\\0003_ERN 4.48.jpg"
-  ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1795,39 +1695,14 @@
 
 {
   "id": "ern5.47",
-  "collection": null,
-  "images": [
-    "images/rings/ERN/3_0024_ERN 5.47.jpg",
-    "images/rings/ERN/3_0025_ERN 5.47.jpg",
-    "images/rings/ERN/3_0026_ERN 5.47.jpg",
-    "images/rings/ERN/3_0027_ERN 5.47.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern5.47"
-},
-
-{
-  "id": "ern5.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\ERN\\3_0024_ERN 5.47.jpg",
     "images\\rings\\ERN\\3_0025_ERN 5.47.jpg",
     "images\\rings\\ERN\\3_0026_ERN 5.47.jpg",
     "images\\rings\\ERN\\3_0027_ERN 5.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1845,39 +1720,14 @@
 
 {
   "id": "ern6.47",
-  "collection": null,
-  "images": [
-    "images/rings/ERN/3_0020_ERN 6.47.jpg",
-    "images/rings/ERN/3_0021_ERN 6.47.jpg",
-    "images/rings/ERN/3_0022_ERN 6.47.jpg",
-    "images/rings/ERN/3_0023_ERN 6.47.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern6.47"
-},
-
-{
-  "id": "ern6.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\ERN\\3_0020_ERN 6.47.jpg",
     "images\\rings\\ERN\\3_0021_ERN 6.47.jpg",
     "images\\rings\\ERN\\3_0022_ERN 6.47.jpg",
     "images\\rings\\ERN\\3_0023_ERN 6.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1895,39 +1745,14 @@
 
 {
   "id": "ern7.47",
-  "collection": null,
-  "images": [
-    "images/rings/ERN/3_0016_ERN 7.47.jpg",
-    "images/rings/ERN/3_0017_ERN 7.47.jpg",
-    "images/rings/ERN/3_0018_ERN 7.47.jpg",
-    "images/rings/ERN/3_0019_ERN 7.47.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern7.47"
-},
-
-{
-  "id": "ern7.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\ERN\\3_0016_ERN 7.47.jpg",
     "images\\rings\\ERN\\3_0017_ERN 7.47.jpg",
     "images\\rings\\ERN\\3_0018_ERN 7.47.jpg",
     "images\\rings\\ERN\\3_0019_ERN 7.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1945,39 +1770,14 @@
 
 {
   "id": "ern8.47",
-  "collection": null,
-  "images": [
-    "images/rings/ERN/3_0012_ERN 8.47.jpg",
-    "images/rings/ERN/3_0013_ERN 8.47.jpg",
-    "images/rings/ERN/3_0014_ERN 8.47.jpg",
-    "images/rings/ERN/3_0015_ERN 8.47.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=ern8.47"
-},
-
-{
-  "id": "ern8.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\ERN\\3_0012_ERN 8.47.jpg",
     "images\\rings\\ERN\\3_0013_ERN 8.47.jpg",
     "images\\rings\\ERN\\3_0014_ERN 8.47.jpg",
     "images\\rings\\ERN\\3_0015_ERN 8.47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -1995,7 +1795,7 @@
 
 {
   "id": "etd1.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\ETD\\7_0003_92 Estrid 1.12.jpg",
     "images\\rings\\ETD\\7_0004_92 Estrid 1.12.jpg",
@@ -2019,7 +1819,7 @@
 
 {
   "id": "etd2.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\ETD\\7_0006_93 Estrid 2.12.jpg",
     "images\\rings\\ETD\\7_0007_93 Estrid 2.12.jpg",
@@ -2043,7 +1843,7 @@
 
 {
   "id": "etd3.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\ETD\\7_0009_94 Estrid 3.12.jpg",
     "images\\rings\\ETD\\7_0010_94 Estrid 3.12.jpg",
@@ -2067,7 +1867,7 @@
 
 {
   "id": "etd4.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\ETD\\7_0012_95 Estrid 4.12.jpg",
     "images\\rings\\ETD\\7_0013_95 Estrid 4.12.jpg",
@@ -2092,7 +1892,7 @@
 
 {
   "id": "etd5.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\ETD\\7_0016_96 Estrid 5.12.jpg",
     "images\\rings\\ETD\\7_0017_96 Estrid 5.12.jpg",
@@ -2115,32 +1915,8 @@
 },
 
 {
-  "id": "fla1.12",
-  "collection": null,
-  "images": [
-    "images\\rings\\FLA\\6_0053_87 Fillia 1.12.jpg",
-    "images\\rings\\FLA\\6_0054_87 Fillia 1.12.jpg",
-    "images\\rings\\FLA\\6_0055_87 Fillia 1.12.jpg"
-  ],
-  "name": "Fillia 1.12",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=fla1.12"
-},
-
-{
   "id": "fla2.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\FLA\\6_0056_88 Fillia 2.12.jpg",
     "images\\rings\\FLA\\6_0057_88 Fillia 2.12.jpg",
@@ -2164,7 +1940,7 @@
 
 {
   "id": "fla3.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\FLA\\6_0059_89 Fillia 3.12.jpg",
     "images\\rings\\FLA\\6_0060_89 Fillia 3.12.jpg",
@@ -2188,7 +1964,7 @@
 
 {
   "id": "fla4.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\FLA\\6_0062_90 Fillia 4.12.jpg",
     "images\\rings\\FLA\\6_0063_90 Fillia 4.12.jpg",
@@ -2212,7 +1988,7 @@
 
 {
   "id": "fla5.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\FLA\\7_0000_91 Fillia 5.12.jpg",
     "images\\rings\\FLA\\7_0001_91 Fillia 5.12.jpg",
@@ -2236,7 +2012,7 @@
 
 {
   "id": "hla1.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/HLA/Hellia 1.47 00.jpg",
     "images/rings/HLA/Hellia 1.47 01.jpg",
@@ -2260,7 +2036,7 @@
 
 {
   "id": "hla2.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/HLA/Hellia 2.47 03.jpg",
     "images/rings/HLA/Hellia 2.47 04.jpg",
@@ -2284,7 +2060,7 @@
 
 {
   "id": "hla3.47",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images/rings/HLA/Hellia 3.47 06.jpg",
     "images/rings/HLA/Hellia 3.47 07.jpg",
@@ -2308,7 +2084,7 @@
 
 {
   "id": "jce1.47",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/JCE/Jace 1.47 19.jpg",
     "images/rings/JCE/Jace 1.47 20.jpg",
@@ -2333,7 +2109,7 @@
 
 {
   "id": "jce2.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/JCE/Jace 2.36 23.jpg",
     "images/rings/JCE/Jace 2.36 24.jpg",
@@ -2358,7 +2134,7 @@
 
 {
   "id": "jce3.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/JCE/Jace 3.36 27.jpg",
     "images/rings/JCE/Jace 3.36 28.jpg",
@@ -2382,7 +2158,7 @@
 
 {
   "id": "jce4.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/JCE/Jace 4.36 30.jpg",
     "images/rings/JCE/Jace 4.36 31.jpg",
@@ -2406,32 +2182,8 @@
 },
 
 {
-  "id": "jce5.36",
-  "collection": null,
-  "images": [
-    "images/rings/JCE/Jace 5.36 34.jpg",
-    "images/rings/JCE/Jace 5.36 35.jpg",
-    "images/rings/JCE/Jace 5.36 36.jpg"
-  ],
-  "name": "Jace 5.36",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=jce5.36"
-},
-
-{
   "id": "kra1.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\KRA\\6_0006_71 Kyara 1.36.jpg",
     "images\\rings\\KRA\\6_0007_71 Kyara 1.36.jpg",
@@ -2455,7 +2207,7 @@
 
 {
   "id": "kra2.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\KRA\\6_0009_72 Kyara 2.36.jpg",
     "images\\rings\\KRA\\6_0010_72 Kyara 2.36.jpg",
@@ -2480,7 +2232,7 @@
 
 {
   "id": "kra3.36",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\KRA\\6_0013_73 Kyara 3.36.jpg",
     "images\\rings\\KRA\\6_0014_73 Kyara 3.36.jpg",
@@ -2504,7 +2256,7 @@
 
 {
   "id": "msy1.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\MSY\\6_0000s_0000_74 Maisy 1.36.jpg",
     "images\\rings\\MSY\\6_0000s_0001_74 Maisy 1.36.jpg",
@@ -2528,7 +2280,7 @@
 
 {
   "id": "msy2.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\MSY\\6_0016_75 Maisy 2.36.jpg",
     "images\\rings\\MSY\\6_0017_75 Maisy 2.36.jpg",
@@ -2552,7 +2304,7 @@
 
 {
   "id": "msy3.36",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\MSY\\6_0019_76 Maisy 3.36.jpg",
     "images\\rings\\MSY\\6_0020_76 Maisy 3.36.jpg",
@@ -2576,7 +2328,7 @@
 
 {
   "id": "mza1.23",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\MZA\\6_0028_79 Meyza 1.23.jpg",
     "images\\rings\\MZA\\6_0029_79 Meyza 1.23.jpg",
@@ -2599,39 +2351,15 @@
 },
 
 {
-  "id": "mza2.23",
-  "collection": null,
-  "images": [
-    "images\\rings\\MZA\\6_0031_80 Meyza 2.23.jpg",
-    "images\\rings\\MZA\\6_0032_80 Meyza 2.23.jpg",
-    "images\\rings\\MZA\\6_0033_80 Meyza 2.23.jpg"
-  ],
-  "name": "Meyza 2.23",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=mza2.23"
-},
-
-{
   "id": "no.11.49",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0000_49.jpg",
     "images\\rings\\11\\11_0001_49.jpg",
     "images\\rings\\11\\11_0002_49.jpg",
     "images\\rings\\11\\11_0003_49.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2649,14 +2377,14 @@
 
 {
   "id": "no.11.50",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0004_50.jpg",
     "images\\rings\\11\\11_0005_50.jpg",
     "images\\rings\\11\\11_0006_50.jpg",
     "images\\rings\\11\\11_0007_50.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2674,13 +2402,13 @@
 
 {
   "id": "no.11.51",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0008_51.jpg",
     "images\\rings\\11\\11_0009_51.jpg",
     "images\\rings\\11\\11_0010_51.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2698,13 +2426,13 @@
 
 {
   "id": "no.11.52",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0011_52.jpg",
     "images\\rings\\11\\11_0012_52.jpg",
     "images\\rings\\11\\11_0013_52.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2722,13 +2450,13 @@
 
 {
   "id": "no.11.53",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0014_53.jpg",
     "images\\rings\\11\\11_0015_53.jpg",
     "images\\rings\\11\\11_0016_53.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2746,13 +2474,13 @@
 
 {
   "id": "no.11.54",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0017_54.jpg",
     "images\\rings\\11\\11_0018_54.jpg",
     "images\\rings\\11\\11_0019_54.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2770,13 +2498,13 @@
 
 {
   "id": "no.11.55",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0020_55.jpg",
     "images\\rings\\11\\11_0021_55.jpg",
     "images\\rings\\11\\11_0022_55.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2794,13 +2522,13 @@
 
 {
   "id": "no.11.56",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\11\\11_0023_56.jpg",
     "images\\rings\\11\\11_0024_56.jpg",
     "images\\rings\\11\\11_0025_56.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2818,13 +2546,13 @@
 
 {
   "id": "no.11.57",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0026_57.jpg",
     "images\\rings\\11\\11_0027_57.jpg",
     "images\\rings\\11\\11_0028_57.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2842,13 +2570,13 @@
 
 {
   "id": "no.11.58",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0029_58.jpg",
     "images\\rings\\11\\11_0030_58.jpg",
     "images\\rings\\11\\11_0031_58.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2866,14 +2594,14 @@
 
 {
   "id": "no.11.59",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0032_59.jpg",
     "images\\rings\\11\\11_0033_59.jpg",
     "images\\rings\\11\\11_0034_59.jpg",
     "images\\rings\\11\\11_0035_59.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2891,13 +2619,13 @@
 
 {
   "id": "no.11.60",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0036_60.jpg",
     "images\\rings\\11\\11_0037_60.jpg",
     "images\\rings\\11\\11_0038_60.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2915,14 +2643,14 @@
 
 {
   "id": "no.11.61",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0039_61.jpg",
     "images\\rings\\11\\11_0040_61.jpg",
     "images\\rings\\11\\11_0041_61.jpg",
     "images\\rings\\11\\11_0042_61.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2940,13 +2668,13 @@
 
 {
   "id": "no.11.62",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0043_62.jpg",
     "images\\rings\\11\\11_0044_62.jpg",
     "images\\rings\\11\\11_0045_62.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2964,13 +2692,13 @@
 
 {
   "id": "no.11.63",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0046_63.jpg",
     "images\\rings\\11\\11_0047_63.jpg",
     "images\\rings\\11\\11_0048_63.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -2988,14 +2716,14 @@
 
 {
   "id": "no.11.65",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0049_65.jpg",
     "images\\rings\\11\\11_0050\\_65.jpg",
     "images\\rings\\11\\11_0051_65.jpg",
     "images\\rings\\11\\11_0052_65.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3013,14 +2741,14 @@
 
 {
   "id": "no.11.66",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0053_66.jpg",
     "images\\rings\\11\\11_0054_66.jpg",
     "images\\rings\\11\\11_0055_66.jpg",
     "images\\rings\\11\\11_0056_66.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3038,13 +2766,13 @@
 
 {
   "id": "no.11.67",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0057_67.jpg",
     "images\\rings\\11\\11_0058_67.jpg",
     "images\\rings\\11\\11_0059_67.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3062,14 +2790,14 @@
 
 {
   "id": "no.11.68",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0060_68.jpg",
     "images\\rings\\11\\11_0061_68.jpg",
     "images\\rings\\11\\11_0062_68.jpg",
     "images\\rings\\11\\11_0063_68.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3087,14 +2815,14 @@
 
 {
   "id": "no.11.69",
-  "collection": null,
+  "collection": "stacking",
   "images": [
     "images\\rings\\11\\11_0064_69.jpg",
     "images\\rings\\11\\11_0065_69.jpg",
     "images\\rings\\11\\11_0066_69.jpg",
     "images\\rings\\11\\11_0067_69.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3112,14 +2840,14 @@
 
 {
   "id": "no.11.70",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0068_70.jpg",
     "images\\rings\\11\\11_0069_70.jpg",
     "images\\rings\\11\\11_0070_70.jpg",
     "images\\rings\\11\\11_0071_70.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3137,13 +2865,13 @@
 
 {
   "id": "no.11.71",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0072_71.jpg",
     "images\\rings\\11\\11_0073_71.jpg",
     "images\\rings\\11\\11_0074_71.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3161,13 +2889,13 @@
 
 {
   "id": "no.11.72",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0075_72.jpg",
     "images\\rings\\11\\11_0076_72.jpg",
     "images\\rings\\11\\11_0077_72.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3185,13 +2913,13 @@
 
 {
   "id": "no.11.73",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0078_73.jpg",
     "images\\rings\\11\\11_0079_73.jpg",
     "images\\rings\\11\\11_0080_73.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3209,13 +2937,13 @@
 
 {
   "id": "no.11.74",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0081_74.jpg",
     "images\\rings\\11\\11_0082_74.jpg",
     "images\\rings\\11\\11_0083_74.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3232,38 +2960,14 @@
 },
 
 {
-  "id": "no.11.75",
-  "collection": null,
-  "images": [
-    "images\\rings\\11\\11_0084_75.jpg",
-    "images\\rings\\11\\11_0085_75.jpg",
-    "images\\rings\\11\\11_0086_75.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=no.11.75"
-},
-
-{
   "id": "no.11.76",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\11\\11_0087_76.jpg",
     "images\\rings\\11\\11_0088_76.jpg",
     "images\\rings\\11\\11_0089_76.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3281,13 +2985,13 @@
 
 {
   "id": "no.11.77",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\11\\11_0090_77.jpg",
     "images\\rings\\11\\11_0091_77.jpg",
     "images\\rings\\11\\11_0092_77.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3305,13 +3009,13 @@
 
 {
   "id": "no.12.78",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\12\\12_0000_78.jpg",
     "images\\rings\\12\\12_0001_78.jpg",
     "images\\rings\\12\\12_0002_78.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3329,13 +3033,13 @@
 
 {
   "id": "no.12.79",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\12\\12_0003_79.jpg",
     "images\\rings\\12\\12_0004_79.jpg",
     "images\\rings\\12\\12_0005_79.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3352,38 +3056,14 @@
 },
 
 {
-  "id": "no.12.80",
-  "collection": null,
-  "images": [
-    "images\\rings\\12\\12_0006_80.jpg",
-    "images\\rings\\12\\12_0007_80.jpg",
-    "images\\rings\\12\\12_0008_80.jpg"
-  ],
-  "name": "?",
-  "price": "",
-  "description": "",
-  "specs": {
-    "ringWidth": {
-      "wanita": "",
-      "pria": ""
-    },
-    "gem": {
-      "wanita": "",
-      "pria": ""
-    }
-  },
-  "detailLink": "item.html?id=no.12.80"
-},
-
-{
   "id": "no.12.81",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\12\\12_0009_81.jpg",
     "images\\rings\\12\\12_0010_81.jpg",
     "images\\rings\\12\\12_0011_81.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3401,13 +3081,13 @@
 
 {
   "id": "no10.25",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0000_25.jpg",
     "images\\rings\\10\\10_0001_25.jpg",
     "images\\rings\\10\\10_0002_25.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3425,14 +3105,14 @@
 
 {
   "id": "no10.26",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0003_26.jpg",
     "images\\rings\\10\\10_0004_26.jpg",
     "images\\rings\\10\\10_0005_26.jpg",
     "images\\rings\\10\\10_0006_26.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3450,13 +3130,13 @@
 
 {
   "id": "no10.27",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0007_27.jpg",
     "images\\rings\\10\\10_0008_27.jpg",
     "images\\rings\\10\\10_0009_27.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3474,14 +3154,14 @@
 
 {
   "id": "no10.28",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0010_28.jpg",
     "images\\rings\\10\\10_0011_28.jpg",
     "images\\rings\\10\\10_0012_28.jpg",
     "images\\rings\\10\\10_0013_28.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3499,14 +3179,14 @@
 
 {
   "id": "no10.29",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0014_29.jpg",
     "images\\rings\\10\\10_0015_29.jpg",
     "images\\rings\\10\\10_0016_29.jpg",
     "images\\rings\\10\\10_0017_29.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3524,13 +3204,13 @@
 
 {
   "id": "no10.30",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0018_30.jpg",
     "images\\rings\\10\\10_0019_30.jpg",
     "images\\rings\\10\\10_0020_30.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3548,13 +3228,13 @@
 
 {
   "id": "no10.31",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0021_31.jpg",
     "images\\rings\\10\\10_0022_31.jpg",
     "images\\rings\\10\\10_0022_31.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3572,13 +3252,13 @@
 
 {
   "id": "no10.32",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0024_32.jpg",
     "images\\rings\\10\\10_0025_32.jpg",
     "images\\rings\\10\\10_0026_32.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3596,13 +3276,13 @@
 
 {
   "id": "no10.33",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0027_33.jpg",
     "images\\rings\\10\\10_0028_33.jpg",
     "images\\rings\\10\\10_0029_33.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3620,13 +3300,13 @@
 
 {
   "id": "no10.34",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0030_34.jpg",
     "images\\rings\\10\\10_0031_34.jpg",
     "images\\rings\\10\\10_0032_34.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3644,13 +3324,13 @@
 
 {
   "id": "no10.35",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0033_35.jpg",
     "images\\rings\\10\\10_0034_35.jpg",
     "images\\rings\\10\\10_0035_35.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3668,13 +3348,13 @@
 
 {
   "id": "no10.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0036_36.jpg",
     "images\\rings\\10\\10_0037_36.jpg",
     "images\\rings\\10\\10_0038_36.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3692,13 +3372,13 @@
 
 {
   "id": "no10.37",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0039_37.jpg",
     "images\\rings\\10\\10_0040_37.jpg",
     "images\\rings\\10\\10_0041_37.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3716,13 +3396,13 @@
 
 {
   "id": "no10.38",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0042_38.jpg",
     "images\\rings\\10\\10_0043_38.jpg",
     "images\\rings\\10\\10_0044_38.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3740,13 +3420,13 @@
 
 {
   "id": "no10.39",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0045_39.jpg",
     "images\\rings\\10\\10_0046_39.jpg",
     "images\\rings\\10\\10_0047_39.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3764,13 +3444,13 @@
 
 {
   "id": "no10.40",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0048_40.jpg",
     "images\\rings\\10\\10_0049_40.jpg",
     "images\\rings\\10\\10_0049_40.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3788,13 +3468,13 @@
 
 {
   "id": "no10.41",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0051_41.jpg",
     "images\\rings\\10\\10_0052_41.jpg",
     "images\\rings\\10\\10_0053_41.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3812,13 +3492,13 @@
 
 {
   "id": "no10.42",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0054_42.jpg",
     "images\\rings\\10\\10_0055_42.jpg",
     "images\\rings\\10\\10_0056_42.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3836,13 +3516,13 @@
 
 {
   "id": "no10.43",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0057_43.jpg",
     "images\\rings\\10\\10_0058_43.jpg",
     "images\\rings\\10\\10_0059_43.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3860,14 +3540,14 @@
 
 {
   "id": "no10.44",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0060_44.jpg",
     "images\\rings\\10\\10_0061_44.jpg",
     "images\\rings\\10\\10_0062_44.jpg",
     "images\\rings\\10\\10_0063_44.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3885,13 +3565,13 @@
 
 {
   "id": "no10.45",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0064_45.jpg",
     "images\\rings\\10\\10_0065_45.jpg",
     "images\\rings\\10\\10_0066_45.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3909,13 +3589,13 @@
 
 {
   "id": "no10.46",
-  "collection": null,
+  "collection": "stacking",
   "images": [
     "images\\rings\\10\\10_0067_46.jpg",
     "images\\rings\\10\\10_0068_46.jpg",
     "images\\rings\\10\\10_0069_46.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3933,13 +3613,13 @@
 
 {
   "id": "no10.47",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\10\\10_0070_47.jpg",
     "images\\rings\\10\\10_0071_47.jpg",
     "images\\rings\\10\\10_0072_47.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3957,14 +3637,14 @@
 
 {
   "id": "no10.48",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\10\\10_0073_48.jpg",
     "images\\rings\\10\\10_0074_48.jpg",
     "images\\rings\\10\\10_0075_48.jpg",
     "images\\rings\\10\\10_0076_48.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -3982,13 +3662,13 @@
 
 {
   "id": "no9.1",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\9\\9_0000_1.jpg",
     "images\\rings\\9\\9_0001_1.jpg",
     "images\\rings\\9\\9_0002_1.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4006,14 +3686,14 @@
 
 {
   "id": "no9.10",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\9\\9_0030_10.jpg",
     "images\\rings\\9\\9_0031_10.jpg",
     "images\\rings\\9\\9_0032_10.jpg",
     "images\\rings\\9\\9_0033_10.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4031,13 +3711,13 @@
 
 {
   "id": "no9.11",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\9\\9_0034_11.jpg",
     "images\\rings\\9\\9_0035_11.jpg",
     "images\\rings\\9\\9_0036_11.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4055,13 +3735,13 @@
 
 {
   "id": "no9.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\9\\9_0037_12.jpg",
     "images\\rings\\9\\9_0038_12.jpg",
     "images\\rings\\9\\9_0039_12.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4079,13 +3759,13 @@
 
 {
   "id": "no9.13",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\9\\9_0040_13.jpg",
     "images\\rings\\9\\9_0041_13.jpg",
     "images\\rings\\9\\9_0042_13.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4103,14 +3783,14 @@
 
 {
   "id": "no9.14",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0043_14.jpg",
     "images\\rings\\9\\9_0044_14.jpg",
     "images\\rings\\9\\9_0045_14.jpg",
     "images\\rings\\9\\9_0046_14.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4128,14 +3808,14 @@
 
 {
   "id": "no9.15",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\9\\9_0047_15.jpg",
     "images\\rings\\9\\9_0048_15.jpg",
     "images\\rings\\9\\9_0049_15.jpg",
     "images\\rings\\9\\9_0050_15.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4153,14 +3833,14 @@
 
 {
   "id": "no9.16",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0051_16.jpg",
     "images\\rings\\9\\9_0052_16.jpg",
     "images\\rings\\9\\9_0053_16.jpg",
     "images\\rings\\9\\9_0054_16.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4178,14 +3858,14 @@
 
 {
   "id": "no9.17",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0055_17.jpg",
     "images\\rings\\9\\9_0056_17.jpg",
     "images\\rings\\9\\9_0057_17.jpg",
     "images\\rings\\9\\9_0058_17.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4203,14 +3883,14 @@
 
 {
   "id": "no9.18",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\9\\9_0059_18.jpg",
     "images\\rings\\9\\9_0060_18.jpg",
     "images\\rings\\9\\9_0061_18.jpg",
     "images\\rings\\9\\9_0062_18.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4228,13 +3908,13 @@
 
 {
   "id": "no9.19",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0063_19.jpg",
     "images\\rings\\9\\9_0064_19.jpg",
     "images\\rings\\9\\9_0065_19.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4252,13 +3932,13 @@
 
 {
   "id": "no9.2",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0003_2.jpg",
     "images\\rings\\9\\9_0004_2.jpg",
     "images\\rings\\9\\9_0005_2.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4276,13 +3956,13 @@
 
 {
   "id": "no9.20",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0066_20.jpg",
     "images\\rings\\9\\9_0067_20.jpg",
     "images\\rings\\9\\9_0068_20.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4300,14 +3980,14 @@
 
 {
   "id": "no9.21",
-  "collection": null,
+  "collection": "stacking",
   "images": [
     "images\\rings\\9\\9_0069_21.jpg",
     "images\\rings\\9\\9_0070_21.jpg",
     "images\\rings\\9\\9_0071_21.jpg",
     "images\\rings\\9\\9_0072_21.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4325,13 +4005,13 @@
 
 {
   "id": "no9.22",
-  "collection": null,
+  "collection": "independent",
   "images": [
     "images\\rings\\9\\9_0073_22.jpg",
     "images\\rings\\9\\9_0074_22.jpg",
     "images\\rings\\9\\9_0075_22.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4349,13 +4029,13 @@
 
 {
   "id": "no9.23",
-  "collection": null,
+  "collection": "stacking",
   "images": [
     "images\\rings\\9\\9_0076_23.jpg",
     "images\\rings\\9\\9_0077_23.jpg",
     "images\\rings\\9\\9_0078_23.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4373,13 +4053,13 @@
 
 {
   "id": "no9.24",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\9\\9_0079_24.jpg",
     "images\\rings\\9\\9_0080_24.jpg",
     "images\\rings\\9\\9_0081_24.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4396,14 +4076,38 @@
 },
 
 {
+  "id": "no9.25",
+  "collection": "timeless",
+  "images": [
+    "images\\rings\\9\\9_0082_25.jpg",
+    "images\\rings\\9\\9_0083_25.jpg",
+    "images\\rings\\9\\9_0084_25.jpg"
+  ],
+  "name": "Cincin Kawin",
+  "price": "",
+  "description": "",
+  "specs": {
+    "ringWidth": {
+      "wanita": "",
+      "pria": ""
+    },
+    "gem": {
+      "wanita": "",
+      "pria": ""
+    }
+  },
+  "detailLink": "item.html?id=no9.25"
+},
+
+{
   "id": "no9.3",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\9\\9_0006_3.jpg",
     "images\\rings\\9\\9_0007_3.jpg",
     "images\\rings\\9\\9_0008_3.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4421,14 +4125,14 @@
 
 {
   "id": "no9.4",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\9\\9_0009_4.jpg",
     "images\\rings\\9\\9_0010_4.jpg",
     "images\\rings\\9\\9_0011_4.jpg",
     "images\\rings\\9\\9_0012_4.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4446,13 +4150,13 @@
 
 {
   "id": "no9.5",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\9\\9_0013_5.jpg",
     "images\\rings\\9\\9_0014_5.jpg",
     "images\\rings\\9\\9_0015_5.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4470,13 +4174,13 @@
 
 {
   "id": "no9.6",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\9\\9_0016_6.jpg",
     "images\\rings\\9\\9_0017_6.jpg",
     "images\\rings\\9\\9_0018_6.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4494,13 +4198,13 @@
 
 {
   "id": "no9.7",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\9\\9_0019_7.jpg",
     "images\\rings\\9\\9_0020_7.jpg",
     "images\\rings\\9\\9_0021_7.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4518,14 +4222,14 @@
 
 {
   "id": "no9.8",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\9\\9_0022_8.jpg",
     "images\\rings\\9\\9_0023_8.jpg",
     "images\\rings\\9\\9_0024_8.jpg",
     "images\\rings\\9\\9_0025_8.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4543,14 +4247,14 @@
 
 {
   "id": "no9.9",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\9\\9_0026_9.jpg",
     "images\\rings\\9\\9_0027_9.jpg",
     "images\\rings\\9\\9_0028_9.jpg",
     "images\\rings\\9\\9_0029_9.jpg"
   ],
-  "name": "?",
+  "name": "Cincin Kawin",
   "price": "",
   "description": "",
   "specs": {
@@ -4568,7 +4272,7 @@
 
 {
   "id": "ocr1.12",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\OCR\\7_0056_108 Oscar 1.12.jpg",
     "images\\rings\\OCR\\7_0057_108 Oscar 1.12.jpg",
@@ -4593,7 +4297,7 @@
 
 {
   "id": "ocr2.11",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\OCR\\7_0060_109 Oscar 2.11.jpg",
     "images\\rings\\OCR\\7_0061_109 Oscar 2.11.jpg",
@@ -4617,7 +4321,7 @@
 
 {
   "id": "ocr3.11",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\OCR\\7_0063_110 Oscar 3.11.jpg",
     "images\\rings\\OCR\\7_0064_110 Oscar 3.11.jpg",
@@ -4642,7 +4346,7 @@
 
 {
   "id": "ocr4.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\OCR\\7_0067_111 Oscar 4.11.jpg",
     "images\\rings\\OCR\\7_0068_111 Oscar 4.11.jpg",
@@ -4667,7 +4371,7 @@
 
 {
   "id": "ocr5.11",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\OCR\\7_0071_112 Oscar 5.11.jpg",
     "images\\rings\\OCR\\7_0072_112 Oscar 5.11.jpg",
@@ -4691,7 +4395,7 @@
 
 {
   "id": "ocr6.11",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images\\rings\\OCR\\7_0074_113 Oscar 6.11.jpg",
     "images\\rings\\OCR\\7_0075_113 Oscar 6.11.jpg",
@@ -4716,7 +4420,7 @@
 
 {
   "id": "scy1.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\SCY\\6_0022_77 Stacey 1.12.jpg",
     "images\\rings\\SCY\\6_0023_77 Stacey 1.12.jpg",
@@ -4740,7 +4444,7 @@
 
 {
   "id": "scy2.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\SCY\\6_0025_78 Stacey 2.12.jpg",
     "images\\rings\\SCY\\6_0026_78 Stacey 2.12.jpg",
@@ -4764,7 +4468,7 @@
 
 {
   "id": "sna1.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\SNA\\6_0034_81 Sena 1.12.jpg",
     "images\\rings\\SNA\\6_0035_81 Sena 1.12.jpg",
@@ -4788,7 +4492,7 @@
 
 {
   "id": "sna2.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\SNA\\6_0039_82 Sena 2.12.jpg",
     "images\\rings\\SNA\\6_0040_82 Sena 2.12.jpg",
@@ -4812,7 +4516,7 @@
 
 {
   "id": "sna3.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\SNA\\6_0040_83 Sena 3.12.jpg",
     "images\\rings\\SNA\\6_0041_83 Sena 3.12.jpg",
@@ -4837,7 +4541,7 @@
 
 {
   "id": "sta1.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\STA\\6_0044_84 Stasya 1.12.jpg",
     "images\\rings\\STA\\6_0045_84 Stasya 1.12.jpg",
@@ -4861,7 +4565,7 @@
 
 {
   "id": "sta2.12",
-  "collection": null,
+  "collection": "timeless",
   "images": [
     "images\\rings\\STA\\6_0047_85 Stasya 2.12.jpg",
     "images\\rings\\STA\\6_0048_85 Stasya 2.12.jpg",
@@ -4885,7 +4589,7 @@
 
 {
   "id": "sta3.12",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images\\rings\\STA\\6_0050_86 Stasya3.12.jpg",
     "images\\rings\\STA\\6_0051_86 Stasya3.12.jpg",
@@ -4909,7 +4613,7 @@
 
 {
   "id": "vee1.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/VEE/Vee 1.36 37.jpg",
     "images/rings/VEE/Vee 1.36 38.jpg",
@@ -4933,7 +4637,7 @@
 
 {
   "id": "vee2.36",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/VEE/Vee 2.36 40.jpg",
     "images/rings/VEE/Vee 2.36 41.jpg",
@@ -4957,7 +4661,7 @@
 
 {
   "id": "vee3.11",
-  "collection": null,
+  "collection": "couple",
   "images": [
     "images/rings/VEE/Vee 3.11 43.jpg",
     "images/rings/VEE/Vee 3.11 44.jpg",
@@ -4982,7 +4686,7 @@
 
 {
   "id": "vee4.11",
-  "collection": null,
+  "collection": "complement",
   "images": [
     "images/rings/VEE/Vee 4.11 47.jpg",
     "images/rings/VEE/Vee 4.11 48.jpg",
@@ -5002,5 +4706,53 @@
     }
   },
   "detailLink": "item.html?id=vee4.11"
+},
+
+{
+  "id": "vee5.11",
+  "collection": "couple",
+  "images": [
+    "images\\rings\\VEE\\6_0002_69 Vee 5.11.jpg",
+    "images\\rings\\VEE\\6_0001_69 Vee 5.11.jpg",
+    "images\\rings\\VEE\\6_0000_69 Vee 5.11.jpg"
+  ],
+  "name": "Vee 5.11",
+  "price": "",
+  "description": "",
+  "specs": {
+    "ringWidth": {
+      "wanita": "",
+      "pria": ""
+    },
+    "gem": {
+      "wanita": "",
+      "pria": ""
+    }
+  },
+  "detailLink": "item.html?id=vee5.11"
+},
+
+{
+  "id": "vee6.11",
+  "collection": "couple",
+  "images": [
+    "images\\rings\\VEE\\6_0003_70 Vee 6.11.jpg",
+    "images\\rings\\VEE\\6_0004_70 Vee 6.11.jpg",
+    "images\\rings\\VEE\\6_0005_70 Vee 6.11.jpg"
+  ],
+  "name": "Vee 6.11",
+  "price": "",
+  "description": "",
+  "specs": {
+    "ringWidth": {
+      "wanita": "",
+      "pria": ""
+    },
+    "gem": {
+      "wanita": "",
+      "pria": ""
+    }
+  },
+  "detailLink": "item.html?id=vee6.11"
 }
 ]
