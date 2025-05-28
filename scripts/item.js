@@ -26,50 +26,81 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Update specs table
     const table = document.querySelector(".detail-table");
-
-    table.innerHTML = `
-      <tr>
-                <th>&#9642; &nbsp; Cincin</th>
-                <td>Wanita</td>
-                <td>Pria</td>
-              </tr>
-              <tr>
-                <th>&#9642; &nbsp; Ring Width</th>
-                <td>${item.specs.ringWidth.wanita}</td>
-                <td>${item.specs.ringWidth.pria}</td>
-              </tr>
-              <tr>
-                <th>&#9642; &nbsp; Gem Spec</th>
-                <td>${item.specs.gem.wanita}</td>
-                <td>${item.specs.gem.pria}</td>
-              </tr>
-              <tr>
-                <th>&#9642; &nbsp; Chrome</th>
-                <td>
-                  White<br>
-                  Rose<br>
-                  Yellow<br>               
-                </td>
-                <td>
-                  White D/G<br>
-                  Rose D/G<br>
-                  Yellow D/G<br>
-                </td>
-              </tr>
-              <tr>
-                <th>&#9642; &nbsp; Material</th>
-                <td>
-                  Platinum V<br>
-                  Platinum X<br>
-                  Gold 17k<br>
-                  Gold 16k<br>
-                </td>
-                <td>
-                  Platinum V<br>
-                  Platinum X<br>
-                </td>
-              </tr>
+    const breadcrumb = document.querySelector(".breadcrumb-navigation");
+    
+    breadcrumb.innerHTML = `
+      <a class="breadcrumb-item" href="collection.html">Koleksi</a>
+      <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
+      <a class="breadcrumb-item" href="item.html?id=${item.id}">${item.id}</a>
     `;
+
+    // Make the design text sentence case
+    function toSentenceCase(text) {
+      return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    }
+
+    const rawText = `${item.collection} Design`;
+    const sentenceCase = toSentenceCase(rawText);
+    const designText = document.querySelector(".design-text-container");
+
+    designText.innerHTML = `
+    <a class="design-text" href="">${sentenceCase}</a>
+    `;
+
+    // Assigning detail content
+    const ringWidthW = document.querySelector(".ring-width-women");
+    const ringWidthM = document.querySelector(".ring-width-men");
+    const gemSpecsW = document.querySelector(".gem-specs-women");
+    const gemSpecsM = document.querySelector(".gem-specs-men");
+
+    ringWidthW.innerHTML = `${item.specs.ringWidth.wanita}` || "-" ;
+    ringWidthM.innerText = `${item.specs.ringWidth.pria}` || "-";
+    gemSpecsW.innerText = `${item.specs.gem.wanita}` || "-";
+    gemSpecsM.innerText = `${item.specs.gem.pria}` || "-";
+
+    // table.innerHTML = `
+    //   <tr>
+    //             <th>&#9642; &nbsp; Cincin</th>
+    //             <td>Wanita</td>
+    //             <td>Pria</td>
+    //           </tr>
+    //           <tr>
+    //             <th>&#9642; &nbsp; Ring Width</th>
+    //             <td>${item.specs.ringWidth.wanita}</td>
+    //             <td>${item.specs.ringWidth.pria}</td>
+    //           </tr>
+    //           <tr>
+    //             <th>&#9642; &nbsp; Gem Spec</th>
+    //             <td>${item.specs.gem.wanita}</td>
+    //             <td>${item.specs.gem.pria}</td>
+    //           </tr>
+    //           <tr>
+    //             <th>&#9642; &nbsp; Chrome</th>
+    //             <td>
+    //               White<br>
+    //               Rose<br>
+    //               Yellow<br>               
+    //             </td>
+    //             <td>
+    //               White D/G<br>
+    //               Rose D/G<br>
+    //               Yellow D/G<br>
+    //             </td>
+    //           </tr>
+    //           <tr>
+    //             <th>&#9642; &nbsp; Material</th>
+    //             <td>
+    //               Platinum V<br>
+    //               Platinum X<br>
+    //               Gold 17k<br>
+    //               Gold 16k<br>
+    //             </td>
+    //             <td>
+    //               Platinum V<br>
+    //               Platinum X<br>
+    //             </td>
+    //           </tr>
+    // `;
 
   } catch (error) {
     console.error("Failed to load item:", error);

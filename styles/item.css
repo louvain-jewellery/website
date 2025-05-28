@@ -72,11 +72,32 @@
   flex: 1;
 }
 
+.breadcrumb-navigation,
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.breadcrumb-item,
+.filter-section a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.design-text-container{
+  margin-bottom: 50px;
+  /* margin-bottom: 10px; */
+}
+
 .item-name {
   font-size: 30px;
   font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
   font-weight: 500;
   margin: 0 0 10px 0;
+  /* margin-bottom: 50px; */
 }
 
 .item-description {
@@ -108,25 +129,32 @@
   flex: 1;
 }
 
-.gender-container span {
+.gender-type {
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 10px 0;
 }
 
-.selection-container {
+.detail-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   border-bottom: 1.5px solid black;
   padding: 7.5px 0;
   margin-bottom: 7px;
 }
 
-.selection-container label {
+.detail-title {
   font-size: 16px;
   font-weight: 500;
+}
+
+.detail-content {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 26px;
 }
 
 .ring-size-selection,
@@ -471,7 +499,8 @@
 
 .notes-box,
 .buttons-container,
-.ring-guide-button {
+.ring-guide-button,
+.table-title-text {
   display: none;
 }
 
