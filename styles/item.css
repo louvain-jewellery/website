@@ -469,6 +469,11 @@
   transform: scale(1.5);
 }
 
+.notes-box,
+.buttons-container,
+.ring-guide-button {
+  display: none;
+}
 
 @media (max-width: 1024px) {
   .item-container {
