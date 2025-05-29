@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     //               Platinum X<br>
     //             </td>
     //           </tr>
-    // `;
+  
 
   } catch (error) {
     console.error("Failed to load item:", error);
