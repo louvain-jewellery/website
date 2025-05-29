@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Update specs table
     const table = document.querySelector(".detail-table");
-    const breadcrumb = document.querySelector(".breadcrumb-navigation");
+    // const breadcrumb = document.querySelector(".breadcrumb-navigation");
     
-    breadcrumb.innerHTML = `
-      <a class="breadcrumb-item" href="collection.html">Koleksi</a>
-      <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
-      <a class="breadcrumb-item" href="item.html?id=${item.id}">${item.id}</a>
-    `;
+    // breadcrumb.innerHTML = `
+    //   <a class="breadcrumb-item" href="collection.html">Koleksi</a>
+    //   <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
+    //   <a class="breadcrumb-item" href="item.html?id=${item.id}">${item.id}</a>
+    // `;
 
     // Make the design text sentence case
     function toSentenceCase(text) {
