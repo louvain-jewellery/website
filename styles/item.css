@@ -92,12 +92,15 @@
   /* margin-bottom: 10px; */
 }
 
+.design-text {
+  text-decoration: none;
+}
+
 .item-name {
-  font-size: 30px;
+  font-size: 38px;
   font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
   font-weight: 500;
-  margin: 0 0 10px 0;
-  /* margin-bottom: 50px; */
+  margin: 0 0 5px 0;
 }
 
 .item-description {
