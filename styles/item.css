@@ -131,12 +131,6 @@
   flex: 1;
 }
 
-.gender-type {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 10px 0;
-}
-
 .detail-container {
   display: flex;
   flex-direction: row;
@@ -147,6 +141,7 @@
   margin-bottom: 7px;
 }
 
+.gender-type,
 .detail-title {
   font-size: 16px;
   font-weight: 500;
