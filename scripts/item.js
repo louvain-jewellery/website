@@ -36,10 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector(".item-description").textContent = item.description;
     document.querySelector(".price-tag").textContent = item.price;
 
-    // Update specs table
-    const table = document.querySelector(".detail-table");
     // const breadcrumb = document.querySelector(".breadcrumb-navigation");
-    
     // breadcrumb.innerHTML = `
     //   <a class="breadcrumb-item" href="collection.html">Koleksi</a>
     //   <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
@@ -70,6 +67,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     gemSpecsW.innerText = `${item.specs.gem.wanita}` || "-";
     gemSpecsM.innerText = `${item.specs.gem.pria}` || "-";
 
+
+    // Update specs table
+    // const table = document.querySelector(".detail-table");
     // table.innerHTML = `
     //   <tr>
     //             <th>&#9642; &nbsp; Cincin</th>
