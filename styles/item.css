@@ -72,16 +72,14 @@
   flex: 1;
 }
 
-.breadcrumb-navigation,
-.filter-section {
-  display: flex;
+.breadcrumb-navigation {
+  display: none;
   flex-direction: row;
   padding: 0;
   margin-bottom: 30px;
 }
 
-.breadcrumb-item,
-.filter-section a {
+.breadcrumb-item {
   color: black;
   font-size: 14px;
   text-decoration: none;
@@ -104,6 +102,7 @@
 }
 
 .item-description {
+  display: none;
   font-size: 16px;
   margin: 0 0 5px 0 ;
   line-height: 26px;
@@ -501,6 +500,7 @@
 }
 
 .notes-box,
+.notes-box-label,
 .buttons-container,
 .ring-guide-button,
 .table-title-text {

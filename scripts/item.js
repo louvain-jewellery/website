@@ -19,29 +19,29 @@ document.addEventListener("DOMContentLoaded", async () => {
       img.src = item.images[index + 1] || item.images[0];
     });
 
-    // if (item.collection === 'timeless') {
-    //   item.description = "Cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.";
-    // } else if (item.collection === 'stacking') {
-    //   item.description = "Cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.";
-    // } else if (item.collection === 'couple') {
-    //   item.description = "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.";
-    // } else if (item.collection === 'complement') {
-    //   item.description = "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak.";
-    // } else if (item.collection === 'independent') {
-    //   item.description = "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.";
-    // }
+    if (item.collection === 'timeless') {
+      item.description = "Cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.";
+    } else if (item.collection === 'stacking') {
+      item.description = "Cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.";
+    } else if (item.collection === 'couple') {
+      item.description = "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.";
+    } else if (item.collection === 'complement') {
+      item.description = "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak.";
+    } else if (item.collection === 'independent') {
+      item.description = "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.";
+    }
 
     // Update name, description, price
     document.querySelector(".item-name").textContent = item.name;
     document.querySelector(".item-description").textContent = item.description;
     document.querySelector(".price-tag").textContent = item.price;
 
-    // const breadcrumb = document.querySelector(".breadcrumb-navigation");
-    // breadcrumb.innerHTML = `
-    //   <a class="breadcrumb-item" href="collection.html">Koleksi</a>
-    //   <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
-    //   <a class="breadcrumb-item" href="item.html?id=${item.id}">${item.id}</a>
-    // `;
+    const breadcrumb = document.querySelector(".breadcrumb-navigation");
+    breadcrumb.innerHTML = `
+      <a class="breadcrumb-item" href="collection.html">Koleksi</a>
+      <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
+      <a class="breadcrumb-item" href="item.html?id=${item.id}">${item.id}</a>
+    `;
 
     // Make the design text sentence case
     function toSentenceCase(text) {
@@ -66,54 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     ringWidthM.innerText = `${item.specs.ringWidth.pria}` || "-";
     gemSpecsW.innerText = `${item.specs.gem.wanita}` || "-";
     gemSpecsM.innerText = `${item.specs.gem.pria}` || "-";
-
-
-    // Update specs table
-    // const table = document.querySelector(".detail-table");
-    // table.innerHTML = `
-    //   <tr>
-    //             <th>&#9642; &nbsp; Cincin</th>
-    //             <td>Wanita</td>
-    //             <td>Pria</td>
-    //           </tr>
-    //           <tr>
-    //             <th>&#9642; &nbsp; Ring Width</th>
-    //             <td>${item.specs.ringWidth.wanita}</td>
-    //             <td>${item.specs.ringWidth.pria}</td>
-    //           </tr>
-    //           <tr>
-    //             <th>&#9642; &nbsp; Gem Spec</th>
-    //             <td>${item.specs.gem.wanita}</td>
-    //             <td>${item.specs.gem.pria}</td>
-    //           </tr>
-    //           <tr>
-    //             <th>&#9642; &nbsp; Chrome</th>
-    //             <td>
-    //               White<br>
-    //               Rose<br>
-    //               Yellow<br>               
-    //             </td>
-    //             <td>
-    //               White D/G<br>
-    //               Rose D/G<br>
-    //               Yellow D/G<br>
-    //             </td>
-    //           </tr>
-    //           <tr>
-    //             <th>&#9642; &nbsp; Material</th>
-    //             <td>
-    //               Platinum V<br>
-    //               Platinum X<br>
-    //               Gold 17k<br>
-    //               Gold 16k<br>
-    //             </td>
-    //             <td>
-    //               Platinum V<br>
-    //               Platinum X<br>
-    //             </td>
-    //           </tr>
   
-
   } catch (error) {
     console.error("Failed to load item:", error);
   }
@@ -186,26 +139,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   
   document.querySelector(".order-button").addEventListener("click", sendToWhatsApp);
 });
-
-// === TABLE DETAILS ===
-
-// document.querySelector(".table-title-text").addEventListener("click", toggleTable);
-// function toggleTable(event) {
-//   const table = document.getElementById("detailTable");
-//   const button = event.target;
-//   const isHidden = getComputedStyle(table).display === "none";
-
-//   if (isHidden) {
-//     table.style.display = "table";
-//     button.style.marginBottom = "10px";
-//     button.textContent = "Detail Cincin ▴";
-//   } else {
-//     table.style.display = "none";
-//     button.textContent = "Detail Cincin ▾";
-//     button.style.marginBottom = "50px";
-
-//   }
-// }
 
 function sendToWhatsApp() {
   const itemName = document.querySelector('.item-name')?.innerText || 'Produk';
