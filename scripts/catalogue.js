@@ -32,7 +32,7 @@ const collectionData = {
     },
     independent: {
         title: "Independent Collection",
-        description: "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita. ",
+        description: "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.",
         image: "images/independent.png"
     }
 };
