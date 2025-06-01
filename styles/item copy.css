@@ -74,7 +74,7 @@
 
 .item-name {
   font-size: 30px;
-  font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
+  font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
   font-weight: 500;
   margin: 0 0 10px 0;
 }
@@ -318,7 +318,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: "Cormorant Garamont", 'Times New Roman', Times, serif;
+  font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 20px;
