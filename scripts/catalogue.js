@@ -27,7 +27,7 @@ const collectionData = {
     },
     complement: {
         title: "Complement Collection",
-        description: "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak",
+        description: "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak.",
         image: "images/complement.png"
     },
     independent: {

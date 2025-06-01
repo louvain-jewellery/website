@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     if (item.collection === 'timeless') {
-      item.description = "Cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.";
+      item.description = 'Cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.';
     } else if (item.collection === 'stacking') {
-      item.description = "Cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.";
+      item.description = 'Cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.';
     } else if (item.collection === 'couple') {
-      item.description = "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.";
+      item.description = 'Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.';
     } else if (item.collection === 'complement') {
-      item.description = "Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak.";
+      item.description = 'Cincin kawin yang memiliki didesain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak.';
     } else if (item.collection === 'independent') {
-      item.description = "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.";
+      item.description = 'Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.';
     }
 
     // Update name, description, price
