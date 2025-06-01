@@ -9,7 +9,7 @@
 }
 
 .material-title-text {
-  font-family: "Cormorand Garamont", 'Times New Roman', Times, serif;
+  font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
   font-size: 35px;
   font-weight: 500;
   margin: 0 0 15px 0;
@@ -42,7 +42,7 @@
 .material-content-text h2 {
   margin: 0 0 10px 0 ;
   font-size: 28px;
-  font-family: "Cormorand Garamont", 'Times New Roman', Times, serif;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-weight: 500;
 }
 
@@ -67,7 +67,7 @@
   }
   
   .material-body-text {
-    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-align: center;
     margin: 0;
