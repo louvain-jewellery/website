@@ -140,55 +140,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.querySelector(".order-button").addEventListener("click", sendToWhatsApp);
 });
 
-function sendToWhatsApp() {
-  const itemName = document.querySelector('.item-name')?.innerText || 'Produk';
-  const itemURL = window.location.href;
-
-  const ringSizeW = document.querySelector('.ring-size-selection.woman')?.value || '-';
-  const gemW = document.querySelector('.gem-selection.woman')?.value || '-';
-  const chromeW = document.querySelector('.chrome-selection.woman')?.value || '-';
-  const materialW = document.querySelector('.material-selection.woman')?.value || '-';
-  const engravingW = document.querySelector('.engraving-box.woman')?.value || '-';
-
-  const ringSizeM = document.querySelector('.ring-size-selection.man')?.value || '-';
-  const gemM = document.querySelector('.gem-selection.man')?.value || '-';
-  const chromeM = document.querySelector('.chrome-selection.man')?.value || '-';
-  const materialM = document.querySelector('.material-selection.man')?.value || '-';
-  const engravingM = document.querySelector('.engraving-box.man')?.value || '-';
-  const notesBox = document.querySelector('.notes-box')?.value || '';
-
-  const message = `
-Halo, saya ingin memesan cincin dengan detail berikut:
-
-Nama Produk: ${itemName}
-Link Produk: ${itemURL}
-
-• Cincin Wanita:
-- Ukuran: ${ringSizeW}
-- Gem: ${gemW}
-- Chrome: ${chromeW}
-- Material: ${materialW}
-- Ukiran: ${engravingW}
-
-• Cincin Pria:
-- Ukuran: ${ringSizeM}
-- Gem: ${gemM}
-- Chrome: ${chromeM}
-- Material: ${materialM}
-- Ukiran: ${engravingM}
-
-Pesan: ${notesBox}
-  `;
-
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappNumber = '6282174532606'; // ganti dengan nomor WA tujuan
-
-  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-  window.open(whatsappURL, '_blank');
-}
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const slider = document.querySelector('.item-image-slider');
 

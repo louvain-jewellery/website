@@ -1,7 +1,7 @@
 .item-container {
   display: flex;
   flex-direction: row;
-  margin: 0 0 50px 50px;
+  margin: 5px 0 50px 50px;
 }
 
 .item-image-container {
@@ -11,7 +11,7 @@
 
 .item-image-slider {
   display: flex;
-  position: relative;
+  position: relative; 
   justify-content: flex-start;
   flex-direction: row;
   -ms-overflow-style: none;
