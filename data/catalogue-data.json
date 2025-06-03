@@ -99,7 +99,7 @@
 
 {
   "id": "alc1.47",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/ALC/3_0010_ALC 1.47.jpg",
     "images/rings/ALC/3_0009_ALC 1.47.jpg",
@@ -124,7 +124,7 @@
 
 {
   "id": "alc2.47",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/ALC/3_0006_ALC 2.47.jpg",
     "images/rings/ALC/3_0005_ALC 2.47.jpg",
@@ -149,7 +149,7 @@
 
 {
   "id": "alc3.47",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/ALC/3_0002_ALC 3.47.jpg",
     "images/rings/ALC/3_0001_ALC 3.47.jpg",
@@ -174,7 +174,7 @@
 
 {
   "id": "alc4.47",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/ALC/4_0000_ALC 4.47.jpg",
     "images/rings/ALC/4_0001_ALC 4.47.jpg",
@@ -199,7 +199,7 @@
 
 {
   "id": "alc5.47",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/ALC/4_0006_ALC 5.47.jpg",
     "images/rings/ALC/4_0005_ALC 5.47.jpg",
@@ -709,7 +709,7 @@
 
 {
   "id": "bry10.48",
-  "collection": "timeless",
+  "collection": "independent",
   "images": [
     "images/rings/BRY/0001s_0000_BRY_10.48.jpg",
     "images/rings/BRY/0001s_0001_BRY_10.48.jpg",
@@ -1916,7 +1916,7 @@
 
 {
   "id": "fla2.12",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/FLA/6_0058_88 Fillia 2.12.jpg",
     "images/rings/FLA/6_0057_88 Fillia 2.12.jpg",
@@ -4077,7 +4077,7 @@
 
 {
   "id": "no9.3",
-  "collection": "timeless",
+  "collection": "complement",
   "images": [
     "images/rings/9/9_0008_3.jpg",
     "images/rings/9/9_0007_3.jpg",
@@ -4126,7 +4126,7 @@
 
 {
   "id": "no9.5",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/9/9_0013_5.jpg",
     "images/rings/9/9_0014_5.jpg",
@@ -4174,7 +4174,7 @@
 
 {
   "id": "no9.7",
-  "collection": "couple",
+  "collection": "timeless",
   "images": [
     "images/rings/9/9_0021_7.jpg",
     "images/rings/9/9_0020_7.jpg",
