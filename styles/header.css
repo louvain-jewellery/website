@@ -4,13 +4,15 @@
   position: fixed;
   height: 105px;
   top: 0;
+  font-family: 'Cormorant Garamond';
   left: 0;
   right: 0;
   border: none;
+  text-transform: uppercase;
 
   background-color: white;
   padding: 20px 50px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   align-items: center;
   z-index: 100;
