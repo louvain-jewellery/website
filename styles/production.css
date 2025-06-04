@@ -11,6 +11,7 @@
 .production-title-text {
   font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
   font-size: 35px;
+  line-height: 45px;
   font-weight: 500;
   margin: 0 0 15px 0;
   text-align: center;
@@ -19,6 +20,7 @@
 .production-body-text {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 26px;
   text-align: center;
   margin: 0;
   }
@@ -54,12 +56,14 @@
 .production-process-text h2 {
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-size: 28px;
+  line-height: 38px;
   font-weight: 500;
   margin: 0 0 8px 0;
 }
 
 .production-process-text p {
   font-size: 16px;
+  line-height: 26px;
   margin: 0;
 }
 
@@ -87,6 +91,7 @@
 
   .production-body-text {
     font-size: 14px;
+    line-height: 24px;
   }
   
   .production-process-text {
@@ -109,6 +114,7 @@
   
   .production-body-text {
     font-size: 16px;
+    line-height: 26px;
   }
 
   .production-process {
