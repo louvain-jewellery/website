@@ -84,7 +84,7 @@
   }
 
   .customize-content-container {
-    padding: 0 25px;
+    padding: 0;
     gap: 50px;
   }
 
@@ -101,6 +101,14 @@
   .customize-content img {
     aspect-ratio: 1/1;
     width: 100%;
+  }
+
+  .customize-text {
+    padding: 0 25px;
+  }
+
+  .even .customize-text {
+    padding: 0 25px;
   }
 
   .customize-text h2 {
