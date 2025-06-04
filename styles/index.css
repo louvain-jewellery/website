@@ -30,9 +30,9 @@
 
 .title-text {
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  font-size: 28px;
+  font-size: 35px;
+  line-height: 45px;
   font-weight: 500;
-  margin: 0 0 10px 0;
 }
 
 /* === BODY TEXT === */
@@ -40,7 +40,7 @@
 .body-text {
   font-size: 16px;
   margin: 0 0 10px 0;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 /* === BUTTONS === */
@@ -377,7 +377,7 @@
   /* === TITLE TEXT === */
 
   .title-text {
-    font-size: 24px;
+    font-size: 35px;
     text-align: center;
   }
 
