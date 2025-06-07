@@ -29,7 +29,7 @@
 /* === TITLE TEXT === */
 
 .title-text {
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
   font-size: 35px;
   line-height: 45px;
   font-weight: 500;
@@ -59,15 +59,15 @@
 
 /* === NEW COLLECTION === */
 
-.new-collection-section {
+.best-seller-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  padding: 0 30px;  
+  padding: 0 30px;
 }
 
-.new-collection-content {
+.best-seller-content {
   display: grid;
   grid-template-columns: repeat(4, 22.5vw);
   justify-content: center;
@@ -76,13 +76,13 @@
   gap: 1vw;
 }
 
-.new-collection-image {
+.best-seller-image {
   width: 22.5vw;
   aspect-ratio: 3/4;
   object-fit: cover;
 }
 
-.new-collection-button {
+.best-seller-button {
   color: black;
   border: 1px solid black;
 }
@@ -222,15 +222,14 @@
 }
 
 .packaging-image {
-  background-color:  #f9f8f2;
+  background-color: #f9f8f2;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-
-.packaging-image-container:hover .packaging-image{
+.packaging-image-container:hover .packaging-image {
   transform: scale(1.5);
 }
 
@@ -245,7 +244,6 @@
   padding: 0;
   margin: 0 0 50px 0;
   background-color: #796862;
-  
 }
 
 .location-content {
@@ -342,10 +340,9 @@
 
 .why-image-container img {
   width: 80px;
-  aspect-ratio: 1/1 ;
+  aspect-ratio: 1/1;
   margin-bottom: 5px;
 }
-
 
 @media (max-width: 1024px) {
   .hero-section,
@@ -356,7 +353,7 @@
     height: auto;
   }
 
-  .hero-background, 
+  .hero-background,
   .location-background {
     aspect-ratio: 1/1;
     object-position: 15%;
@@ -367,7 +364,7 @@
   .hero-content,
   .location-content,
   .customize-content {
-    color: black; 
+    color: black;
     position: static;
     align-items: center;
     max-width: none;
@@ -399,18 +396,32 @@
 
   /* === NEW COLLECTION === */
 
-  .new-collection-content {
-    grid-template-columns: repeat(2, 45.5vw);
-    gap: 10px;
+  .best-seller-section {
+    padding: 0;
   }
 
-  .new-collection-image {
+  .best-seller-content {
+    grid-template-columns: repeat(4, 45.5vw);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    grid-auto-flow: row;
+    scroll-snap-type: x mandatory;
+
+    padding: 0 25px;
+    justify-content: start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .best-seller-image {
     width: 45.5vw;
-    aspect-ratio: 1/1 ;
+    /* aspect-ratio: 1/1; */
   }
 
   /* === DESIGN SECTION === */
-  
 
   .design-content-container {
     grid-template-columns: repeat(5, 35vw);
@@ -447,7 +458,7 @@
     width: fit-content;
   }
 
-  .design-content a{
+  .design-content a {
     font-size: 12px;
   }
 
@@ -501,14 +512,14 @@
     aspect-ratio: 1/1;
     overflow: hidden;
   }
-  
+
   .packaging-image {
-    background-color:  #f9f8f2;
+    background-color: #f9f8f2;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
+
   /* === LOCATION SECTION === */
 
   .location-section {
@@ -528,25 +539,25 @@
     object-fit: cover;
     height: auto;
   }
-  
+
   /* === CTA SECTION === */
-  
+
   .cta-section {
     padding: 50px 25px;
     height: auto;
   }
-  
+
   .cta-image {
     height: 50px;
     margin-bottom: 50px;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     gap: 10px;
     margin: 0;
   }
-  
+
   .cta-buttons a {
     color: white;
     border: 1px solid white;
@@ -579,7 +590,7 @@
   }
 }
 
-@media (min-width:769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   /* === CTA SECTION === */
 
   .cta-section {

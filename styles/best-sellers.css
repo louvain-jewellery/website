@@ -1,0 +1,370 @@
+/* === HERO SECTION === */
+
+.best-hero-section {
+  position: relative;
+  background: radial-gradient(circle at 25% 50%, #36483c, #222e26);
+  /* background-color: #36483c; */
+  color: white;
+  width: 100%;
+  aspect-ratio: 4/1;
+  margin-bottom: 50px;
+}
+
+.best-hero-image {
+  position: absolute;
+  height: 50%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 65%;
+}
+
+.best-hero-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  max-width: 40%;
+}
+
+.best-hero-title-text {
+  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.best-hero-body-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.design-section {
+  display: grid;
+  grid-template-columns: repeat(5, 13vw);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 1vw;
+}
+
+.design-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.design-content a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.design-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13vw;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  background-color: rgb(248, 246, 242);
+}
+
+.design-image-link:hover {
+  border: 1px solid black;
+}
+
+.design-image-link img {
+  width: 70%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.design-image-link:hover img {
+  transform: scale(1.15);
+}
+
+.breadcrumb-navigation,
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-item,
+.filter-section a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.filter-section {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.catalogue-section {
+  display: grid;
+  grid-template-columns: repeat(4, 25.5%);
+  width: 100%;
+  padding: 0 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.catalogue-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.catalogue-image-link,
+.catalogue-image-link-overlay {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  border: 1px solid lightgray;
+}
+
+.catalogue-image,
+.catalogue-image-overlay {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  /* border: 1px solid lightgray; */
+}
+
+.favorite-button {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20px;
+  width: 12%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 100%;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.catalogue-overlay {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: white;
+  padding: 14px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.catalogue-item:hover .catalogue-overlay {
+  display: flex;
+}
+
+.catalogue-name-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 15px 0 15px 0;
+  color: black;
+}
+
+.catalogue-price-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 15px 0;
+}
+
+.catalogue-button {
+  opacity: 1;
+  font-size: 14px;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  font-weight: 500;
+  padding: 5px 15px 7.5px 15px;
+}
+
+.selected-collection {
+  border: 1px solid black;
+}
+
+@media (max-width: 1024px) {
+  /* === HERO SECTION === */
+
+  .collection-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    aspect-ratio: 1/1;
+    padding: 25px;
+    margin-bottom: 0;
+  }
+
+  .collection-hero-image {
+    position: static;
+    height: 30%;
+    transform: none;
+    right: 65%;
+    margin-bottom: 20px;
+  }
+
+  .collection-hero-content {
+    position: static;
+    text-align: center;
+    transform: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .collection-hero-body-text {
+    font-size: 14px;
+  }
+
+  .design-section {
+    grid-template-columns: repeat(5, 30vw);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    grid-auto-flow: row;
+    scroll-snap-type: x mandatory;
+
+    padding: 25px;
+    justify-content: start;
+    margin-bottom: 0;
+    gap: 10px;
+  }
+
+  .design-section::-webkit-scrollbar {
+    display: none;
+  }
+
+  .design-content a {
+    font-size: 14px;
+  }
+
+  .design-image-link {
+    width: 30vw;
+  }
+
+  .breadcrumb-navigation,
+  .filter-section {
+    padding: 0 25px;
+  }
+
+  .breadcrumb-item,
+  .filter-section a {
+    font-size: 12px;
+  }
+
+  .catalogue-section {
+    grid-template-columns: repeat(2, 48%);
+    gap: 15px;
+    padding: 0 25px;
+  }
+
+  .catalogue-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .catalogue-image-link {
+    display: none;
+  }
+
+  .catalogue-overlay {
+    position: static;
+    display: flex;
+    border: none;
+    padding: 0 0 25px 0;
+  }
+
+  .catalogue-item:hover .catalogue-overlay {
+    display: flex;
+  }
+
+  .favorite-button {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 100%;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .selected-collection {
+    border: 1px solid lightgray;
+  }
+
+  .catalogue-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .collection-hero-section {
+    aspect-ratio: 2/1;
+    padding: 0 50px;
+  }
+
+  .collection-hero-body-text {
+    font-size: 16px;
+  }
+
+  .design-section {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+  }
+
+  .design-image-link {
+    width: 20vw;
+  }
+
+  .breadcrumb-navigation,
+  .filter-section {
+    padding: 0 50px;
+  }
+
+  .catalogue-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 50px;
+  }
+}
