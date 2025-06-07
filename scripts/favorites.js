@@ -15,9 +15,9 @@ function toggleFavorite(item) {
   const existingIndex = favorites.findIndex(fav => fav.id === item.id);
   
   if (existingIndex >= 0) {
-      favorites.splice(existingIndex, 1);
+    favorites.splice(existingIndex, 1);
   } else {
-      favorites.push(item);
+    favorites.push(item);
   }
   
   saveFavorites(favorites);
@@ -35,10 +35,10 @@ function updateFavoriteButtons(itemId) {
   
   const buttons = document.querySelectorAll(`.favorite-button[data-item-id="${itemId}"]`);
   buttons.forEach(button => {
-      const imgSrc = isFavorited 
-          ? "icons/favorite_22dp_1F1F1F_FILL1_wght300_GRAD0_opsz24.svg"
-          : "icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg";
-      button.querySelector('img').src = imgSrc;
+    const imgSrc = isFavorited 
+      ? "icons/favorite_22dp_1F1F1F_FILL1_wght300_GRAD0_opsz24.svg"
+      : "icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg";
+    button.querySelector('img').src = imgSrc;
   });
 }
 
@@ -50,6 +50,6 @@ function showFeedback(message) {
   document.body.appendChild(feedback);
   
   setTimeout(() => {
-      feedback.remove();
+    feedback.remove();
   }, 2000);
 }

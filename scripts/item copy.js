@@ -189,23 +189,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // === TABLE DETAILS ===
 
-// document.querySelector(".table-title-text").addEventListener("click", toggleTable);
-// function toggleTable(event) {
-//   const table = document.getElementById("detailTable");
-//   const button = event.target;
-//   const isHidden = getComputedStyle(table).display === "none";
+document.querySelector(".table-title-text").addEventListener("click", toggleTable);
+function toggleTable(event) {
+  const table = document.getElementById("detailTable");
+  const button = event.target;
+  const isHidden = getComputedStyle(table).display === "none";
 
-//   if (isHidden) {
-//     table.style.display = "table";
-//     button.style.marginBottom = "10px";
-//     button.textContent = "Detail Cincin ▴";
-//   } else {
-//     table.style.display = "none";
-//     button.textContent = "Detail Cincin ▾";
-//     button.style.marginBottom = "50px";
+  if (isHidden) {
+    table.style.display = "table";
+    button.style.marginBottom = "10px";
+    button.textContent = "Detail Cincin ▴";
+  } else {
+    table.style.display = "none";
+    button.textContent = "Detail Cincin ▾";
+    button.style.marginBottom = "50px";
 
-//   }
-// }
+  }
+}
 
 function sendToWhatsApp() {
   const itemName = document.querySelector('.item-name')?.innerText || 'Produk';
