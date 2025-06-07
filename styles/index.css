@@ -401,7 +401,7 @@
   }
 
   .best-seller-content {
-    grid-template-columns: repeat(4, 35vw);
+    grid-template-columns: repeat(4, 60vw);
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
