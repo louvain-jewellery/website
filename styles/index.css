@@ -57,7 +57,7 @@
   width: fit-content;
 }
 
-/* === NEW COLLECTION === */
+/* === BEST SELLERS === */
 
 .best-seller-section {
   display: flex;
@@ -67,19 +67,42 @@
   padding: 0 30px;
 }
 
+.best-seller-content-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .best-seller-content {
   display: grid;
-  grid-template-columns: repeat(4, 22.5vw);
-  justify-content: center;
-  max-width: 100%;
+  grid-auto-flow: column;
+  grid-auto-columns: 22.5vw;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  width: 100%;
   margin-bottom: 25px;
   gap: 1vw;
+  justify-content: start;
 }
 
 .best-seller-image {
   width: 22.5vw;
   aspect-ratio: 3/4;
   object-fit: cover;
+}
+
+.scroll-button {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+
+  border: none;
+  border-radius: 100px;
 }
 
 .best-seller-button {
@@ -394,20 +417,23 @@
     color: black;
   }
 
-  /* === NEW COLLECTION === */
+  /* === BEST SELLERS === */
 
   .best-seller-section {
     padding: 0;
   }
 
   .best-seller-content {
-    grid-template-columns: repeat(4, 60vw);
+    display: grid;
+    position: relative;
+    grid-auto-flow: column;
+    grid-auto-columns: 60vw;
+
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    grid-auto-flow: row;
     scroll-snap-type: x mandatory;
 
     padding: 0 25px;
@@ -417,9 +443,10 @@
   }
 
   .best-seller-image {
-    width: 100%
+    width: 100%;
     /* aspect-ratio: 1/1; */
   }
+
 
   /* === DESIGN SECTION === */
 
