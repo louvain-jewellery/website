@@ -115,6 +115,13 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.scroll-button.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
 .scroll-button img {
   opacity: 0.7;
 }
