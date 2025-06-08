@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Best Sellers | Louvain Jewellery</title>
+    <title>Koleksi | Louvain Jewellery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="favicon.png">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/best-sellers.css">
 
-    <link rel="icon" href="favicon.png" />
-
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/dropdown.css" />
-
-    <link rel="stylesheet" href="styles/best-sellers.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header id="header" class="header"></header>
 
     <main>
       <!-- HERO SECTION -->
 
-      <section class="best-hero-section">
-        <img class="best-hero-image" alt="hero image" src="images/logo.png" />
-        <div class="best-hero-content">
-          <h2 class="best-hero-title-text">Best Sellers Item</h2>
-          <p class="best-hero-body-text"></p>
+      <section class="collection-hero-section">
+        <img class="collection-hero-image" src="images/logo.png">
+        <div class="collection-hero-content">
+          <h2 class="collection-hero-title-text"></h2>
+          <p class="collection-hero-body-text"></p>
         </div>
       </section>
-
+  
       <!-- BREADCRUMB NAVIGATION -->
 
       <div class="breadcrumb-navigation">
@@ -43,11 +40,11 @@
         <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
         <a class="breadcrumb-item" href="collection.html">Koleksi</a>
       </div>
-
+  
       <div class="filter-section">
         <a class="item-count">100 Items</a>
       </div>
-
+  
       <section class="catalogue-section" id="catalogue-section"></section>
     </main>
 
@@ -56,7 +53,7 @@
     <div class="overlay"></div>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/catalogue.js"></script>
+    <script src="scripts/best-sellers.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/overlay.js"></script>
     <script src="scripts/filter-product.js"></script>
