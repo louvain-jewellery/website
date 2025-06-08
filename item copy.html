@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/item.css" />
+
     <title>Item Info | LOUVAIN Jewellery</title>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" href="favicon.png">
-    
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/dropdown.css">
-
-    <link rel="stylesheet" href="styles/item.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="header" class="header"></header>
 
     <main>
       <section class="item-section">
-
         <div class="item-container">
           <div class="item-image-container">
             <div class="item-image-slider">
-              <img src="" class="item-image-top clickable-img" alt="Main Image" >
-              <img src="" alt="Thumbnail 1" class="item-image clickable-img">
-              <img src="" alt="Thumbnail 2" class="item-image clickable-img">
-              <img src="" alt="Thumbnail 3" class="item-image clickable-img">
+              <img
+                src=""
+                class="item-image-top clickable-img"
+                alt="Main Image"
+              />
+              <img src="" alt="Thumbnail 1" class="item-image clickable-img" />
+              <img src="" alt="Thumbnail 2" class="item-image clickable-img" />
+              <img src="" alt="Thumbnail 3" class="item-image clickable-img" />
             </div>
           </div>
-    
+
           <div class="item-detail-container">
             <h2 class="item-name"></h2>
             <p class="item-description"></p>
-    
-            <button class="table-title-text">
-              Detail Cincin &#9662;
-            </button>
+
+            <button class="table-title-text">Detail Cincin &#9662;</button>
             <table id="detailTable" class="detail-table"></table>
-            
+
             <span class="item-personalize-title">Request Order: </span>
             <div class="personalize-section">
               <div class="gender-container">
@@ -63,7 +66,7 @@
                     <option value="15">16</option>
                     <option value="17">17</option>
                     <option value="18">18</option>
-                    <option value="19">19</option>  
+                    <option value="19">19</option>
                     <option value="20">20</option>
                     <option value="21">21</option>
                     <option value="22">22</option>
@@ -106,7 +109,11 @@
                     <option value="Gold 16k">Gold 16k</option>
                   </select>
                 </div>
-                <input class="engraving-box woman" type="text" placeholder="Masukkan Ukiran Nama">
+                <input
+                  class="engraving-box woman"
+                  type="text"
+                  placeholder="Masukkan Ukiran Nama"
+                />
               </div>
               <div class="gender-container">
                 <span>Pria</span>
@@ -125,7 +132,7 @@
                     <option value="15">16</option>
                     <option value="17">17</option>
                     <option value="18">18</option>
-                    <option value="19">19</option>  
+                    <option value="19">19</option>
                     <option value="20">20</option>
                     <option value="21">21</option>
                     <option value="22">22</option>
@@ -163,25 +170,37 @@
                     <option value="Platinum X">Platinum X</option>
                   </select>
                 </div>
-                <input class="engraving-box man" type="text" placeholder="Masukkan Ukiran Nama">
+                <input
+                  class="engraving-box man"
+                  type="text"
+                  placeholder="Masukkan Ukiran Nama"
+                />
               </div>
             </div>
             <!-- <label class="notes-box-label" for="notes-box">Tambahkan Pesan:</label> -->
-            <input class="notes-box" type="text" placeholder="Tambahkan Pesan untuk Penjual">
-            
+            <input
+              class="notes-box"
+              type="text"
+              placeholder="Tambahkan Pesan untuk Penjual"
+            />
+
             <div class="price-container">
               <p class="price-title">Harga:</p>
-              <p class="price-tag">Rp. 10.000.000 </p>
+              <p class="price-tag">Rp. 10.000.000</p>
             </div>
             <div class="buttons-container">
               <button class="order-button" onclick="">
                 Pesan Via WhatsApp
               </button>
               <button id="favoriteButton" class="favorite-button">
-                <img src="icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg">
+                <img
+                  src="icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg"
+                />
               </button>
             </div>
-            <a class="ring-guide-button" href="ring-size-guide.html">Panduan Ukuran Cincin &gt;</a>
+            <a class="ring-guide-button" href="ring-size-guide.html"
+              >Panduan Ukuran Cincin &gt;</a
+            >
           </div>
         </div>
       </section>
@@ -191,54 +210,94 @@
         <div class="discover-container">
           <div class="discover-item">
             <a class="discover-image-link" href="/item.html?id=jce2.36">
-              <img class="discover-image" src="images/rings/JCE/Jace 2.36 23.jpg" alt="Jace 2.36">
+              <img
+                class="discover-image"
+                src="images/rings/JCE/Jace 2.36 23.jpg"
+                alt="Jace 2.36"
+              />
+            </a>
+            <div class="discover-overlay">
+              <a class="discover-image-link" href="/item.html?id=jce2.36">
+                <img
+                  class="discover-image"
+                  src="images/rings/JCE/Jace 2.36 23.jpg"
+                  alt="Jace 2.36"
+                />
               </a>
-              <div class="discover-overlay">
-                  <a class="discover-image-link" href="/item.html?id=jce2.36">
-                      <img class="discover-image" src="images/rings/JCE/Jace 2.36 23.jpg" alt="Jace 2.36">
-                  </a>
-                  <h2 class="discover-name-text">Jace 2.36</h2>
-                  <a class="discover-button" href="/item.html?id=jce2.36">Lihat Produk</a>
-              </div>
+              <h2 class="discover-name-text">Jace 2.36</h2>
+              <a class="discover-button" href="/item.html?id=jce2.36"
+                >Lihat Produk</a
+              >
+            </div>
           </div>
 
           <div class="discover-item">
             <a class="discover-image-link" href="/item.html?id=ags1.48">
-              <img class="discover-image" src="images/rings/AGS/AGS 1.48 01.jpg" alt="Agsaina 1.48">
+              <img
+                class="discover-image"
+                src="images/rings/AGS/AGS 1.48 01.jpg"
+                alt="Agsaina 1.48"
+              />
+            </a>
+            <div class="discover-overlay">
+              <a class="discover-image-link" href="/item.html?id=ags1.48">
+                <img
+                  class="discover-image"
+                  src="images/rings/AGS/AGS 1.48 01.jpg"
+                  alt="Agsaina 1.48"
+                />
               </a>
-              <div class="discover-overlay">
-                  <a class="discover-image-link" href="/item.html?id=ags1.48">
-                      <img class="discover-image" src="images/rings/AGS/AGS 1.48 01.jpg" alt="Agsaina 1.48">
-                  </a>
-                  <h2 class="discover-name-text">Agsaina 1.48</h2>
-                  <a class="discover-button" href="/item.html?id=ags1.48">Lihat Produk</a>
-              </div>
+              <h2 class="discover-name-text">Agsaina 1.48</h2>
+              <a class="discover-button" href="/item.html?id=ags1.48"
+                >Lihat Produk</a
+              >
+            </div>
           </div>
 
           <div class="discover-item">
             <a class="discover-image-link" href="/item.html?id=bry7.48">
-              <img class="discover-image" src="images/rings/BRY/0004_BRY_7.48.jpg" alt="Beryl 7.48">
+              <img
+                class="discover-image"
+                src="images/rings/BRY/0004_BRY_7.48.jpg"
+                alt="Beryl 7.48"
+              />
+            </a>
+            <div class="discover-overlay">
+              <a class="discover-image-link" href="/item.html?id=bry7.48">
+                <img
+                  class="discover-image"
+                  src="images/rings/BRY/0004_BRY_7.48.jpg"
+                  alt="Beryl 7.48"
+                />
               </a>
-              <div class="discover-overlay">
-                  <a class="discover-image-link" href="/item.html?id=bry7.48">
-                      <img class="discover-image" src="images/rings/BRY/0004_BRY_7.48.jpg" alt="Beryl 7.48">
-                  </a>
-                  <h2 class="discover-name-text">Beryl 7.48</h2>
-                  <a class="discover-button" href="/item.html?id=bry7.48">Lihat Produk</a>
-              </div>
+              <h2 class="discover-name-text">Beryl 7.48</h2>
+              <a class="discover-button" href="/item.html?id=bry7.48"
+                >Lihat Produk</a
+              >
+            </div>
           </div>
 
           <div class="discover-item">
             <a class="discover-image-link" href="/item.html?id=aln2.47">
-              <img class="discover-image" src="images/rings/ALN/4_0044_ALN 2.47.jpg" alt="aln 2.47">
+              <img
+                class="discover-image"
+                src="images/rings/ALN/4_0044_ALN 2.47.jpg"
+                alt="aln 2.47"
+              />
+            </a>
+            <div class="discover-overlay">
+              <a class="discover-image-link" href="/item.html?id=aln2.47">
+                <img
+                  class="discover-image"
+                  src="images/rings/ALN/4_0044_ALN 2.47.jpg"
+                  alt="aln 2.47"
+                />
               </a>
-              <div class="discover-overlay">
-                  <a class="discover-image-link" href="/item.html?id=aln2.47">
-                      <img class="discover-image" src="images/rings/ALN/4_0044_ALN 2.47.jpg" alt="aln 2.47">
-                  </a>
-                  <h2 class="discover-name-text">?</h2>
-                  <a class="discover-button" href="/item.html?id=aln2.47">Lihat Produk</a>
-              </div>
+              <h2 class="discover-name-text">?</h2>
+              <a class="discover-button" href="/item.html?id=aln2.47"
+                >Lihat Produk</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -250,27 +309,28 @@
               Kemasan Eksklusif Louvain
             </h2>
             <p class="packaging-body-text text-transition body-text">
-              Kemasan eksklusif untuk setiap pembelian sepasang cincin Louvain Jewellery.
+              Kemasan eksklusif untuk setiap pembelian sepasang cincin Louvain
+              Jewellery.
             </p>
           </div>
           <div class="packaging-hero-image-container">
-            <img class="packaging-hero-image" src="images/pakajing.png">
+            <img class="packaging-hero-image" src="images/pakajing.png" />
           </div>
         </div>
 
         <div class="packaging-bottom-section">
           <div class="packaging-content">
             <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging4.png">
+              <img class="packaging-image" src="images/packaging4.png" />
             </div>
             <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging1.png">
+              <img class="packaging-image" src="images/packaging1.png" />
             </div>
             <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging2.png">
+              <img class="packaging-image" src="images/packaging2.png" />
             </div>
             <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging3.png">
+              <img class="packaging-image" src="images/packaging3.png" />
             </div>
           </div>
         </div>
@@ -278,9 +338,9 @@
     </main>
 
     <footer id="footer" class="footer"></footer>
-    
+
     <div class="overlay"></div>
-    
+
     <div class="image-overlay" id="overlay">
       <span class="close-btn" id="closeOverlay">&#10005;</span>
       <img id="overlayImg" src="" alt="Full Image" />
