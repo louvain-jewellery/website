@@ -475,6 +475,7 @@
     white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
 
     justify-content: start;
     gap: 10px;
