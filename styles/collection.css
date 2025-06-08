@@ -44,6 +44,10 @@
 }
 
 .design-section {
+  width: 100%;
+}
+
+.design-content-container {
   display: grid;
   grid-template-columns: repeat(5, 13vw);
   justify-content: center;
@@ -111,9 +115,10 @@
 
 .catalogue-section {
   display: grid;
-  grid-template-columns: repeat(4, 25.5%);
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   padding: 0 50px;
+  gap: 20px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -125,7 +130,6 @@
   justify-content: center;
   align-items: center ;
   width: 100%;
-  padding: 10px;
 }
 
 .catalogue-image-link,
@@ -133,7 +137,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  width: fit-content;
+  width: 100%;
   aspect-ratio: 1/1;
   border: 1px solid lightgray;
 }
@@ -243,6 +247,15 @@
   }
 
   .design-section {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .design-section::-webkit-scrollbar {
+    display: none;
+  }
+
+  .design-content-container {
     grid-template-columns: repeat(5, 30vw);
 
     overflow-x: auto;
@@ -253,14 +266,13 @@
     grid-auto-flow: row;
     scroll-snap-type: x mandatory;
 
-    padding: 25px;
     justify-content: start;
     margin-bottom: 0;
     gap: 10px;
   }
 
-  .design-section::-webkit-scrollbar {
-    display: none;
+  .design-content {
+    scroll-snap-align: start;
   }
 
   .design-content a {
@@ -282,7 +294,7 @@
   }
 
   .catalogue-section {
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 0 25px;
   }
@@ -366,5 +378,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 0 50px;
+  }
+
+  .catalogue-image-link {
+    display: none;
+  }
+
+  .catalogue-overlay {
+    position: static;
+    display: flex;
+    border: none;
+    padding: 0 0 25px 0;
   }
 }

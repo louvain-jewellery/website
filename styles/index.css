@@ -129,12 +129,12 @@
 }
 
 .left-button {
-  left: 35px;
+  left: 40px;
   transform: rotate(180deg);
 }
 
 .right-button {
-  right: 35px;
+  right: 40px;
 }
 
 .best-seller-button {
@@ -475,7 +475,6 @@
     white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scroll-snap-type: x mandatory;
 
     justify-content: start;
     gap: 10px;
@@ -527,6 +526,7 @@
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    scroll-snap-align: start;
   }
 
   .design-content a {

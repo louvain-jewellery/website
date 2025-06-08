@@ -11,26 +11,13 @@ const collectionLinks = document.querySelectorAll(".design-image-link");
 function renderCatalogue(data) {
 	let visibleCount = 0;
 
-	// Set Hero Section
-	if (collection && collectionData[collection]) {
-		collectionHeroTitle.textContent = collectionData[collection].title;
-		collectionHeroBody.textContent = collectionData[collection].description;
-		const heroImage = document.querySelector(".collection-hero-image");
-		heroImage.src = collectionData[collection].image;
-	} else {
-		collectionHeroTitle.textContent = "Semua Koleksi";
-		collectionHeroBody.textContent = "Jelajahi berbagai koleksi cincin pernikahan kami.";
-		const heroImage = document.querySelector(".collection-hero-image");
-		heroImage.src = "images/logo.png";
-	}
-
 	// Clear existing items
 	catalogueSection.innerHTML = '';
 
 	// Loop through each item in the JSON data
 	data.forEach(item => {
-		// Apply filtering based on collection
-		if (!collection || collection === "all" || item.collection === collection) {
+		// Show only best-sellers items
+		if (item.collection === 'best-sellers') {
 			visibleCount++;
 
 			const div = document.createElement("div");
@@ -72,8 +59,7 @@ function renderCatalogue(data) {
 	});
 
 	// Update item count display
-	const collectionName = collection ? collection.charAt(0).toUpperCase() + collection.slice(1) : "Semua";
-	itemCountEl.textContent = `${visibleCount} Produk${collection ? " " + collectionName : ""}`;
+	itemCountEl.textContent = `${visibleCount} Produk`;
 
 	// Initialize image sizing
 	adjustImageSizes();

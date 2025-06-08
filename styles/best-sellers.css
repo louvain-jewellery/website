@@ -43,52 +43,6 @@
   margin: 0;
 }
 
-.design-section {
-  display: grid;
-  grid-template-columns: repeat(5, 13vw);
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  gap: 1vw;
-}
-
-.design-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-}
-
-.design-content a {
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.design-image-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  aspect-ratio: 1/1;
-  margin-bottom: 10px;
-  border: 1px solid lightgray;
-  background-color: rgb(248, 246, 242);
-}
-
-.design-image-link:hover {
-  border: 1px solid black;
-}
-
-.design-image-link img {
-  width: 70%;
-  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.design-image-link:hover img{
-  transform: scale(1.15);
-}
-
 .breadcrumb-navigation,
 .filter-section {
   display: flex;
@@ -111,9 +65,10 @@
 
 .catalogue-section {
   display: grid;
-  grid-template-columns: repeat(4, 25.5%);
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   padding: 0 50px;
+  gap: 20px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -125,7 +80,6 @@
   justify-content: center;
   align-items: center ;
   width: 100%;
-  padding: 10px;
 }
 
 .catalogue-image-link,
@@ -133,7 +87,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  width: fit-content;
+  width: 100%;
   aspect-ratio: 1/1;
   border: 1px solid lightgray;
 }
@@ -242,35 +196,6 @@
     font-size: 14px;
   }
 
-  .design-section {
-    grid-template-columns: repeat(5, 30vw);
-
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    grid-auto-flow: row;
-    scroll-snap-type: x mandatory;
-
-    padding: 25px;
-    justify-content: start;
-    margin-bottom: 0;
-    gap: 10px;
-  }
-
-  .design-section::-webkit-scrollbar {
-    display: none;
-  }
-
-  .design-content a {
-    font-size: 14px;
-  }
-
-  .design-image-link {
-    width: 30vw;
-  }
-
   .breadcrumb-navigation,
   .filter-section {
     padding: 0 25px;
@@ -282,7 +207,7 @@
   }
 
   .catalogue-section {
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 0 25px;
   }
@@ -348,15 +273,6 @@
     font-size: 16px;
   }
 
-  .design-section {
-    grid-template-columns: repeat(5, 1fr);
-    padding: 50px;
-  }
-
-  .design-image-link {
-    width: 20vw;
-  }
-
   .breadcrumb-navigation,
   .filter-section {
     padding: 0 50px;
@@ -366,5 +282,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 0 50px;
+  }
+
+  .catalogue-image-link {
+    display: none;
+  }
+
+  .catalogue-overlay {
+    position: static;
+    display: flex;
+    border: none;
+    padding: 0 0 25px 0;
   }
 }
