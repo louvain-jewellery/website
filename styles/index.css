@@ -96,13 +96,36 @@
 }
 
 .scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   background-color: white;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 200;
+  transform: translateY(-50%);
+
+  top: 50%;
 
   border: none;
-  border-radius: 100px;
+  /* border-radius: 100px; */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button img {
+  opacity: 0.7;
+}
+
+.left-button {
+  left: 5px;
+  transform: rotate(180deg);
+}
+
+.right-button {
+  right: 5px;
 }
 
 .best-seller-button {
@@ -446,7 +469,6 @@
     width: 100%;
     /* aspect-ratio: 1/1; */
   }
-
 
   /* === DESIGN SECTION === */
 
