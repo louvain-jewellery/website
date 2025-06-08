@@ -477,6 +477,13 @@
     /* aspect-ratio: 1/1; */
   }
 
+  .scroll-button {
+    display: none;
+    /* opacity: 0;
+    pointer-events: none;
+    visibility: hidden; */
+  }
+
   /* === DESIGN SECTION === */
 
   .design-content-container {
