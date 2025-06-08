@@ -82,6 +82,7 @@
   white-space: nowrap;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
 
   width: 100%;
   margin-bottom: 25px;
@@ -93,6 +94,7 @@
   width: 22.5vw;
   aspect-ratio: 3/4;
   object-fit: cover;
+  scroll-snap-align: start;
 }
 
 .scroll-button {
@@ -453,6 +455,10 @@
     padding: 0;
   }
 
+  .best-seller-content-wrapper {
+    padding: 0 25px;
+  }
+
   .best-seller-content {
     display: grid;
     position: relative;
@@ -466,7 +472,6 @@
     -ms-overflow-style: none;
     scroll-snap-type: x mandatory;
 
-    padding: 0 25px;
     justify-content: start;
     gap: 10px;
     width: 100%;
@@ -479,12 +484,13 @@
 
   .scroll-button {
     display: none;
-    /* opacity: 0;
-    pointer-events: none;
-    visibility: hidden; */
   }
 
   /* === DESIGN SECTION === */
+
+  .design-section {
+    padding: 0 25px;
+  }
 
   .design-content-container {
     grid-template-columns: repeat(5, 35vw);
@@ -497,7 +503,6 @@
     grid-auto-flow: row;
     scroll-snap-type: x mandatory;
 
-    padding: 0 25px;
     justify-content: start;
     margin-bottom: 0;
     gap: 10px;
@@ -506,7 +511,6 @@
 
   .design-body-text {
     margin-bottom: 25px;
-    padding: 0px 25px;
   }
 
   .design-content-container::-webkit-scrollbar {
