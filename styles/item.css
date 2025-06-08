@@ -525,6 +525,8 @@
     padding-left: 0;
 
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
     -webkit-overflow-scrolling: touch;
   }
 
@@ -573,6 +575,8 @@
     scrollbar-width: none;
     grid-auto-flow: row;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
 
     justify-content: start;
     gap: 10px;
@@ -649,6 +653,7 @@
     scrollbar-width: none;
     grid-auto-flow: row;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 
     justify-content: start;
     gap: 10px;

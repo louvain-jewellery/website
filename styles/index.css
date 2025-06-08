@@ -83,6 +83,8 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
 
   width: 100%;
   margin-bottom: 25px;
@@ -112,9 +114,9 @@
   top: 50%;
 
   border: none;
-  /* border-radius: 100px; */
+  border-radius: 100px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-button.hidden {
@@ -475,7 +477,6 @@
     white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scroll-behavior: smooth;
 
     justify-content: start;
     gap: 10px;
@@ -507,6 +508,7 @@
     scrollbar-width: none;
     grid-auto-flow: row;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 
     justify-content: start;
     margin-bottom: 0;

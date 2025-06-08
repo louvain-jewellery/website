@@ -31,7 +31,7 @@
 }
 
 .collection-hero-title-text {
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
   font-size: 35px;
   line-height: 45px;
   font-weight: 500;
@@ -89,7 +89,7 @@
   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.design-image-link:hover img{
+.design-image-link:hover img {
   transform: scale(1.15);
 }
 
@@ -128,7 +128,7 @@
   flex-direction: column;
   position: relative;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   width: 100%;
 }
 
@@ -181,7 +181,7 @@
   z-index: 99;
 }
 
-.catalogue-item:hover .catalogue-overlay{
+.catalogue-item:hover .catalogue-overlay {
   display: flex;
 }
 
@@ -265,6 +265,7 @@
     scrollbar-width: none;
     grid-auto-flow: row;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 
     justify-content: start;
     margin-bottom: 0;
@@ -320,7 +321,7 @@
     padding: 0 0 25px 0;
   }
 
-  .catalogue-item:hover .catalogue-overlay{
+  .catalogue-item:hover .catalogue-overlay {
     display: flex;
   }
 
@@ -338,6 +339,10 @@
     border-radius: 100%;
     z-index: 1000;
     cursor: pointer;
+  }
+
+  .favorite-button img {
+    opacity: 0.5;
   }
 
   .selected-collection {
