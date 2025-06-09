@@ -45,11 +45,12 @@
 
 .design-section {
   width: 100%;
+  padding: 0 50px;
 }
 
 .design-content-container {
   display: grid;
-  grid-template-columns: repeat(5, 13vw);
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;

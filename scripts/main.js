@@ -47,6 +47,12 @@ header.innerHTML = `
     <div class="dropdown-content koleksi-dropdown-content">
       <div class="dropdown-content-top">
         <div class="dropdown-koleksi-container">
+          <a class="dropdown-image-link" href="collection.html?collection=bestSellers">
+            <img src="images/complement.png" alt="Best Sellers">
+          </a>
+          <a class="text-button" href="collection.html?collection=bestSellers">Best Sellers</a>
+        </div>
+        <div class="dropdown-koleksi-container">
           <a class="dropdown-image-link" href="collection.html?collection=timeless">
             <img src="images/timeless.png" alt="Timeless">
           </a>
@@ -161,10 +167,10 @@ footer.innerHTML = `
         <img src="icons/arrow_forward_24dp_000000_FILL0_wght400_GRAD0_opsz24 (1).svg">
       </div>-->
       <div class="footer-social-media">
-        <a href="https://www.instagram.com/louvainjewellery" target="_blank">
+        <a href="https://www.instagram.com/Louvainjewellery" target="_blank">
           <img class="social-media-icon" src="icons/vecteezy_instagram-logo-png-instagram-icon-transparent_18930460.png">
         </a>
-        <a href="https://www.tiktok.com/@louvainjewellery" target="_blank">
+        <a href="https://www.tiktok.com/@Louvainjewellery" target="_blank">
           <img class="social-media-icon" src="icons/vecteezy_tiktok-logo-png-tikok-icon-transparent-png-tikok-app-logo-png_18930701.png">
         </a>
         <a href="https://wa.me/6285324922353" target="_blank">
