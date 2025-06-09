@@ -1,5 +1,38 @@
 const header = document.getElementById("header");
 const footer = document.getElementById("footer");
+function isMobileView() {
+  return window.innerWidth <= 1024;
+}
+
+const videos = document.querySelectorAll(".hover-video");
+
+videos.forEach((video) => {
+  // Click event for mobile
+  video.addEventListener("click", function () {
+    if (isMobileView()) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+        video.currentTime = 0;
+      }
+    }
+  });
+
+  // Hover event for desktop
+  video.addEventListener("mouseenter", function () {
+    if (!isMobileView()) {
+      video.play();
+    }
+  });
+
+  video.addEventListener("mouseleave", function () {
+    if (!isMobileView()) {
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+});
 
 header.innerHTML = `
   <div class="header-top">
