@@ -83,13 +83,13 @@ function renderCatalogue(data) {
 
   // Loop through each item in the JSON data
   data.forEach((item) => {
-		// Do not show best sellers unless viewing bestSellers collection
-		if (
-			(!collection || collection === "all") &&
-			item.collection === "bestSellers"
-		) {
-			return; // skip this item
-		}
+    // Do not show best sellers unless viewing bestSellers collection
+    if (
+      (!collection || collection === "all") &&
+      item.collection === "bestSellers"
+    ) {
+      return; // skip this item
+    }
 
     // Apply filtering based on collection
     if (!collection || collection === "all" || item.collection === collection) {
@@ -140,6 +140,18 @@ function renderCatalogue(data) {
   itemCountEl.textContent = `${visibleCount} Produk${
     collection ? " " + collectionName : ""
   }`;
+
+  const breadcrumbNav = document.querySelector(".breadcrumb-navigation");
+  // const designSection = document.querySelector(".design-section");
+  // designSection.style.display = collection === "bestSellers" ? "none" : "flex";
+
+  breadcrumbNav.innerHTML = `
+    <a class="breadcrumb-item" href="./">Beranda</a>
+    <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
+    <a class="breadcrumb-item" href="collection.html">Koleksi</a>
+    <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
+    <a class="breadcrumb-item" href="#">${collectionName}</a>
+  `;
 
   // Initialize image sizing
   adjustImageSizes();

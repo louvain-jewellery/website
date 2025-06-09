@@ -2595,12 +2595,12 @@
 
   {
     "id": "no.11.59",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
-      "images/rings/11/11_0035_59.jpg",
+      "images/rings/11/11_0032_59.jpg",
       "images/rings/11/11_0033_59.jpg",
       "images/rings/11/11_0034_59.jpg",
-      "images/rings/11/11_0032_59.jpg"
+      "images/rings/11/11_0035_59.jpg"
     ],
     "name": "Cincin No. 11.59",
     "price": "",
@@ -2620,7 +2620,7 @@
 
   {
     "id": "no.11.60",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
       "images/rings/11/11_0038_60.jpg",
       "images/rings/11/11_0037_60.jpg",
@@ -2914,7 +2914,7 @@
 
   {
     "id": "no.11.74",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
       "images/rings/11/11_0081_74.jpg",
       "images/rings/11/11_0082_74.jpg",
@@ -2986,7 +2986,7 @@
 
   {
     "id": "no.12.78",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
       "images/rings/12/12_0002_78.jpg",
       "images/rings/12/12_0001_78.jpg",
@@ -3058,7 +3058,7 @@
 
   {
     "id": "no10.25",
-    "collection": "complement",
+    "collection": "bestSellers",
     "images": [
       "images/rings/10/10_0002_25.jpg",
       "images/rings/10/10_0001_25.jpg",
@@ -3131,7 +3131,7 @@
 
   {
     "id": "no10.28",
-    "collection": "complement",
+    "collection": "bestSellers",
     "images": [
       "images/rings/10/10_0013_28.jpg",
       "images/rings/10/10_0011_28.jpg",
@@ -3397,7 +3397,7 @@
 
   {
     "id": "no10.39",
-    "collection": "complement",
+    "collection": "bestSellers",
     "images": [
       "images/rings/10/10_0047_39.jpg",
       "images/rings/10/10_0046_39.jpg",
@@ -3542,7 +3542,7 @@
 
   {
     "id": "no10.45",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
       "images/rings/10/10_0064_45.jpg",
       "images/rings/10/10_0065_45.jpg",
@@ -3688,7 +3688,7 @@
 
   {
     "id": "no9.11",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
       "images/rings/9/9_0036_11.jpg",
       "images/rings/9/9_0035_11.jpg",
@@ -3736,7 +3736,7 @@
 
   {
     "id": "no9.13",
-    "collection": "independent",
+    "collection": "bestSellers",
     "images": [
       "images/rings/9/9_0042_13.jpg",
       "images/rings/9/9_0041_13.jpg",
@@ -4006,7 +4006,7 @@
 
   {
     "id": "no9.23",
-    "collection": "stacking",
+    "collection": "bestSellers",
     "images": [
       "images/rings/9/9_0076_23.jpg",
       "images/rings/9/9_0077_23.jpg",
