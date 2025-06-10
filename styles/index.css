@@ -591,6 +591,10 @@
     /* aspect-ratio: 1/1; */
   }
 
+  .best-seller-item:hover .bs-video {
+    transform: none;
+  }
+
   .scroll-button {
     display: none;
   }
