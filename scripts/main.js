@@ -1,36 +1,14 @@
 const header = document.getElementById("header");
 const footer = document.getElementById("footer");
-function isMobileView() {
-  return window.innerWidth <= 1024;
-}
 
-const videos = document.querySelectorAll(".hover-video");
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll(".best-seller-item video");
+  const playButtons = document.querySelectorAll(".best-seller-item button");
 
-videos.forEach((video) => {
-  // Click event for mobile
-  video.addEventListener("click", function () {
-    if (isMobileView()) {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-        video.currentTime = 0;
-      }
-    }
-  });
-
-  // Hover event for desktop
-  video.addEventListener("mouseenter", function () {
-    if (!isMobileView()) {
-      video.play();
-    }
-  });
-
-  video.addEventListener("mouseleave", function () {
-    if (!isMobileView()) {
-      video.pause();
-      video.currentTime = 0;
-    }
+  playButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      videos[index].play();
+    });
   });
 });
 
