@@ -564,7 +564,7 @@
     display: grid;
     position: relative;
     grid-auto-flow: column;
-    grid-auto-columns: 84vw;
+    grid-auto-columns: 80vw;
 
     overflow-x: auto;
     overflow-y: hidden;
