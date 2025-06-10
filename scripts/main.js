@@ -72,6 +72,26 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  const internalLinks = document.querySelectorAll(
+    'a[href^="/"], a[href^="./"], a[href^="../"]'
+  );
+
+  internalLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      // Check if the browser supports View Transitions API
+      if (document.startViewTransition) {
+        event.preventDefault(); // Prevent default navigation immediately
+
+        // Start the view transition
+        document.startViewTransition(() => {
+          // Navigate to the new page inside the transition callback
+          window.location.href = link.href;
+        });
+      }
+      // If not supported, let the default navigation happen
+    });
+  });
 });
 
 header.innerHTML = `

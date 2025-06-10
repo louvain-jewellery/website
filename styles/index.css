@@ -99,7 +99,7 @@
   scroll-snap-align: start;
 }
 
-.bs-video {
+.best-sellers-video {
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -107,7 +107,7 @@
   cursor: pointer;
 }
 
-.best-seller-item:hover .bs-video {
+.best-seller-item:hover .best-sellers-video {
   transform: scale(1.03);
 }
 
@@ -297,7 +297,6 @@
 .customize-content {
   color: black;
   right: 0;
-  left: 55%;
 }
 
 .customize-image {
@@ -562,12 +561,12 @@
     opacity: 1;
   }
 
-  .bs-video {
+  .best-sellers-video {
     width: 100%;
     /* aspect-ratio: 1/1; */
   }
 
-  .best-seller-item:hover .bs-video {
+  .best-seller-item:hover .best-sellers-video {
     transform: none;
   }
 
@@ -796,7 +795,7 @@
     scroll-snap-align: start;
   }
 
-  .best-seller-item:hover .bs-video {
+  .best-seller-item:hover .best-sellers-video {
     transform: none;
   }
 
