@@ -573,7 +573,7 @@
     white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 
@@ -582,12 +582,12 @@
     gap: 10px;
   }
 
-  .title-text {
-    font-size: 24px;
+  .discover-item {
+    margin-left: 2px;
   }
 
-  .discover-item {
-    scroll-snap-align: start;
+  .title-text {
+    font-size: 24px;
   }
 
   .discover-item:hover .discover-overlay {
