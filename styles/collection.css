@@ -267,7 +267,7 @@
   }
 
   .design-content-container {
-    grid-template-columns: repeat(5, 30vw);
+    grid-template-columns: repeat(6, 30vw);
 
     overflow-x: auto;
     overflow-y: hidden;

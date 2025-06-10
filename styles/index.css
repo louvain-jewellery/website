@@ -134,7 +134,9 @@
   width: 30px;
 }
 
-.play-button:hover {
+.play-button:hover,
+.open-button:hover,
+.mute-button:hover {
   background: rgba(115, 115, 115, 0.5);
   backdrop-filter: blur(10px);
 }
