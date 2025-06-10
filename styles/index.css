@@ -816,6 +816,31 @@
     aspect-ratio: 2/1;
   }
 
+  .best-seller-item {
+    scroll-snap-align: start;
+  }
+
+  .best-seller-item:hover .bs-video {
+    transform: none;
+  }
+
+  /* .mute-button {
+    bottom: auto;
+    left: auto;
+    top: 15px;
+    right: 15px;
+  }
+
+  .open-button {
+    left: 15px;
+    transform: none;
+  } */
+
+  .open-button,
+  .mute-button {
+    opacity: 1;
+  }
+
   .customize-image {
     width: 50%;
     height: auto;
