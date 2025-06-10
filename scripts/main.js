@@ -3,7 +3,8 @@ const footer = document.getElementById("footer");
 
 document.addEventListener("DOMContentLoaded", function () {
   const videos = document.querySelectorAll(".best-seller-item video");
-  const playButtons = document.querySelectorAll(".best-seller-item button");
+  const playButtons = document.querySelectorAll(".play-button");
+  const muteButtons = document.querySelectorAll(".mute-button");
 
   let currentlyPlayingVideo = null;
 
@@ -11,13 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const video = videos[index];
 
-      // Pause other videos first
       if (currentlyPlayingVideo && currentlyPlayingVideo !== video) {
         currentlyPlayingVideo.pause();
-        currentlyPlayingVideo.currentTime = 0; // Reset to show poster
-        currentlyPlayingVideo.load(); // Ensures poster is shown
+        currentlyPlayingVideo.currentTime = 0;
+        currentlyPlayingVideo.load();
 
-        // Reset button of previous video
         playButtons.forEach((btn, i) => {
           if (videos[i] === currentlyPlayingVideo) {
             btn.innerHTML = `
@@ -35,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         currentlyPlayingVideo = video;
       } else {
         video.pause();
-        video.currentTime = 0; // Reset to show poster
-        video.load(); // Ensures poster is shown
+        video.currentTime = 0;
+        video.load();
         button.innerHTML = `
           <img src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg">
         `;
@@ -44,14 +43,33 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // When video ends, reset poster + button
     videos[index].addEventListener("ended", function () {
       videos[index].currentTime = 0;
       videos[index].load();
-      button.innerHTML = `
+      playButtons[index].innerHTML = `
         <img src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg">
       `;
       currentlyPlayingVideo = null;
+    });
+  });
+
+  // MUTE BUTTON LOGIC 🔇🔊
+  muteButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Check if ANY video is muted (assume they are all in same state)
+      const isMuted = videos[0].muted;
+
+      // Toggle ALL videos
+      videos.forEach((video) => {
+        video.muted = !isMuted;
+      });
+
+      // Update ALL mute buttons to match new state
+      muteButtons.forEach((btn) => {
+        btn.innerHTML = isMuted
+          ? `<img src="icons/volume_up_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg" />`
+          : `<img src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg" />`;
+      });
     });
   });
 });

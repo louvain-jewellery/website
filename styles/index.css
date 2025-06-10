@@ -84,6 +84,7 @@
   -ms-overflow-style: none;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  color: white;
 
   width: 100%;
   margin-bottom: 25px;
@@ -93,10 +94,11 @@
 
 .best-seller-item {
   position: relative;
+  overflow: hidden;
+  aspect-ratio: 9/16;
 }
 
 .bs-video {
-  aspect-ratio: 2/3;
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -106,7 +108,11 @@
   scroll-snap-align: start;
 }
 
-#playButton {
+.best-seller-item:hover .bs-video {
+  transform: scale(1.03);
+}
+
+.play-button {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -123,10 +129,19 @@
 
   bottom: 15px;
   right: 15px;
-  /* transform: translateX(50%); */
 }
 
-.best-seller-item a {
+.play-button img {
+  width: 30px;
+}
+
+.play-button:hover {
+  background: rgba(115, 115, 115, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.mute-button {
+  display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -141,18 +156,42 @@
   cursor: pointer;
 
   bottom: 15px;
-  right: 50%;
-  z-index: 10000;
-  /* transform: translateX(50%); */
+  left: 15px;
 }
 
-#playButton img {
-  width: 30px;
-}
-
-#playButton:hover {
-  background: rgba(255, 255, 255, 0.5);
+.open-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px 2px 20px;
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.open-button,
+.mute-button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.best-seller-item:hover .open-button,
+.best-seller-item:hover .mute-button {
+  opacity: 1;
 }
 
 .scroll-button {
