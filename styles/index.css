@@ -778,11 +778,6 @@
     padding: 7.5px 0 10px 0;
     transform: translateX(15px);
   }
-
-  .image-transition {
-    margin: 0 40px;
-    transition: padding 0.5 ease;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1399px) {
@@ -826,10 +821,5 @@
   .cta-section {
     height: auto;
     aspect-ratio: 2/1;
-  }
-
-  .image-transition {
-    margin: 0 50px;
-    transition: padding 0.5 ease;
   }
 }
