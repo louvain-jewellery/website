@@ -121,7 +121,7 @@
   height: 40px;
 
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -144,7 +144,7 @@
 .open-button:hover,
 .mute-button:hover {
   background: rgba(115, 115, 115, 0.5);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
 .mute-button {
