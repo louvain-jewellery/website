@@ -295,6 +295,10 @@
     width: 30vw;
   }
 
+  .breadcrumb-filter {
+    flex-direction: column;
+  }
+
   .breadcrumb-navigation,
   .filter-section {
     padding: 0 25px;
@@ -357,7 +361,7 @@
   }
 
   .selected-collection {
-    border: 1px solid lightgray;
+    border: 1px solid black;
   }
 
   .catalogue-button {
