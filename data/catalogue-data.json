@@ -3038,8 +3038,13 @@
     "images": [
       "images/rings/12/12_0011_81.jpg",
       "images/rings/12/12_0010_81.jpg",
-      "images/rings/12/12_0009_81.jpg"
+      "images/rings/12/12_0009_81.jpg",
+      "images/rings/12/12_0010_81.jpg"
     ],
+    "video": {
+      "url": "videos/best-sellers1.mp4",
+      "thumbnail": "images/thumbnails/best-sellers1.jpg"
+    },
     "name": "Cincin No. 12.81",
     "price": "",
     "description": "",

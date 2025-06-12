@@ -21,10 +21,6 @@
   overflow: hidden;
 }
 
-.design-section::-webkit-scrollbar {
-  display: none;
-}
-
 .item-image-top {
   display: block;
   width: 70%;
