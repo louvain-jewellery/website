@@ -230,7 +230,7 @@
       "images/rings/ALN/4_0041_ALN 1.47.jpg",
       "images/rings/ALN/4_0043_ALN 1.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ALN 1.47",
     "price": "",
     "description": "",
     "specs": {
@@ -254,7 +254,7 @@
       "images/rings/ALN/4_0045_ALN 2.47.jpg",
       "images/rings/ALN/4_0046_ALN 2.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ALN 2.47",
     "price": "",
     "description": "",
     "specs": {
@@ -278,7 +278,7 @@
       "images/rings/ALN/4_0047_ALN 4.47.jpg",
       "images/rings/ALN/4_0049_ALN 4.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ALN 4.47",
     "price": "",
     "description": "",
     "specs": {
@@ -940,7 +940,7 @@
       "images/rings/CLA/4_0008_CLA 1.47.jpg",
       "images/rings/CLA/4_0010_CLA 1.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CLA 1.47",
     "price": "",
     "description": "",
     "specs": {
@@ -965,7 +965,7 @@
       "images/rings/CLA/4_0013_CLA 2.47.jpg",
       "images/rings/CLA/4_0015_CLA 2.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CLA 2.47",
     "price": "",
     "description": "",
     "specs": {
@@ -990,7 +990,7 @@
       "images/rings/CLA/4_0016_CLA 3.47.jpg",
       "images/rings/CLA/4_0019_CLA 3.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CLA 3.47",
     "price": "",
     "description": "",
     "specs": {
@@ -1014,7 +1014,7 @@
       "images/rings/CLA/4_0021_CLA 4.47.jpg",
       "images/rings/CLA/4_0020_CLA 4.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CLA 4.47",
     "price": "",
     "description": "",
     "specs": {
@@ -1038,7 +1038,7 @@
       "images/rings/CLA/4_0024_CLA 5.47.jpg",
       "images/rings/CLA/4_0025_CLA 5.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CLA 5.47",
     "price": "",
     "description": "",
     "specs": {
@@ -1063,7 +1063,7 @@
       "images/rings/CLA/4_0031_CLA 2.47.jpg",
       "images/rings/CLA/4_0010_CLA 1.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CLA 2.47",
     "price": "",
     "description": "",
     "specs": {
@@ -1330,7 +1330,7 @@
       "images/rings/CSA/0000s_0002_CSA 1.48.jpg",
       "images/rings/CSA/0000s_0003_CSA 1.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 1.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1355,7 +1355,7 @@
       "images/rings/CSA/0035_CSA 2.48.jpg",
       "images/rings/CSA/0036_CSA 2.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 2.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1380,7 +1380,7 @@
       "images/rings/CSA/0031_CSA 3.48.jpg",
       "images/rings/CSA/0032_CSA 3.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 3.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1405,7 +1405,7 @@
       "images/rings/CSA/0027_CSA 4.48.jpg",
       "images/rings/CSA/0028_CSA 4.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 4.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1430,7 +1430,7 @@
       "images/rings/CSA/0004s_0002_CSA 5.48.jpg",
       "images/rings/CSA/0004s_0003_CSA 5.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 5.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1455,7 +1455,7 @@
       "images/rings/CSA/0003s_0000_CSA 6.48.jpg",
       "images/rings/CSA/0003s_0003_CSA 6.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 6.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1480,7 +1480,7 @@
       "images/rings/CSA/0002s_0002_CSA 7.48.jpg",
       "images/rings/CSA/0002s_0003_CSA 7.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "CSA 7.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1605,7 +1605,7 @@
       "images/rings/ERN/0000s_0002_ERN 1.48.jpg",
       "images/rings/ERN/0000s_0000_ERN 1.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 1.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1630,7 +1630,7 @@
       "images/rings/ERN/0010_ERN 2.48.jpg",
       "images/rings/ERN/0008_ERN 2.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 2.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1655,7 +1655,7 @@
       "images/rings/ERN/0004_ERN 3.48.jpg",
       "images/rings/ERN/0007_ERN 3.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 3.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1680,7 +1680,7 @@
       "images/rings/ERN/0002_ERN 4.48.jpg",
       "images/rings/ERN/0001_ERN 4.48.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 4.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1705,7 +1705,7 @@
       "images/rings/ERN/3_0026_ERN 5.47.jpg",
       "images/rings/ERN/3_0024_ERN 5.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 5.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1729,7 +1729,7 @@
       "images/rings/ERN/3_0021_ERN 6.47.jpg",
       "images/rings/ERN/3_0020_ERN 6.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 6.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1754,7 +1754,7 @@
       "images/rings/ERN/3_0016_ERN 7.47.jpg",
       "images/rings/ERN/3_0018_ERN 7.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 7.48",
     "price": "",
     "description": "",
     "specs": {
@@ -1779,7 +1779,7 @@
       "images/rings/ERN/3_0012_ERN 8.47.jpg",
       "images/rings/ERN/3_0015_ERN 8.47.jpg"
     ],
-    "name": "Cincin Kawin",
+    "name": "ERN 8.48",
     "price": "",
     "description": "",
     "specs": {
