@@ -65,8 +65,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Specs table
     document.querySelector(".detail-table").innerHTML = `
       <tr><th>&#9642; &nbsp; Cincin</th><td>Wanita</td><td>Pria</td></tr>
-      <tr><th>&#9642; &nbsp; Ring Width</th><td>${specs.ringWidth?.wanita}</td><td>${specs.ringWidth?.pria}</td></tr>
-      <tr><th>&#9642; &nbsp; Gem Spec</th><td>${specs.gem?.wanita}</td><td>${specs.gem?.pria}</td></tr>
+      <tr><th>&#9642; &nbsp; Ring Width</th><td>${
+        specs.ringWidth?.wanita || "-"
+      }</td><td>${specs.ringWidth?.pria || "-"}</td></tr>
+      <tr><th>&#9642; &nbsp; Gem Spec</th><td>${
+        specs.gem?.wanita || "-"
+      }</td><td>${specs.gem?.pria || "-"}</td></tr>
       <tr><th>&#9642; &nbsp; Chrome</th><td>White<br>Rose<br>Yellow</td><td>White D/G<br>Rose D/G<br>Yellow D/G</td></tr>
       <tr><th>&#9642; &nbsp; Material</th><td>Platinum V<br>Platinum X<br>Gold 17k<br>Gold 16k</td><td>Platinum V<br>Platinum X</td></tr>
     `;
@@ -129,6 +133,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   document
     .querySelector(".order-button")
     .addEventListener("click", sendToWhatsApp);
+  // This is the moved line
   document
     .querySelector(".table-title-text")
     .addEventListener("click", toggleTable);
