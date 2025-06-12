@@ -126,9 +126,9 @@
     "id": "alc2.47",
     "collection": "timeless",
     "images": [
-      "images/rings/ALC/3_0006_ALC 2.47.jpg",
-      "images/rings/ALC/3_0005_ALC 2.47.jpg",
       "images/rings/ALC/3_0007_ALC 2.47.jpg",
+      "images/rings/ALC/3_0005_ALC 2.47.jpg",
+      "images/rings/ALC/3_0006_ALC 2.47.jpg",
       "images/rings/ALC/3_0004_ALC 2.47.jpg"
     ],
     "name": "Alice 2.47",
@@ -686,10 +686,10 @@
     "id": "bry1.48",
     "collection": "timeless",
     "images": [
-      "images/rings/BRY/0026_BRY 1.48.jpg",
+      "images/rings/BRY/0027_BRY 1.48.jpg",
       "images/rings/BRY/0025_BRY 1.48.jpg",
       "images/rings/BRY/0024_BRY 1.48.jpg",
-      "images/rings/BRY/0027_BRY_1.48.jpg"
+      "images/rings/BRY/0026_BRY_1.48.jpg"
     ],
     "name": "Beryl 1.48",
     "price": "",
@@ -760,10 +760,10 @@
     "id": "bry3.48",
     "collection": "timeless",
     "images": [
-      "images/rings/BRY/0016_BRY_3.48.jpg",
+      "images/rings/BRY/0019_BRY_3.48.jpg",
       "images/rings/BRY/0017_BRY_3.48.jpg",
       "images/rings/BRY/0018_BRY_3.48.jpg",
-      "images/rings/BRY/0019_BRY_3.48.jpg"
+      "images/rings/BRY/0016_BRY_3.48.jpg"
     ],
     "name": "Beryl 3.48",
     "price": "",
@@ -785,8 +785,8 @@
     "id": "bry4.48",
     "collection": "timeless",
     "images": [
-      "images/rings/BRY/0014_BRY_4.48.jpg",
       "images/rings/BRY/0013_BRY_4.48.jpg",
+      "images/rings/BRY/0014_BRY_4.48.jpg",
       "images/rings/BRY/0012_BRY_4.48.jpg",
       "images/rings/BRY/0015_BRY_4.48.jpg"
     ],
@@ -810,8 +810,8 @@
     "id": "bry5.48",
     "collection": "timeless",
     "images": [
-      "images/rings/BRY/0009_BRY_5.48.jpg",
       "images/rings/BRY/0008_BRY_5.48.jpg",
+      "images/rings/BRY/0009_BRY_5.48.jpg",
       "images/rings/BRY/0010_BRY_5.48.jpg",
       "images/rings/BRY/0011_BRY_5.48.jpg"
     ],
@@ -910,9 +910,9 @@
     "id": "bry9.48",
     "collection": "timeless",
     "images": [
-      "images/rings/BRY/0002s_0003_BRY_9.48.jpg",
-      "images/rings/BRY/0002s_0001_BRY_9.48.jpg",
       "images/rings/BRY/0002s_0002_BRY_9.48.jpg",
+      "images/rings/BRY/0002s_0001_BRY_9.48.jpg",
+      "images/rings/BRY/0002s_0003_BRY_9.48.jpg",
       "images/rings/BRY/0002s_0000_BRY_9.48.jpg"
     ],
     "name": "Beryl 9.48",
@@ -935,10 +935,10 @@
     "id": "cla1.47",
     "collection": "timeless",
     "images": [
-      "images/rings/CLA/4_0010_CLA 1.47.jpg",
+      "images/rings/CLA/4_0011_CLA 1.47.jpg",
       "images/rings/CLA/4_0009_CLA 1.47.jpg",
       "images/rings/CLA/4_0008_CLA 1.47.jpg",
-      "images/rings/CLA/4_0011_CLA 1.47.jpg"
+      "images/rings/CLA/4_0010_CLA 1.47.jpg"
     ],
     "name": "Cincin Kawin",
     "price": "",
@@ -1060,7 +1060,8 @@
     "images": [
       "images/rings/CLA/4_0029_CLA 2.47.jpg",
       "images/rings/CLA/4_0030_CLA 2.47.jpg",
-      "images/rings/CLA/4_0031_CLA 2.47.jpg"
+      "images/rings/CLA/4_0031_CLA 2.47.jpg",
+      "images/rings/CLA/4_0010_CLA 1.47.jpg"
     ],
     "name": "Cincin Kawin",
     "price": "",
@@ -1449,9 +1450,9 @@
     "id": "csa6.48",
     "collection": "timeless",
     "images": [
-      "images/rings/CSA/0003s_0000_CSA 6.48.jpg",
-      "images/rings/CSA/0003s_0001_CSA 6.48.jpg",
       "images/rings/CSA/0003s_0002_CSA 6.48.jpg",
+      "images/rings/CSA/0003s_0001_CSA 6.48.jpg",
+      "images/rings/CSA/0003s_0000_CSA 6.48.jpg",
       "images/rings/CSA/0003s_0003_CSA 6.48.jpg"
     ],
     "name": "Cincin Kawin",
@@ -1499,9 +1500,9 @@
     "id": "cto1.11",
     "collection": "timeless",
     "images": [
-      "images/rings/CTO/7_0081_114 Catarino 1.11.jpg",
-      "images/rings/CTO/7_0079_114 Catarino 1.11.jpg",
       "images/rings/CTO/7_0080_114 Catarino 1.11.jpg",
+      "images/rings/CTO/7_0079_114 Catarino 1.11.jpg",
+      "images/rings/CTO/7_0081_114 Catarino 1.11.jpg",
       "images/rings/CTO/7_0078_114 Catarino 1.11.jpg"
     ],
     "name": "Catarino 1.11",
@@ -1549,8 +1550,8 @@
     "id": "cto3.11",
     "collection": "timeless",
     "images": [
-      "images/rings/CTO/7_0089_116 Catarino 3.11.jpg",
       "images/rings/CTO/7_0087_116 Catarino 3.11.jpg",
+      "images/rings/CTO/7_0089_116 Catarino 3.11.jpg",
       "images/rings/CTO/7_0088_116 Catarino 3.11.jpg",
       "images/rings/CTO/7_0086_116 Catarino 3.11.jpg"
     ],
@@ -1748,10 +1749,10 @@
     "id": "ern7.47",
     "collection": "timeless",
     "images": [
-      "images/rings/ERN/3_0018_ERN 7.47.jpg",
+      "images/rings/ERN/3_0019_ERN 7.47.jpg",
       "images/rings/ERN/3_0017_ERN 7.47.jpg",
       "images/rings/ERN/3_0016_ERN 7.47.jpg",
-      "images/rings/ERN/3_0019_ERN 7.47.jpg"
+      "images/rings/ERN/3_0018_ERN 7.47.jpg"
     ],
     "name": "Cincin Kawin",
     "price": "",
@@ -4325,9 +4326,9 @@
     "id": "ocr4.11",
     "collection": "timeless",
     "images": [
-      "images/rings/OCR/7_0070_111 Oscar 4.11.jpg",
-      "images/rings/OCR/7_0068_111 Oscar 4.11.jpg",
       "images/rings/OCR/7_0069_111 Oscar 4.11.jpg",
+      "images/rings/OCR/7_0068_111 Oscar 4.11.jpg",
+      "images/rings/OCR/7_0070_111 Oscar 4.11.jpg",
       "images/rings/OCR/7_0067_111 Oscar 4.11.jpg"
     ],
     "name": "Oscar 4.11",
