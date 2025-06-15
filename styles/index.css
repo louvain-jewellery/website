@@ -95,13 +95,13 @@
 .best-seller-item {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 9/16;
   scroll-snap-align: start;
 }
 
 .best-sellers-video {
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 9/16;
   width: 100%;
   transition: transform 0.3s ease;
   cursor: pointer;
