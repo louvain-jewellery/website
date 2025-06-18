@@ -79,7 +79,6 @@
 
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-snap-type: x mandatory;
@@ -747,6 +746,15 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* === BEST SELLERS === */
+  .best-seller-content-wrapper {
+    padding: 0 25px;
+  }
+
+  .best-seller-content {
+    grid-auto-columns: 60vw;
+  }
+
   /* === CTA SECTION === */
 
   .cta-section {
