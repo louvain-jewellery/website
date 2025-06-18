@@ -216,6 +216,14 @@ main {
     gap: 0.5rem;
   }
 
+  .video-button {
+    height: 20px;
+  }
+
+  .video-button-icon {
+    height: 15px;
+  }
+
   /* VIDEO RECENTLY'S ITEM */
 
   .video-recently__item {
