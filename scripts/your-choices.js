@@ -37,6 +37,7 @@ fetch("data/your-choices-data.json")
           ? "video-recently__video"
           : "video-monthly__video";
         video.setAttribute("loading", "lazy");
+        video.setAttribute("preload", "metadata");
         item.appendChild(video);
 
         if (isRecently) {
