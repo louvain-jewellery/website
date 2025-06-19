@@ -303,6 +303,7 @@ main {
 
   .video-button {
     opacity: 0;
+    display: none;
   }
 
   .scroll-button {
