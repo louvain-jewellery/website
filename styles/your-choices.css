@@ -302,8 +302,7 @@ main {
   /* VIDEO RECENTLY'S BUTTONS */
 
   .video-button {
-    opacity: 0;
-    display: none;
+    opacity: 1;
   }
 
   .scroll-button {
