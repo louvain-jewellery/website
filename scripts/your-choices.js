@@ -36,7 +36,7 @@ fetch("data/your-choices-data.json")
         video.className = isRecently
           ? "video-recently__video"
           : "video-monthly__video";
-
+        video.setAttribute("loading", "lazy");
         item.appendChild(video);
 
         if (isRecently) {
