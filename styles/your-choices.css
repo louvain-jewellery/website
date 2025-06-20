@@ -253,7 +253,6 @@ main {
   }
 
   /* VIDEO MONTHLY */
-
   .video-monthly__grid {
     grid-template-columns: repeat(3, 1fr);
   }
