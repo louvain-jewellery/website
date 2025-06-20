@@ -189,11 +189,13 @@ main {
   cursor: pointer;
 }
 
+/* Updated styles for both video and image elements with same class */
 .video-monthly__video {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   transform: scale(1.025);
+  transition: filter 0.3s ease;
 }
 
 .video-monthly__item:hover .video-monthly__video {

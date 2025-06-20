@@ -16,6 +16,42 @@ const observer = new IntersectionObserver(
   }
 );
 
+// Function to create thumbnail from video first frame
+function createThumbnail(video, callback) {
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+
+  function captureFrame() {
+    if (video.videoWidth === 0 || video.videoHeight === 0) {
+      setTimeout(captureFrame, 100);
+      return;
+    }
+
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    canvas.toBlob(
+      function (blob) {
+        const thumbnailUrl = URL.createObjectURL(blob);
+        callback(thumbnailUrl);
+      },
+      "image/jpeg",
+      0.8
+    );
+  }
+
+  video.addEventListener("loadeddata", function () {
+    video.currentTime = 0;
+  });
+
+  video.addEventListener("seeked", function () {
+    captureFrame();
+  });
+
+  video.load();
+}
+
 fetch("data/your-choices-data.json")
   .then((response) => response.json())
   .then((data) => {
@@ -48,18 +84,17 @@ fetch("data/your-choices-data.json")
           ? "video-recently__item"
           : "video-monthly__item";
 
-        const video = document.createElement("video");
-        video.dataset.src = videoUrl;
-        video.loop = true;
-        video.muted = true;
-        video.className = isRecently
-          ? "video-recently__video"
-          : "video-monthly__video";
-        video.setAttribute("preload", "metadata");
-        observer.observe(video);
-        item.appendChild(video);
-
         if (isRecently) {
+          // Keep recently videos as video elements (original behavior)
+          const video = document.createElement("video");
+          video.dataset.src = videoUrl;
+          video.loop = true;
+          video.muted = true;
+          video.className = "video-recently__video";
+          video.setAttribute("preload", "metadata");
+          observer.observe(video);
+          item.appendChild(video);
+
           const muteBtn = document.createElement("button");
           muteBtn.className = "video-recently__mute-button video-button";
           muteBtn.innerHTML = `
@@ -85,6 +120,35 @@ fetch("data/your-choices-data.json")
           item.appendChild(muteBtn);
           item.appendChild(fullBtn);
           item.appendChild(playBtn);
+        } else {
+          // For monthly videos, create thumbnail images
+          const img = document.createElement("img");
+          img.className = "video-monthly__video";
+          img.dataset.videoSrc = videoUrl;
+          img.style.cursor = "pointer";
+
+          // Add loading placeholder
+          img.style.backgroundColor = "#f0f0f0";
+          img.alt = "Loading video thumbnail...";
+
+          // Create a hidden video element to generate thumbnail
+          const hiddenVideo = document.createElement("video");
+          hiddenVideo.style.position = "absolute";
+          hiddenVideo.style.left = "-9999px";
+          hiddenVideo.style.width = "1px";
+          hiddenVideo.style.height = "1px";
+          hiddenVideo.muted = true;
+          hiddenVideo.preload = "metadata";
+          hiddenVideo.src = videoUrl;
+          document.body.appendChild(hiddenVideo);
+
+          createThumbnail(hiddenVideo, function (thumbnailUrl) {
+            img.src = thumbnailUrl;
+            img.style.backgroundColor = "transparent";
+            document.body.removeChild(hiddenVideo);
+          });
+
+          item.appendChild(img);
         }
 
         grid.appendChild(item);
@@ -154,10 +218,10 @@ fetch("data/your-choices-data.json")
       }
     });
 
-    // Collect all the videos
+    // Collect all the recently videos
     const allVideos = document.querySelectorAll(".video-recently__video");
 
-    // MUTE TOGGLE — globally mute/unmute all
+    // MUTE TOGGLE — globally mute/unmute all recently videos
     document
       .querySelectorAll(".video-recently__mute-button")
       .forEach((button) => {
@@ -176,7 +240,7 @@ fetch("data/your-choices-data.json")
         });
       });
 
-    // PLAY/PAUSE TOGGLE — per video
+    // PLAY/PAUSE TOGGLE — per recently video
     document
       .querySelectorAll(".video-recently__play-button")
       .forEach((button, index) => {
@@ -232,12 +296,12 @@ fetch("data/your-choices-data.json")
       }
     });
 
-    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK
-    document.querySelectorAll(".video-monthly__video").forEach((videoEl) => {
-      videoEl.addEventListener("click", () => {
+    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK (now for thumbnail images)
+    document.querySelectorAll(".video-monthly__video").forEach((imgEl) => {
+      imgEl.addEventListener("click", () => {
         overlay.classList.remove("hidden");
-        overlayVideo.src = videoEl.src;
-        overlayVideo.currentTime = videoEl.currentTime;
+        overlayVideo.src = imgEl.dataset.videoSrc; // Use the original video source
+        overlayVideo.currentTime = 0;
         overlayVideo.play();
       });
     });
