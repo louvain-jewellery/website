@@ -1,21 +1,3 @@
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const video = entry.target;
-        if (video.dataset.src) {
-          video.src = video.dataset.src;
-          observer.unobserve(video);
-        }
-      }
-    });
-  },
-  {
-    rootMargin: "200px",
-    threshold: 0.1,
-  }
-);
-
 // Function to create thumbnail from video first frame
 function createThumbnail(video, callback) {
   const canvas = document.createElement("canvas");
@@ -87,12 +69,11 @@ fetch("data/your-choices-data.json")
         if (isRecently) {
           // Keep recently videos as video elements (original behavior)
           const video = document.createElement("video");
-          video.dataset.src = videoUrl;
+          video.src = videoUrl;
           video.loop = true;
           video.muted = true;
           video.className = "video-recently__video";
           video.setAttribute("preload", "metadata");
-          observer.observe(video);
           item.appendChild(video);
 
           const muteBtn = document.createElement("button");
