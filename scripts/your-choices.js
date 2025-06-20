@@ -1,3 +1,21 @@
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        if (video.dataset.src) {
+          video.src = video.dataset.src;
+          observer.unobserve(video);
+        }
+      }
+    });
+  },
+  {
+    rootMargin: "200px",
+    threshold: 0.1,
+  }
+);
+
 fetch("data/your-choices-data.json")
   .then((response) => response.json())
   .then((data) => {
@@ -31,13 +49,13 @@ fetch("data/your-choices-data.json")
           : "video-monthly__item";
 
         const video = document.createElement("video");
-        video.src = videoUrl;
+        video.dataset.src = videoUrl;
         video.muted = true;
         video.className = isRecently
           ? "video-recently__video"
           : "video-monthly__video";
-        video.setAttribute("loading", "lazy");
         video.setAttribute("preload", "metadata");
+        observer.observe(video);
         item.appendChild(video);
 
         if (isRecently) {
@@ -165,6 +183,11 @@ fetch("data/your-choices-data.json")
         const icon = button.querySelector("img");
 
         button.addEventListener("click", () => {
+          // Pause ALL other videos first
+          document.querySelectorAll("video").forEach((v) => {
+            if (v !== video) v.pause();
+          });
+
           if (video.paused) {
             video.play();
             icon.src = "icons/pause_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
