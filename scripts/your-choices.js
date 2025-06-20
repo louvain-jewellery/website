@@ -105,10 +105,7 @@ fetch("data/your-choices-data.json")
             leftBtn.classList.remove("hidden");
           }
 
-          if (
-            grid.scrollLeft + grid.clientWidth >=
-            grid.scrollWidth - 1
-          ) {
+          if (grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1) {
             rightBtn.classList.add("hidden");
           } else {
             rightBtn.classList.remove("hidden");
@@ -136,5 +133,88 @@ fetch("data/your-choices-data.json")
         section.appendChild(grid);
         videoSection.appendChild(section);
       }
+    });
+
+    // Collect all the videos
+    const allVideos = document.querySelectorAll(".video-recently__video");
+
+    // MUTE TOGGLE — globally mute/unmute all
+    document
+      .querySelectorAll(".video-recently__mute-button")
+      .forEach((button) => {
+        button.addEventListener("click", () => {
+          const isMuted = allVideos[0].muted;
+          allVideos.forEach((video) => (video.muted = !isMuted));
+
+          // Update ALL mute icons
+          document
+            .querySelectorAll(".video-recently__mute-button-icon")
+            .forEach((icon) => {
+              icon.src = isMuted
+                ? "icons/volume_up_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
+                : "icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
+            });
+        });
+      });
+
+    // PLAY/PAUSE TOGGLE — per video
+    document
+      .querySelectorAll(".video-recently__play-button")
+      .forEach((button, index) => {
+        const video = allVideos[index];
+        const icon = button.querySelector("img");
+
+        button.addEventListener("click", () => {
+          if (video.paused) {
+            video.play();
+            icon.src = "icons/pause_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
+          } else {
+            video.pause();
+            icon.src =
+              "icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
+          }
+        });
+      });
+
+    // FULLSCREEN POPUP
+    const overlay = document.getElementById("videoOverlay");
+    const overlayVideo = document.getElementById("overlayVideo");
+    const closeOverlay = document.getElementById("closeOverlay");
+
+    document
+      .querySelectorAll(".video-recently__full-screen-button")
+      .forEach((button, index) => {
+        const video = allVideos[index];
+
+        button.addEventListener("click", () => {
+          overlay.classList.remove("hidden");
+          overlayVideo.src = video.src;
+          overlayVideo.currentTime = video.currentTime;
+          overlayVideo.play();
+        });
+      });
+
+    closeOverlay.addEventListener("click", () => {
+      overlay.classList.add("hidden");
+      overlayVideo.pause();
+      overlayVideo.src = "";
+    });
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) {
+        overlay.classList.add("hidden");
+        overlayVideo.pause();
+        overlayVideo.src = "";
+      }
+    });
+
+    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK
+    document.querySelectorAll(".video-monthly__video").forEach((videoEl) => {
+      videoEl.addEventListener("click", () => {
+        overlay.classList.remove("hidden");
+        overlayVideo.src = videoEl.src;
+        overlayVideo.currentTime = videoEl.currentTime;
+        overlayVideo.play();
+      });
     });
   });
