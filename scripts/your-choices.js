@@ -241,4 +241,23 @@ fetch("data/your-choices-data.json")
         overlayVideo.play();
       });
     });
+
+    // 📱 If screen is small, tapping recently video triggers popup instead of inline play
+    document.querySelectorAll(".video-recently__video").forEach((videoEl) => {
+      videoEl.addEventListener("click", () => {
+        if (window.innerWidth < 1024) {
+          // Show popup on mobile
+          overlay.classList.remove("hidden");
+          overlayVideo.src = videoEl.dataset.src;
+          overlayVideo.currentTime = videoEl.currentTime;
+          overlayVideo.play();
+        } else {
+          // Normal inline play on desktop
+          document.querySelectorAll("video").forEach((v) => {
+            if (v !== videoEl) v.pause();
+          });
+          videoEl.play();
+        }
+      });
+    });
   });

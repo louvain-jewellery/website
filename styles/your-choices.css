@@ -219,11 +219,13 @@ main {
 .video-overlay__content {
   position: relative;
   height: 95vh;
+  width: auto;
   border-radius: 1rem;
   overflow: hidden;
 }
 .video-overlay video {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .video-overlay__close {
@@ -286,6 +288,11 @@ main {
 
   .video-recently__item:hover .video-recently__play-button {
     opacity: 1;
+  }
+
+  .video-recently__full-screen-button,
+  .video-recently__mute-button {
+    display: none;
   }
 
   .scroll-button {
