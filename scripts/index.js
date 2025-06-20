@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // NOW HERE WE ADD THE FETCH + RENDER PART 💅
   fetch("data/catalogue-data.json")
     .then((response) => response.json())
     .then((data) => {

@@ -41,50 +41,102 @@ fetch("data/your-choices-data.json")
         item.appendChild(video);
 
         if (isRecently) {
-          item.innerHTML += `
-          <button class="video-recently__mute-button video-button">
+          const muteBtn = document.createElement("button");
+          muteBtn.className = "video-recently__mute-button video-button";
+          muteBtn.innerHTML = `
             <img
               class="video-recently__mute-button-icon video-button-icon"
               src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
             />
-          </button>
-          <button class="video-recently__full-screen-button video-button">
-            Full Screen
-          </button>
-          <button class="video-recently__play-button video-button">
+          `;
+
+          const fullBtn = document.createElement("button");
+          fullBtn.className = "video-recently__full-screen-button video-button";
+          fullBtn.textContent = "Full Screen";
+
+          const playBtn = document.createElement("button");
+          playBtn.className = "video-recently__play-button video-button";
+          playBtn.innerHTML = `
             <img
               class="video-recently__play-button-icon video-button-icon"
               src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
             />
-          </button>
-        `;
+          `;
+
+          item.appendChild(muteBtn);
+          item.appendChild(fullBtn);
+          item.appendChild(playBtn);
         }
+
         grid.appendChild(item);
       });
 
       if (isRecently) {
         gridWrapper.appendChild(grid);
 
-        gridWrapper.innerHTML += `
-          <button class="video-recently__left-scroll-button scroll-button">
-              <img
-                class="video-recently__left-scroll-button-icon"
-                src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-              />
-            </button>
-            <button class="video-recently__right-scroll-button scroll-button">
-              <img
-                class="video-recently__right-scroll-button-icon"
-                src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-              />
-            </button>
+        // 🌪️ Build scroll buttons with DOM API instead of innerHTML
+        const leftBtn = document.createElement("button");
+        leftBtn.className = "video-recently__left-scroll-button scroll-button";
+        leftBtn.innerHTML = `
+          <img
+            class="video-recently__left-scroll-button-icon"
+            src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+          />
         `;
 
+        const rightBtn = document.createElement("button");
+        rightBtn.className =
+          "video-recently__right-scroll-button scroll-button";
+        rightBtn.innerHTML = `
+          <img
+            class="video-recently__right-scroll-button-icon"
+            src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        `;
+
+        gridWrapper.appendChild(leftBtn);
+        gridWrapper.appendChild(rightBtn);
         section.appendChild(gridWrapper);
+        videoSection.appendChild(section);
+
+        // 💅 Hook up the buttons AFTER appending
+        function updateButtonVisibility() {
+          if (grid.scrollLeft === 0) {
+            leftBtn.classList.add("hidden");
+          } else {
+            leftBtn.classList.remove("hidden");
+          }
+
+          if (
+            grid.scrollLeft + grid.clientWidth >=
+            grid.scrollWidth - 1
+          ) {
+            rightBtn.classList.add("hidden");
+          } else {
+            rightBtn.classList.remove("hidden");
+          }
+        }
+
+        updateButtonVisibility();
+
+        grid.addEventListener("scroll", updateButtonVisibility);
+
+        leftBtn.addEventListener("click", () => {
+          grid.scrollBy({
+            left: -grid.offsetWidth,
+            behavior: "smooth",
+          });
+        });
+
+        rightBtn.addEventListener("click", () => {
+          grid.scrollBy({
+            left: grid.offsetWidth,
+            behavior: "smooth",
+          });
+        });
       } else {
         section.appendChild(grid);
+        videoSection.appendChild(section);
       }
-
-      videoSection.appendChild(section);
     });
   });
