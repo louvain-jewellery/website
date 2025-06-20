@@ -50,6 +50,7 @@ fetch("data/your-choices-data.json")
 
         const video = document.createElement("video");
         video.dataset.src = videoUrl;
+        video.loop = true;
         video.muted = true;
         video.className = isRecently
           ? "video-recently__video"
