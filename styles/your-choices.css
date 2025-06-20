@@ -310,6 +310,19 @@ main {
   .video-monthly__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* VIDEO OVERLAY */
+  .video-overlay {
+    background: black;
+  }
+
+  .video-overlay__content {
+    border-radius: 1rem;
+  }
+
+  .video-overlay__close {
+    color: white;
+  }
 }
 
 /* VERTICAL TAB */
