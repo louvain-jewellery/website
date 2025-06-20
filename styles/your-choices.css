@@ -153,6 +153,13 @@ main {
   cursor: pointer;
 }
 
+.scroll-button.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
 .video-recently__left-scroll-button {
   left: 0.5rem;
 }

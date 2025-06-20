@@ -74,7 +74,6 @@ fetch("data/your-choices-data.json")
       if (isRecently) {
         gridWrapper.appendChild(grid);
 
-        // 🌪️ Build scroll buttons with DOM API instead of innerHTML
         const leftBtn = document.createElement("button");
         leftBtn.className = "video-recently__left-scroll-button scroll-button";
         leftBtn.innerHTML = `
@@ -99,7 +98,6 @@ fetch("data/your-choices-data.json")
         section.appendChild(gridWrapper);
         videoSection.appendChild(section);
 
-        // 💅 Hook up the buttons AFTER appending
         function updateButtonVisibility() {
           if (grid.scrollLeft === 0) {
             leftBtn.classList.add("hidden");
