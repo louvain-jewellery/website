@@ -274,54 +274,18 @@ fetch("data/your-choices-data.json")
 
           // Create fallback thumbnail function
           function createFallbackThumbnail() {
-            // Create a simple fallback thumbnail with video info
-            const fallbackCanvas = document.createElement("canvas");
-            const fallbackCtx = fallbackCanvas.getContext("2d");
-            fallbackCanvas.width = 320;
-            fallbackCanvas.height = 180;
+            // Simple clean fallback - just show the video element as thumbnail
+            const fallbackVideo = document.createElement("video");
+            fallbackVideo.className = "video-monthly__video";
+            fallbackVideo.dataset.videoSrc = videoUrl;
+            fallbackVideo.style.cursor = "pointer";
+            fallbackVideo.src = videoUrl;
+            fallbackVideo.muted = true;
+            fallbackVideo.preload = "metadata";
+            fallbackVideo.currentTime = 2; // Try to show frame at 2 seconds
 
-            // Create gradient background
-            const gradient = fallbackCtx.createLinearGradient(0, 0, 320, 180);
-            gradient.addColorStop(0, "#4a90e2");
-            gradient.addColorStop(1, "#357abd");
-            fallbackCtx.fillStyle = gradient;
-            fallbackCtx.fillRect(0, 0, 320, 180);
-
-            // Add play icon
-            fallbackCtx.fillStyle = "rgba(255, 255, 255, 0.9)";
-            fallbackCtx.beginPath();
-            fallbackCtx.moveTo(120, 60);
-            fallbackCtx.lineTo(120, 120);
-            fallbackCtx.lineTo(180, 90);
-            fallbackCtx.closePath();
-            fallbackCtx.fill();
-
-            // Add text
-            fallbackCtx.fillStyle = "rgba(255, 255, 255, 0.8)";
-            fallbackCtx.font = "14px Arial";
-            fallbackCtx.textAlign = "center";
-            fallbackCtx.fillText("Video Thumbnail", 160, 140);
-            fallbackCtx.fillText("Click to play", 160, 160);
-
-            fallbackCanvas.toBlob(
-              (blob) => {
-                if (blob) {
-                  const fallbackUrl = URL.createObjectURL(blob);
-                  img.src = fallbackUrl;
-                  img.style.display = "block";
-                  thumbnailSkeleton.remove();
-                } else {
-                  // Ultimate fallback - just remove skeleton and show error
-                  thumbnailSkeleton.remove();
-                  const errorDiv = document.createElement("div");
-                  errorDiv.className = "video-error";
-                  errorDiv.textContent = "Thumbnail unavailable";
-                  item.appendChild(errorDiv);
-                }
-              },
-              "image/jpeg",
-              0.8
-            );
+            thumbnailSkeleton.remove();
+            item.appendChild(fallbackVideo);
           }
 
           // Create a hidden video element to generate thumbnail
