@@ -2,105 +2,59 @@
 function createThumbnail(video, callback, fallbackCallback) {
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
-  let attempts = 0;
-  const maxAttempts = 3;
-  const timePositions = [0, 1, 2]; // Try different time positions
 
-  function captureFrame(timePosition = 0) {
-    attempts++;
-
+  function captureFrame() {
     if (video.videoWidth === 0 || video.videoHeight === 0) {
-      if (attempts < maxAttempts) {
-        setTimeout(() => captureFrame(timePositions[attempts - 1]), 200);
-        return;
-      } else {
-        fallbackCallback();
-        return;
-      }
+      setTimeout(captureFrame, 100);
+      return;
     }
 
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
 
-    // Clear canvas with white background first
-    ctx.fillStyle = "#ffffff";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
     try {
       ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-      // Check if the canvas is not just black/empty
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const data = imageData.data;
-      let hasContent = false;
-
-      // Check if there's actual content (not all black pixels)
-      for (let i = 0; i < data.length; i += 4) {
-        const r = data[i];
-        const g = data[i + 1];
-        const b = data[i + 2];
-
-        // If we find any non-black pixel, consider it has content
-        if (r > 10 || g > 10 || b > 10) {
-          hasContent = true;
-          break;
-        }
-      }
-
-      if (hasContent) {
-        canvas.toBlob(
-          function (blob) {
-            if (blob && blob.size > 0) {
-              const thumbnailUrl = URL.createObjectURL(blob);
-              callback(thumbnailUrl);
-            } else {
-              // Try next time position or fallback
-              if (attempts < maxAttempts) {
-                video.currentTime = timePositions[attempts];
-              } else {
-                fallbackCallback();
-              }
-            }
-          },
-          "image/jpeg",
-          0.8
-        );
-      } else {
-        // No content found, try next time position
-        if (attempts < maxAttempts) {
-          video.currentTime = timePositions[attempts];
-        } else {
-          fallbackCallback();
-        }
-      }
+      canvas.toBlob(
+        function (blob) {
+          if (blob && blob.size > 0) {
+            const thumbnailUrl = URL.createObjectURL(blob);
+            callback(thumbnailUrl);
+          } else {
+            fallbackCallback();
+          }
+        },
+        "image/jpeg",
+        0.7
+      );
     } catch (error) {
-      console.warn("Canvas drawing failed:", error);
-      if (attempts < maxAttempts) {
-        video.currentTime = timePositions[attempts];
-      } else {
-        fallbackCallback();
-      }
+      fallbackCallback();
     }
   }
 
-  video.addEventListener("loadeddata", function () {
-    video.currentTime = timePositions[0];
-  });
+  video.addEventListener(
+    "loadeddata",
+    function () {
+      video.currentTime = 1; // Try 1 second instead of 0
+    },
+    { once: true }
+  );
 
-  video.addEventListener("seeked", function () {
-    captureFrame(video.currentTime);
-  });
+  video.addEventListener(
+    "seeked",
+    function () {
+      captureFrame();
+    },
+    { once: true }
+  );
 
-  video.addEventListener("error", function () {
-    fallbackCallback();
-  });
-
-  // Timeout fallback
-  setTimeout(() => {
-    if (attempts === 0) {
+  video.addEventListener(
+    "error",
+    function () {
       fallbackCallback();
-    }
-  }, 5000);
+    },
+    { once: true }
+  );
 
   video.load();
 }
@@ -274,18 +228,20 @@ fetch("data/your-choices-data.json")
 
           // Create fallback thumbnail function
           function createFallbackThumbnail() {
-            // Simple clean fallback - just show the video element as thumbnail
-            const fallbackVideo = document.createElement("video");
-            fallbackVideo.className = "video-monthly__video";
-            fallbackVideo.dataset.videoSrc = videoUrl;
-            fallbackVideo.style.cursor = "pointer";
-            fallbackVideo.src = videoUrl;
-            fallbackVideo.muted = true;
-            fallbackVideo.preload = "metadata";
-            fallbackVideo.currentTime = 2; // Try to show frame at 2 seconds
-
+            // Super simple fallback - just a gray placeholder
             thumbnailSkeleton.remove();
-            item.appendChild(fallbackVideo);
+            const placeholder = document.createElement("div");
+            placeholder.className = "video-monthly__video video-placeholder";
+            placeholder.dataset.videoSrc = videoUrl;
+            placeholder.style.cursor = "pointer";
+            placeholder.style.backgroundColor = "#e0e0e0";
+            placeholder.style.display = "flex";
+            placeholder.style.alignItems = "center";
+            placeholder.style.justifyContent = "center";
+            placeholder.style.color = "#666";
+            placeholder.style.fontSize = "14px";
+            placeholder.textContent = "📹";
+            item.appendChild(placeholder);
           }
 
           // Create a hidden video element to generate thumbnail
@@ -296,7 +252,6 @@ fetch("data/your-choices-data.json")
           hiddenVideo.style.height = "1px";
           hiddenVideo.muted = true;
           hiddenVideo.preload = "metadata";
-          hiddenVideo.crossOrigin = "anonymous"; // Help with CORS issues
           hiddenVideo.src = videoUrl;
           document.body.appendChild(hiddenVideo);
 
@@ -309,7 +264,7 @@ fetch("data/your-choices-data.json")
               document.body.removeChild(hiddenVideo);
             },
             function () {
-              // Fallback when thumbnail generation fails
+              // Simple fallback when thumbnail generation fails
               document.body.removeChild(hiddenVideo);
               createFallbackThumbnail();
             }
@@ -463,11 +418,11 @@ fetch("data/your-choices-data.json")
       }
     });
 
-    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK (now for thumbnail images)
-    document.querySelectorAll(".video-monthly__video").forEach((imgEl) => {
-      imgEl.addEventListener("click", () => {
+    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK (now for thumbnail images and placeholders)
+    document.querySelectorAll(".video-monthly__video").forEach((element) => {
+      element.addEventListener("click", () => {
         overlay.classList.remove("hidden");
-        overlayVideo.src = imgEl.dataset.videoSrc; // Use the original video source
+        overlayVideo.src = element.dataset.videoSrc; // Use the original video source
         overlayVideo.currentTime = 0;
         overlayVideo.play();
       });
