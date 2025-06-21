@@ -221,7 +221,7 @@ main {
 .video-overlay__content {
   position: relative;
   height: 95vh;
-  width: auto;
+  aspect-ratio: 9/16;
   border-radius: 1rem;
   overflow: hidden;
 }
