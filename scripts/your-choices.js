@@ -42,8 +42,10 @@ function createThumbnail(video, callback, fallbackCallback) {
 
   video.addEventListener(
     "seeked",
-    function () {
-      captureFrame();
+    () => {
+      requestAnimationFrame(() => {
+        captureFrame();
+      });
     },
     { once: true }
   );
@@ -55,7 +57,7 @@ function createThumbnail(video, callback, fallbackCallback) {
     },
     { once: true }
   );
-
+  video.crossOrigin;
   video.load();
 }
 
