@@ -1,5 +1,5 @@
 // Function to create thumbnail from video first frame
-function createThumbnail(video, callback, fallbackCallback) {
+function createThumbnail(video, callback) {
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
 
@@ -11,53 +11,26 @@ function createThumbnail(video, callback, fallbackCallback) {
 
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-    try {
-      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-      canvas.toBlob(
-        function (blob) {
-          if (blob && blob.size > 0) {
-            const thumbnailUrl = URL.createObjectURL(blob);
-            callback(thumbnailUrl);
-          } else {
-            fallbackCallback();
-          }
-        },
-        "image/jpeg",
-        0.7
-      );
-    } catch (error) {
-      fallbackCallback();
-    }
+    canvas.toBlob(
+      function (blob) {
+        const thumbnailUrl = URL.createObjectURL(blob);
+        callback(thumbnailUrl);
+      },
+      "image/jpeg",
+      0.8
+    );
   }
 
-  video.addEventListener(
-    "loadeddata",
-    function () {
-      video.currentTime = 1; // Try 1 second instead of 0
-    },
-    { once: true }
-  );
+  video.addEventListener("loadeddata", function () {
+    video.currentTime = 0;
+  });
 
-  video.addEventListener(
-    "seeked",
-    () => {
-      requestAnimationFrame(() => {
-        captureFrame();
-      });
-    },
-    { once: true }
-  );
+  video.addEventListener("seeked", function () {
+    captureFrame();
+  });
 
-  video.addEventListener(
-    "error",
-    function () {
-      fallbackCallback();
-    },
-    { once: true }
-  );
-  video.crossOrigin;
   video.load();
 }
 
@@ -65,6 +38,9 @@ function createThumbnail(video, callback, fallbackCallback) {
 function createSkeletonLoader(className) {
   const skeleton = document.createElement("div");
   skeleton.className = `${className} skeleton-loader`;
+  skeleton.innerHTML = `
+    <div class="skeleton-shimmer"></div>
+  `;
   return skeleton;
 }
 
@@ -228,24 +204,6 @@ fetch("data/your-choices-data.json")
           img.style.display = "none"; // Hide initially
           img.alt = "Video thumbnail";
 
-          // Create fallback thumbnail function
-          function createFallbackThumbnail() {
-            // Super simple fallback - just a gray placeholder
-            thumbnailSkeleton.remove();
-            const placeholder = document.createElement("div");
-            placeholder.className = "video-monthly__video video-placeholder";
-            placeholder.dataset.videoSrc = videoUrl;
-            placeholder.style.cursor = "pointer";
-            placeholder.style.backgroundColor = "#e0e0e0";
-            placeholder.style.display = "flex";
-            placeholder.style.alignItems = "center";
-            placeholder.style.justifyContent = "center";
-            placeholder.style.color = "#666";
-            placeholder.style.fontSize = "14px";
-            placeholder.textContent = "📹";
-            item.appendChild(placeholder);
-          }
-
           // Create a hidden video element to generate thumbnail
           const hiddenVideo = document.createElement("video");
           hiddenVideo.style.position = "absolute";
@@ -257,20 +215,22 @@ fetch("data/your-choices-data.json")
           hiddenVideo.src = videoUrl;
           document.body.appendChild(hiddenVideo);
 
-          createThumbnail(
-            hiddenVideo,
-            function (thumbnailUrl) {
-              img.src = thumbnailUrl;
-              img.style.display = "block";
-              thumbnailSkeleton.remove();
-              document.body.removeChild(hiddenVideo);
-            },
-            function () {
-              // Simple fallback when thumbnail generation fails
-              document.body.removeChild(hiddenVideo);
-              createFallbackThumbnail();
-            }
-          );
+          createThumbnail(hiddenVideo, function (thumbnailUrl) {
+            img.src = thumbnailUrl;
+            img.style.display = "block";
+            thumbnailSkeleton.remove();
+            document.body.removeChild(hiddenVideo);
+          });
+
+          // Handle thumbnail generation error
+          hiddenVideo.addEventListener("error", () => {
+            thumbnailSkeleton.remove();
+            const errorDiv = document.createElement("div");
+            errorDiv.className = "video-error";
+            errorDiv.textContent = "Failed to load thumbnail";
+            item.appendChild(errorDiv);
+            document.body.removeChild(hiddenVideo);
+          });
 
           item.appendChild(img);
         }
@@ -420,11 +380,11 @@ fetch("data/your-choices-data.json")
       }
     });
 
-    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK (now for thumbnail images and placeholders)
-    document.querySelectorAll(".video-monthly__video").forEach((element) => {
-      element.addEventListener("click", () => {
+    // MONTHLY VIDEO FULLSCREEN OVERLAY ON CLICK (now for thumbnail images)
+    document.querySelectorAll(".video-monthly__video").forEach((imgEl) => {
+      imgEl.addEventListener("click", () => {
         overlay.classList.remove("hidden");
-        overlayVideo.src = element.dataset.videoSrc; // Use the original video source
+        overlayVideo.src = imgEl.dataset.videoSrc; // Use the original video source
         overlayVideo.currentTime = 0;
         overlayVideo.play();
       });
@@ -436,7 +396,7 @@ fetch("data/your-choices-data.json")
         if (window.innerWidth < 1024) {
           // Show popup on mobile
           overlay.classList.remove("hidden");
-          overlayVideo.src = videoEl.src; // Fixed: use videoEl.src instead of videoEl.dataset.src
+          overlayVideo.src = videoEl.dataset.src;
           overlayVideo.currentTime = videoEl.currentTime;
           overlayVideo.play();
         } else {
