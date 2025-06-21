@@ -34,9 +34,74 @@ function createThumbnail(video, callback) {
   video.load();
 }
 
+// Function to create skeleton loader
+function createSkeletonLoader(className) {
+  const skeleton = document.createElement("div");
+  skeleton.className = `${className} skeleton-loader`;
+  return skeleton;
+}
+
+// Function to show loading skeletons while data is being fetched
+function showInitialSkeletons() {
+  const videoSection = document.getElementById("videoSection");
+
+  // Create recently section skeleton
+  const recentlySection = document.createElement("section");
+  recentlySection.className = "video-recently skeleton-section";
+
+  const recentlyTitle = document.createElement("div");
+  recentlyTitle.className = "skeleton-title";
+  recentlySection.appendChild(recentlyTitle);
+
+  const recentlyGrid = document.createElement("div");
+  recentlyGrid.className = "video-recently__grid";
+
+  // Add 4 skeleton items for recently section
+  for (let i = 0; i < 4; i++) {
+    const skeletonItem = createSkeletonLoader("video-recently__item");
+    recentlyGrid.appendChild(skeletonItem);
+  }
+
+  recentlySection.appendChild(recentlyGrid);
+  videoSection.appendChild(recentlySection);
+
+  // Create monthly section skeleton
+  const monthlySection = document.createElement("section");
+  monthlySection.className = "video-monthly skeleton-section";
+
+  const monthlyTitle = document.createElement("div");
+  monthlyTitle.className = "skeleton-title";
+  monthlySection.appendChild(monthlyTitle);
+
+  const monthlyGrid = document.createElement("div");
+  monthlyGrid.className = "video-monthly__grid";
+
+  // Add 6 skeleton items for monthly section
+  for (let i = 0; i < 6; i++) {
+    const skeletonItem = createSkeletonLoader("video-monthly__item");
+    monthlyGrid.appendChild(skeletonItem);
+  }
+
+  monthlySection.appendChild(monthlyGrid);
+  videoSection.appendChild(monthlySection);
+}
+
+// Function to remove skeleton loaders
+function removeSkeletons() {
+  document.querySelectorAll(".skeleton-section").forEach((section) => {
+    section.remove();
+  });
+}
+
+// Show initial skeletons
+showInitialSkeletons();
+
 fetch("data/your-choices-data.json")
   .then((response) => response.json())
   .then((data) => {
+    // Remove skeleton loaders
+    removeSkeletons();
+
     const videoSection = document.getElementById("videoSection");
 
     data.forEach((entry, index) => {
@@ -67,6 +132,10 @@ fetch("data/your-choices-data.json")
           : "video-monthly__item";
 
         if (isRecently) {
+          // Add skeleton for recently videos while loading
+          const videoSkeleton = createSkeletonLoader("video-recently__video");
+          item.appendChild(videoSkeleton);
+
           // Keep recently videos as video elements (original behavior)
           const video = document.createElement("video");
           video.src = videoUrl;
@@ -74,6 +143,23 @@ fetch("data/your-choices-data.json")
           video.muted = true;
           video.className = "video-recently__video";
           video.setAttribute("preload", "metadata");
+          video.style.display = "none"; // Hide initially
+
+          // Show video and remove skeleton when loaded
+          video.addEventListener("loadeddata", () => {
+            video.style.display = "block";
+            videoSkeleton.remove();
+          });
+
+          // Handle loading error
+          video.addEventListener("error", () => {
+            videoSkeleton.remove();
+            const errorDiv = document.createElement("div");
+            errorDiv.className = "video-error";
+            errorDiv.textContent = "Failed to load video";
+            item.appendChild(errorDiv);
+          });
+
           item.appendChild(video);
 
           const muteBtn = document.createElement("button");
@@ -102,15 +188,18 @@ fetch("data/your-choices-data.json")
           item.appendChild(fullBtn);
           item.appendChild(playBtn);
         } else {
-          // For monthly videos, create thumbnail images
+          // For monthly videos, create thumbnail images with skeleton
+          const thumbnailSkeleton = createSkeletonLoader(
+            "video-monthly__video"
+          );
+          item.appendChild(thumbnailSkeleton);
+
           const img = document.createElement("img");
           img.className = "video-monthly__video";
           img.dataset.videoSrc = videoUrl;
           img.style.cursor = "pointer";
-
-          // Add loading placeholder
-          img.style.backgroundColor = "#f0f0f0";
-          img.alt = "Loading video thumbnail...";
+          img.style.display = "none"; // Hide initially
+          img.alt = "Video thumbnail";
 
           // Create a hidden video element to generate thumbnail
           const hiddenVideo = document.createElement("video");
@@ -125,7 +214,18 @@ fetch("data/your-choices-data.json")
 
           createThumbnail(hiddenVideo, function (thumbnailUrl) {
             img.src = thumbnailUrl;
-            img.style.backgroundColor = "transparent";
+            img.style.display = "block";
+            thumbnailSkeleton.remove();
+            document.body.removeChild(hiddenVideo);
+          });
+
+          // Handle thumbnail generation error
+          hiddenVideo.addEventListener("error", () => {
+            thumbnailSkeleton.remove();
+            const errorDiv = document.createElement("div");
+            errorDiv.className = "video-error";
+            errorDiv.textContent = "Failed to load thumbnail";
+            item.appendChild(errorDiv);
             document.body.removeChild(hiddenVideo);
           });
 
@@ -293,7 +393,7 @@ fetch("data/your-choices-data.json")
         if (window.innerWidth < 1024) {
           // Show popup on mobile
           overlay.classList.remove("hidden");
-          overlayVideo.src = videoEl.dataset.src;
+          overlayVideo.src = videoEl.src; // Fixed: use videoEl.src instead of videoEl.dataset.src
           overlayVideo.currentTime = videoEl.currentTime;
           overlayVideo.play();
         } else {
@@ -305,4 +405,15 @@ fetch("data/your-choices-data.json")
         }
       });
     });
+  })
+  .catch((error) => {
+    console.error("Error loading video data:", error);
+    // Remove skeletons and show error message
+    removeSkeletons();
+    const videoSection = document.getElementById("videoSection");
+    const errorDiv = document.createElement("div");
+    errorDiv.className = "error-message";
+    errorDiv.textContent =
+      "Failed to load video gallery. Please try again later.";
+    videoSection.appendChild(errorDiv);
   });
