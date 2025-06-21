@@ -187,6 +187,55 @@ fetch("data/your-choices-data.json")
             />
           `;
 
+          // Add this right after creating muteBtn and before appendChild:
+          muteBtn.addEventListener("click", () => {
+            const allVideos = document.querySelectorAll(
+              ".video-recently__video"
+            );
+            const shouldMute = !video.muted;
+
+            allVideos.forEach((v) => {
+              v.muted = shouldMute;
+            });
+
+            document
+              .querySelectorAll(".video-recently__mute-button-icon")
+              .forEach((icon) => {
+                icon.src = shouldMute
+                  ? "icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
+                  : "icons/volume_up_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
+              });
+          });
+
+          // Add this right after creating fullBtn:
+          fullBtn.addEventListener("click", () => {
+            const overlay = document.getElementById("videoOverlay");
+            const overlayVideo = document.getElementById("overlayVideo");
+
+            overlay.classList.remove("hidden");
+            overlayVideo.src = video.src;
+            overlayVideo.currentTime = video.currentTime;
+            overlayVideo.play();
+          });
+
+          // Add this right after creating playBtn:
+          playBtn.addEventListener("click", () => {
+            document.querySelectorAll("video").forEach((v) => {
+              if (v !== video) v.pause();
+            });
+
+            const icon = playBtn.querySelector("img");
+            if (video.paused) {
+              video.play();
+              icon.src =
+                "icons/pause_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
+            } else {
+              video.pause();
+              icon.src =
+                "icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
+            }
+          });
+
           item.appendChild(muteBtn);
           item.appendChild(fullBtn);
           item.appendChild(playBtn);
@@ -305,66 +354,10 @@ fetch("data/your-choices-data.json")
     // Collect all the recently videos
     const allVideos = document.querySelectorAll(".video-recently__video");
 
-    // MUTE TOGGLE — globally mute/unmute all recently videos
-    document
-      .querySelectorAll(".video-recently__mute-button")
-      .forEach((button) => {
-        button.addEventListener("click", () => {
-          const isMuted = allVideos[0].muted;
-          allVideos.forEach((video) => (video.muted = !isMuted));
-
-          // Update ALL mute icons
-          document
-            .querySelectorAll(".video-recently__mute-button-icon")
-            .forEach((icon) => {
-              icon.src = isMuted
-                ? "icons/volume_up_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                : "icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
-            });
-        });
-      });
-
-    // PLAY/PAUSE TOGGLE — per recently video
-    document
-      .querySelectorAll(".video-recently__play-button")
-      .forEach((button, index) => {
-        const video = allVideos[index];
-        const icon = button.querySelector("img");
-
-        button.addEventListener("click", () => {
-          // Pause ALL other videos first
-          document.querySelectorAll("video").forEach((v) => {
-            if (v !== video) v.pause();
-          });
-
-          if (video.paused) {
-            video.play();
-            icon.src = "icons/pause_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
-          } else {
-            video.pause();
-            icon.src =
-              "icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg";
-          }
-        });
-      });
-
     // FULLSCREEN POPUP
     const overlay = document.getElementById("videoOverlay");
     const overlayVideo = document.getElementById("overlayVideo");
     const closeOverlay = document.getElementById("closeOverlay");
-
-    document
-      .querySelectorAll(".video-recently__full-screen-button")
-      .forEach((button, index) => {
-        const video = allVideos[index];
-
-        button.addEventListener("click", () => {
-          overlay.classList.remove("hidden");
-          overlayVideo.src = video.src;
-          overlayVideo.currentTime = video.currentTime;
-          overlayVideo.play();
-        });
-      });
 
     closeOverlay.addEventListener("click", () => {
       overlay.classList.add("hidden");
@@ -396,7 +389,7 @@ fetch("data/your-choices-data.json")
         if (window.innerWidth < 1024) {
           // Show popup on mobile
           overlay.classList.remove("hidden");
-          overlayVideo.src = videoEl.dataset.src;
+          overlayVideo.src = videoEl.src;
           overlayVideo.currentTime = videoEl.currentTime;
           overlayVideo.play();
         } else {
