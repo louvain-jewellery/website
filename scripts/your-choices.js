@@ -1,35 +1,106 @@
 // Function to create thumbnail from video first frame
-function createThumbnail(video, callback) {
+function createThumbnail(video, callback, fallbackCallback) {
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
+  let attempts = 0;
+  const maxAttempts = 3;
+  const timePositions = [0, 1, 2]; // Try different time positions
 
-  function captureFrame() {
+  function captureFrame(timePosition = 0) {
+    attempts++;
+
     if (video.videoWidth === 0 || video.videoHeight === 0) {
-      setTimeout(captureFrame, 100);
-      return;
+      if (attempts < maxAttempts) {
+        setTimeout(() => captureFrame(timePositions[attempts - 1]), 200);
+        return;
+      } else {
+        fallbackCallback();
+        return;
+      }
     }
 
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
-    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-    canvas.toBlob(
-      function (blob) {
-        const thumbnailUrl = URL.createObjectURL(blob);
-        callback(thumbnailUrl);
-      },
-      "image/jpeg",
-      0.8
-    );
+    // Clear canvas with white background first
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    try {
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      // Check if the canvas is not just black/empty
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = imageData.data;
+      let hasContent = false;
+
+      // Check if there's actual content (not all black pixels)
+      for (let i = 0; i < data.length; i += 4) {
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+
+        // If we find any non-black pixel, consider it has content
+        if (r > 10 || g > 10 || b > 10) {
+          hasContent = true;
+          break;
+        }
+      }
+
+      if (hasContent) {
+        canvas.toBlob(
+          function (blob) {
+            if (blob && blob.size > 0) {
+              const thumbnailUrl = URL.createObjectURL(blob);
+              callback(thumbnailUrl);
+            } else {
+              // Try next time position or fallback
+              if (attempts < maxAttempts) {
+                video.currentTime = timePositions[attempts];
+              } else {
+                fallbackCallback();
+              }
+            }
+          },
+          "image/jpeg",
+          0.8
+        );
+      } else {
+        // No content found, try next time position
+        if (attempts < maxAttempts) {
+          video.currentTime = timePositions[attempts];
+        } else {
+          fallbackCallback();
+        }
+      }
+    } catch (error) {
+      console.warn("Canvas drawing failed:", error);
+      if (attempts < maxAttempts) {
+        video.currentTime = timePositions[attempts];
+      } else {
+        fallbackCallback();
+      }
+    }
   }
 
   video.addEventListener("loadeddata", function () {
-    video.currentTime = 0;
+    video.currentTime = timePositions[0];
   });
 
   video.addEventListener("seeked", function () {
-    captureFrame();
+    captureFrame(video.currentTime);
   });
+
+  video.addEventListener("error", function () {
+    fallbackCallback();
+  });
+
+  // Timeout fallback
+  setTimeout(() => {
+    if (attempts === 0) {
+      fallbackCallback();
+    }
+  }, 5000);
 
   video.load();
 }
@@ -201,6 +272,58 @@ fetch("data/your-choices-data.json")
           img.style.display = "none"; // Hide initially
           img.alt = "Video thumbnail";
 
+          // Create fallback thumbnail function
+          function createFallbackThumbnail() {
+            // Create a simple fallback thumbnail with video info
+            const fallbackCanvas = document.createElement("canvas");
+            const fallbackCtx = fallbackCanvas.getContext("2d");
+            fallbackCanvas.width = 320;
+            fallbackCanvas.height = 180;
+
+            // Create gradient background
+            const gradient = fallbackCtx.createLinearGradient(0, 0, 320, 180);
+            gradient.addColorStop(0, "#4a90e2");
+            gradient.addColorStop(1, "#357abd");
+            fallbackCtx.fillStyle = gradient;
+            fallbackCtx.fillRect(0, 0, 320, 180);
+
+            // Add play icon
+            fallbackCtx.fillStyle = "rgba(255, 255, 255, 0.9)";
+            fallbackCtx.beginPath();
+            fallbackCtx.moveTo(120, 60);
+            fallbackCtx.lineTo(120, 120);
+            fallbackCtx.lineTo(180, 90);
+            fallbackCtx.closePath();
+            fallbackCtx.fill();
+
+            // Add text
+            fallbackCtx.fillStyle = "rgba(255, 255, 255, 0.8)";
+            fallbackCtx.font = "14px Arial";
+            fallbackCtx.textAlign = "center";
+            fallbackCtx.fillText("Video Thumbnail", 160, 140);
+            fallbackCtx.fillText("Click to play", 160, 160);
+
+            fallbackCanvas.toBlob(
+              (blob) => {
+                if (blob) {
+                  const fallbackUrl = URL.createObjectURL(blob);
+                  img.src = fallbackUrl;
+                  img.style.display = "block";
+                  thumbnailSkeleton.remove();
+                } else {
+                  // Ultimate fallback - just remove skeleton and show error
+                  thumbnailSkeleton.remove();
+                  const errorDiv = document.createElement("div");
+                  errorDiv.className = "video-error";
+                  errorDiv.textContent = "Thumbnail unavailable";
+                  item.appendChild(errorDiv);
+                }
+              },
+              "image/jpeg",
+              0.8
+            );
+          }
+
           // Create a hidden video element to generate thumbnail
           const hiddenVideo = document.createElement("video");
           hiddenVideo.style.position = "absolute";
@@ -209,25 +332,24 @@ fetch("data/your-choices-data.json")
           hiddenVideo.style.height = "1px";
           hiddenVideo.muted = true;
           hiddenVideo.preload = "metadata";
+          hiddenVideo.crossOrigin = "anonymous"; // Help with CORS issues
           hiddenVideo.src = videoUrl;
           document.body.appendChild(hiddenVideo);
 
-          createThumbnail(hiddenVideo, function (thumbnailUrl) {
-            img.src = thumbnailUrl;
-            img.style.display = "block";
-            thumbnailSkeleton.remove();
-            document.body.removeChild(hiddenVideo);
-          });
-
-          // Handle thumbnail generation error
-          hiddenVideo.addEventListener("error", () => {
-            thumbnailSkeleton.remove();
-            const errorDiv = document.createElement("div");
-            errorDiv.className = "video-error";
-            errorDiv.textContent = "Failed to load thumbnail";
-            item.appendChild(errorDiv);
-            document.body.removeChild(hiddenVideo);
-          });
+          createThumbnail(
+            hiddenVideo,
+            function (thumbnailUrl) {
+              img.src = thumbnailUrl;
+              img.style.display = "block";
+              thumbnailSkeleton.remove();
+              document.body.removeChild(hiddenVideo);
+            },
+            function () {
+              // Fallback when thumbnail generation fails
+              document.body.removeChild(hiddenVideo);
+              createFallbackThumbnail();
+            }
+          );
 
           item.appendChild(img);
         }
