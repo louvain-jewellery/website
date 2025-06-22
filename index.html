@@ -48,7 +48,7 @@
       <section class="hero-section">
         <img class="hero-background" src="images/hero1.png" />
         <div class="hero-content">
-          <h2 class="hero-title-text title-text">Saksi di Jari Manih</h2>
+          <h1 class="hero-title-text title-text">Saksi di Jari Manih</h1>
           <p class="hero-body-text body-text">
             Setiap cincin Louvain bukan sekadar perhiasan, melainkan saksi bisu
             dari janji suci Anda berdua. Dirancang untuk menemani cinta yang
@@ -224,6 +224,25 @@
         </a>
       </section>
 
+      <!-- YOUR CHOICES SECTION -->
+
+      <section class="your-choices">
+        <div class="your-choices__title-wrapper">
+          <h2 class="your-choices__title-text title-text">
+            Apa yang Mereka Pilih?
+          </h2>
+          <p class="your-choices__subtitle-text body-text">
+            Rangkaian cincin yang dipilih dengan sepenuh hati oleh tiap
+            pasangan.
+          </p>
+        </div>
+
+        <div class="video-recently__grid-wrapper"></div>
+        <button class="your-choices__button square-button">
+          Lihat Semua Produk Best Seller
+        </button>
+      </section>
+
       <!-- DESIGN SECTION -->
 
       <section id="designSection" class="design-section">
@@ -387,6 +406,23 @@
         </div>
       </section>
 
+      <!-- YOUR CHOICES SECTION -->
+
+      <section class="your-choices" style="display: none">
+        <div class="your-choices__title-wrapper">
+          <h2 class="your-choices__title-text title-text">
+            Apa yang Mereka Pilih?
+          </h2>
+          <p class="your-choices__subtitle-text body-text">
+            Rangkaian cincin yang dipilih dengan sepenuh hati oleh tiap
+            pasangan.
+          </p>
+        </div>
+
+        <div class="video-recently__grid-wrapper"></div>
+        <button class="your-choices__button square-button">Lihat Semua</button>
+      </section>
+
       <!-- WHY SECTION -->
 
       <section class="why-section">
@@ -439,22 +475,13 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/header.js"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then((reg) => {
-              console.log(
-                "✅ Service worker registered with scope:",
-                reg.scope
-              );
-            })
-            .catch((err) => {
-              console.log("❌ Service worker registration failed:", err);
-            });
-        });
-      }
-    </script>
+    <script src="scripts/your-choices.js"></script>
+    <scrip>
+      if ("serviceWorker" in navigator) { window.addEventListener("load", () =>
+      { navigator.serviceWorker .register("/service-worker.js") .then((reg) => {
+      console.log( "✅ Service worker registered with scope:", reg.scope ); })
+      .catch((err) => { console.log("❌ Service worker registration failed:",
+      err); }); }); }
+    </scrip>
   </body>
 </html>

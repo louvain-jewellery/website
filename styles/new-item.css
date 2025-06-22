@@ -1,0 +1,55 @@
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 0 50px 50px 50px;
+  box-sizing: border-box;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: row;
+  width: 50%; /* This is the total width for both image areas */
+  max-height: calc(90vh - 110px);
+  gap: 0.6rem;
+  align-items: stretch; /* Ensures both wrapper and container are same height */
+}
+
+.detail-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.main-image-wrapper {
+  flex: 1; /* Allows this to shrink/grow */
+  min-width: 0; /* Important for flex items to prevent overflow */
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will crop if aspect ratio is forced by main-image-wrapper */
+  border: 1px solid lightgray;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* Gap between thumbnail images */
+  overflow: hidden; /* Hide any potential scrollbars */
+  /* Remove scrollbar-width and -ms-overflow-style as they are not needed if overflow is hidden */
+
+  /* The width of this container will now be implicitly determined by its children's aspect ratios */
+  /* We remove the fixed width or flex on images-container itself to let thumbnails dictate width */
+}
+
+.images-container img {
+  /* We are removing flex: 1 here! */
+  /* The height will be set by JavaScript */
+  height: var(--thumbnail-height); /* Set by JS */
+  width: var(--thumbnail-height); /* Maintain aspect ratio (1:1) based on height */
+  /* Or use aspect-ratio: 1/1; if preferred, but setting width=height is more explicit for 1:1 */
+  object-fit: cover; /* Use cover if you want images to fill, or 'contain' if you don't want cropping */
+  border: 1px solid lightgray;
+}
