@@ -68,9 +68,8 @@ main {
   aspect-ratio: 9/16;
   width: 100%;
   overflow: hidden;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   scroll-snap-align: start;
-  /* border: 1px solid black; */
 }
 
 .video-recently__video {
