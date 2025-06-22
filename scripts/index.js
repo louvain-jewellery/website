@@ -72,7 +72,7 @@ fetch("data/your-choices-data.json")
     grid.className = "video-recently__grid";
 
     // Add videos to grid
-    recentlyData.videos.slice(0, 4).forEach((videoUrl) => {
+    recentlyData.videos.slice(0, 5).forEach((videoUrl) => {
       const item = document.createElement("div");
       item.className = "video-recently__item";
 
