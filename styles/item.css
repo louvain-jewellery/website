@@ -497,6 +497,8 @@
   display: none;
 }
 
+/* === PHONE SCREEN === */
+
 @media (max-width: 1024px) {
   .item-container {
     flex-direction: column;
@@ -661,6 +663,8 @@
   }
 }
 
+/* === VERTICAL TABLET SCREEN === */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .item-detail-container {
     padding: 0 50px 50px 50px;
@@ -675,6 +679,8 @@
     gap: 50px;
   }
 }
+
+/* === HORIZONTAL TABLET SCREEN === */
 
 @media (min-width: 1025px) and (max-width: 1399px) {
   .item-image-container {
