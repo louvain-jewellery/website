@@ -140,7 +140,7 @@ header.innerHTML = `
     <div class="dropdown-content koleksi-dropdown-content">
       <div class="dropdown-content-top">
         <div class="dropdown-koleksi-container">
-          <a class="dropdown-image-link" href="collection.html?collection=bestSellers">
+          <a class="dropdown-image-link" href="your-choices.html">
             <img src="images/complement.png" alt="Best Sellers">
           </a>
           <a class="text-button" href="collection.html?collection=bestSellers">Best Sellers</a>
