@@ -6,6 +6,114 @@ main {
   padding: 0 50px;
 }
 
+/* === HERO SECTION === */
+
+.page-hero {
+  position: relative;
+  background: radial-gradient(circle at 25% 50%, #36483c, #222e26);
+  /* background-color: #36483c; */
+  color: white;
+  width: 100%;
+  aspect-ratio: 4/1;
+  margin-bottom: 50px;
+}
+
+.page-hero__logo {
+  position: absolute;
+  height: 50%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 65%;
+}
+
+.page-hero__title-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  max-width: 40%;
+}
+
+.page-hero__title-text {
+  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.page-hero__subtitle-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+/* === DESIGN SECTION === */
+
+.design-nav {
+  width: 100%;
+  padding: 0 50px;
+}
+
+.design-nav__wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 1vw;
+}
+
+.design-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.design-nav__name {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.design-nav__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  background-color: rgb(248, 246, 242);
+  /* background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center; */
+}
+
+.design-nav__item-link:hover {
+  border: 1px solid black;
+}
+
+.design-nav__image {
+  width: 70%;
+  filter: brightness(95%);
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.design-nav__item-link:hover design-nav__image {
+  transform: scale(1.15);
+}
+
+/* === MAIN === */
+
+.page-title {
+  display: none;
+}
+
 .page-title__heading {
   font: 500 35px/45px "Cormorant Garamond", "Times New Roman", serif;
   text-align: center;
@@ -320,6 +428,82 @@ main {
     padding: 0;
   }
 
+  /* === HERO SECTION === */
+
+  .page-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    aspect-ratio: 1/1;
+    padding: 25px;
+    margin-bottom: 0;
+  }
+
+  .page-hero__logo {
+    position: static;
+    height: 30%;
+    transform: none;
+    right: 65%;
+    margin-bottom: 20px;
+  }
+
+  .page-hero__title-wrapper {
+    position: static;
+    text-align: center;
+    transform: none;
+    max-width: none;
+    width: 100%;
+  }
+
+  .page-hero__subtitle-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* === DESIGN SECTION === */
+
+  .design-nav {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .design-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .design-nav__wrapper {
+    grid-template-columns: repeat(6, 30vw);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    grid-auto-flow: row;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    justify-content: start;
+    margin-bottom: 0;
+    gap: 10px;
+  }
+
+  .design-nav__item {
+    scroll-snap-align: start;
+  }
+
+  .design-nav__name {
+    font-size: 14px;
+  }
+
+  .design-nav__item-link {
+    width: 30vw;
+  }
+
+  /* === MAIN === */
+
   .video-section {
     gap: 15px;
   }
@@ -400,6 +584,25 @@ main {
 
 /* VERTICAL TAB */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .page-hero {
+    aspect-ratio: 2/1;
+    padding: 0 50px;
+  }
+
+  .page-hero__subtitle-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .design-nav {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+  }
+
+  .design-nav__item-link {
+    width: 20vw;
+  }
+
   .video-section {
     gap: 20px;
   }
