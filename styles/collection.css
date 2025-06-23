@@ -267,16 +267,17 @@
   }
 
   .design-content-container {
-    grid-template-columns: repeat(6, 30vw);
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 25vw;
 
     overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    grid-auto-flow: row;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    width: 100%;
 
     justify-content: start;
     margin-bottom: 0;
@@ -289,10 +290,6 @@
 
   .design-content a {
     font-size: 14px;
-  }
-
-  .design-image-link {
-    width: 30vw;
   }
 
   .breadcrumb-filter {
@@ -381,12 +378,11 @@
   }
 
   .design-section {
-    grid-template-columns: repeat(5, 1fr);
     padding: 50px;
   }
 
-  .design-image-link {
-    width: 20vw;
+  .design-content-container {
+    grid-auto-columns: 20vw;
   }
 
   .breadcrumb-navigation,

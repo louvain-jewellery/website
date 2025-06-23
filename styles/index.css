@@ -806,6 +806,10 @@
     grid-auto-columns: 80vw;
   }
 
+  .video-recently__item {
+    scroll-snap-align: center;
+  }
+
   /* === CTA SECTION === */
 
   .cta-section {
@@ -843,7 +847,7 @@
   .why-section {
     flex-direction: column;
     gap: 60px;
-    padding: 50px 25px;
+    padding: 50px 50px;
   }
 
   .why-item {

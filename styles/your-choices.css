@@ -474,16 +474,17 @@ main {
   }
 
   .design-nav__wrapper {
-    grid-template-columns: repeat(6, 30vw);
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 25vw;
 
     overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    grid-auto-flow: row;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    width: 100%;
 
     justify-content: start;
     margin-bottom: 0;
@@ -496,10 +497,6 @@ main {
 
   .design-nav__name {
     font-size: 14px;
-  }
-
-  .design-nav__item-link {
-    width: 30vw;
   }
 
   /* === MAIN === */
@@ -595,12 +592,11 @@ main {
   }
 
   .design-nav {
-    grid-template-columns: repeat(5, 1fr);
     padding: 50px;
   }
 
-  .design-nav__item-link {
-    width: 20vw;
+  .design-nav__wrapper {
+    grid-auto-columns: 20vw;
   }
 
   .video-section {
