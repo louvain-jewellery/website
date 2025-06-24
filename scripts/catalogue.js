@@ -52,11 +52,15 @@ const collectionData = {
 
 // Highlight the selected collection link with a border
 collectionLinks.forEach((link) => {
+  // Remove any existing selection first
+  link.classList.remove("selected-collection");
+
   const href = link.getAttribute("href");
   const url = new URL(href, window.location.origin);
   const linkCollection = url.searchParams.get("collection");
 
-  if (linkCollection === collection) {
+  // Only add selection if there's an exact match and we're not in "all" view
+  if (linkCollection === collection && collection && collection !== "all") {
     link.classList.add("selected-collection");
   }
 });
@@ -83,14 +87,6 @@ function renderCatalogue(data) {
 
   // Loop through each item in the JSON data
   data.forEach((item) => {
-    // Do not show best sellers unless viewing bestSellers collection
-    if (
-      (!collection || collection === "all") &&
-      item.collection === "bestSellers"
-    ) {
-      return; // skip this item
-    }
-
     // Apply filtering based on collection
     if (!collection || collection === "all" || item.collection === collection) {
       visibleCount++;
@@ -134,16 +130,15 @@ function renderCatalogue(data) {
   });
 
   // Update item count display
-  const collectionName = collection
-    ? collection.charAt(0).toUpperCase() + collection.slice(1)
-    : "Semua";
+  const collectionName =
+    collection && collection !== "all"
+      ? collection.charAt(0).toUpperCase() + collection.slice(1)
+      : "Semua";
   itemCountEl.textContent = `${visibleCount} Produk${
-    collection ? " " + collectionName : ""
+    collection && collection !== "all" ? " " + collectionName : ""
   }`;
 
   const breadcrumbNav = document.querySelector(".breadcrumb-navigation");
-  // const designSection = document.querySelector(".design-section");
-  // designSection.style.display = collection === "bestSellers" ? "none" : "flex";
 
   breadcrumbNav.innerHTML = `
     <a class="breadcrumb-item" href="./">Beranda</a>
