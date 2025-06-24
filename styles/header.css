@@ -11,7 +11,7 @@
 
   background-color: white;
   padding: 20px 50px;
-  font-size: 13px;
+  font-size: 14px;
   align-items: center;
   z-index: 100;
   transition: top 0.3s;
@@ -60,11 +60,11 @@
 }
 
 .header-text-button {
+  font-weight: 400;
   text-decoration: none;
   align-items: center;
   color: black;
   width: fit-content;
-  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -97,7 +97,6 @@
 
 .favorite-hover {
   display: none;
-  
 }
 
 .favorite:hover .favorite-normal {
@@ -129,7 +128,7 @@
 
   .header-top {
     flex: 1;
-  } 
+  }
 
   .header-top-right {
     gap: 20px;
@@ -161,12 +160,11 @@
     justify-content: center;
   }
 
-  
   .mobile-button-container {
     display: flex;
     justify-content: space-between;
     padding: 20px 25px;
-    width: 100% ;
+    width: 100%;
   }
 
   .header-text-button {
@@ -175,7 +173,7 @@
     text-decoration: none;
     font-weight: 500;
   }
-  
+
   .mobile-arrow-button {
     display: flex;
     align-items: center;
