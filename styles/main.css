@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   margin: 0 auto;
   padding: 0;
   padding-top: env(safe-area-inset-top);
@@ -42,8 +42,8 @@ a:visited {
   font-weight: 600;
 }
 
-.text-button::after{
-  content: '';
+.text-button::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -57,7 +57,6 @@ a:visited {
   width: 100%;
 }
 
-
 .square-button {
   position: relative;
   display: inline-block;
@@ -68,7 +67,7 @@ a:visited {
 }
 
 .square-button::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -92,4 +91,3 @@ body.no-scroll {
     padding-top: 70px;
   }
 }
-

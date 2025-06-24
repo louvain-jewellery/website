@@ -97,6 +97,7 @@
 
 .favorite-hover {
   display: none;
+  
 }
 
 .favorite:hover .favorite-normal {
@@ -128,7 +129,7 @@
 
   .header-top {
     flex: 1;
-  }
+  } 
 
   .header-top-right {
     gap: 20px;
@@ -160,11 +161,12 @@
     justify-content: center;
   }
 
+  
   .mobile-button-container {
     display: flex;
     justify-content: space-between;
     padding: 20px 25px;
-    width: 100%;
+    width: 100% ;
   }
 
   .header-text-button {
@@ -173,7 +175,7 @@
     text-decoration: none;
     font-weight: 500;
   }
-
+  
   .mobile-arrow-button {
     display: flex;
     align-items: center;

@@ -103,8 +103,8 @@ function renderCatalogue(data) {
       const favorites = getFavorites();
       const isFavorited = favorites.some((fav) => fav.id === item.id);
       const favoriteIconSrc = isFavorited
-        ? "icons/favorite_22dp_1F1F1F_FILL1_wght300_GRAD0_opsz24.svg"
-        : "icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg";
+        ? "icons/favorite_22dp_000000_FILL1_wght100_GRAD0_opsz24.svg"
+        : "icons/favorite_22dp_000000_FILL0_wght200_GRAD0_opsz24.svg";
 
       div.innerHTML = `
 				<a class="catalogue-image-link" href="${item.detailLink}">
