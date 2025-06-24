@@ -1,7 +1,11 @@
+// Declare lastScroll variable at the top
+let lastScroll = 0;
+
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
   const screenWidth = window.innerWidth;
   const searchDropdown = document.getElementById("searchDropdown");
+  const header = document.getElementById("header"); // Also declare header if not defined elsewhere
 
   if (screenWidth >= 769) {
     if (currentScroll > 105 && currentScroll > lastScroll) {
@@ -34,6 +38,7 @@ hamburger.addEventListener("click", () => {
 const closeButton = document.getElementById("closeBtn");
 const searchButton = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchBox");
+const searchDropdown = document.getElementById("searchDropdown");
 
 searchButton.addEventListener("click", () => {
   if (searchDropdown.style.display === "flex") {
@@ -44,7 +49,8 @@ searchButton.addEventListener("click", () => {
   }
 });
 
-closeBtn.addEventListener("click", () => {
+closeButton.addEventListener("click", () => {
+  // Fixed: was closeBtn, now closeButton
   searchDropdown.style.display = "none";
 });
 
@@ -55,39 +61,30 @@ async function loadItems() {
   return items;
 }
 
-// Load items from the JSON file
-async function loadItems() {
-  const response = await fetch("data/catalogue-data.json");
-  const items = await response.json();
-  return items;
-}
-
 // Filter and display the items based on the search query
 async function filterItems() {
-  const input = document.getElementById("searchBox").value.toLowerCase(); // Corrected ID to match HTML
+  const input = document.getElementById("searchBox").value.toLowerCase();
   const results = document.getElementById("searchResults");
-  const items = await loadItems(); // Load the items from JSON
+  const items = await loadItems();
 
   const filteredItems = items.filter((item) =>
     item.name.toLowerCase().includes(input)
-  ); // Filter items by name
+  );
 
-  results.innerHTML = ""; // Clear previous results
+  results.innerHTML = "";
   if (input) {
-    // Show the filtered items in the results list
     filteredItems.forEach((item) => {
       const li = document.createElement("li");
-      li.textContent = item.name; // Set the name of the item
-      li.onclick = () => (window.location.href = item.detailLink); // Redirect to the item page when clicked
-      results.appendChild(li); // Append to the results list
+      li.textContent = item.name;
+      li.onclick = () => (window.location.href = item.detailLink);
+      results.appendChild(li);
     });
-    results.style.display = filteredItems.length > 0 ? "block" : "none"; // Show dropdown if results found
+    results.style.display = filteredItems.length > 0 ? "block" : "none";
   } else {
-    results.style.display = "none"; // Hide dropdown if input is empty
+    results.style.display = "none";
   }
 }
 
-// Add event listener to trigger filterItems when user types in the search box
 document.getElementById("searchBox").addEventListener("input", filterItems);
 
 document.addEventListener("click", function (event) {
@@ -100,7 +97,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-dropdownButton = document.querySelector(".koleksi-dropdown");
+const dropdownButton = document.querySelector(".koleksi-dropdown"); // Fixed: was missing const
 const overlay = document.querySelector(".overlay");
 
 dropdownButton.addEventListener("mouseenter", () => {
