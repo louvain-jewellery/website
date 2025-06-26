@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <!-- Basic Meta Tags -->
+    <!-- basic meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -12,17 +12,17 @@
     <meta name="theme-color" content="#ffffff" />
     <meta name="view-transition" content="same-origin" />
 
-    <!-- Mobile Web App Meta -->
+    <!-- mobile web app meta -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="mobile-web-app-capable" content="yes" />
 
-    <!-- Icon and manifest -->
+    <!-- icon and manifest -->
     <link rel="icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="favicon.png" />
     <link rel="manifest" href="manifest.json" />
 
-    <!-- Fonts -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
 
-    <!-- Stylesheets -->
+    <!-- stylesheets -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
@@ -41,197 +41,35 @@
   </head>
 
   <body>
+    <!-- header -->
     <header id="header" class="header"></header>
 
-    <main>
-      <!-- HERO SECTION -->
-      <section class="hero-section">
-        <img class="hero-background" src="images/hero1.png" />
-        <div class="hero-content">
-          <h1 class="hero-title-text title-text">Saksi di Jari Manih</h1>
-          <p class="hero-body-text body-text">
+    <main class="page-main">
+      <!-- page hero -->
+      <section class="page-hero">
+        <img class="page-hero__background-image" src="images/hero1.png" />
+        <div class="page-hero__title-wrapper">
+          <h1 class="page-hero__title-text title-text--left">
+            Saksi di Jari Manih
+          </h1>
+          <p class="page-hero__subtitle-text subtitle-text--left">
             Setiap cincin Louvain bukan sekadar perhiasan, melainkan saksi bisu
             dari janji suci Anda berdua. Dirancang untuk menemani cinta yang
             abadi.
           </p>
-          <a class="hero-button square-button" href="collection.html"
+          <a class="page-hero__button square-button" href="collection.html"
             >lihat Selengkapnya</a
           >
         </div>
       </section>
 
-      <!-- BEST SELLER SECTION -->
-
-      <section class="best-seller-section">
-        <div class="best-seller-content-wrapper">
-          <div class="best-seller-content">
-            <div class="best-seller-item">
-              <a href="item.html?id=ags1.48">
-                <video
-                  class="best-sellers-video"
-                  src="videos/best-seller1.mp4"
-                  playsinline
-                  muted
-                  poster="images/thumbnails/best-seller1.jpg"
-                ></video>
-              </a>
-              <button class="play-button">
-                <img
-                  src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-              <a href="item.html?id=ags1.48" class="open-button"
-                >Lihat Produk</a
-              >
-              <button class="mute-button">
-                <img
-                  src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-
-            <div class="best-seller-item">
-              <a href="item.html?id=ags5.48">
-                <video
-                  class="best-sellers-video"
-                  src="videos/best-seller1.mp4"
-                  playsinline
-                  muted
-                  poster="images/thumbnails/best-seller1.jpg"
-                ></video>
-              </a>
-              <button class="play-button">
-                <img
-                  src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-              <a href="item.html?id=ags1.48" class="open-button"
-                >Lihat Produk</a
-              >
-              <button class="mute-button">
-                <img
-                  src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-
-            <div class="best-seller-item">
-              <a href="item.html?id=ags1.48">
-                <video
-                  class="best-sellers-video"
-                  src="videos/best-seller1.mp4"
-                  playsinline
-                  muted
-                  poster="images/thumbnails/best-seller1.jpg"
-                ></video>
-              </a>
-              <button class="play-button">
-                <img
-                  src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-              <a href="item.html?id=ags1.48" class="open-button"
-                >Lihat Produk</a
-              >
-              <button class="mute-button">
-                <img
-                  src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-
-            <div class="best-seller-item">
-              <a href="item.html?id=ags1.48">
-                <video
-                  class="best-sellers-video"
-                  src="videos/best-seller1.mp4"
-                  playsinline
-                  muted
-                  poster="images/thumbnails/best-seller1.jpg"
-                ></video>
-              </a>
-              <button class="play-button">
-                <img
-                  src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-              <a href="item.html?id=ags1.48" class="open-button"
-                >Lihat Produk</a
-              >
-              <button class="mute-button">
-                <img
-                  src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-
-            <div class="best-seller-item">
-              <a href="item.html?id=ags1.48">
-                <video
-                  class="best-sellers-video"
-                  src="videos/best-seller1.mp4"
-                  playsinline
-                  muted
-                  poster="images/thumbnails/best-seller1.jpg"
-                ></video>
-              </a>
-              <button class="play-button">
-                <img
-                  src="icons/play_arrow_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-              <a href="item.html?id=ags1.48" class="open-button"
-                >Lihat Produk</a
-              >
-              <button class="mute-button">
-                <img
-                  src="icons/no_sound_22dp_FFFFFF_FILL1_wght300_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-
-          <div class="scroll-buttons">
-            <button id="leftButton" class="scroll-button left-button">
-              <img
-                src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=""
-              />
-            </button>
-            <button id="rightButton" class="scroll-button right-button">
-              <img
-                src="icons/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=""
-              />
-            </button>
-          </div>
-        </div>
-        <a
-          class="best-seller-button square-button"
-          href="collection.html?collection=bestSellers"
-        >
-          Lihat Produk Best Seller
-        </a>
-      </section>
-
-      <!-- YOUR CHOICES SECTION -->
-
+      <!-- your choices section -->
       <section class="your-choices">
         <div class="your-choices__title-wrapper">
           <h2 class="your-choices__title-text title-text">
             Apa yang Mereka Pilih?
           </h2>
-          <p class="your-choices__subtitle-text body-text">
+          <p class="your-choices__subtitle-text subtitle-text">
             Rangkaian cincin yang dipilih dengan sepenuh hati oleh tiap
             pasangan.
           </p>
@@ -243,71 +81,101 @@
         </a>
       </section>
 
-      <!-- DESIGN SECTION -->
+      <!-- design section -->
+      <section id="designSection" class="design">
+        <div class="design__title -wrapper">
+          <h2 class="design__title-text title-text">
+            Belanja Berdasarkan Desain
+          </h2>
+          <p class="design__subtitle-text subtitle-text">
+            Dari Sentuhan Klasik hingga Modern, Temukan Cincin yang Berbicara
+            untuk Hati Anda.
+          </p>
+        </div>
 
-      <section id="designSection" class="design-section">
-        <h2 class="design-title-text title-text">Belanja Berdasarkan Desain</h2>
-        <p class="design-body-text body-text">
-          Dari Sentuhan Klasik hingga Modern, Temukan Cincin yang Berbicara
-          untuk Hati Anda.
-        </p>
-        <nav class="design-content-container-wrapper">
-          <ul class="design-content-container">
-            <li class="design-content">
+        <nav class="design-nav">
+          <ul class="design-nav__item-wrapper">
+            <li class="design-nav__item">
               <a
-                class="design-image-link"
+                class="design-nav__item-link"
                 href="collection.html?collection=timeless"
               >
-                <img src="images/timeless.png" alt="Timeless" />
+                <img
+                  class="design-nav__item-image"
+                  src="images/timeless.png"
+                  alt="Timeless"
+                />
               </a>
-              <a class="text-button" href="collection.html?collection=timeless"
+              <a
+                class="design-nav__item-name"
+                href="collection.html?collection=timeless"
                 >Timeless Design</a
               >
             </li>
-            <li class="design-content">
+            <li class="design-nav__item">
               <a
-                class="design-image-link"
+                class="design-nav__item-link"
                 href="collection.html?collection=stacking"
               >
-                <img src="images/stacking.png" alt="Stacking" />
+                <img
+                  class="design-nav__item-image"
+                  src="images/stacking.png"
+                  alt="Stacking"
+                />
               </a>
-              <a class="text-button" href="collection.html?collection=stacking"
+              <a
+                class="design-nav__item-name"
+                href="collection.html?collection=stacking"
                 >Stacking Design</a
               >
             </li>
-            <li class="design-content">
+            <li class="design-nav__item">
               <a
-                class="design-image-link"
+                class="design-nav__item-link"
                 href="collection.html?collection=couple"
               >
-                <img src="images/couple.png" alt="Couple" />
+                <img
+                  class="design-nav__item-image"
+                  src="images/couple.png"
+                  alt="Couple"
+                />
               </a>
-              <a class="text-button" href="collection.html?collection=couple"
+              <a
+                class="design-nav__item-name"
+                href="collection.html?collection=couple"
                 >Couple Design</a
               >
             </li>
-            <li class="design-content">
+            <li class="design-nav__item">
               <a
-                class="design-image-link"
+                class="design-nav__item-link"
                 href="collection.html?collection=complement"
               >
-                <img src="images/complement.png" alt="Complement" />
+                <img
+                  class="design-nav__item-image"
+                  src="images/complement.png"
+                  alt="Complement"
+                />
               </a>
               <a
-                class="text-button"
+                class="design-nav__item-name"
                 href="collection.html?collection=complement"
                 >Complement Design</a
               >
             </li>
-            <li class="design-content">
+            <li class="design-nav__item">
               <a
-                class="design-image-link"
+                class="design-nav__item-link"
                 href="collection.html?collection=independent"
               >
-                <img src="images/independent.png" alt="Independent" />
+                <img
+                  class="design-nav__item-image"
+                  src="images/independent.png"
+                  alt="Independent"
+                />
               </a>
               <a
-                class="text-button"
+                class="design-nav__item-name"
                 href="collection.html?collection=independent"
                 >Independent Design</a
               >
@@ -316,20 +184,19 @@
         </nav>
       </section>
 
-      <!-- CUSTOMIZE SECTION -->
-
-      <section class="customize-section">
-        <img class="customize-image" src="images/customize.png" />
-        <div class="customize-content">
-          <h2 class="customize-title-text title-text">
+      <!-- customize section -->
+      <section class="customize">
+        <img class="customize__image" src="images/customize.png" />
+        <div class="customize__title-wrapper">
+          <h2 class="customize__title-text title-text--left">
             Ingin Cincin yang Lebih Personal?
           </h2>
-          <p class="customize-body-text body-text">
+          <p class="customize__subtitle-text subtitle-text--left">
             Buat desain cincin sesuai keinginan Anda, untuk momen yang tak
             terlupakan.
           </p>
           <a
-            class="customize-button text-button"
+            class="customize__button text-button"
             href="https://wa.me/6285324922353"
             target="_blank"
           >
@@ -338,44 +205,47 @@
         </div>
       </section>
 
-      <!-- PACKAGING SECTION -->
+      <!-- packaging section -->
+      <section id="packaging" class="packaging">
+        <div class="packaging-title-wrapper">
+          <h2 class="packaging-title-text title-text">
+            Kemasan Eksklusif Louvain
+          </h2>
+          <p class="packaging-subtitle-text subtitle-text">
+            Kemasan eksklusif untuk setiap pembelian sepasang cincin Louvain
+            Jewellery.
+          </p>
+        </div>
 
-      <section id="packagingSection" class="packaging-section">
-        <h2 class="packaging-title-text title-text">
-          Kemasan Eksklusif Louvain
-        </h2>
-        <p class="packaging-body-text body-text">
-          Kemasan eksklusif untuk setiap pembelian sepasang cincin Louvain
-          Jewellery.
-        </p>
-        <div class="packaging-content">
-          <div class="packaging-image-container">
-            <img class="packaging-image" src="images/packaging4.png" />
+        <div class="packaging__item-wrapper">
+          <div class="packaging__item">
+            <img class="packaging__item-image" src="images/packaging4.png" />
           </div>
-          <div class="packaging-image-container">
-            <img class="packaging-image" src="images/packaging1.png" />
+          <div class="packaging__item">
+            <img class="packaging__item-image" src="images/packaging1.png" />
           </div>
-          <div class="packaging-image-container">
-            <img class="packaging-image" src="images/packaging2.png" />
+          <div class="packaging__item">
+            <img class="packaging__item-image" src="images/packaging2.png" />
           </div>
-          <div class="packaging-image-container">
-            <img class="packaging-image" src="images/packaging3.png" />
+          <div class="packaging__item">
+            <img class="packaging__item-image" src="images/packaging3.png" />
           </div>
         </div>
       </section>
 
-      <!-- LOCATION SECTION -->
-
-      <section class="location-section">
-        <img class="location-background" src="images/location2.jpg" />
-        <div class="location-content">
-          <h2 class="location-title-text title-text">Kunjungi Toko Kami</h2>
-          <p class="location-body-text body-text">
+      <!-- location section -->
+      <section class="location">
+        <img class="location__image" src="images/location2.jpg" />
+        <div class="location__title-wrapper">
+          <h2 class="location__title-text title-text--left">
+            Kunjungi Toko Kami
+          </h2>
+          <p class="location__subtitle-text subtitle-text--left">
             Jl. Patimura, Kp. Jao, Kec. Padang Barat, Kota Padang, Sumatera
             Barat
           </p>
           <a
-            class="location-button square-button"
+            class="location__button square-button"
             href="https://maps.app.goo.gl/Z3Q8pYDUb1qYTpas7"
             target="_blank"
           >
@@ -384,21 +254,25 @@
         </div>
       </section>
 
-      <!-- CTA SECTION -->
+      <!-- cta section -->
 
-      <section class="cta-section">
-        <img class="cta-image" src="images/logo.png" />
-        <h2 class="cta-title-text title-text">
-          Siap Menemukan Cincin untuk Anda dan Pasangan?
-        </h2>
-        <p class="cta-body-text body-text">
-          Pilih cincin yang berbicara untuk hati Anda, simbol sempurna dari
-          perjalanan cinta yang penuh makna.
-        </p>
-        <div class="cta-buttons">
-          <a class="square-button" href="collection.html">Jelajahi Sekarang</a>
+      <section class="cta">
+        <img class="cta__image" src="images/logo.png" />
+        <div class="cta__title-wrapper">
+          <h2 class="cta__title-text title-text">
+            Siap Menemukan Cincin untuk Anda dan Pasangan?
+          </h2>
+          <p class="cta__subtitle-text subtitle-text">
+            Pilih cincin yang berbicara untuk hati Anda, simbol sempurna dari
+            perjalanan cinta yang penuh makna.
+          </p>
+        </div>
+        <div class="cta__button-wrapper">
+          <a class="cta__button square-button" href="collection.html"
+            >Jelajahi Sekarang</a
+          >
           <a
-            class="square-button"
+            class="cta__button square-button"
             href="https://wa.me/6285324922353"
             target="_blank"
             >Hubungi Kami</a
@@ -406,44 +280,56 @@
         </div>
       </section>
 
-      <!-- WHY SECTION -->
+      <!-- why section -->
 
-      <section class="why-section">
-        <div class="why-item">
-          <a class="why-image-container" href="production.html">
-            <img src="icons/why/1.png" alt="Produksi" />
+      <section class="why">
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="production.html">
+            <img class="why__item-image" src="icons/why/1.png" alt="Produksi" />
           </a>
-          <a href="production.html" class="text-button">Produksi</a>
-          <p>
+          <a href="production.html" class="why__item-name text-button"
+            >Produksi</a
+          >
+          <p class="why__item-caption">
             Produksi in-house pertama di Sumatera Barat dengan teknologi modern.
           </p>
         </div>
-        <div class="why-item">
-          <a class="why-image-container" href="collection.html">
-            <img src="icons/why/2.png" alt="Desain" />
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="collection.html">
+            <img class="why__item-image" src="icons/why/2.png" alt="Desain" />
           </a>
-          <a href="collection.html" class="text-button">Desain</a>
-          <p>
+          <a href="collection.html" class="why__item-name text-button"
+            >Desain</a
+          >
+          <p class="why__item-caption">
             Louvain memadukan keanggunan klasik dan modern, menciptakan
             perhiasan yang unik dan bermakna.
           </p>
         </div>
-        <div class="why-item">
-          <a class="why-image-container" href="material.html">
-            <img src="icons/why/3.png" alt="Material" />
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="material.html">
+            <img class="why__item-image" src="icons/why/3.png" alt="Material" />
           </a>
-          <a href="material.html" class="text-button">Material</a>
-          <p>
+          <a href="material.html" class="why__item-name text-button"
+            >Material</a
+          >
+          <p class="why__item-caption">
             Cincin Louvain terbuat dari material pilihan, memastikan keindahan
             dan ketahanan seiring waktu.
           </p>
         </div>
-        <div class="why-item">
-          <a class="why-image-container" href="#packagingSection">
-            <img src="icons/why/4.png" alt="Paket Pembelian" />
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="#packagingSection">
+            <img
+              class="why__item-image"
+              src="icons/why/4.png"
+              alt="Paket Pembelian"
+            />
           </a>
-          <a href="#packagingSection" class="text-button">Paket Pembelian</a>
-          <p>
+          <a href="#packaging" class="why__item-name text-button"
+            >Paket Pembelian</a
+          >
+          <p class="why__item-caption">
             Pilih cincin impian Anda dan nikmati layanan istimewa, pengemasan
             mewah, dan garansi resmi.
           </p>
@@ -451,16 +337,18 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer id="footer" class="footer"></footer>
 
     <div class="overlay"></div>
 
+    <!-- scripts -->
     <script src="scripts/main.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/header.js"></script>
-    <script src="scripts/your-choices.js"></script>
+    <!-- <script src="scripts/your-choices.js"></script> -->
 
-    <!-- SERVICE WORKER REGISTRATION -->
+    <!-- service worker registration -->
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {

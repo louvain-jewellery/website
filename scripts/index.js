@@ -1,59 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollContainer = document.querySelector(".best-seller-content");
-  const leftButton = document.querySelector(".left-button");
-  const rightButton = document.querySelector(".right-button");
-
-  function updateButtonVisibility() {
-    // Check if at the start
-    if (scrollContainer.scrollLeft === 0) {
-      leftButton.classList.add("hidden");
-    } else {
-      leftButton.classList.remove("hidden");
-    }
-
-    // Check if at the end
-    if (
-      scrollContainer.scrollLeft + scrollContainer.clientWidth >=
-      scrollContainer.scrollWidth - 1
-    ) {
-      rightButton.classList.add("hidden");
-    } else {
-      rightButton.classList.remove("hidden");
-    }
-  }
-
-  // Initial check
-  updateButtonVisibility();
-
-  // Update on scroll
-  scrollContainer.addEventListener("scroll", updateButtonVisibility);
-
-  // Scroll buttons
-  leftButton.addEventListener("click", () => {
-    scrollContainer.scrollBy({
-      left: -scrollContainer.offsetWidth * 1,
-      behavior: "smooth",
-    });
-  });
-
-  rightButton.addEventListener("click", () => {
-    scrollContainer.scrollBy({
-      left: scrollContainer.offsetWidth * 1,
-      behavior: "smooth",
-    });
-  });
-
-  fetch("data/catalogue-data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      renderBestSellers(data); // call the function to render the images
-      updateButtonVisibility(); // update buttons again after images loaded
-    })
-    .catch((error) => {
-      console.error("Failed to load best sellers data:", error);
-    });
-});
-
 // Fetch data and populate recently videos
 fetch("data/your-choices-data.json")
   .then((response) => response.json())
@@ -78,17 +22,18 @@ fetch("data/your-choices-data.json")
 
       // Create video element
       const video = document.createElement("video");
+      video.className = "video-recently__video";
       video.src = videoUrl;
       video.loop = true;
       video.muted = true;
-      video.className = "video-recently__video";
       video.setAttribute("preload", "metadata");
 
       item.appendChild(video);
 
       // Create control buttons
       const muteBtn = document.createElement("button");
-      muteBtn.className = "video-recently__mute-button video-button";
+      muteBtn.className =
+        "video-recently__mute-button video-button mute-button";
       muteBtn.innerHTML = `
         <img
           class="video-recently__mute-button-icon video-button-icon"
@@ -97,7 +42,8 @@ fetch("data/your-choices-data.json")
       `;
 
       const playBtn = document.createElement("button");
-      playBtn.className = "video-recently__play-button video-button";
+      playBtn.className =
+        "video-recently__play-button video-button play-button";
       playBtn.innerHTML = `
         <img
           class="video-recently__play-button-icon video-button-icon"

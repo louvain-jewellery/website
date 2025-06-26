@@ -18,7 +18,7 @@ main {
   margin-bottom: 50px;
 }
 
-.page-hero__logo {
+.page-hero__image {
   position: absolute;
   height: 50%;
   aspect-ratio: 1/1;
@@ -74,7 +74,7 @@ main {
   width: fit-content;
 }
 
-.design-nav__name {
+.design-nav__item-name {
   color: black;
   text-decoration: none;
   font-weight: 400;
@@ -98,13 +98,13 @@ main {
   border: 1px solid black;
 }
 
-.design-nav__image {
+.design-nav__item-image {
   width: 70%;
   filter: brightness(95%);
   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.design-nav__item-link:hover design-nav__image {
+.design-nav__item-link:hover design-nav__item-image {
   transform: scale(1.15);
 }
 
@@ -358,7 +358,6 @@ main {
 
 /* LOADING SKELETON */
 
-/* Skeleton Loader Styles */
 .skeleton-loader {
   position: relative;
   background-color: #f0f0f0;
@@ -422,7 +421,7 @@ main {
   margin: 20px 0;
 }
 
-/* PHONE */
+/* Phone Screen */
 @media (max-width: 1024px) {
   main {
     padding: 0;
@@ -441,7 +440,7 @@ main {
     margin-bottom: 0;
   }
 
-  .page-hero__logo {
+  .page-hero__image {
     position: static;
     height: 30%;
     transform: none;
@@ -495,7 +494,7 @@ main {
     scroll-snap-align: start;
   }
 
-  .design-nav__name {
+  .design-nav__item-name {
     font-size: 14px;
   }
 
@@ -579,7 +578,7 @@ main {
   }
 }
 
-/* VERTICAL TAB */
+/* Portrait Tablet Screen */
 @media (min-width: 769px) and (max-width: 1024px) {
   .page-hero {
     aspect-ratio: 2/1;
@@ -617,7 +616,7 @@ main {
   }
 }
 
-/* HORIZONTAL TABLET */
+/* Landscape Tablet Screen */
 @media (min-width: 1025px) and (max-width: 1399px) {
   main {
     padding: 0px;

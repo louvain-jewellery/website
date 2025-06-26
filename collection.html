@@ -7,12 +7,16 @@
 
     <link rel="icon" href="favicon.png" />
 
+    <!-- fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- stylesheets -->
 
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/header.css" />
@@ -24,113 +28,150 @@
   </head>
 
   <body>
+    <!-- header -->
+
     <header id="header" class="header"></header>
 
-    <main>
-      <!-- HERO SECTION -->
+    <main class="page-main">
+      <!-- page hero -->
 
-      <section class="collection-hero-section">
-        <img class="collection-hero-image" src="images/logo.png" />
-        <div class="collection-hero-content">
-          <h2 class="collection-hero-title-text"></h2>
-          <p class="collection-hero-body-text"></p>
+      <section class="page-hero">
+        <img class="page-hero__image" src="images/logo.png" />
+        <div class="page-hero__title-wrapper">
+          <h2 class="page-hero__title-text"></h2>
+          <p class="page-hero__subtitle-text"></p>
         </div>
       </section>
 
-      <!-- DESIGN SECTION -->
+      <!-- Design Navigation-->
 
-      <nav class="design-section">
-        <ul class="design-content-container">
-          <li class="design-content">
-            <a class="design-image-link" href="your-choices.html">
-              <img src="images/complement.png" alt="Best Sellers" />
+      <nav class="design-nav">
+        <ul class="design-nav__item-wrapper">
+          <li class="design-nav__item">
+            <a class="design-nav__item-link" href="your-choices.html">
+              <img
+                class="design-nav__item-image"
+                src="images/complement.png"
+                alt="Best Sellers"
+              />
             </a>
-            <a class="text-button" href="collection.html?collection=bestSellers"
+            <a
+              class="design-nav__item-name"
+              href="collection.html?collection=bestSellers"
               >Best Sellers</a
             >
           </li>
-          <li class="design-content">
+          <li class="design-nav__item">
             <a
-              class="design-image-link"
+              class="design-nav__item-link"
               href="collection.html?collection=timeless"
             >
-              <img src="images/timeless.png" alt="Timeless" />
+              <img
+                class="design-nav__item-image"
+                src="images/timeless.png"
+                alt="Timeless"
+              />
             </a>
-            <a class="text-button" href="collection.html?collection=timeless"
+            <a
+              class="design-nav__item-name"
+              href="collection.html?collection=timeless"
               >Timeless</a
             >
           </li>
-          <li class="design-content">
+          <li class="design-nav__item">
             <a
-              class="design-image-link"
+              class="design-nav__item-link"
               href="collection.html?collection=stacking"
             >
-              <img src="images/stacking.png" alt="Stacking" />
+              <img
+                class="design-nav__item-image"
+                src="images/stacking.png"
+                alt="Stacking"
+              />
             </a>
-            <a class="text-button" href="collection.html?collection=stacking"
+            <a
+              class="design-nav__item-name"
+              href="collection.html?collection=stacking"
               >Stacking</a
             >
           </li>
-          <li class="design-content">
+          <li class="design-nav__item">
             <a
-              class="design-image-link"
+              class="design-nav__item-link"
               href="collection.html?collection=couple"
             >
-              <img src="images/couple.png" alt="Couple" />
+              <img
+                class="design-nav__item-image"
+                src="images/couple.png"
+                alt="Couple"
+              />
             </a>
-            <a class="text-button" href="collection.html?collection=couple"
+            <a
+              class="design-nav__item-name"
+              href="collection.html?collection=couple"
               >Couple</a
             >
           </li>
-          <li class="design-content">
+          <li class="design-nav__item">
             <a
-              class="design-image-link"
+              class="design-nav__item-link"
               href="collection.html?collection=complement"
             >
-              <img src="images/complement.png" alt="Complement" />
+              <img
+                class="design-nav__item-image"
+                src="images/complement.png"
+                alt="Complement"
+              />
             </a>
-            <a class="text-button" href="collection.html?collection=complement"
+            <a
+              class="design-nav__item-name"
+              href="collection.html?collection=complement"
               >Complement</a
             >
           </li>
-          <li class="design-content">
+          <li class="design-nav__item">
             <a
-              class="design-image-link"
+              class="design-nav__item-link"
               href="collection.html?collection=independent"
             >
-              <img src="images/independent.png" alt="Independent" />
+              <img
+                class="design-nav__item-image"
+                src="images/independent.png"
+                alt="Independent"
+              />
             </a>
-            <a class="text-button" href="collection.html?collection=independent"
+            <a
+              class="design-nav__item-name"
+              href="collection.html?collection=independent"
               >Independent</a
             >
           </li>
         </ul>
       </nav>
-      <!-- BREADCRUMB NAVIGATION -->
 
-      <div class="breadcrumb-filter">
-        <nav class="breadcrumb-navigation">
-          <a class="breadcrumb-item" href="./">Beranda</a>
-          <a class="breadcrumb-item">&nbsp; / &nbsp;</a>
-          <a class="breadcrumb-item" href="collection.html">Koleksi</a>
-        </nav>
+      <!-- breadcrumb navigation -->
 
-        <div class="filter-section">
-          <a class="item-count">100 Items</a>
-        </div>
-      </div>
+      <nav class="breadcrumb-nav">
+        <ul class="breadcrumb-nav__item-wrapper"></ul>
 
-      <!-- CATALOGUE SECTION -->
+        <a class="breadcrumb-nav__item-count">0 Items</a>
+      </nav>
+
+      <!-- catalogue section -->
 
       <section class="catalogue-section" id="catalogue-section"></section>
     </main>
+
+    <!-- footer -->
 
     <footer id="footer" class="footer"></footer>
 
     <div class="overlay"></div>
 
+    <!-- scripts -->
+
     <script src="scripts/main.js"></script>
-    <script src="scripts/catalogue.js"></script>
+    <script src="scripts/collection.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/wishlist.js"></script>
     <script src="scripts/favorites.js"></script>
