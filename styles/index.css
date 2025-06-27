@@ -628,6 +628,10 @@
     aspect-ratio: 2/1;
   }
 
+  .video-button {
+    opacity: 1;
+  }
+
   .customize__image {
     aspect-ratio: 3/2;
   }
