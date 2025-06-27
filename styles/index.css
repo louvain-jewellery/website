@@ -567,12 +567,12 @@
   }
 
   .design-nav__item-wrapper {
-    grid-template-columns: 30vw;
+    grid-template-columns: 25vw;
   }
 
   .design-nav__item-link {
-    height: 30vw;
-    width: 30vw;
+    height: 25vw;
+    width: 25vw;
   }
 
   .design-nav__item-name {
