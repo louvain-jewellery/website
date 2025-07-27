@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/layout/packaging.css" />
+    <link rel="stylesheet" href="styles/layout/design-nav.css" />
+    <link rel="stylesheet" href="styles/layout/catalogue-item.css" />
+    <link rel="stylesheet" href="styles/layout/image-overlay.css" />
     <link rel="stylesheet" href="styles/item.css" />
 
     <title>Item Info | Louvain Jewellery</title>
@@ -25,278 +29,197 @@
   <body>
     <header id="header" class="header"></header>
 
-    <main>
-      <section class="item-section">
-        <div class="item-container">
-          <div class="item-image-container">
-            <div class="item-image-slider">
-              <img
-                src=""
-                class="item-image-top clickable-img"
-                alt="Main Image"
-              />
-              <img src="" alt="Thumbnail 1" class="item-image clickable-img" />
-              <img src="" alt="Thumbnail 2" class="item-image clickable-img" />
-              <img src="" alt="Thumbnail 3" class="item-image clickable-img" />
-            </div>
-          </div>
-
-          <div class="item-detail-container">
-            <nav class="breadcrumb-navigation"></nav>
-            <h2 class="item-name"></h2>
-            <div class="design-text-container"></div>
-            <p class="item-description"></p>
-
-            <span class="item-personalize-title">Detail Cincin: </span>
-            <div class="personalize-section">
-              <!-- FEMALE SECTION -->
-
-              <div class="gender-container">
-                <div class="detail-container">
-                  <span class="gender-type">Wanita</span>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Ring Width:</span>
-                  <p class="detail-content ring-width-women"></p>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Gem Specification:</span>
-                  <p class="detail-content gem-specs-women"></p>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Chrome:</span>
-                  <p class="detail-content">
-                    White D/G<br />
-                    Rose D/G<br />
-                    Yellow D/G
-                  </p>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Material:</span>
-                  <p class="detail-content">
-                    Platinum V<br />
-                    Platinum X<br />
-                    Gold 17k<br />
-                    Gold 16k
-                  </p>
-                </div>
-              </div>
-
-              <!-- MALE SECTION -->
-
-              <div class="gender-container">
-                <div class="detail-container">
-                  <span class="gender-type">Pria</span>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Ring Width:</span>
-                  <p class="detail-content ring-width-men"></p>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Gem Specification:</span>
-                  <p class="detail-content gem-specs-men"></p>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Chrome:</span>
-                  <p class="detail-content">
-                    White D/G<br />
-                    Rose D/G<br />
-                    Yellow D/G
-                  </p>
-                </div>
-                <div class="detail-container">
-                  <span class="detail-title">Material:</span>
-                  <p class="detail-content">
-                    Platinum V<br />
-                    Platinum X<br />
-                    Gold 17k<br />
-                    Gold 16k
-                  </p>
-                </div>
-              </div>
-            </div>
-            <label class="notes-box-label" for="notes-box"
-              >Tambahkan Pesan:</label
-            >
-            <input
-              class="notes-box"
-              type="text"
-              placeholder="Tambahkan Pesan untuk Penjual"
+    <main class="page-main">
+      <section class="item">
+        <section class="item-images">
+          <div class="item-images__main-image-wrapper js-main-image-wrapper">
+            <img
+              src=""
+              class="item-images__main-image js-main-image"
+              alt="Main Image"
             />
+          </div>
+          <div
+            class="item-images__thumbnails-wrapper js-thumbnails-wrapper"
+          ></div>
+        </section>
 
-            <!-- PRICE SECTION -->
-
-            <div class="price-container">
-              <p class="price-title">Harga:</p>
-              <p class="price-tag">Rp. 10.000.000</p>
+        <section class="item-details">
+          <div class="item-details__top-wrapper">
+            <div class="item-details__name-wrapper">
+              <h2 class="item-details__item-name js-item-name"></h2>
+              <div class="item-details__item-design js-item-design"></div>
             </div>
-            <div class="buttons-container">
-              <button class="order-button" onclick="">
-                Pesan Via WhatsApp
+
+            <section class="item-specs">
+              <p class="item-specs__title">Detail Cincin:</p>
+              <div class="item-specs__gender">
+                <!-- female section -->
+                <div class="item-specs__gender-wrapper">
+                  <div class="item-specs__detail-row">
+                    <p class="item-specs__detail-title">Wanita</p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title">Ring Width:</span>
+                    <p class="item-specs__detail-content js-w-ring-width"></p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title"
+                      >Gem Specification:</span
+                    >
+                    <p class="item-specs__detail-content js-w-gem-specs"></p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title">Chrome:</span>
+                    <p class="item-specs__detail-content">
+                      White D/G<br />
+                      Rose D/G<br />
+                      Yellow D/G
+                    </p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title">Material:</span>
+                    <p class="item-specs__detail-content">
+                      Platinum V<br />
+                      Platinum X<br />
+                      Gold 17k<br />
+                      Gold 16k
+                    </p>
+                  </div>
+                </div>
+
+                <!-- male section -->
+                <div class="item-specs__gender-wrapper">
+                  <div class="item-specs__detail-row">
+                    <p class="item-specs__detail-title">Pria</p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title">Ring Width:</span>
+                    <p class="item-specs__detail-content js-m-ring-width"></p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title"
+                      >Gem Specification:</span
+                    >
+                    <p class="item-specs__detail-content js-m-gem-specs"></p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title">Chrome:</span>
+                    <p class="item-specs__detail-content">
+                      White D/G<br />
+                      Rose D/G<br />
+                      Yellow D/G
+                    </p>
+                  </div>
+                  <div class="item-specs__detail-row">
+                    <span class="item-specs__detail-title">Material:</span>
+                    <p class="item-specs__detail-content">
+                      Platinum V<br />
+                      Platinum X<br />
+                      Gold 17k<br />
+                      Gold 16k
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- price section -->
+          <div class="item-details__bottom-wrapper">
+            <div class="item-details__price">
+              <p class="item-details__price-title">Harga:</p>
+              <p class="item-details__price-content">
+                Mulai dari Rp. 2.800.000
+              </p>
+            </div>
+            <div class="item-details__buttons-wrapper">
+              <button class="item-details__ask-button js-ask-button" onclick="">
+                Ajukan Pertanyaan
               </button>
-              <button id="favoriteButton" class="favorite-button">
+              <button class="item-details__favorite-button js-favorite-button">
                 <img
+                  class="js-favorite-icon"
                   src="icons/favorite_22dp_000000_FILL0_wght300_GRAD0_opsz24.svg"
                 />
               </button>
             </div>
-            <a class="ring-guide-button" href="ring-size-guide.html"
-              >Panduan Ukuran Cincin &gt;</a
-            >
           </div>
-        </div>
+        </section>
       </section>
 
-      <!-- DISCOVER SECTION -->
-
-      <section class="discover-section">
-        <h2 class="discover-title-text title-text">Temukan Lebih Banyak</h2>
-        <div class="discover-container">
-          <div class="discover-item">
-            <a class="discover-image-link" href="/item.html?id=jce2.36">
-              <img
-                class="discover-image"
-                src="images/rings/JCE/Jace 2.36 23.jpg"
-                alt="Jace 2.36"
-              />
-            </a>
-            <div class="discover-overlay">
-              <a class="discover-image-link" href="/item.html?id=jce2.36">
-                <img
-                  class="discover-image"
-                  src="images/rings/JCE/Jace 2.36 23.jpg"
-                  alt="Jace 2.36"
-                />
-              </a>
-              <h2 class="discover-name-text">Jace 2.36</h2>
-              <a class="discover-button" href="/item.html?id=jce2.36"
-                >Lihat Produk</a
-              >
-            </div>
-          </div>
-
-          <div class="discover-item">
-            <a class="discover-image-link" href="/item.html?id=ags1.48">
-              <img
-                class="discover-image"
-                src="images/rings/AGS/AGS 1.48 01.jpg"
-                alt="Agsaina 1.48"
-              />
-            </a>
-            <div class="discover-overlay">
-              <a class="discover-image-link" href="/item.html?id=ags1.48">
-                <img
-                  class="discover-image"
-                  src="images/rings/AGS/AGS 1.48 01.jpg"
-                  alt="Agsaina 1.48"
-                />
-              </a>
-              <h2 class="discover-name-text">Agsaina 1.48</h2>
-              <a class="discover-button" href="/item.html?id=ags1.48"
-                >Lihat Produk</a
-              >
-            </div>
-          </div>
-
-          <div class="discover-item">
-            <a class="discover-image-link" href="/item.html?id=bry7.48">
-              <img
-                class="discover-image"
-                src="images/rings/BRY/0004_BRY_7.48.jpg"
-                alt="Beryl 7.48"
-              />
-            </a>
-            <div class="discover-overlay">
-              <a class="discover-image-link" href="/item.html?id=bry7.48">
-                <img
-                  class="discover-image"
-                  src="images/rings/BRY/0004_BRY_7.48.jpg"
-                  alt="Beryl 7.48"
-                />
-              </a>
-              <h2 class="discover-name-text">Beryl 7.48</h2>
-              <a class="discover-button" href="/item.html?id=bry7.48"
-                >Lihat Produk</a
-              >
-            </div>
-          </div>
-
-          <div class="discover-item">
-            <a class="discover-image-link" href="/item.html?id=aln2.47">
-              <img
-                class="discover-image"
-                src="images/rings/ALN/4_0044_ALN 2.47.jpg"
-                alt="aln 2.47"
-              />
-            </a>
-            <div class="discover-overlay">
-              <a class="discover-image-link" href="/item.html?id=aln2.47">
-                <img
-                  class="discover-image"
-                  src="images/rings/ALN/4_0044_ALN 2.47.jpg"
-                  alt="aln 2.47"
-                />
-              </a>
-              <h2 class="discover-name-text">?</h2>
-              <a class="discover-button" href="/item.html?id=aln2.47"
-                >Lihat Produk</a
-              >
-            </div>
-          </div>
-        </div>
+      <!-- discover section -->
+      <section class="discover">
+        <h2 class="discover__title-text title-text">Temukan Lebih Banyak</h2>
+        <div class="discover__items-wrapper catalogue js-items-wrapper"></div>
       </section>
 
       <!-- PACKAGING SECTION -->
 
-      <section id="packagingSection" class="packaging-section">
-        <div class="packaging-top-section">
-          <div class="packaging-text-container">
-            <h2 class="packaging-title-text text-transition title-text">
+      <section class="packaging">
+        <div class="packaging__banner">
+          <div class="packaging__banner-text-wrapper">
+            <h2 class="packaging__banner-title-text title-text">
               Kemasan Eksklusif Louvain
             </h2>
-            <p class="packaging-body-text text-transition body-text">
+            <p class="packaging__banner-subtitle-text body-text">
               Kemasan eksklusif untuk setiap pembelian sepasang cincin Louvain
               Jewellery.
             </p>
           </div>
-          <div class="packaging-hero-image-container">
-            <img class="packaging-hero-image" src="images/pakajing.png" />
+          <div class="packaging__banner-image-wrapper">
+            <img class="packaging__banner-image" src="images/pakajing.png" />
           </div>
         </div>
 
-        <div class="packaging-bottom-section">
-          <div class="packaging-content">
-            <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging4.png" />
-            </div>
-            <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging1.png" />
-            </div>
-            <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging2.png" />
-            </div>
-            <div class="packaging-image-container">
-              <img class="packaging-image" src="images/packaging3.png" />
-            </div>
-          </div>
+        <div class="packaging__items">
+          <div class="packaging__items-wrapper js-packaging-wrapper"></div>
         </div>
       </section>
     </main>
 
     <footer id="footer" class="footer"></footer>
 
-    <div class="overlay"></div>
+    <!-- image overlay -->
+    <div class="image-overlay js-image-overlay">
+      <div class="image-overlay__image-wrapper">
+        <img
+          class="image-overlay__image"
+          src="images/rings/AGS/AGS 1.48 01.jpg"
+          alt=""
+        />
+        <img
+          class="image-overlay__image"
+          src="images/rings/AGS/AGS 1.48 01.jpg"
+          alt=""
+        />
+        <img
+          class="image-overlay__image"
+          src="images/rings/AGS/AGS 1.48 01.jpg"
+          alt=""
+        />
+      </div>
 
-    <div class="image-overlay" id="overlay">
-      <span class="close-btn" id="closeOverlay">&#10005;</span>
-      <img id="overlayImg" src="" alt="Full Image" />
+      <div class="image-overlay__buttons-wrapper">
+        <button
+          class="image-overlay__left-button image-overlay__button js-left-button"
+        >
+          &lt;
+        </button>
+        <button
+          class="image-overlay__close-button image-overlay__button js-close-button"
+        >
+          &#10005;
+        </button>
+        <button
+          class="image-overlay__right-button image-overlay__button js-right-button"
+        >
+          &gt;
+        </button>
+      </div>
     </div>
 
-    <script src="scripts/main.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/filter-product.js"></script>
-    <script src="scripts/item.js"></script>
-    <script src="scripts/wishlist.js"></script>
-    <script src="scripts/favorites.js"></script>
+    <!-- scripts -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/pages/item.js"></script>
   </body>
 </html>

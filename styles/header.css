@@ -1,6 +1,9 @@
 .header {
   display: flex;
   flex-direction: column;
+  /* font-family: "Cormorant Garamond"; */
+  /* font-weight: 500; */
+  font-size: 14px;
   position: fixed;
   height: 105px;
   width: 100%;
@@ -61,7 +64,6 @@
 }
 
 .header-text-button {
-  font-weight: 400;
   text-decoration: none;
   align-items: center;
   color: black;

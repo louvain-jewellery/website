@@ -1,0 +1,80 @@
+.video-overlay {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  padding: 50px;
+  background-color: white;
+  z-index: 101;
+}
+
+.video-button {
+  opacity: 1;
+}
+
+.video-overlay.visible {
+  display: flex;
+}
+
+.video-overlay__video-wrapper {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 9/16;
+  border: none;
+  /* border-radius: 25px; */
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-overlay__video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.video-overlay__close-button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 50px;
+  aspect-ratio: 1/1;
+
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+
+  font-size: 25px;
+  font-family: "Cormorant Garamond";
+}
+
+/* phone screen */
+@media (max-width: 1024px) {
+  .video-overlay {
+    padding: 15px;
+  }
+
+  .video-overlay__video-wrapper {
+    height: auto;
+    width: 100%;
+    border-radius: 25px;
+    aspect-ratio: 9/16;
+  }
+
+  .video-overlay__video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .video-overlay__close-button {
+    top: 15px;
+    right: 15px;
+  }
+
+  .video-button {
+    opacity: 0;
+    display: none;
+  }
+}

@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/layout/design-nav.css" />
+    <link rel="stylesheet" href="styles/layout/catalogue-item.css" />
+
     <link rel="stylesheet" href="styles/wishlist.css" />
 
     <title>koleksi yang Disukai | Louvain Jewellery</title>
@@ -34,16 +37,16 @@
         </p>
       </section>
 
-      <section id="wishlistContentSection" class="content-section"></section>
+      <section
+        id="wishlistContentSection"
+        class="content-section js-favorite-wrapper"
+      ></section>
     </main>
 
     <footer id="footer" class="footer"></footer>
 
-    <div class="overlay"></div>
-
-    <script src="scripts/main.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/favorites.js"></script>
-    <script src="scripts/wishlist.js"></script>
+    <!-- scripts -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/pages/favorite.js"></script>
   </body>
 </html>

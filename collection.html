@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/layout/design-nav.css" />
+    <link rel="stylesheet" href="styles/layout/page-hero.css" />
+    <link rel="stylesheet" href="styles/layout/video-button.css" />
+    <link rel="stylesheet" href="styles/layout/catalogue-item.css">
+    <link rel="stylesheet" href="styles/layout/video-overlay.css" />
+
     <link rel="stylesheet" href="styles/collection.css" />
 
     <title>Koleksi | Louvain Jewellery</title>
@@ -36,144 +42,41 @@
       <!-- page hero -->
 
       <section class="page-hero">
-        <img class="page-hero__image" src="images/logo.png" />
+        <img class="page-hero__image js-hero-image" src="images/logo.png" />
         <div class="page-hero__title-wrapper">
-          <h2 class="page-hero__title-text"></h2>
-          <p class="page-hero__subtitle-text"></p>
+          <h2 class="page-hero__title-text js-hero-title"></h2>
+          <p class="page-hero__subtitle-text js-hero-subtitle"></p>
         </div>
       </section>
 
-      <!-- Design Navigation-->
+      <!-- design Navigation-->
 
       <nav class="design-nav">
-        <ul class="design-nav__item-wrapper">
-          <li class="design-nav__item">
-            <a class="design-nav__item-link" href="your-choices.html">
-              <img
-                class="design-nav__item-image"
-                src="images/complement.png"
-                alt="Best Sellers"
-              />
-            </a>
-            <a
-              class="design-nav__item-name"
-              href="collection.html?collection=bestSellers"
-              >Best Sellers</a
-            >
-          </li>
-          <li class="design-nav__item">
-            <a
-              class="design-nav__item-link"
-              href="collection.html?collection=timeless"
-            >
-              <img
-                class="design-nav__item-image"
-                src="images/timeless.png"
-                alt="Timeless"
-              />
-            </a>
-            <a
-              class="design-nav__item-name"
-              href="collection.html?collection=timeless"
-              >Timeless</a
-            >
-          </li>
-          <li class="design-nav__item">
-            <a
-              class="design-nav__item-link"
-              href="collection.html?collection=stacking"
-            >
-              <img
-                class="design-nav__item-image"
-                src="images/stacking.png"
-                alt="Stacking"
-              />
-            </a>
-            <a
-              class="design-nav__item-name"
-              href="collection.html?collection=stacking"
-              >Stacking</a
-            >
-          </li>
-          <li class="design-nav__item">
-            <a
-              class="design-nav__item-link"
-              href="collection.html?collection=couple"
-            >
-              <img
-                class="design-nav__item-image"
-                src="images/couple.png"
-                alt="Couple"
-              />
-            </a>
-            <a
-              class="design-nav__item-name"
-              href="collection.html?collection=couple"
-              >Couple</a
-            >
-          </li>
-          <li class="design-nav__item">
-            <a
-              class="design-nav__item-link"
-              href="collection.html?collection=complement"
-            >
-              <img
-                class="design-nav__item-image"
-                src="images/complement.png"
-                alt="Complement"
-              />
-            </a>
-            <a
-              class="design-nav__item-name"
-              href="collection.html?collection=complement"
-              >Complement</a
-            >
-          </li>
-          <li class="design-nav__item">
-            <a
-              class="design-nav__item-link"
-              href="collection.html?collection=independent"
-            >
-              <img
-                class="design-nav__item-image"
-                src="images/independent.png"
-                alt="Independent"
-              />
-            </a>
-            <a
-              class="design-nav__item-name"
-              href="collection.html?collection=independent"
-              >Independent</a
-            >
-          </li>
-        </ul>
+        <ul class="design-nav__item-wrapper js-design-wrapper"></ul>
       </nav>
 
       <!-- breadcrumb navigation -->
 
       <nav class="breadcrumb-nav">
-        <ul class="breadcrumb-nav__item-wrapper"></ul>
+        <ul class="breadcrumb-nav__item-wrapper js-breadcrumb-nav-wrapper"></ul>
 
-        <a class="breadcrumb-nav__item-count">0 Items</a>
+        <a class="breadcrumb-nav__item-count js-item-count">0 Items</a>
       </nav>
 
       <!-- catalogue section -->
 
-      <section class="catalogue-section" id="catalogue-section"></section>
+      <section class="catalogue js-catalogue-wrapper"></section>
     </main>
 
     <!-- footer -->
 
     <footer id="footer" class="footer"></footer>
 
-    <div class="overlay"></div>
+    <!-- video overlay -->
+    <div class="video-overlay js-video-overlay"></div>
 
     <!-- scripts -->
-
-    <script src="scripts/main.js"></script>
-    <script src="scripts/collection.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/wishlist.js"></script>
-    <script src="scripts/favorites.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/pages/collection.js"></script>
   </body>
 </html>

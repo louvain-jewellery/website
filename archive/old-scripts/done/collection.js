@@ -86,13 +86,6 @@ function renderCatalogue(data) {
       div.className = "catalogue-item";
       div.dataset.collection = item.collection;
 
-      // Check if item is in favorites
-      const favorites = getFavorites();
-      const isFavorited = favorites.some((fav) => fav.id === item.id);
-      const favoriteIconSrc = isFavorited
-        ? "icons/favorite_22dp_000000_FILL1_wght100_GRAD0_opsz24.svg"
-        : "icons/favorite_22dp_000000_FILL0_wght200_GRAD0_opsz24.svg";
-
       div.innerHTML = `
 				<a class="catalogue-image-link" href="${item.detailLink}">
 					<img class="catalogue-image" src="${item.images[0]}" alt="${item.name}">
@@ -108,13 +101,6 @@ function renderCatalogue(data) {
 					<a class="catalogue-button" href="${item.detailLink}">Lihat Produk</a>
 				</div>
 			`;
-
-      const favoriteButton = div.querySelector(".favorite-button");
-      favoriteButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleFavorite(item);
-      });
 
       catalogueSection.appendChild(div);
     }

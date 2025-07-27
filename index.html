@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/layout/design-nav.css" />
+    <link rel="stylesheet" href="styles/layout/video-button.css" />
+    <link rel="stylesheet" href="styles/layout/packaging.css" />
     <link rel="stylesheet" href="styles/index.css" />
 
     <title>Louvain Jewellery | Butik Cincin Kawin & Tunangan Sumbar</title>
@@ -63,27 +66,32 @@
         </div>
       </section>
 
-      <!-- your choices section -->
-      <section class="your-choices">
-        <div class="your-choices__title-wrapper">
-          <h2 class="your-choices__title-text title-text">
+      <!-- best sellers section -->
+      <section class="best-sellers">
+        <div class="best-sellers__title-wrapper">
+          <h2 class="best-sellers__title-text title-text">
             Apa yang Mereka Pilih?
           </h2>
-          <p class="your-choices__subtitle-text subtitle-text">
+          <p class="best-sellers__subtitle-text subtitle-text">
             Rangkaian cincin yang dipilih dengan sepenuh hati oleh tiap
             pasangan.
           </p>
         </div>
 
-        <div class="video-recently__grid-wrapper"></div>
-        <a class="your-choices__button square-button" href="your-choices.html">
+        <div class="video-recently__grid-wrapper">
+          <div class="video-recently__grid js-video-grid"></div>
+        </div>
+        <a
+          class="best-sellers__button square-button"
+          href="collection.html?collection=best-sellers"
+        >
           Lihat Produk Best Seller
         </a>
       </section>
 
       <!-- design section -->
       <section id="designSection" class="design">
-        <div class="design__title -wrapper">
+        <div class="design__title-wrapper">
           <h2 class="design__title-text title-text">
             Belanja Berdasarkan Desain
           </h2>
@@ -94,93 +102,7 @@
         </div>
 
         <nav class="design-nav">
-          <ul class="design-nav__item-wrapper">
-            <li class="design-nav__item">
-              <a
-                class="design-nav__item-link"
-                href="collection.html?collection=timeless"
-              >
-                <img
-                  class="design-nav__item-image"
-                  src="images/timeless.png"
-                  alt="Timeless"
-                />
-              </a>
-              <a
-                class="design-nav__item-name"
-                href="collection.html?collection=timeless"
-                >Timeless Design</a
-              >
-            </li>
-            <li class="design-nav__item">
-              <a
-                class="design-nav__item-link"
-                href="collection.html?collection=stacking"
-              >
-                <img
-                  class="design-nav__item-image"
-                  src="images/stacking.png"
-                  alt="Stacking"
-                />
-              </a>
-              <a
-                class="design-nav__item-name"
-                href="collection.html?collection=stacking"
-                >Stacking Design</a
-              >
-            </li>
-            <li class="design-nav__item">
-              <a
-                class="design-nav__item-link"
-                href="collection.html?collection=couple"
-              >
-                <img
-                  class="design-nav__item-image"
-                  src="images/couple.png"
-                  alt="Couple"
-                />
-              </a>
-              <a
-                class="design-nav__item-name"
-                href="collection.html?collection=couple"
-                >Couple Design</a
-              >
-            </li>
-            <li class="design-nav__item">
-              <a
-                class="design-nav__item-link"
-                href="collection.html?collection=complement"
-              >
-                <img
-                  class="design-nav__item-image"
-                  src="images/complement.png"
-                  alt="Complement"
-                />
-              </a>
-              <a
-                class="design-nav__item-name"
-                href="collection.html?collection=complement"
-                >Complement Design</a
-              >
-            </li>
-            <li class="design-nav__item">
-              <a
-                class="design-nav__item-link"
-                href="collection.html?collection=independent"
-              >
-                <img
-                  class="design-nav__item-image"
-                  src="images/independent.png"
-                  alt="Independent"
-                />
-              </a>
-              <a
-                class="design-nav__item-name"
-                href="collection.html?collection=independent"
-                >Independent Design</a
-              >
-            </li>
-          </ul>
+          <ul class="design-nav__item-wrapper js-design-wrapper"></ul>
         </nav>
       </section>
 
@@ -197,7 +119,7 @@
           </p>
           <a
             class="customize__button text-button"
-            href="https://wa.me/6285324922353"
+            href="customize.html"
             target="_blank"
           >
             Lihat Hasil Kustomisasi &nbsp; &gt;
@@ -206,7 +128,7 @@
       </section>
 
       <!-- packaging section -->
-      <section id="packaging" class="packaging">
+      <section id="packagingSection" class="packaging">
         <div class="packaging-title-wrapper">
           <h2 class="packaging-title-text title-text">
             Kemasan Eksklusif Louvain
@@ -217,20 +139,7 @@
           </p>
         </div>
 
-        <div class="packaging__item-wrapper">
-          <div class="packaging__item">
-            <img class="packaging__item-image" src="images/packaging4.png" />
-          </div>
-          <div class="packaging__item">
-            <img class="packaging__item-image" src="images/packaging1.png" />
-          </div>
-          <div class="packaging__item">
-            <img class="packaging__item-image" src="images/packaging2.png" />
-          </div>
-          <div class="packaging__item">
-            <img class="packaging__item-image" src="images/packaging3.png" />
-          </div>
-        </div>
+        <div class="packaging__item-wrapper js-packaging-wrapper"></div>
       </section>
 
       <!-- location section -->
@@ -326,7 +235,10 @@
               alt="Paket Pembelian"
             />
           </a>
-          <a href="#packaging" class="why__item-name text-button"
+          <a
+            id="toPackagingSection"
+            href="#packagingSection"
+            class="why__item-name text-button"
             >Paket Pembelian</a
           >
           <p class="why__item-caption">
@@ -340,13 +252,10 @@
     <!-- footer -->
     <footer id="footer" class="footer"></footer>
 
-    <div class="overlay"></div>
-
     <!-- scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/header.js"></script>
-    <!-- <script src="scripts/your-choices.js"></script> -->
+    <script type="module" src="scripts/pages/index.js"></script>
+
+    <script type="module" src="scripts/main.js"></script>
 
     <!-- service worker registration -->
     <script>

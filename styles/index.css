@@ -23,24 +23,6 @@
   margin-bottom: 15px;
 }
 
-.video-button {
-  bottom: 1rem;
-  aspect-ratio: 1/1;
-  opacity: 0;
-}
-
-.video-button:hover {
-  background: rgba(115, 115, 115, 0.6);
-}
-
-.mute-button {
-  left: 1rem;
-}
-
-.play-button {
-  right: 1rem;
-}
-
 /* page hero section */
 
 .page-hero {
@@ -74,7 +56,7 @@
 
 /* your choices section */
 
-.your-choices,
+.best-sellers,
 .design,
 .packaging,
 .cta {
@@ -87,7 +69,7 @@
   width: 100%;
 }
 
-.your-choices__title-wrapper {
+.best-sellers__title-wrapper {
   display: none;
 }
 
@@ -100,7 +82,7 @@
   grid-template-columns: repeat(5, 1fr);
   justify-content: start;
   align-items: center;
-  gap: 1vw;
+  gap: 0.8vw;
   width: 100%;
 }
 
@@ -109,7 +91,7 @@
   aspect-ratio: 9/16;
   width: 100%;
   overflow: hidden;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
 }
 
 .video-recently__video {
@@ -124,60 +106,19 @@
   transform: scale(1.025);
 }
 
-.video-recently__item:hover .video-button {
-  opacity: 1;
-}
-
 /* design section */
 
 .design-nav {
   width: 100%;
 }
 
-.design-nav__item-wrapper,
-.packaging__item-wrapper {
+.design-nav__item-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 1vw;
+  gap: 0.8vw;
   width: 100%;
-}
-
-.design-nav__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 12.5px;
-}
-
-.design-nav__item-link,
-.packaging__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid lightgray;
-  width: 100%;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  background-color: rgb(248, 246, 242);
-}
-
-.design-nav__item-image,
-.packaging__item-image {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-  transition: transform 0.5s ease;
-}
-
-.design-nav__item-link:hover .design-nav__item-image {
-  transform: scale(1.15);
-}
-
-.design-nav__item-link:hover {
-  border: 1px solid black;
 }
 
 /* customize section */
@@ -213,15 +154,11 @@
 
 .packaging__item-wrapper {
   grid-template-columns: repeat(4, 1fr);
-}
-
-.packaging__item-image {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vw;
   width: 100%;
-  height: 100%;
-}
-
-.packaging__item:hover .packaging__item-image {
-  transform: scale(1.5);
 }
 
 /* location section */
@@ -322,10 +259,6 @@
     text-align: center;
   }
 
-  .video-button {
-    opacity: 1;
-  }
-
   /* page hero section */
 
   .page-hero {
@@ -357,7 +290,7 @@
 
   /* your choices section */
 
-  .your-choices,
+  .best-sellers,
   .design,
   .packaging,
   .cta {
@@ -396,7 +329,7 @@
   .design-nav__item-wrapper {
     grid-template-columns: none;
     grid-auto-flow: column;
-    grid-template-columns: 35vw;
+    grid-template-columns: 30vw;
     justify-content: start;
     gap: 15px;
     width: 100%;
@@ -410,21 +343,6 @@
 
   .design-nav__item-wrapper::-webkit-scrollbar {
     display: none;
-  }
-
-  .design-nav__item-link {
-    height: 35vw;
-    width: 35vw;
-  }
-
-  .design-nav__item-name {
-    font-size: 12px;
-    white-space: nowrap;
-  }
-
-  .design-nav__item-image,
-  .packaging__item-image {
-    aspect-ratio: 1/1;
   }
 
   /* customize section */
@@ -458,8 +376,6 @@
     padding: 0 15px;
   }
 
-  /* packaging section */
-
   .packaging__item-wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: none;
@@ -468,12 +384,8 @@
     width: 100%;
   }
 
-  .packaging__item {
-    width: 100%;
-    aspect-ratio: 1/1;
-  }
-
   /* location section */
+
   .location {
     flex-direction: column;
     background: none;
@@ -538,7 +450,7 @@
   }
 }
 
-/* landscape tablet screen */
+/* portrait tablet screen */
 @media (min-width: 769px) and (max-width: 1024px) {
   .title-text,
   .title-text--left {
@@ -555,7 +467,7 @@
     padding: 0 50px;
   }
 
-  .your-choices,
+  .best-sellers,
   .design,
   .packaging,
   .cta {
@@ -626,10 +538,6 @@
   .page-hero {
     height: auto;
     aspect-ratio: 2/1;
-  }
-
-  .video-button {
-    opacity: 1;
   }
 
   .customize__image {

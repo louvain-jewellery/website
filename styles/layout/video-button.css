@@ -1,0 +1,35 @@
+.video-button {
+  position: absolute;
+  bottom: 1rem;
+  aspect-ratio: 1/1;
+  opacity: 0;
+}
+
+.video-button:hover {
+  background: rgba(115, 115, 115, 0.6);
+}
+
+.mute-button {
+  left: 1rem;
+}
+
+.play-button {
+  right: 1rem;
+}
+
+.video-recently__item:hover .video-button,
+.video-section__item:hover .video-button {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .video-button {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .video-button {
+    opacity: 1;
+  }
+}

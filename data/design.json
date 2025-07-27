@@ -1,0 +1,40 @@
+[
+  {
+    "best-sellers" : {
+      "title": "Best Sellers",
+      "description": "Koleksi unggulan Louvain yang mengutamakan keindahan, detail, serta kualitas dalam setiap desainnya.",
+      "image": "images/complement.png",
+      "link": "collection.html?collection=best-sellers"
+    },
+    "timeless": {
+      "title": "Timeless",
+      "description": "Cincin kawin yang memiliki model abadi sepanjang masa. Identik dengan model basic dipadukan satu permata.",
+      "image": "images/timeless.png",
+      "link": "collection.html?collection=timeless"
+    },
+    "stacking": {
+      "title": "Stacking",
+      "description": "Cincin kawin yang terdiri dari dua buah cincin digabungkan menjadi satu cincin dengan model yang berbeda satu sama lain.",
+      "image": "images/stacking.png",
+      "link": "collection.html?collection=stacking"
+    },
+    "couple": {
+      "title": "Couple",
+      "description": "Cincin kawin yang memiliki design sama persis antara cincin pria dan cincin wanita.",
+      "image": "images/couple.png",
+      "link": "collection.html?collection=couple"
+    },
+    "complement": {
+      "title": "Complement",
+      "description": "Cincin kawin yang memiliki desain saling melengkapi antara cincin pria dan wanita. Dengan ciri khas cincin wanita memiliki permata yang lebih banyak.",
+      "image": "images/complement.png",
+      "link": "collection.html?collection=complement"
+    },
+    "independent": {
+      "title": "Independent",
+      "description": "Cincin kawin dengan model yag berbeda antara cincin pria dan wanita.",
+      "image": "images/independent.png",
+      "link": "collection.html?collection=independent"
+    }
+  }
+]

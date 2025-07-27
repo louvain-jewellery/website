@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="id">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="view-transition" content="same-origin" />
+
+    <link rel="icon" href="favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/best-sellers.css" />
+
+    <title>Pilihan Kamu | Louvain Jewellery</title>
+  </head>
+
+  <body>
+    <header id="header" class="header"></header>
+
+    <!-- HERO SECTION -->
+
+    <section class="page-hero">
+      <img class="page-hero__image js-hero-image" src="images/logo.png" />
+      <div class="page-hero__title-wrapper">
+        <h2 class="page-hero__title-text js-hero-title"></h2>
+        <p class="page-hero__subtitle-text js-hero-subtitle"></p>
+      </div>
+    </section>
+
+    <!-- DESIGN SECTION -->
+
+    <nav class="design-nav">
+      <ul class="design-nav__wrapper js-design-wrapper"></ul>
+    </nav>
+
+    <main>
+      <section class="page-title">
+        <h1 class="page-title__heading">Pilihan Kamu</h1>
+        <p class="page-title__subtitle">Koleksi Pilihan dari Sobat Loufvam</p>
+      </section>
+
+      <section id="videoSection" class="video-section"></section>
+    </main>
+
+    <div id="videoOverlay" class="video-overlay hidden">
+      <div class="video-overlay__content">
+        <video id="overlayVideo" controls loop></video>
+      </div>
+      <button id="closeOverlay" class="video-overlay__close">&#10005;</button>
+    </div>
+
+    <footer id="footer" class="footer"></footer>
+
+    <div class="overlay"></div>
+
+    <!-- scripts -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/pages/best-sellers.js"></script>
+  </body>
+</html>
