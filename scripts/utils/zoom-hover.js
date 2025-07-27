@@ -1,18 +1,31 @@
 export function zoomHover() {
-  const mainImage = document.querySelector(".js-main-image");
-  const imageWrapper = document.querySelector(".js-main-image-wrapper");
+  const image = document.querySelector(".image-overlay__image");
+  const imageWrapper = document.querySelector(".image-overlay__image-wrapper");
 
-  imageWrapper.addEventListener("mousemove", (e) => {
-    const bounds = imageWrapper.getBoundingClientRect();
+  let isDragging = false;
 
-    const x = ((e.clientX - bounds.left) / bounds.width) * 100;
-    const y = ((e.clientY - bounds.top) / bounds.height) * 100;
+  imageWrapper.addEventListener("mousedown", () => {
+    isDragging = true;
+    image.style.transform = "scale(2)";
+  });
 
-    mainImage.style.transformOrigin = `${x}% ${y}%`;
-    mainImage.style.transform = `scale(2)`;
+  imageWrapper.addEventListener("mouseup", () => {
+    isDragging = false;
+    image.style.transform = "scale(1)";
   });
 
   imageWrapper.addEventListener("mouseleave", () => {
-    mainImage.style.transform = "scale(1)";
+    isDragging = false;
+    image.style.transform = "scale(1)";
+  });
+
+  imageWrapper.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+
+    const bounds = imageWrapper.getBoundingClientRect();
+    const x = ((e.clientX - bounds.left) / bounds.width) * 100;
+    const y = ((e.clientY - bounds.top) / bounds.height) * 100;
+
+    image.style.transformOrigin = `${x}% ${y}%`;
   });
 }

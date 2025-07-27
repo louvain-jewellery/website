@@ -22,15 +22,6 @@ section {
   font-weight: 400;
 }
 
-.content-section {
-  display: grid;
-  grid-template-columns: repeat(4, 25.5%);
-  width: 100%;
-  padding: 0 50px;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
 @media (max-width: 1024px) {
   section {
     padding: 0px 25px;
@@ -43,19 +34,5 @@ section {
 
   .wishlist-body-text {
     text-align: center;
-  }
-
-  .content-section {
-    grid-template-columns: repeat(2, 48%);
-    gap: 10px;
-    padding: 0 25px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .content-section {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 0 50px;
   }
 }

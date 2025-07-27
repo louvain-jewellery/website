@@ -1,3 +1,4 @@
+import { zoomHover } from "../../utils/zoom-hover.js";
 import { scrollOverlay } from "../overlayScroll.js";
 
 export function showImageOverlay(item, selectedImage, allImages) {
@@ -22,7 +23,7 @@ export function showImageOverlay(item, selectedImage, allImages) {
     imageWrapper.classList.add("image-overlay__image-wrapper");
     imageWrapper.appendChild(img);
     imageSlider.appendChild(imageWrapper);
-  }); 
+  });
 
   const buttonsWrapper = document.createElement("div");
   buttonsWrapper.classList.add(
@@ -50,4 +51,5 @@ export function showImageOverlay(item, selectedImage, allImages) {
   document.body.style.overflow = "hidden";
 
   scrollOverlay();
+  zoomHover();
 }

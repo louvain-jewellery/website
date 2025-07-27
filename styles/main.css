@@ -138,6 +138,12 @@ body.no-scroll {
   width: 25px;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
 /* phone screen */
 
 @media (max-width: 1024px) {

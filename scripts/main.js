@@ -9,5 +9,3 @@ document.addEventListener("DOMContentLoaded", () => {
   link.type = "stylesheet";
   link.src = "";
 });
-
-
