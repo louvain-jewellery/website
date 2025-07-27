@@ -1,10 +1,6 @@
 import { breadcrumbNav } from "./breadcrumb-nav.js";
 import { renderVideos } from "./render-videos.js";
-import {
-  addToFavorite,
-  loadFavorites,
-  updateFavoriteIcon,
-} from "../../utils/favorites.js";
+import { setupFavorites } from "../../utils/favorites.js";
 
 export function renderCatalogue(collection) {
   const showItemCount = document.querySelector(".js-item-count");
@@ -62,8 +58,6 @@ export function renderCatalogue(collection) {
         catalogueWrapper.insertAdjacentHTML("beforeend", html);
         showItemCount.textContent = `${filteredCollection.length} Items`;
       });
-      loadFavorites();
-      updateFavoriteIcon();
-      addToFavorite();
+      setupFavorites();
     });
 }

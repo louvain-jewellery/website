@@ -1,11 +1,7 @@
 import { hideOverlay } from "../../components/hide-overlay.js";
 import { showImageOverlay } from "../../components/image-overlay/image-overlay.js";
 import { renderDiscover } from "./render-discover.js";
-import {
-  addToFavorite,
-  loadFavorites,
-  updateFavoriteIcon,
-} from "../../utils/favorites.js";
+import { setupFavorites } from "../../utils/favorites.js";
 
 export function renderItem(id) {
   const thumbnailWrapper = document.querySelector(".js-thumbnails-wrapper");
@@ -47,6 +43,7 @@ export function renderItem(id) {
 
         thumbnailWrapper.appendChild(img);
       });
+      document.querySelector(".js-favorite-button").dataset.itemId = item.id;
 
       itemName.textContent = item.name;
       itemDesign.textContent =
@@ -57,7 +54,6 @@ export function renderItem(id) {
       mRingWidth.textContent = item.specs.ringWidth.pria;
       wGemSpecs.textContent = item.specs.gem.wanita;
       mGemSpecs.textContent = item.specs.gem.pria;
-
 
       mainImage.addEventListener("click", () => {
         const selectedImage = mainImage.dataset.imageSource;
@@ -71,8 +67,7 @@ export function renderItem(id) {
               (i) => i.collection === item.collection && i.id !== item.id
             );
       renderDiscover(sameCollection);
+
+      setupFavorites();
     });
-  loadFavorites();
-  updateFavoriteIcon();
-  addToFavorite();
 }

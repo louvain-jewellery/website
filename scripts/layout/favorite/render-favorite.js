@@ -1,8 +1,7 @@
 import {
   favoriteItem,
   loadFavorites,
-  addToFavorite,
-  updateFavoriteIcon,
+  setupFavorites,
 } from "../../utils/favorites.js";
 
 export function renderFavorite() {
@@ -34,7 +33,7 @@ export function renderFavorite() {
                   alt="${item.name}"
                 />
               </a>
-              <button class="favorite-button" data-item-id="${item.id}">
+              <button class="favorite-button js-favorite-button" data-item-id="${item.id}">
                 <img class="js-favorite-icon" src="icons/favorite_22dp_000000_FILL0_wght200_GRAD0_opsz24.svg" />
               </button>
               <h2 class="catalogue-item__name">${item.name}</h2>
@@ -50,8 +49,6 @@ export function renderFavorite() {
           favoriteWrapper.appendChild(div);
         }
       });
-      updateFavoriteIcon();
-      loadFavorites();
-      addToFavorite();
+      setupFavorites();
     });
 }

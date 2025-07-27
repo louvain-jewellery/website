@@ -2,6 +2,12 @@ import { renderFavorite } from "../layout/favorite/render-favorite.js";
 
 export let favoriteItem;
 
+export function setupFavorites() {
+  loadFavorites();
+  updateFavoriteIcon();
+  addToFavorite();
+}
+
 export function saveToStorage() {
   localStorage.setItem("favorite", JSON.stringify(favoriteItem));
 }
@@ -34,16 +40,21 @@ export function addToFavorite() {
       const index = favoriteItem.findIndex((savedId) => savedId === itemId);
 
       if (index !== -1) {
-        console.log("rmovd");
+        console.log(`removed ${itemId}`);
         favoriteItem.splice(index, 1);
       } else {
-        console.log("added");
+        console.log(`added ${itemId}`);
         favoriteItem.push(itemId);
       }
 
       saveToStorage();
-      renderFavorite();
       updateFavoriteIcon();
+
+      const favoriteWrapper = document.querySelector(".js-favorite-wrapper");
+      if (favoriteWrapper) {
+        favoriteWrapper.innerHTML = "";
+        renderFavorite();
+      }
     });
   });
 }
