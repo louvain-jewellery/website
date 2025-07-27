@@ -44,6 +44,7 @@ div {
   -webkit-tap-highlight-color: transparent;
   color: inherit;
   text-decoration: none;
+  -webkit-user-drag: none;
 }
 
 a:hover {
