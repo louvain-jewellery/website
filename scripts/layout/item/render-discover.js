@@ -1,12 +1,8 @@
-import {
-  addToFavorite,
-  loadFavorites,
-  updateFavoriteIcon,
-} from "../../utils/favorites.js";
-
 export function renderDiscover(sameCollection) {
   const discoverWrapper = document.querySelector(".js-items-wrapper");
-  sameCollection.slice(0, 4).forEach((item) => {
+  const randomItems = getRandomItem(sameCollection, 4);
+
+  randomItems.forEach((item) => {
     const html = `
       <div class="catalogue-item">
         <a class="catalogue-item__image-link" href="item.html?id=${item.id}">
@@ -39,4 +35,9 @@ export function renderDiscover(sameCollection) {
     `;
     discoverWrapper.insertAdjacentHTML("beforeend", html);
   });
+}
+
+function getRandomItem(array, count) {
+  const shuffled = [...array].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
 }
