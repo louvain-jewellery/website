@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: env(safe-area-inset-top);
+  background-color: white;
+  padding-top: 105px;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+a,
+div {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  -webkit-user-drag: none;
+}
+
+a:hover {
+  font-weight: 400;
+}
+
+a:focus-visible {
+  outline: 2px solid lightgray;
+}
+
+a:active,
+a:visited {
+  color: inherit;
+}
+
+.text-button {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-button:hover {
+  font-weight: 600;
+}
+
+.text-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.text-button:hover::after {
+  width: 100%;
+}
+
+.square-button {
+  position: relative;
+  display: inline-block;
+  background: none;
+
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  border: 1px solid black;
+  padding: 10px 15px;
+  width: fit-content;
+}
+
+.square-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.square-button:hover::after {
+  width: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.video-button {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  height: 35px;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.video-button img {
+  width: 25px;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
+/* phone screen */
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 70px;
+  }
+}
