@@ -121,8 +121,10 @@ async function cacheFirst(request) {
   }
 
   const networkResponse = await fetch(request);
-  const cache = await caches.open(CACHE_NAME);
-  cache.put(request, networkResponse.clone());
+  if (networkResponse.ok && networkResponse.status === 200) {
+    const cache = await caches.open(CACHE_NAME);
+    cache.put(request, networkResponse.clone());
+  }
   return networkResponse;
 }
 
@@ -130,14 +132,14 @@ async function cacheFirst(request) {
 async function networkFirst(request) {
   try {
     const networkResponse = await fetch(request);
-    const cache = await caches.open(CACHE_NAME);
-    cache.put(request, networkResponse.clone());
+    if (networkResponse.ok && networkResponse.status === 200) {
+      const cache = await caches.open(CACHE_NAME);
+      cache.put(request, networkResponse.clone());
+    }
     return networkResponse;
   } catch (error) {
     const cachedResponse = await caches.match(request);
-    if (cachedResponse) {
-      return cachedResponse;
-    }
+    if (cachedResponse) return cachedResponse;
     throw error;
   }
 }
@@ -146,11 +148,19 @@ async function networkFirst(request) {
 async function staleWhileRevalidate(request) {
   const cachedResponse = await caches.match(request);
 
-  const fetchPromise = fetch(request).then((networkResponse) => {
-    const cache = caches.open(CACHE_NAME);
-    cache.then((c) => c.put(request, networkResponse.clone()));
-    return networkResponse;
-  });
+  const fetchPromise = fetch(request)
+    .then((networkResponse) => {
+      if (networkResponse.ok && networkResponse.status === 200) {
+        caches
+          .open(CACHE_NAME)
+          .then((cache) => cache.put(request, networkResponse.clone()));
+      }
+      return networkResponse;
+    })
+    .catch((error) => {
+      console.warn("SW fetch failed:", error);
+      return null; // so app doesn’t crash
+    });
 
   return cachedResponse || fetchPromise;
 }
