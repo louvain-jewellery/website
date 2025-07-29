@@ -1,0 +1,39 @@
+.page-main {
+  gap: 50px;
+}
+
+/* page title */
+
+.page-title {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30vh 0;
+  padding: 0 50px;
+  text-align: center;
+}
+
+/* phone screen */
+
+@media (max-width: 768px) {
+  .page-title__title-text,
+  .page-title__subtitle-text {
+    padding: 0 25px;
+  }
+
+  .page-title__subtitle-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* portrait tablet screen */
+
+@media (min-width: 768px) and (max-width: 1399px) {
+  .page-title__title-text,
+  .page-title__subtitle-text {
+    padding: 0 50px;
+  }
+}

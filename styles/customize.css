@@ -1,0 +1,142 @@
+.customize-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  margin: 25px 0 50px 0;
+  text-align: center;
+}
+
+.customize-title-text {
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.customize-subtitle-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.customize-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* padding: 0 50px; */
+  margin-bottom: 50px;
+}
+
+.customize-content {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(245, 245, 245); */
+  align-items: center;
+  gap: 50px;
+}
+
+.even {
+  flex-direction: row-reverse;
+}
+
+.customize-content img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  width: 50%;
+}
+
+.customize-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 50px;
+  text-align: center;
+  /* text-align: justify; */
+}
+
+.even .customize-text {
+  padding-right: 0;
+  padding-left: 50px;
+}
+
+.customize-text h2 {
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.customize-text p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (max-width: 1024px) {
+  .customize-title {
+    padding: 0 25px;
+  }
+
+  .customize-subtitle-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .customize-content-container {
+    padding: 0;
+    gap: 50px;
+  }
+
+  .customize-content {
+    flex-direction: column;
+    gap: 25px;
+    text-align: justify;
+  }
+
+  .even {
+    flex-direction: column;
+  }
+
+  .customize-content img {
+    aspect-ratio: 1/1;
+    width: 100%;
+  }
+
+  .customize-text {
+    padding: 0 25px;
+  }
+
+  .even .customize-text {
+    padding: 0 25px;
+  }
+
+  .customize-text h2 {
+    text-align: center;
+  }
+
+  .customize-text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .customize-title {
+    padding: 0 50px;
+  }
+
+  .customize-subtitle-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .customize-content-container {
+    padding: 0 50px;
+  }
+
+  .customize-text p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

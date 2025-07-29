@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- basic meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>Louvain Jewellery | Butik Cincin Kawin & Tunangan Sumbar</title>
+
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Louvain Jewellery adalah butik cincin kawin & tunangan pertama di Sumatera Barat yang menghadirkan desain elegan, custom, dan eksklusif. Temukan koleksi cincin impianmu bersama Louvain."
+    />
+    <meta
+      name="keywords"
+      content="cincin kawin, cincin tunangan, perhiasan, sumatera barat, sumbar, custom ring, wedding ring, engangement ring"
+    />
+    <meta name="author" content="Louvain Jewellery" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- open graph meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Louvain Jewellery" />
+    <meta
+      property="og:description"
+      content="Butik Cincin Kawin & Tunangan Sumbar"
+    />
+    <meta property="og:site_name" content="Louvain Jewellery" />
+
+    <!-- additional meta tags -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="view-transition" content="same-origin" />
+    <meta
+      name="google-site-verification"
+      content="xKkstPh47GJOMnrdOhJVCPVmwxRKa5UdcdAiOIDGQy8"
+    />
+
+    <!-- mobile web app meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Louvain" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- icon and manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/layout/design-nav.css" />
+    <link rel="stylesheet" href="styles/layout/video-button.css" />
+    <link rel="stylesheet" href="styles/layout/packaging.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="header" class="header"></header>
+
+    <main class="page-main">
+      <!-- page hero -->
+      <section class="page-hero">
+        <img class="page-hero__background-image" src="images/hero1.png" />
+        <div class="page-hero__title-wrapper">
+          <h1 class="page-hero__title-text title-text--left">
+            Saksi di Jari Manih
+          </h1>
+          <p class="page-hero__subtitle-text subtitle-text--left">
+            Setiap cincin Louvain bukan sekadar perhiasan, melainkan saksi bisu
+            dari janji suci Anda berdua. Dirancang untuk menemani cinta yang
+            abadi.
+          </p>
+          <a class="page-hero__button square-button" href="collection.html"
+            >lihat Selengkapnya</a
+          >
+        </div>
+      </section>
+
+      <!-- best sellers section -->
+      <section class="best-sellers">
+        <div class="best-sellers__title-wrapper">
+          <h2 class="best-sellers__title-text title-text">
+            Apa yang Mereka Pilih?
+          </h2>
+          <p class="best-sellers__subtitle-text subtitle-text">
+            Rangkaian cincin yang dipilih dengan sepenuh hati oleh tiap
+            pasangan.
+          </p>
+        </div>
+
+        <div class="video-recently__grid-wrapper">
+          <div class="video-recently__grid js-video-grid"></div>
+        </div>
+        <a
+          class="best-sellers__button square-button"
+          href="collection.html?collection=best-sellers"
+        >
+          Lihat Produk Best Seller
+        </a>
+      </section>
+
+      <!-- design section -->
+      <section id="designSection" class="design">
+        <div class="design__title-wrapper">
+          <h2 class="design__title-text title-text">
+            Belanja Berdasarkan Desain
+          </h2>
+          <p class="design__subtitle-text subtitle-text">
+            Dari Sentuhan Klasik hingga Modern, Temukan Cincin yang Berbicara
+            untuk Hati Anda.
+          </p>
+        </div>
+
+        <nav class="design-nav">
+          <ul class="design-nav__item-wrapper js-design-wrapper"></ul>
+        </nav>
+      </section>
+
+      <!-- customize section -->
+      <section class="customize">
+        <img class="customize__image" src="images/customize.png" />
+        <div class="customize__title-wrapper">
+          <h2 class="customize__title-text title-text--left">
+            Ingin Cincin yang Lebih Personal?
+          </h2>
+          <p class="customize__subtitle-text subtitle-text--left">
+            Buat desain cincin sesuai keinginan Anda, untuk momen yang tak
+            terlupakan.
+          </p>
+          <a class="customize__button text-button" href="customize.html">
+            Lihat Hasil Kustomisasi &nbsp; &gt;
+          </a>
+        </div>
+      </section>
+
+      <!-- packaging section -->
+      <section id="packagingSection" class="packaging">
+        <div class="packaging-title-wrapper">
+          <h2 class="packaging-title-text title-text">
+            Kemasan Eksklusif Louvain
+          </h2>
+          <p class="packaging-subtitle-text subtitle-text">
+            Kemasan eksklusif untuk setiap pembelian sepasang cincin Louvain
+            Jewellery.
+          </p>
+        </div>
+
+        <div class="packaging__item-wrapper js-packaging-wrapper"></div>
+      </section>
+
+      <!-- location section -->
+      <section class="location">
+        <img class="location__image" src="images/location2.jpg" />
+        <div class="location__title-wrapper">
+          <h2 class="location__title-text title-text--left">
+            Kunjungi Toko Kami
+          </h2>
+          <p class="location__subtitle-text subtitle-text--left">
+            Jl. Patimura, Kp. Jao, Kec. Padang Barat, Kota Padang, Sumatera
+            Barat
+          </p>
+          <a
+            class="location__button square-button"
+            href="https://maps.app.goo.gl/Z3Q8pYDUb1qYTpas7"
+            target="_blank"
+          >
+            Temukan Toko
+          </a>
+        </div>
+      </section>
+
+      <!-- cta section -->
+
+      <section class="cta">
+        <img class="cta__image" src="images/logo.png" />
+        <div class="cta__title-wrapper">
+          <h2 class="cta__title-text title-text">
+            Siap Menemukan Cincin untuk Anda dan Pasangan?
+          </h2>
+          <p class="cta__subtitle-text subtitle-text">
+            Pilih cincin yang berbicara untuk hati Anda, simbol sempurna dari
+            perjalanan cinta yang penuh makna.
+          </p>
+        </div>
+        <div class="cta__button-wrapper">
+          <a class="cta__button square-button" href="collection.html"
+            >Jelajahi Sekarang</a
+          >
+          <a
+            class="cta__button square-button"
+            href="https://wa.me/6285324922353"
+            target="_blank"
+            >Hubungi Kami</a
+          >
+        </div>
+      </section>
+
+      <!-- why section -->
+
+      <section class="why">
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="production.html">
+            <img class="why__item-image" src="icons/why/1.png" alt="Produksi" />
+          </a>
+          <a href="production.html" class="why__item-name text-button"
+            >Produksi</a
+          >
+          <p class="why__item-caption">
+            Produksi in-house pertama di Sumatera Barat dengan teknologi modern.
+          </p>
+        </div>
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="collection.html">
+            <img class="why__item-image" src="icons/why/2.png" alt="Desain" />
+          </a>
+          <a href="collection.html" class="why__item-name text-button"
+            >Desain</a
+          >
+          <p class="why__item-caption">
+            Louvain memadukan keanggunan klasik dan modern, menciptakan
+            perhiasan yang unik dan bermakna.
+          </p>
+        </div>
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="material.html">
+            <img class="why__item-image" src="icons/why/3.png" alt="Material" />
+          </a>
+          <a href="material.html" class="why__item-name text-button"
+            >Material</a
+          >
+          <p class="why__item-caption">
+            Cincin Louvain terbuat dari material pilihan, memastikan keindahan
+            dan ketahanan seiring waktu.
+          </p>
+        </div>
+        <div class="why__item">
+          <a class="why__item-image-wrapper" href="#packagingSection">
+            <img
+              class="why__item-image"
+              src="icons/why/4.png"
+              alt="Paket Pembelian"
+            />
+          </a>
+          <a
+            id="toPackagingSection"
+            href="#packagingSection"
+            class="why__item-name text-button"
+            >Paket Pembelian</a
+          >
+          <p class="why__item-caption">
+            Pilih cincin impian Anda dan nikmati layanan istimewa, pengemasan
+            mewah, dan garansi resmi.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="footer"></footer>
+
+    <!-- scripts -->
+    <script type="module" src="scripts/pages/index.js"></script>
+
+    <script type="module" src="scripts/main.js"></script>
+
+    <!-- service worker registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((reg) => {
+              console.log(
+                "✅ Service worker registered with scope:",
+                reg.scope
+              );
+            })
+            .catch((err) => {
+              console.log("❌ Service worker registration failed:", err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    margin: 25px 0 50px 0;
+  }
+
+  .hero-title-text {
+    font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .hero-body-text {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ring-guide-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ring-guide-left {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 50px 50px;
+    width: 30vw;
+  }
+
+  .ring-size-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+
+  .ring-size-table th,
+  .ring-size-table td {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .ring-size-table th {
+    font-weight: 500;
+  }
+
+  .ring-guide-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 50px;
+  }
+
+  .ring-guide-title-text {
+    font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+  }
+
+  .ring-guide-top-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .ring-guide-sub-title-text {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .ring-guide-body-text {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+  }
+
+  p strong {
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 0 25px;
+    }
+
+    .hero-body-text {
+      font-size: 14px;
+    }
+  
+    .hero-title-text {
+      font-size: 33px;
+      line-height: 43px;
+
+      white-space: collapse;
+    }
+  
+    .ring-guide-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ring-guide-left {
+      margin: 0 0 50px 0;
+      padding: 0 25px;
+      width: 100%;
+    }
+  
+    .ring-guide-right {
+      padding: 0 25px;
+    }
+  }
