@@ -1,3 +1,13 @@
 name = "louvainjewellery"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "CATALOGUE_DB"
+database_name = "catalogue-db"
+database_id = "f9c0378b-f25a-4d13-a0f3-c589208ef360"
+
+[[d1_databases]]
+binding = "AUTH-DB"
+database_name = "louvain-auth-db"
+database_id = "fa1ebb04-0c2f-46ae-8ce9-38bea7d2ef5d"
