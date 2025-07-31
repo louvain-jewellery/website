@@ -3,22 +3,22 @@ const CACHE_NAME = "louvain-jewellery-v1.0.0";
 
 // Files to cache for better performance
 const STATIC_CACHE_URLS = [
-  "/",
-  "/index.html",
-  "/styles/main.css",
-  "/styles/header.css",
-  "/styles/footer.css",
-  "/styles/dropdown.css",
-  "/styles/layout/design-nav.css",
-  "/styles/layout/video-button.css",
-  "/styles/layout/packaging.css",
-  "/styles/index.css",
-  "/favicon.svg",
-  "/favicon-96x96.png",
-  "/apple-touch-icon.png",
-  "/site.webmanifest",
-  "/web-app-manifest-192x192.png",
-  "/web-app-manifest-512x512.png",
+  "./",
+  "./index.html",
+  "./styles/main.css",
+  "./styles/header.css",
+  "./styles/footer.css",
+  "./styles/dropdown.css",
+  "./styles/layout/design-nav.css",
+  "./styles/layout/video-button.css",
+  "./styles/layout/packaging.css",
+  "./styles/index.css",
+  "./favicon.svg",
+  "./favicon-96x96.png",
+  "./apple-touch-icon.png",
+  "./site.webmanifest",
+  "./web-app-manifest-192x192.png",
+  "./web-app-manifest-512x512.png",
 ];
 
 // Install event - cache static assets
@@ -220,12 +220,12 @@ self.addEventListener("push", (event) => {
         {
           action: "view",
           title: "View",
-          icon: "/favicon-32x32.png",
+          icon: "./favicon-32x32.png",
         },
         {
           action: "close",
           title: "Close",
-          icon: "/favicon-32x32.png",
+          icon: "./favicon-32x32.png",
         },
       ],
     };
@@ -259,5 +259,5 @@ self.addEventListener("fetch", (event) => {
 
 async function handleSharedContent(request) {
   // Handle shared content (images, text, etc.)
-  return Response.redirect("/", 303);
+  return Response.redirect("./", 303);
 }
